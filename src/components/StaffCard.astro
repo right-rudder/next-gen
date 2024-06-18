@@ -1,0 +1,42 @@
+---
+const { name, qualifications, imagePath, bio } = Astro.props;
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+---
+
+<div class="flex flex-col bg-white group relative overflow-hidden">
+  <div class="w-[90%] h-[30rem] overflow-hidden">
+    <Image
+      src={images[imagePath]()}
+      alt={name}
+      class="h-full object-cover group-hover:scale-105 duration-700 ease-in-out"
+      quality={10}
+    />
+  </div>
+  <!-- <div
+    class="absolute w-full h-full bg-dark-blue/80 backdrop-blur-sm -translate-x-[101%] group-hover:translate-x-0 duration-700"
+  >
+    <p class="p-10 leading-loose text-white">{bio}</p>
+  </div> -->
+  <div class="p-10 z-10">
+    <h2
+      class="text-dark-blue text-3xl font-medium mb-3 group-hover:text-red-700 duration-700"
+    >
+      {name}
+    </h2>
+    {
+      qualifications.map((qualification) => (
+        <p class="uppercase tracking-widest text-xs font-bold group-hover:text-red-700 duration-700">
+          {qualification}
+        </p>
+      ))
+    }
+  </div>
+</div>

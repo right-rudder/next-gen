@@ -1,0 +1,34 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+const { data } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+);
+if (!images[data.headerImage]) {
+  throw new Error(
+    `"${data.headerImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
+  );
+}
+---
+
+<header
+  class="relative isolate pt-14 overflow-hidden h-[40vh] lg:h-[65vh] text-white flex
+    items-center"
+>
+  <Image
+    src={images[data.headerImage]()}
+    alt={data.headerAlt}
+    class="absolute top-0 w-full h-full object-cover -z-50"
+    quality={100}
+  />
+
+  <div class="absolute inset-0 bg-dark-blue/30 -z-40"></div>
+  <div
+    class="flex w-full max-w-7xl mx-auto px-5 font-medium flex-col gap-4 lg:gap-8"
+  >
+    <h1 class="text-4xl max-w-xl lg:text-6xl font-extrabold lg:max-w-4xl">
+      {data.title}
+    </h1>
+  </div>
+</header>

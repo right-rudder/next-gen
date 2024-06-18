@@ -1,0 +1,162 @@
+---
+const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
+  .QUICK_START_FORM_WEBHOOK_URL;
+---
+
+<form
+  id="quick-start-form"
+  class="p-10 shadow-lg flex flex-col gap-5 mx-auto shadow-gray-400 max-w-xl lg:w-[30rem] bg-white"
+>
+  <h3 class="font-bold text-xl">
+    Want to learn how you can start flight training and become a pilot?
+  </h3>
+  <input
+    type="text"
+    name="full-name"
+    placeholder="Full name"
+    class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
+    required
+  />
+  <input
+    id="email"
+    type="email"
+    name="email"
+    placeholder="Email"
+    class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
+    required
+  />
+
+  <input
+    type="email"
+    name="confirm-email"
+    placeholder="Confirm email"
+    class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+  />
+
+  <input
+    type="text"
+    name="phone"
+    placeholder="Phone"
+    class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full"
+    required
+  />
+
+  <select
+    name="experience"
+    required
+    class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full bg-white"
+  >
+    <option class="text-gray-500" value="" selected
+      >Do you have any pilot experience?</option
+    >
+    <option>I haven't started yet and I want to start flying</option>
+    <option>I have a few hours, but I haven't solo'd yet</option>
+    <option>I working on my private pilot</option>
+    <option>I have my private pilot certificate</option>
+    <option>I have an instrument rating</option>
+    <option>I am a certificated commercial pilot</option>
+    <option>I am a certified instructor</option>
+  </select>
+
+  <div class="flex gap-3">
+    <input
+      type="checkbox"
+      name="agree-data-collection"
+      id="agree-data-collection"
+    />
+
+    <label for="agree-data-collection" class="text-gray-500 text-xs">
+      I agree to the terms & conditions provided by the company. By providing my
+      phone number, I agree to receive text messages from Alto Flight Academy.
+    </label>
+  </div>
+  <button
+    id="submit-button"
+    disabled
+    type="submit"
+    class="px-5 py-3 btn-dark-blue w-full cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+    >START FLYING</button
+  >
+</form>
+
+<script define:vars={{ QUICK_START_FORM_WEBHOOK_URL }}>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const quickStartForm = document.getElementById("quick-start-form");
+
+    // Check if the contactUs form element exists
+    if (quickStartForm !== null) {
+      // Add submit event listener to the contactUs form
+      quickStartForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(quickStartForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          quickStartForm.action = QUICK_START_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", quickStartForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/quick-start-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Contact us form element not found.");
+    }
+  });
+
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>

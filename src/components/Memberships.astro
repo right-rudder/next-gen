@@ -1,0 +1,63 @@
+---
+import eaaLogo from "../assets/eaa-logo.png";
+import nafiLogo from "../assets/nafi-logo.webp";
+import opaLogo from "../assets/opa-logo.png";
+import aopaLogo from "../assets/aopa-logo.png";
+import luizmonteiroLogo from "../assets/luizmonteiro-logo.webp";
+import challengeAirLogo from "../assets/challenge-air-logo.webp";
+import { Image } from "astro:assets";
+---
+
+<section
+  class="mb-0 py-12 lg:py-24 sm:py-10 bg-red-700 relative max-w-[80rem] mx-auto lg:mb-20"
+>
+  <h2 class="text-center font-semibold px-5 mb-10 sm:mb-32 text-2xl text-white">
+    Alto Flight Academy is a proud member of the aviation communities
+  </h2>
+  <div
+    class="gap-y-24 gap-x-10 grid grid-cols-2 px-10 sm:grid-cols-3 place-content-center place-items-center"
+  >
+    <a href="https://www.eaa.org/eaa">
+      <Image
+        src={eaaLogo}
+        alt="EAA logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      />
+    </a>
+    <a href="https://www.nafinet.org/">
+      <Image
+        src={nafiLogo}
+        alt="NAFI logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      />
+    </a>
+    <a href="https://opa.aero/">
+      <Image
+        src={opaLogo}
+        alt="OPA logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      />
+    </a>
+    <a href="https://www.aopa.org/">
+      <Image
+        src={aopaLogo}
+        alt="AOPA logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto invert"
+      />
+    </a>
+    <a href="https://www.luizmonteiro.com/Index.aspx">
+      <Image
+        src={luizmonteiroLogo}
+        alt="LuizMonteiro logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+      />
+    </a>
+    <a href="https://www.challengeair.com/">
+      <Image
+        src={challengeAirLogo}
+        alt="Challenge Air for kids & friends logo"
+        class="h-32 hover:scale-105 duration-200 object-scale-down w-auto"
+      />
+    </a>
+  </div>
+</section>

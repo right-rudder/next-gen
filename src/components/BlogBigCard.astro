@@ -1,0 +1,37 @@
+---
+const { title, date, alt, imagePath } = Astro.props;
+import FormattedDate from "./FormattedDate.astro";
+const dateData = new Date(date);
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+---
+
+<div class="flex flex-col shadow-lg w-80 my-5">
+  <div class="min-h-64">
+    <Image
+      src={images[imagePath]()}
+      alt={alt}
+      class="h-full w-full object-cover"
+      quality={50}
+    />
+  </div>
+  <div class="h-0">
+    <div
+      class="bg-red-700 w-fit rounded-full px-4 py-1 text-white font-bold text-sm -translate-y-4 ml-8"
+    >
+      <FormattedDate date={dateData} />
+    </div>
+  </div>
+  <div class="h-full p-6 flex flex-col justify-between">
+    <h3 class="font-bold text-2xl">{title}</h3>
+    <p class="font-bold text-gray-400">Aircraft</p>
+  </div>
+</div>

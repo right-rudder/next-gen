@@ -1,0 +1,97 @@
+---
+const EMAIL_FORM_WEBHOOK_URL = import.meta.env.EMAIL_FORM_WEBHOOK_URL;
+---
+
+<form
+  id="email-form"
+  class="lg:max-w-6xl mt-20 lg:mt-24 max-w-xl mx-auto bg-red-700 py-20 px-5 lg:px-20 gap-5 flex justify-between items-center flex-col lg:flex-row lg:gap-10 xl:gap-24 z-10"
+>
+  <h3 class="text-white font-bold text-3xl flex-1">
+    Want to be notified when the next ground school starts? <br
+      class="lg:block hidden"
+    /> Sign up here.
+  </h3>
+  <div class="flex relative flex-1 flex-col w-full pt-10 lg:pt-0">
+    <input
+      id="email"
+      type="email"
+      name="email"
+      required
+      placeholder="Your email"
+      class="px-5 py-4 w-full outline-1 focus:ring-0 border-gray-300 border outline-gray-400 rounded-full"
+    />
+    <input
+      type="email"
+      name="confirm-email"
+      placeholder="Confirm email"
+      class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+    />
+    <button
+      type="submit"
+      class="btn-dark-blue hover:outline hover:outline-dark-blue hover:bg-white hover:text-dark-blue border-blue-800 px-8 lg:absolute lg:right-[1px] py-4 lg:top-[1px] mt-10 lg:mt-0"
+    >
+      Sign up
+    </button>
+  </div>
+</form>
+
+<script define:vars={{ EMAIL_FORM_WEBHOOK_URL }}>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const quickStartForm = document.getElementById("email-form");
+
+    // Check if the contactUs form element exists
+    if (quickStartForm !== null) {
+      // Add submit event listener to the contactUs form
+      quickStartForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(quickStartForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          quickStartForm.action = EMAIL_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", quickStartForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/email-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Contact us form element not found.");
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>

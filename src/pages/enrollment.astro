@@ -1,0 +1,240 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Enrollment Form",
+  headerImage: "/src/assets/cfi-in-cessna.jpg",
+  headerAlt: "CFI in Cessna",
+};
+
+const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
+---
+
+<BaseLayout
+  siteTitle="Start Flight Training in Oklahoma City"
+  siteDescription="Alto Flight Academy has been training pilots for 30 years.  Start your journey today.  Enroll at Alto Flight Academy and join the family.  We are committed to your success and want to see you achieve your aviation goals."
+>
+  <Header slot="header" data={headerData} />
+
+  <section class="py-24 px-5">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Start the enrollment process at Alto Flight Academy
+      </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! An Alto team member will
+        get in touch with you and walk you through the next steps on getting you
+        in the air.
+      </h3>
+      <form
+        id="enrollment-form"
+        class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+      >
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your first name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Your last name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+          <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            required
+          />
+        </div>
+
+        <label for="experience">How far along are you in pilot training?*</label
+        >
+        <input
+          id="experience"
+          name="experience"
+          type="text"
+          placeholder=""
+          class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+          required
+        />
+        <label for="goals">What are your goals?*</label>
+        <input
+          id="goals"
+          name="goals"
+          type="text"
+          placeholder=""
+          class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+          required
+        />
+
+        <label for="extra-information"
+          >Anything else you want us to know about?*</label
+        >
+        <textarea
+          required
+          id="extra-information"
+          name="extra-information"
+          placeholder=""
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
+        ></textarea>
+
+        <div class="flex gap-3">
+          <input
+            type="checkbox"
+            name="agree-data-collection"
+            id="agree-data-collection"
+          />
+
+          <label
+            for="agree-data-collection"
+            class="text-gray-500 text-sm lg:text-base"
+          >
+            I agree to the terms & conditions provided by the company. By
+            providing my phone number, I agree to receive text messages from
+            Alto Flight Academy.
+          </label>
+        </div>
+        <button
+          id="submit-button"
+          disabled
+          type="submit"
+          class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+          >Submit</button
+        >
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
+
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
+
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
+
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+      );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const enrollmentForm = document.getElementById("enrollment-form");
+
+    // Check if the contactUs form element exists
+    if (enrollmentForm !== null) {
+      // Add submit event listener to the contactUs form
+      enrollmentForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(enrollmentForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", enrollmentForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Enrollment form element not found.");
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>

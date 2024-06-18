@@ -1,0 +1,367 @@
+---
+import Header from "../components/Header.astro";
+import Counter from "../components/Counter.jsx";
+import TeamMemberCard from "../components/TeamMemberCard.astro";
+import team from "../data/team";
+import BaseLayout from "../layouts/BaseLayout.astro";
+const headerData = {
+  title: "Is becoming a pilot right for you?",
+  headerImage:
+    "/src/assets/alto-fleet-of-aircraft-at-sundance-airpark-KHSD-bethany-ok.jpg",
+  headerAlt:
+    "Fleet of Alto Flight Academy airplanes in front of Sundance Airpark KHSD",
+};
+import EmailCTA from "../components/EmailCTA.astro";
+import { FaCheck } from "react-icons/fa";
+import { Image } from "astro:assets";
+import PiperArrow from "../assets/piper-arrow.jpg";
+import IntroImage from "../assets/student-and-cfi-in-cessna.jpg";
+import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+import Airliner from "../assets/inside-cockpit-flying-airliner-jet-over-bethany-oklahoma.jpg";
+import FemalePilots from "../assets/female-pilots-at-sundance-airport-in-front-of-planes.jpg";
+import GroundSchool from "../assets/instrument-ground-school-in-oklahoma-city.jpg";
+---
+
+<BaseLayout
+  siteTitle="Why Become a Pilot? | Flight Training in Yukon, OK"
+  siteDescription="Becoming a pilot is a rewarding path.  Whether you're flying for fun or you're learning to fly for a career, the skills, knowledge, and experience will mold you to become a better version of yourself.  In terms of careers, pilots can make a very nice salary and income and have unparalleled work life balance.  Once the parking brake is set, you don't need to take home client calls, emails, and meetings.  Pilot careers are in high demand and it keeps getting better as more people take to the skies for travel and business."
+>
+  <Header slot="header" data={headerData} />
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={IntroImage}
+          alt="Student and CFI in Alto Flight Academy"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Why learn to fly?
+        </h2>
+        <p class="paragraph">
+          Becoming a pilot is a dream for many people. It's a career that offers
+          a lot of excitement and adventure, as well as the opportunity to see
+          the world from a whole new perspective. It may be something you've
+          been thinking about, but never thought possible. We're here to say
+          that it is possible!
+        </p>
+        <h3 class="font-bold text-2xl">
+          We have flight training programs for all experience levels
+        </h3>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/private-pilot">Private Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/instrument-rating">Instrument Rating</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/commercial-pilot">Commercial Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/multi-engine-rating"
+                >Multi-Engine Rating</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/flight-instructor"
+                >Certified Flight Instructor</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="/flight-training/airline-transport-pilot"
+                >Airline Transport Pilot</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="relative isolate overflow-hidden bg-gray-900 pt-24 sm:pt-32 lg:-mt-12 -mt-16"
+  >
+    <Image
+      src={Airliner}
+      alt="back of pilot flying"
+      class="absolute inset-0 -z-10 h-full w-full object-cover object-center"
+    />
+
+    <div class="absolute inset-0 bg-gradient-to-tr from-black from-25%"></div>
+
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 z-10 relative">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2
+          class="text-4xl font-bold tracking-tight text-white sm:text-6xl font-header"
+        >
+          Is there a pilot shortage?
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-100 font-sans">
+          The aviation industry faces a pilot supply challenge due to a
+          confluence of factors including mandatory retirement ages, early
+          retirements prompted by COVID, and the escalating demand for pilots.
+          Experts predict that within the next year or two, global demand for
+          pilots will surpass the available supply, with this trend anticipated
+          to endure for the next decade.
+        </p>
+      </div>
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 font-sans text-white sm:grid-cols-2 md:flex lg:gap-x-10"
+        >
+          <a
+            href="/intro-flight"
+            target="_blank"
+            class="hover:text-red-700 duration-300"
+            >Discovery Flight <span>→</span></a
+          >
+          <a
+            href="/enrollment"
+            target="_blank"
+            class="hover:text-red-700 duration-300"
+            >Enroll Today <span>→</span></a
+          >
+          <a href="/contact" class="hover:text-red-700 duration-300"
+            >Contact Us <span>→</span></a
+          >
+        </div>
+
+        <dl
+          class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <div class="flex flex-col-reverse justify-center">
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots needed in the next 10 years
+            </dt>
+            <dd
+              class="text-2xl font-extrabold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="280000" />
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse justify-center">
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots over 50 years old
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="38" />%
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse justify-center">
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Pilots retiring in the next 10 years
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="45000" />
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse justify-center">
+            <dt class="text-base leading-7 text-gray-100 font-sans">
+              Growth in pilot demand
+            </dt>
+            <dd
+              class="text-2xl font-bold leading-9 tracking-tight text-white flex"
+            >
+              <Counter client:only="react" value="39" />%
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <div class="flex flex-row justify-end">
+      <div class="text-gray-500 mt-20 mb-10 mr-10 italic text-sm">
+        <a
+          href="https://www.cae.com/media/documents/ATF/Aviation-Talent-Forecast-2023.pdf"
+          target="blank">Source: 2023 CAE Aviation Talent Forcast</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={FemalePilots}
+          alt="Student and CFI in Alto Flight Academy"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          How it works
+        </h2>
+        <p class="paragraph">
+          At Alto Flight Academy, we offer two different courses for each type
+          of certification and rating: ground school and flight training. In
+          order to receive any certification or rating there are two main
+          requirements and that is passing the FAA written exam and the FAA
+          practical exam (also known as a checkride).
+        </p>
+        <p class="paragraph">
+          If you're ready to take the first step in learning how to become a
+          pilot or you're looking to take advanced classes to further your pilot
+          career and knowledge, we encourage you to start with our ground school
+          courses. Being in a ground school course is an excellent opportunity
+          to meet fellow pilots in a similar stage in their training as you.
+          Like the expression goes... "it takes a village".
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-5">
+    <div
+      class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+    >
+      <div class="flex-[1.5_1.5_0] w-full">
+        <Image
+          class="rounded-lg"
+          src={GroundSchool}
+          alt="Student and CFI in Alto Flight Academy"
+        />
+      </div>
+      <div class="flex flex-col flex-1 gap-5">
+        <h2 class="text-5xl text-dark-blue font-extrabold leading-tight">
+          Start with ground school
+        </h2>
+        <p class="paragraph">
+          Having a community and family to support your in your journey is
+          extremely beneficial to your success. After completing the ground
+          school and passing the written exam, move forward and get paired up
+          with a flight instructor to prepare for your checkride.
+        </p>
+        <p class="paragraph">
+          Below you'll find links to more information to our ground school
+          sessions. Click below to learn more and give us a call or fill out one
+          of the forms to get started.
+        </p>
+        <ul class="grid grid-cols-2 gap-4 font-medium leading-loose">
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/private-pilot">Private Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/instrument-rating">Instrument Rating</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/commercial-pilot">Commercial Pilot</a>
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/multi-engine-rating">Multi-Engine Rating</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/flight-instructor"
+                >Certified Flight Instructor</a
+              >
+            </p>
+          </li>
+          <li class="flex gap-2 items-center group">
+            <div class="p-2 bg-red-700 rounded-full group-hover:bg-dark-blue">
+              <FaCheck className="size-3 text-white" />
+            </div>
+            <p class="group-hover:underline">
+              <a href="ground-school/airline-transport-pilot"
+                >Airline Transport Pilot</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-36 px-5 relative overflow-hidden">
+    <Image
+      src={ComponentBackground}
+      alt="View from the skies inside Alto airplane"
+      class="absolute inset-0 object-cover w-full h-full"
+    />
+    <div class="bg-white/10 w-full h-full absolute inset-0"></div>
+    <div
+      class="max-w-7xl mx-auto z-10 relative text-white flex justify-between items-center flex-col gap-8"
+    >
+      <h2 class="text-6xl font-extrabold">
+        <span class="text-dark-blue">Let your dreams</span> take a flight!
+      </h2>
+      <p class="text-lg leading-relaxed max-w-5xl text-center">
+        Whether you're aspiring to soar through the skies as a private pilot,
+        embark on a career in aviation, or advance your current pilot
+        credentials, Alto Flight Academy is here to support your journey. Our
+        experienced instructors, state of the art facilities, and comprehensive
+        training programs are tailored to help you achieve your aviation goals.
+        Don't let this opportunity pass you by. Contact us today to take the
+        first step towards making your dreams a reality!
+      </p>
+      <a href="/contact" class="btn-dark-blue">Contact us</a>
+    </div>
+  </section>
+
+  <EmailCTA />
+</BaseLayout>

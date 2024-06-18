@@ -1,0 +1,28 @@
+---
+const { title, excerpt, alt, imagePath } = Astro.props;
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+---
+
+<div class="flex flex-col lg:flex-row lg:gap-3 lg:max-w-96">
+  <div class="lg:min-h-fit lg:min-w-28 lg:max-w-28 lg:h-24 aspect-video">
+    <Image
+      src={images[imagePath]()}
+      alt={alt}
+      class="h-full w-full object-cover shrink-0"
+      quality={50}
+    />
+  </div>
+  <div class="flex flex-col justify-between p-6 lg:p-0 gap-3">
+    <h3 class="font-bold lg:text-xl text-2xl">{title}</h3>
+    <p class="font-bold text-gray-400">Aircraft</p>
+  </div>
+</div>

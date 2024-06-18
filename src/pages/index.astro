@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import homePage from "../data/homePage"
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+const { data } = homePage;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+);
+---
+
+<BaseLayout 
+  siteTitle={data.pageTitle} 
+  siteDescription={data.pageDescription} 
+  keywords={data.pageKeywords}
+>
+ 
+<!-- HEADER -->
+<div class="h-[90vh] bg-gray-800 text-white flex flex-col items-center justify-center">
+  <!-- <Image 
+    src={images[data.headerImagePath]()}
+    alt={data.headerImageAlt}
+    class=""
+  /> -->
+  
+  <h1 class="text-3xl font-bold">{data.headerH1}</h1>
+  <h2 class="text-xl font-bold">{data.headerH2}</h2>
+</div>
+
+
+<!-- Content 1 -->
+ <div class="">
+<!-- <Image 
+    src={data.contentOneImage}
+    alt={data.contentOneAlt}
+    class=""
+  />  -->
+</div>
+
+</BaseLayout>

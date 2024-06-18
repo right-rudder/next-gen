@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "/src/assets/alto-pilot-thumbs-up-oklahoma.jpg";
+---
+
+<header
+  class="relative isolate pt-14 overflow-hidden h-[60vh] lg:h-[80vh] text-white flex
+    items-center"
+>
+  <Image
+    src={HeroImage}
+    alt="A description of my image."
+    class="absolute top-0 w-full h-full object-cover -z-50 animate-slow-zoom"
+    quality={100}
+  />
+
+  <div class="absolute inset-0 bg-dark-blue/30 -z-40"></div>
+  <div class="flex w-full max-w-7xl mx-auto px-5">
+    <div class="flex flex-col gap-4 lg:gap-8">
+      <h1 class="text-5xl max-w-xl lg:text-7xl font-extrabold lg:max-w-max">
+        Professional <span class="text-red-500 font-strong">Pilot</span> Training
+      </h1>
+      <h2 class="text-3xl max-w-xl lg:text-5xl font-extrabold lg:max-w-4xl text-gray-200">
+        <span class="text-red-500 font-strong">Flight School</span> in Oklahoma City
+      </h2>
+      <a href="/intro-flight" target="_blank" class="btn-red uppercase font-light tracking-wider"
+        >Begin Today</a
+      >
+  </div>
+  </div>
+</header>

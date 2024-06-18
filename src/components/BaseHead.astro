@@ -1,0 +1,177 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  keywords: string;
+  image?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const { title, description, keywords, image = "/blog-placeholder-1.jpg" } = Astro.props;
+---
+
+<!-- Global Metadata -->
+<meta charset="utf-8" />
+<!-- Site Created By:    
+       _____  _       _     _     _____           _     _           
+      |  __ \(_)     | |   | |   |  __ \         | |   | |          
+      | |__) |_  __ _| |__ | |_  | |__) |   _  __| | __| | ___ _ __ 
+      |  _  /| |/ _` | '_ \| __| |  _  / | | |/ _` |/ _` |/ _ \ '__|
+      | | \ \| | (_| | | | | |_  | | \ \ |_| | (_| | (_| |  __/ |   
+      |_|  \_\_|\__, |_| |_|\__| |_|  \_\__,_|\__,_|\__,_|\___|_|   
+      |  \/  |   __/ |  | |      | | (_)                            
+      | \  / | _|___/ __| | _____| |_ _ _ __   __ _                 
+      | |\/| |/ _` | '__| |/ / _ \ __| | '_ \ / _` |                
+      | |  | | (_| | |  |   <  __/ |_| | | | | (_| |                
+      |_|  |_|\__,_|_|  |_|\_\___|\__|_|_| |_|\__, |                
+                                               __/ |                
+                                              |___/                 
+
+    Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
+
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="icon" type="image/svg+xml" href="/logo.ico" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+<meta name="keywords" content={keywords} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<!-- UPDATE GTAG PLEASE -->
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=YOURIDGOESHERE"></script>
+<script type="text/partytown">
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "YOURIDGOESHERE");
+</script>
+
+
+<!-- NEED TO UPDATE SCHEMA -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Alto Flight Academy",
+    "description": "Discover top-notch flight training at Alto Flight Academy in Oklahoma City. Since 1995, we've been helping aspiring pilots achieve their dreams with FAA-certified instructors, competitive rates, and comprehensive programs including private pilot training, instrument rating courses, and commercial pilot license training. Join our professional flight school in Yukon, OK, and take the first step towards your aviation career.",
+    "keywords": "flight school, flight training, pilot training, pilot school, flight lessons, flight instruction, flight instructor, flight school near me, flight training near me, pilot training near me, pilot school near me, flight lessons near me, flight instruction near me, flight instructor near me",
+    "image": "pending",
+    "logo": "pending",
+    "telephone": "(405) 789-1234",
+    "email": "info@altoflight.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "13000 N Sara Rd",
+      "addressLocality": "Yukon",
+      "addressRegion": "OK",
+      "addressCountry": "US",
+      "postalCode": "73099"
+    },
+    "currenciesAccepted": "USD",
+    "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express, Discover, Checks",
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 35.60320320498056,
+        "longitude": -97.7079658306885
+      },
+      "geoRadius": 9000
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "14"
+    },
+    "url": "https://altoflight.com/",
+    "priceRange": "$",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 35.60320320498056,
+      "longitude": -97.7079658306885
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "12:00",
+        "closes": "17:00"
+      }
+    ],
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "serviceType": "Flight Instruction"
+      },
+      "priceCurrency": "USD",
+      "price": "Varies"
+    },
+    "memberOf": {
+      "@type": "Organization",
+      "name": "Cessna Pilot Center"
+    },
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "name": "IATA Code",
+        "value": "HSD"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "ICAO Code",
+        "value": "KHSD"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Airport Code",
+        "value": "HSD"
+      }
+    ],
+    "hasMap": "https://www.google.com/maps/place/13000+N+Sara+Rd,+Yukon,+OK+73099"
+  }
+</script>

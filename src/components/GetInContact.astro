@@ -1,0 +1,67 @@
+---
+import {
+  PHONE_NUMBER,
+  AIRPORT,
+  ADDRESS_LINE_1,
+  ADDRESS_LINE_2,
+} from "../consts";
+
+import { Image } from "astro:assets";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+
+import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
+
+---
+
+<section class="py-32 px-5 relative">
+  <Image
+    src={ComponentBackground}
+    alt="View from the skies inside Alto airplane"
+    class="absolute inset-0 object-cover w-full h-full"
+  />
+  <div class="bg-white/10 w-full h-full absolute inset-0"></div>
+  <div
+    class="max-w-7xl lg:pb-5 mx-auto z-20 relative text-white flex justify-between lg:items-center items-start flex-col lg:flex-row gap-10"
+  >
+    <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white lg:mt-20">
+      Get in <span class="text-white lg:text-dark-blue">contact with us</span><br class="hidden lg:block"><br class="hidden lg:block"><a href="/contact" class="hidden lg:block btn-red shrink-0 text-sm">CONTACT US</a>
+    </h2>
+    
+    <div class="flex items-center">
+      <IoPhonePortraitOutline className="size-24" />
+      <div class="flex flex-col justify-between font-bold gap-5">
+        <a class="font-bold text-2xl" href=`tel:${PHONE_NUMBER}`>
+          Give us a call today<br />
+          {PHONE_NUMBER}
+        </a>
+        <div class="grid grid-cols-2 text-white">
+          <div class="">Mon — Sat</div>
+          <div class="">8 AM - 5 PM</div>
+          <div class="">Sun</div>
+          <div class="">12 PM - 5 PM</div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <IoLocationOutline className="size-24" />
+      <div class="flex flex-col justify-between font-bold">
+        <a
+          class="text-white font-bold text-2xl"
+          href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
+          target="_blank"
+          >{AIRPORT}
+          <br />(KHSD)
+        </a>
+        <div class="flex flex-col pt-5">
+          <p>{ADDRESS_LINE_1}</p>
+          <p>{ADDRESS_LINE_2}</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center lg:hidden">
+      <a href="/contact" class="btn-red text-sm">CONTACT US</a>
+    </div>
+  </div>
+  
+</section>

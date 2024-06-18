@@ -1,0 +1,42 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import FormattedDate from "./FormattedDate.astro";
+
+const { imagePath, title, date, blogUrl, description } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+
+const dateData = new Date(date);
+---
+
+<a href={blogUrl} class="max-w-sm shadow-md flex flex-col group">
+  <div class="h-96 overflow-hidden shrink-0 relative">
+    <Image
+      src={images[imagePath]()}
+      alt={title}
+      class="w-full h-full object-cover scale-105 group-hover:scale-100 duration-700"
+      quality={80}
+    />
+  </div>
+
+  <div class="flex flex-col bg-white py-8 px-12 gap-3 justify-between h-full">
+    <div class="flex flex-col gap-3">
+      <p
+        class="text-white bg-red-700 py-2 uppercase font-bold text-xs px-4 rounded-full w-fit"
+      >
+        <FormattedDate date={dateData} />
+      </p>
+      <h3 class="text-2xl font-semibold leading-tight text-dark-blue">
+        {title}
+      </h3>
+      <p class="paragraph line-clamp-3">{description}</p>
+    </div>
+  </div>
+</a>

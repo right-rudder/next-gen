@@ -1,0 +1,53 @@
+---
+const { name, imagePath, alt, price, equipment } = Astro.props;
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+import { FaCheck } from "react-icons/fa";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}",
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
+  );
+}
+---
+
+<div class="flex flex-col">
+  <div
+    class="flex justify-between items-center px-8 py-12 bg-dark-blue text-white text-2xl font-bold"
+  >
+    <h2>{name}</h2>
+    <p>{price}</p>
+  </div>
+  <div class="flex py-10 gap-10 flex-col lg:flex-row">
+    <div class="flex-1 flex">
+      <Image
+        src={images[imagePath]()}
+        alt={alt}
+        class="h-full w-full object-cover max-h-[28rem]"
+        quality={50}
+      />
+    </div>
+    <div
+      class="flex-1 text-dark-blue flex flex-col max-h-[28rem] justify-between"
+    >
+      <div>
+        <h3 class="text-xl font-bold">Equipment</h3>
+        <ul class="p-4 flex flex-col gap-3">
+          {
+            equipment.map((item) => (
+              <li class="flex items-center gap-2">
+                <div class="p-2 bg-red-700 rounded-full">
+                  <FaCheck className="size-2 text-white" />
+                </div>
+                <p>{item}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <a href="/enrollment" class="btn-dark-blue mt-5 block">Fly Now</a>
+    </div>
+  </div>
+</div>

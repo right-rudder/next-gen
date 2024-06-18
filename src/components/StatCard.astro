@@ -1,0 +1,58 @@
+---
+//const { value, title } = Astro.props;
+---
+
+<div class="flex flex-col py-10 group max-w-48 lg:max-w-72 mx-auto">
+  <div
+    class="border-r border-white/20 px-10 flex flex-col gap-1 group-last:border-0"
+  >
+    <span
+      class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
+      x-data="{ current: 0, target: 1490, time: 1000}" 
+      x-init="() => { 
+        start = current; 
+        const interval = Math.max(time / (target - start), 5); 
+        const step = (target - start) /  (time / interval);  
+        const handle = setInterval(() => {
+          if(current < target) 
+            current += step
+          else {
+            clearInterval(handle);
+            current = target
+          }   
+        }, interval)
+      }"
+    >
+      <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
+    </span>
+    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">students trained at Alto</p>
+  </div>
+</div>
+
+
+<div class="flex flex-col py-10 group max-w-48 lg:max-w-72 mx-auto">
+  <div
+    class="border-r border-white/20 px-10 flex flex-col gap-1 group-last:border-0"
+  >
+    <span
+      class="text-5xl lg:text-7xl font-bold tabular-nums scroll-counter"
+      x-data="{ current: 0, target: 52500, time: 1000}" 
+      x-init="() => {
+        start = current; 
+        const interval = Math.max(time / (target - start), 5); 
+        const step = (target - start) /  (time / interval);  
+        const handle = setInterval(() => {
+          if(current < target) 
+            current += step
+          else {
+            clearInterval(handle);
+            current = target
+          }   
+        }, interval)
+      }"
+    >
+      <span class="card"x-text="Math.round(current).toLocaleString()"></span>+
+    </span>
+    <p class="font-semibold lg:text-3xl mt-2 lg:mt-5">hours of flight instruction</p>
+  </div>
+</div>

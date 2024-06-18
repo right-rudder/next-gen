@@ -1,0 +1,30 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS } from "../consts";
+import "@fontsource-variable/raleway";
+import "@fontsource/poppins";
+import Navbar from "../components/Navbar";
+const { pathname } = Astro.url;
+const { siteTitle, siteDescription, keywords } = Astro.props;
+import ChatWidget from "../components/ChatWidget.astro";
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={siteTitle || SITE_TITLE}
+      description={siteDescription || SITE_DESCRIPTION}
+      keywords={keywords || KEYWORDS}
+    />
+  </head>
+  <body>
+    <Navbar pathname={pathname} client:load />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+    <!-- <ChatWidget /> -->
+  </body>
+</html>

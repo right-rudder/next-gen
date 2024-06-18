@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import Badge from "../assets/30-years-in-business.png";
+import ThirtyYearsText from "../components/ThirtyYearsText.jsx";
+---
+
+<section
+  class="mb-0 py-12 lg:py-24 sm:py-10 bg-gradient-to-tl from-dark-blue to-sky-950 text-white relative max-w-[80rem] mx-auto lg:mb-20"
+>
+  <div class="grid place-items-center">
+    <div class="flex flex-col items-center">
+      <ThirtyYearsText client:only="react" />
+      <Image
+        src={Badge}
+        alt="Alto FLight Academy has been training pilots for 30 years"
+        class="w-28 lg:w-56"
+      />
+
+      <p class="paragraph pt-10 text-gray-400 text-center">
+        Alto Flight has been training thousands of pilots in Oklahoma City for 3
+        decades!
+      </p>
+    </div>
+  </div>
+</section>
