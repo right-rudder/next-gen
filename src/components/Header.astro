@@ -3,11 +3,11 @@ import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[data.headerImage]) {
   throw new Error(
-    `"${data.headerImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
+    `"${data.headerImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
   );
 }
 ---
@@ -17,7 +17,7 @@ if (!images[data.headerImage]) {
     items-center"
 >
   <Image
-    src={images[data.headerImage]()}
+    src={data.headerImage}
     alt={data.headerAlt}
     class="absolute top-0 w-full h-full object-cover -z-50"
     quality={100}

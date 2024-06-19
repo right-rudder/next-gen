@@ -102,14 +102,14 @@ const Navbar = ({ pathname }) => {
                   alt="Next Gen Logo"
                   className="relative z-10 w-20 h-20 lg:w-32 lg:h-32"
                 />
-                <div className="absolute -z-0 w-22 h-22 lg:w-36 lg:h-36 bg-white rounded-xl"></div>
+                <div className="absolute -z-0 w-22 h-22 lg:w-36 lg:h-36 bg-white rounded-md"></div>
               </a>
               <div className="hidden lg:flex justify-center w-full">
                 <ul className="flex justify-between align-middle w-9/12 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "bg-primary px-4 py-2" : ""} font-sans1 relative group last:no-underline`}
+                      className={`${isActive(item, pathname) ? "bg-primary px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >

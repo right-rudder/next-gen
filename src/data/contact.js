@@ -1,19 +1,18 @@
-const homePage = {
+const contact = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
+    pageTitle: "XYZ Flight School in Rudderville, RRM",
     pageDescription: "meta description goes here",
     pageKeywords:
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
     //top header
-    headerImagePath: "~/assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg",
-    headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "NextGen Flight Academy",
-    headerH2: "Riverside's best flight school",
+    headerImagePath: "",
+    headerH1: "",
+    headerH2: "",
 
     //contentOne
-    contentOneImage: "~/assets/nextgen-flight-academy-discovery-flight.jpg",
+    contentOneImage: "",
     contentOneImageAlt: "",
     contentOneImageCaption: "",
     contentOneH3: "",
@@ -53,4 +52,4 @@ const homePage = {
   },
 };
 
-export default homePage;
+export default contact;

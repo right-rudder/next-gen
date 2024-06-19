@@ -9,8 +9,8 @@ const about = {
     //top header
     headerImagePath: "",
     headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "",
-    headerH2: "",
+    headerH1: "About XYZ Flight School in Rudderville, RRM",
+    headerH2: "Learn to fly with the best flight school in Rudderville, RRM",
 
     //contentOne
     contentOneImage: "",
