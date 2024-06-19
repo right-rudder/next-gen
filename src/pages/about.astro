@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import homePage from "../data/homePage";
+import about from "../data/about";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
-import TryFlyingCTA from "../components/TryFlyingCTA.astro";
-const { data } = homePage;
+const { data } = about;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
@@ -36,13 +35,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       <h1
         class="text-7xl text-center font-medium tracking-normal text-gray-100"
       >
-        {data.headerH1}
+        ABOUT<br />NextGen Flight Academy
       </h1>
       <h2 class="text-3xl tracking-wide font-sans2">
-        {data.headerH2}
+        Your Leading Flight School in Riverside, CA
       </h2>
     </div>
   </div>
-
-  <TryFlyingCTA />
 </BaseLayout>

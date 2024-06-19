@@ -1,16 +1,16 @@
-const homePage = {
+const about = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
+    pageTitle: "XYZ Flight School in Rudderville, RRM",
     pageDescription: "meta description goes here",
     pageKeywords:
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
     //top header
-    headerImagePath: "../assets/flight-school-name-location-keyword.jpg",
+    headerImagePath: "",
     headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "NextGen Flight Academy",
-    headerH2: "Riverside's best flight school",
+    headerH1: "",
+    headerH2: "",
 
     //contentOne
     contentOneImage: "",
@@ -53,4 +53,4 @@ const homePage = {
   },
 };
 
-export default homePage;
+export default about;

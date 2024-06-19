@@ -4,12 +4,30 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      backgroundImage: {
+        home: "url('../assets/flight-school-name-location-keyword.jpg')",
+      },
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
+        sans: ["Oswald Variable", ...defaultTheme.fontFamily.sans],
+        sans1: ["Poppins", ...defaultTheme.fontFamily.sans],
         sans2: ["Raleway Variable", ...defaultTheme.fontFamily.sans],
-        stock: ["ui-sans-serif", "system-ui", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+        sans3: ["Exo 2 Variable", ...defaultTheme.fontFamily.sans],
+        stock: [
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
       },
       colors: {
+        primary: "#099a97",
+        "primary-dark": "#055250",
+        secondary: "#0de2de",
+        accent: "#0cbfca",
+        muted: "#e0fdfd",
         "dark-blue": "#09212b",
         "medium-blue": "#2cc0ff",
       },

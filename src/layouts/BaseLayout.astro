@@ -4,6 +4,8 @@ import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS } from "../consts";
 import "@fontsource-variable/raleway";
 import "@fontsource/poppins";
+import "@fontsource-variable/exo-2";
+import "@fontsource-variable/oswald";
 import Navbar from "../components/Navbar";
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
@@ -19,7 +21,7 @@ import ChatWidget from "../components/ChatWidget.astro";
       keywords={keywords || KEYWORDS}
     />
   </head>
-  <body>
+  <body class="font-sans">
     <Navbar pathname={pathname} client:load />
     <main>
       <slot />

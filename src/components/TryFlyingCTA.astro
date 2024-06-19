@@ -1,0 +1,38 @@
+---
+import { Image } from "astro:assets";
+import img from "../assets/nextgen-flight-academy-discovery-flight.jpg";
+---
+
+<div class="bg-white h-screen">
+  <div class="flex items-center justify-center flex-wrap h-full">
+    <div class="lg:h-full w-full lg:w-1/2">
+      <Image
+        src={img}
+        alt={"Pilot in cockpit"}
+        class="object-cover object-center w-full h-full"
+      />
+    </div>
+    <div class="w-full lg:w-1/2">
+      <div class="max-w-4xl px-8">
+        <h2
+          class="text-3xl font-semibold leading-7 text-primary-dark text-left"
+        >
+          Give Flying a Try
+        </h2>
+        <p
+          class="mt-2 text-5xl font-bold tracking-tight text-primary text-left"
+        >
+          Take an Intro Flight Today
+        </p>
+        <p class="mt-6 font-sans1 text-xl leading-7 text-gray-900 text-left">
+          Test out if flight training is right for you by booking an
+          introductory discovery flight with us! Meet the team, visit the flight
+          school, and go up in a plane with one of our expert instructors.
+        </p>
+        <a href="/" target="_blank" class="btn-primary mt-8 block">
+          Request a Discovery Flight</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

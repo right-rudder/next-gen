@@ -1,0 +1,70 @@
+---
+import HomeLayout from "../layouts/HomeLayout.astro";
+import TryFlyingCTA from "../components/TryFlyingCTA.astro";
+import GettingStarted from "../components/GettingStarted.astro";
+import OurTop from "../components/OurTop.astro";
+import WhySummit from "../components/WhySummit.astro";
+import CarouselReviews from "../components/carouselReviews.jsx";
+import QuizCTA from "../components/QuizCTA.astro";
+import EnrollmentModalButton from "../components/enrollmentModalButtom";
+---
+
+<HomeLayout
+  pageTitle="Home | Summit Flight Academy"
+  pageDescription="Summit Flight Academy is a leading flight school in Kansas City, offering a range of pilot training programs including private pilot, instrument rating, commercial pilot, and multi-engine rating. With well-maintained aircraft, experienced instructors, and a supportive environment, they provide quality aviation education for aspiring pilots."
+  pageKeywords="flight school kansas city, pilot training kansas city, private pilot training, instrument rating, commercial pilot training, multi-engine rating, aviation education, learn to fly, discovery flight, career pilot program"
+>
+  <!-- <PageHeader
+    title="Become a Pilot with Summit"
+    subtitle="Your Leading Flight School in Kansas City at Lee's Summit Airport"
+    headerImg="home"
+    imgPosition="center"
+    imgStartOpacity="60"
+    imgEndOpacity="20"
+    btnText="Enroll Today"
+    headerSize="4/5"
+  /> -->
+
+  <!-- Header -->
+  <header
+    class="relative top-0 h-screen lg:h-screen-4/5 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-black/50 to-black/10 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">
+        Become a Pilot with Summit
+      </h1>
+      <h2 class="text-3xl tracking-wide">
+        Your Leading Flight School in Kansas City at Lee's Summit Airport
+      </h2>
+      <div></div>
+      <EnrollmentModalButton
+        client:visible
+        btnStyle={"btn-red z-0"}
+        btnText={"Apply Today"}
+      />
+    </div>
+    <!-- <Partners /> -->
+  </header>
+
+  <TryFlyingCTA />
+
+  <GettingStarted />
+
+  <CarouselReviews client:load />
+
+  <WhySummit />
+
+  <OurTop />
+
+  <QuizCTA />
+
+  <!-- <GuideDownload /> -->
+</HomeLayout>

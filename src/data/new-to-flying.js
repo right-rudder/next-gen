@@ -1,4 +1,4 @@
-const homePage = {
+const newToFlying = {
   data: {
     //SEO Header Stuff
     pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
@@ -9,7 +9,7 @@ const homePage = {
     //top header
     headerImagePath: "../assets/flight-school-name-location-keyword.jpg",
     headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "NextGen Flight Academy",
+    headerH1: "New to Flying?",
     headerH2: "Riverside's best flight school",
 
     //contentOne
@@ -53,4 +53,4 @@ const homePage = {
   },
 };
 
-export default homePage;
+export default newToFlying;

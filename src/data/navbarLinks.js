@@ -6,12 +6,13 @@ export const navbarLinks = [
   },
   {
     name: "New to Flying?",
-    link: "/why-become-a-pilot",
+    link: "/new-to-flying",
     submenu: [],
   },
   {
     name: "Training Programs",
-    submenu: [
+    link: "/training-programs",
+    /* submenu: [
       {
         name: "Private Pilot",
         link: "/private-pilot",
@@ -32,12 +33,13 @@ export const navbarLinks = [
         name: "Airline Transport Pilot",
         link: "/airline-transport-pilot",
       },
-    ],
+    ], */
   },
 
   {
     name: "About",
-    submenu: [
+    link: "/about",
+    /* submenu: [
       {
         name: "Our Story",
         link: "/about/our-story",
@@ -54,7 +56,7 @@ export const navbarLinks = [
         name: "Learning Center",
         link: "/about/learning-center",
       },
-    ],
+    ], */
   },
   {
     name: "CONTACT US",

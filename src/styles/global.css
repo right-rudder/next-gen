@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-dark-blue {
-    @apply text-center font-bold py-5 px-14 bg-dark-blue w-fit text-white rounded-full hover:bg-red-700 duration-300;
+  .btn-primary {
+    @apply text-center uppercase font-medium py-5 px-14 bg-primary w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
   }
   .btn-white {
     @apply text-center font-bold py-4 px-8 outline outline-1 outline-gray-700 w-fit bg-gray-100 text-dark-blue rounded-full;
   }
-  .btn-red {
-    @apply text-center font-bold py-5 px-14 bg-gradient-to-br from-red-600 to-red-800 w-fit text-white hover:from-white hover:to-gray-100 hover:text-dark-blue rounded-full duration-300;
+  .btn-secondary {
+    @apply text-center font-bold py-5 px-14 bg-gradient-to-br from-primary to-secondary w-fit text-white hover:from-white hover:to-gray-100 hover:text-dark-blue rounded-full duration-300;
   }
   .paragraph {
     @apply text-gray-500 lg:text-lg leading-loose;

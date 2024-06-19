@@ -10,7 +10,12 @@ interface Props {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
-const { title, description, keywords, image = "/blog-placeholder-1.jpg" } = Astro.props;
+const {
+  title,
+  description,
+  keywords,
+  image = "/blog-placeholder-1.jpg",
+} = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -33,7 +38,7 @@ const { title, description, keywords, image = "/blog-placeholder-1.jpg" } = Astr
     Nice to see you here.  Find new student pilots with Right Rudder Marketing.  https://rightruddermarketing.com/contact-us -->
 
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/logo.ico" />
+<link rel="icon" type="image/svg+xml" href="/old-airplane.png" />
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
@@ -76,7 +81,6 @@ const { title, description, keywords, image = "/blog-placeholder-1.jpg" } = Astr
 
   gtag("config", "YOURIDGOESHERE");
 </script>
-
 
 <!-- NEED TO UPDATE SCHEMA -->
 <script type="application/ld+json">

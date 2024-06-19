@@ -1,11 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import homePage from "../data/homePage";
+import trainingPrograms from "../data/training-programs";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
-import TryFlyingCTA from "../components/TryFlyingCTA.astro";
-const { data } = homePage;
+const { data } = trainingPrograms;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
@@ -43,6 +42,4 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       </h2>
     </div>
   </div>
-
-  <TryFlyingCTA />
 </BaseLayout>
