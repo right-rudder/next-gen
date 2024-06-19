@@ -7,13 +7,13 @@ const homePage = {
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
     //top header
-    headerImagePath: "~/assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg",
+    headerImagePath: "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg",
     headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
     headerH1: "NextGen Flight Academy",
     headerH2: "Riverside's best flight school",
 
     //contentOne
-    contentOneImage: "~/assets/nextgen-flight-academy-discovery-flight.jpg",
+    contentOneImage: "../assets/nextgen-flight-academy-discovery-flight.jpg",
     contentOneImageAlt: "",
     contentOneImageCaption: "",
     contentOneH3: "",
