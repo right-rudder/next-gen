@@ -79,17 +79,17 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky top-0 z-50 font-stock tracking-wider">
+    <nav className="w-full h-0 sticky top-0 z-50 font-sans tracking-wider">
       <div
         className={`${
           navBar || openMobile
-            ? "bg-gray-500/90 backdrop-blur border-primary/80"
+            ? "bg-gray-900/90 backdrop-blur border-primary/80"
             : "bg-transparent border-white/20"
         } duration-300 border-b-2`}
       >
         <div className="px-5 max-w-7xl mx-auto ">
           <div
-            className={`lg:h-28 relative flex h-20 items-center justify-between transition-all`}
+            className={`lg:h-24 relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">

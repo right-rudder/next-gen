@@ -4,6 +4,8 @@ import newToFlying from "../data/new-to-flying";
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
+import Features from "../components/Features.astro";
+import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 const { data } = newToFlying;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"
@@ -42,4 +44,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
       </h2>
     </div>
   </div>
+
+  <!-- FEATURES -->
+  <Features content={data.features} />
+
+  <TryFlyingCTA content={data.discoveryCTA} />
 </BaseLayout>

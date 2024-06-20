@@ -6,6 +6,8 @@ import type { ImageMetadata } from "astro";
 import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
 import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 import GoogleMaps from "../components/GoogleMaps.astro";
+import GridNav from "../components/GridNav.astro";
+
 const { data } = homePage;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"
@@ -45,7 +47,9 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
     </div>
   </div>
 
-  <TryFlyingCTA content={data.CTA1} />
+  <GridNav content={data.gridNav} />
+
+  <TryFlyingCTA content={data.discoveryCTA} />
 
   <section class="w-full overflow-hidden">
     <GoogleMaps />
