@@ -95,14 +95,13 @@ const Navbar = ({ pathname }) => {
             <div className="flex w-full items-center justify-between">
               <a
                 href="/"
-                className="h-20 lg:h-36 mt-6 uppercase flex justify-center align-middle items-center leading-none text-white z-50 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
+                className="relative h-20 lg:h-36 mt-6 uppercase flex justify-center align-middle items-center leading-none text-white z-0 font-bold text-4xl tracking-wider ml-3 lg:ml-8"
               >
                 <img
                   src="/NG Logo White Background 2.webp"
-                  alt="Next Gen Logo"
-                  className="relative z-10 w-20 h-20 lg:w-32 lg:h-32"
+                  alt="NextGen Logo"
+                  className="z-10 bg-white px-3 py-2 rounded-md w-24 h-24 lg:w-36 lg:h-32"
                 />
-                <div className="absolute -z-0 w-22 h-22 lg:w-36 lg:h-36 bg-white rounded-md"></div>
               </a>
               <div className="hidden lg:flex justify-center w-full">
                 <ul className="flex justify-between align-middle w-9/12 items-center">
@@ -229,7 +228,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           openMobile ? "max-h-screen" : "max-h-0 delay-300"
-        } overflow-x-hidden duration-300 ease-in-out h-screen lg:hidden absolute w-full bg-primary z-50 top-0`}
+        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-50 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
@@ -255,8 +254,10 @@ const Navbar = ({ pathname }) => {
           href="/"
           className="text-white px-10 w-fit block leading-none uppercase font-bold text-lg z-40 relative"
         >
-          <h1 className="text-4xl">Alto</h1>
-          <h2 className="text-primary font-medium">Flight Academy</h2>
+          <h1 className="text-4xl font-sans">NextGen</h1>
+          <h2 className="text-primary-dark font-medium font-sans">
+            Flight Academy
+          </h2>
         </a>
 
         <div

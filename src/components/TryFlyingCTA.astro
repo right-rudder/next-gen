@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import img from "../assets/nextgen-flight-academy-discovery-flight.jpg";
+
+const { content } = Astro.props;
 ---
 
 <div class="bg-white h-screen">
@@ -13,24 +15,23 @@ import img from "../assets/nextgen-flight-academy-discovery-flight.jpg";
       />
     </div>
     <div class="w-full lg:w-1/2">
-      <div class="max-w-4xl px-8">
-        <h2
-          class="text-3xl font-semibold leading-7 text-primary-dark text-left"
-        >
-          Give Flying a Try
-        </h2>
+      <div class="px-8">
         <p
-          class="mt-2 text-5xl font-bold tracking-tight text-primary text-left"
+          class="px-4 text-6xl lg:text-8xl font-sans2 font-bold tracking-tight text-primary text-center lg:text-left"
         >
-          Take an Intro Flight Today
+          {content.heading}
         </p>
-        <p class="mt-6 font-sans1 text-xl leading-7 text-gray-900 text-left">
-          Test out if flight training is right for you by booking an
-          introductory discovery flight with us! Meet the team, visit the flight
-          school, and go up in a plane with one of our expert instructors.
+        <p
+          class="px-4 mt-6 font-sans1 text-lg leading-6 text-gray-900 text-center lg:text-left"
+        >
+          {content.text}
         </p>
-        <a href="/" target="_blank" class="btn-primary mt-8 block">
-          Request a Discovery Flight</a
+        <a
+          href={content.buttonLink}
+          target="_blank"
+          class="btn-primary block mt-6 mx-auto lg:mx-0 lg:ml-4"
+        >
+          {content.buttonText}</a
         >
       </div>
     </div>

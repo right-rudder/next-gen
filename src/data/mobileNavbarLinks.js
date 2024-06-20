@@ -1,75 +1,45 @@
 export const mobileNavbarLinks = [
   {
-    name: "Why Become a Pilot?",
-    link: "/why-become-a-pilot",
+    name: "Home",
+    link: "/",
     submenu: [],
   },
   {
-    name: "Ground School",
-    submenu: [
-      {
-        name: "Private Pilot",
-        link: "/ground-school/private-pilot",
-      },
-      {
-        name: "Instrument Rating",
-        link: "/ground-school/instrument-rating",
-      },
-      {
-        name: "Commercial Pilot",
-        link: "/ground-school/commercial-pilot",
-      },
-      {
-        name: "Flight Instructor",
-        link: "/ground-school/flight-instructor",
-      },
-      {
-        name: "Multi-Engine Rating",
-        link: "/ground-school/multi-engine-rating",
-      },
-      {
-        name: "Airline Transport Pilot",
-        link: "/ground-school/airline-transport-pilot",
-      },
-    ],
-  },
-  {
-    name: "Flight Training",
-    submenu: [
-      {
-        name: "Private Pilot",
-        link: "/flight-training/private-pilot",
-      },
-      {
-        name: "Instrument Rating",
-        link: "/flight-training/instrument-rating",
-      },
-      {
-        name: "Commercial Pilot",
-        link: "/flight-training/commercial-pilot",
-      },
-      {
-        name: "Flight Instructor",
-        link: "/flight-training/flight-instructor",
-      },
-      {
-        name: "Multi-Engine Rating",
-        link: "/flight-training/multi-engine-rating",
-      },
-      {
-        name: "Airline Transport Pilot",
-        link: "/flight-training/airline-transport-pilot",
-      },
-    ],
-  },
-  {
-    name: "Aircraft Sales",
-    link: "/acquisitions-sales",
+    name: "New to Flying?",
+    link: "/new-to-flying",
     submenu: [],
   },
+  {
+    name: "Training Programs",
+    link: "/training-programs",
+    /* submenu: [
+      {
+        name: "Private Pilot",
+        link: "/private-pilot",
+      },
+      {
+        name: "Instrument Rating",
+        link: "/instrument-rating",
+      },
+      {
+        name: "Commercial Pilot",
+        link: "/commercial-pilot",
+      },
+      {
+        name: "Certified Flight Instructor",
+        link: "/certified-flight-instructor",
+      },
+      {
+        name: "Airline Transport Pilot",
+        link: "/airline-transport-pilot",
+      },
+    ], */
+  },
+
   {
     name: "About",
-    submenu: [
+    link: "/about",
+    /* submenu: [
       {
         name: "Our Story",
         link: "/about/our-story",
@@ -86,7 +56,7 @@ export const mobileNavbarLinks = [
         name: "Learning Center",
         link: "/about/learning-center",
       },
-    ],
+    ], */
   },
   {
     name: "CONTACT US",

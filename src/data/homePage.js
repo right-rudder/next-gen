@@ -12,6 +12,12 @@ const homePage = {
     headerH1: "NextGen Flight Academy",
     headerH2: "Riverside's best flight school",
 
+    CTA1: {
+      heading: "Get Started Today",
+      text: "Schedule a discovery flight and see if flying is for you.",
+      buttonText: "Schedule a Discovery Flight",
+      buttonLink: "/contact",
+    },
     //contentOne
     contentOneImage: "../assets/nextgen-flight-academy-discovery-flight.jpg",
     contentOneImageAlt: "",

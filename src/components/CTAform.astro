@@ -67,7 +67,8 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
 
     <label for="agree-data-collection" class="text-gray-500 text-xs">
       I agree to the terms & conditions provided by the company. By providing my
-      phone number, I agree to receive text messages from Alto Flight Academy.
+      phone number, I agree to receive text messages from NextGen Flight
+      Academy.
     </label>
   </div>
   <button
@@ -114,7 +115,7 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
         xhr.open("POST", quickStartForm.action);
         xhr.setRequestHeader(
           "Content-Type",
-          "application/x-www-form-urlencoded",
+          "application/x-www-form-urlencoded"
         );
         xhr.onload = function () {
           // Check if the request was successful (status 200)
@@ -146,14 +147,14 @@ const QUICK_START_FORM_WEBHOOK_URL = import.meta.env
       submitButton.classList.remove(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     } else {
       submitButton.disabled = true;
       submitButton.classList.add(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     }
   });

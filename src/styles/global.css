@@ -4,7 +4,7 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase font-medium py-5 px-14 bg-primary w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
+    @apply text-center uppercase font-medium py-5 px-8 bg-primary w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
   }
   .btn-white {
     @apply text-center font-bold py-4 px-8 outline outline-1 outline-gray-700 w-fit bg-gray-100 text-dark-blue rounded-full;
