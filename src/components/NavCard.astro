@@ -1,0 +1,45 @@
+---
+const { title, imagePath, imageAlt, link, description } = Astro.props;
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
+---
+
+<a
+  href={link}
+  target="_self"
+  class="flex flex-col bg-white group relative overflow-hidden"
+>
+  <div
+    class="w-full h-[30rem] overflow-hidden flex justify-center items-center align-middle"
+  >
+    <p class="z-10 text-3xl text-center leading-loose text-white">{title}</p>
+    <Image
+      src={images[imagePath]()}
+      alt={imageAlt}
+      class="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-105 duration-300 ease-out"
+      quality={60}
+    />
+    <div
+      class="absolute z-0 w-full h-full bg-black/30 group-hover:bg-black/40 duration-700"
+    >
+    </div>
+  </div>
+  <div
+    class="absolute bottom-0 w-full h-16 bg-black opacity-40 translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-500"
+  >
+    <div class="flex h-full w-full justify-center align-middle items-center">
+      <p
+        class="text-center text-lg tracking-wide font-bold leading-loose text-white"
+      >
+        EXPLORE
+      </p>
+    </div>
+  </div>
+</a>
