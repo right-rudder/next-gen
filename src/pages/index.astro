@@ -5,7 +5,7 @@ import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
 import TryFlyingCTA from "../components/TryFlyingCTA.astro";
-import GoogleMaps from "~/components/GoogleMaps.astro";
+import GoogleMaps from "../components/GoogleMaps.astro";
 const { data } = homePage;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif,webp}"

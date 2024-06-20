@@ -14,7 +14,7 @@ import {
   ADDRESS_LINE_2,
   EMAIL_ADDRESS,
 } from "../consts";
-import GoogleMaps from "~/components/GoogleMaps.astro";
+import GoogleMaps from "../components/GoogleMaps.astro";
 
 const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 ---
@@ -157,7 +157,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
     </section>
   </section>
 
-  <section class="w-full h-[20rem]">
+  <section class="w-full overflow-hidden">
     <GoogleMaps />
   </section>
 
