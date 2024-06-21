@@ -1,14 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import trainingPrograms from "../data/training-programs";
-import { Image } from "astro:assets";
-import type { ImageMetadata } from "astro";
-import headerImg from "../assets/oskar-kadaksoo-f_rLDn5m2XQ-unsplash.jpg";
 import HeaderScreen from "../components/HeaderScreen.astro";
+import ProgramsSwiper from "../components/ProgramsSwiper.astro";
+
 const { data } = trainingPrograms;
-const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
-);
 ---
 
 <BaseLayout
@@ -18,4 +14,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 >
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
+
+  <ProgramsSwiper content={data.programs} />
 </BaseLayout>
+<script src="../scripts/widerSlider.js"></script>
