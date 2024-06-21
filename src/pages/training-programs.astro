@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import trainingPrograms from "../data/training-programs";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import ProgramsSwiper from "../components/ProgramsSwiper.astro";
+import GridPrograms from "../components/GridPrograms.astro";
 
 const { data } = trainingPrograms;
 ---
@@ -15,6 +16,5 @@ const { data } = trainingPrograms;
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <ProgramsSwiper content={data.programs} />
+  <GridPrograms content={data.programs} />
 </BaseLayout>
-<script src="../scripts/widerSlider.js"></script>

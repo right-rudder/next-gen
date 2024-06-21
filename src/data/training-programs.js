@@ -42,7 +42,7 @@ const trainingPrograms = {
           link: "/training-programs",
         },
         {
-          title: "CFI",
+          title: "Multi-Engine Rating",
           imagePath: "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
           imageAlt: "Lorem Ipsum Dolor Sit Amet",
           description:
@@ -50,7 +50,7 @@ const trainingPrograms = {
           link: "/training-programs",
         },
         {
-          title: "Lorem 1",
+          title: "Airline Transport Pilot",
           imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
           imageAlt: "Lorem Ipsum Dolor Sit Amet",
           description:
@@ -58,7 +58,7 @@ const trainingPrograms = {
           link: "/training-programs",
         },
         {
-          title: "Lorem 2",
+          title: "Flight Instructor (CFI, CFII, MEI)",
           imagePath: "/src/assets/dominik-dancs-3Eqc3Ph4oRg-unsplash.jpg",
           imageAlt: "Lorem Ipsum Dolor Sit Amet",
           description:
@@ -66,7 +66,7 @@ const trainingPrograms = {
           link: "/training-programs",
         },
         {
-          title: "Lorem 3",
+          title: "High Performance Endorsement",
           imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
           imageAlt: "Lorem Ipsum Dolor Sit Amet",
           description:
@@ -74,8 +74,16 @@ const trainingPrograms = {
           link: "/training-programs",
         },
         {
-          title: "Lorem 4",
+          title: "High Altitude Endorsement",
           imagePath: "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
+          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          description:
+            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
+          link: "/training-programs",
+        },
+        {
+          title: "Complex​ Endorsement",
+          imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
           imageAlt: "Lorem Ipsum Dolor Sit Amet",
           description:
             "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",

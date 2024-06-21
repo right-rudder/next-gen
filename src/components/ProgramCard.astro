@@ -17,12 +17,12 @@ if (!images[imagePath])
     class="w-full h-[24rem] overflow-hidden flex flex-col justify-center items-center align-middle"
   >
     <p
-      class="z-10 w-full text-3xl translate-y-6 text-center leading-loose text-white group-hover:-translate-y-3 duration-300 delay-150"
+      class="z-10 w-full px-6 text-3xl lg:translate-y-6 text-center leading-tight text-white group-hover:-translate-y-3 duration-300 delay-150"
     >
       {title}
     </p>
     <p
-      class="z-10 px-8 w-full font-sans1 opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 duration-500 delay-150"
+      class="z-10 mt-3 lg:mt-0 px-8 w-full font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 duration-500 delay-150"
     >
       {description}
     </p>
@@ -40,7 +40,7 @@ if (!images[imagePath])
   <a
     href={link}
     target="_self"
-    class="absolute bottom-0 w-full h-16 bg-black opacity-40 translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+    class="absolute bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
   >
     <div class="flex h-full w-full justify-center align-middle items-center">
       <p
