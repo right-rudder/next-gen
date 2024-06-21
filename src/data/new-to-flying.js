@@ -6,6 +6,14 @@ const newToFlying = {
     pageKeywords:
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
+    //top header
+    header: {
+      imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+      headerH1: "New to Flying?",
+      headerH2: "Riverside's best flight school",
+    },
+
     features: {
       upperHeading: "Why Choose NextGen Flight Academy?",
       heading: "We're the best flight school in Riverside",
@@ -39,12 +47,6 @@ const newToFlying = {
       buttonText: "Schedule a Discovery Flight",
       buttonLink: "/contact",
     },
-
-    //top header
-    headerImagePath: "../assets/flight-school-name-location-keyword.jpg",
-    headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "New to Flying?",
-    headerH2: "Riverside's best flight school",
 
     //contentOne
     contentOneImage: "",

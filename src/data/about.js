@@ -7,10 +7,12 @@ const about = {
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
     //top header
-    headerImagePath: "",
-    headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "About XYZ Flight School in Rudderville, RRM",
-    headerH2: "Learn to fly with the best flight school in Rudderville, RRM",
+    header: {
+      imagePath: "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
+      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+      headerH1: "New to Flying?",
+      headerH2: "Riverside's best flight school",
+    },
 
     //contentOne
     contentOneImage: "",

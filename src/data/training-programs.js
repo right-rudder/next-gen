@@ -7,11 +7,12 @@ const trainingPrograms = {
       "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
 
     //top header
-    headerImagePath: "",
-    headerImageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-    headerH1: "Training Programs",
-    headerH2:
-      "Our flight school offers a variety of training programs to fit your needs.",
+    header: {
+      imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
+      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+      headerH1: "Training Programs",
+      headerH2: "Riverside's best flight school",
+    },
 
     //contentOne
     contentOneImage: "",

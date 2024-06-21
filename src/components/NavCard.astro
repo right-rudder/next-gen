@@ -11,11 +11,7 @@ if (!images[imagePath])
   );
 ---
 
-<a
-  href={link}
-  target="_self"
-  class="flex flex-col bg-white group relative overflow-hidden"
->
+<div class="flex flex-col bg-white group relative overflow-hidden">
   <div
     class="w-full h-[30rem] overflow-hidden flex justify-center items-center align-middle"
   >
@@ -31,7 +27,9 @@ if (!images[imagePath])
     >
     </div>
   </div>
-  <div
+  <a
+    href={link}
+    target="_self"
     class="absolute bottom-0 w-full h-16 bg-black opacity-40 translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-500"
   >
     <div class="flex h-full w-full justify-center align-middle items-center">
@@ -41,5 +39,5 @@ if (!images[imagePath])
         EXPLORE
       </p>
     </div>
-  </div>
-</a>
+  </a>
+</div>
