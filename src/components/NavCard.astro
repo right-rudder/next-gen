@@ -13,9 +13,13 @@ if (!images[imagePath])
 
 <div class="flex flex-col bg-white group relative overflow-hidden">
   <div
-    class="w-full h-[30rem] overflow-hidden flex justify-center items-center align-middle"
+    class="w-full h-80 lg:h-[30rem] overflow-hidden flex justify-center items-center align-middle"
   >
-    <p class="z-10 text-3xl text-center leading-loose text-white">{title}</p>
+    <p
+      class="z-10 w-full px-6 text-3xl lg:translate-y-6 text-center leading-tight text-white group-hover:-translate-y-3 duration-300 delay-150"
+    >
+      {title}
+    </p>
     <Image
       src={images[imagePath]()}
       alt={imageAlt}
@@ -30,7 +34,7 @@ if (!images[imagePath])
   <a
     href={link}
     target="_self"
-    class="absolute bottom-0 w-full h-16 bg-black opacity-40 translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-500"
+    class="absolute bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
   >
     <div class="flex h-full w-full justify-center align-middle items-center">
       <p

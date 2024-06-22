@@ -7,13 +7,14 @@ import "@fontsource/poppins";
 import "@fontsource-variable/exo-2";
 import "@fontsource-variable/oswald";
 import Navbar from "../components/Navbar";
+import ChatWidget from "../components/ChatWidget.astro";
+
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
-import ChatWidget from "../components/ChatWidget.astro";
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth" transition:animate="none">
   <head>
     <BaseHead
       title={siteTitle || SITE_TITLE}
@@ -23,7 +24,7 @@ import ChatWidget from "../components/ChatWidget.astro";
   </head>
   <body class="font-sans">
     <Navbar pathname={pathname} client:load />
-    <main>
+    <main transition:animate="none">
       <slot />
     </main>
     <Footer />

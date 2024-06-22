@@ -6,6 +6,7 @@ import GoogleMaps from "../components/GoogleMaps.astro";
 import GridNav from "../components/GridNav.astro";
 import ProgramsSwiper from "../components/ProgramsSwiper.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
+import Testimonials from "../components/Testimonials.astro";
 
 const { data } = homePage;
 ---
@@ -23,6 +24,8 @@ const { data } = homePage;
   <TryFlyingCTA content={data.discoveryCTA} />
 
   <ProgramsSwiper content={data.programs} />
+
+  <Testimonials content={data.testimonials} />
 
   <section class="w-full overflow-hidden">
     <GoogleMaps />
