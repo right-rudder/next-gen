@@ -108,7 +108,7 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "bg-primary px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "btn-animate bg-primary px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
@@ -117,10 +117,10 @@ const Navbar = ({ pathname }) => {
                           href={item.link}
                           className="text-white font-normal text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
                         >
-                          {item.name}
+                          <span className="relative z-10">{item.name}</span>
                         </a>
                       ) : (
-                        <span className="font-normal cursor-default text-white text-lg duration-300 hover:underline decoration-secondary  decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap">
+                        <span className="font-normal cursor-default text-white text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap">
                           {item.name}
                         </span>
                       )}

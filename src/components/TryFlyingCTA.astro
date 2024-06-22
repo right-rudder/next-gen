@@ -30,10 +30,11 @@ const { content } = Astro.props;
       <a
         href={content.buttonLink}
         target="_blank"
-        class="btn-primary block mt-6 mx-auto lg:mx-0 lg:ml-4"
-      >
-        {content.buttonText}</a
-      >
+        class="btn-primary btn-animate block mt-6 mx-auto lg:mx-0 lg:ml-4"
+        ><span class="relative z-10">
+          {content.buttonText}
+        </span>
+      </a>
     </div>
   </div>
 </div>
