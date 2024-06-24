@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+
+const {
+  heading = "Let's Get Started?",
+  subheading = "Submit your enrollment interest today",
+  linkText = "Enroll Now",
+  linkUrl = "/enroll",
+  imagePath = "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
+  imageAlt = "Enroll Now",
+} = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+  );
+}
+---
+
+<section
+  class={`flex flex-col items-center justify-center align-middle text-white relative overflow-hidden h-screen-2/3`}
+  id="enroll-now-cta"
+>
+  <div class="absolute bg-gray-800/10 w-full h-full z-10"></div>
+  <Image
+    src={images[imagePath]()}
+    alt={imageAlt}
+    loading={"eager"}
+    class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
+  />
+  <div
+    class="lg:w-1/2 flex flex-col items-center py-28 lg:py-16 z-10 bg-primary/80 rounded-bl-xl rounded-tr-xl shadow-xl"
+  >
+    <div class="max-w-5xl px-5 flex flex-col items-center justify-end">
+      <h2
+        class="text-5xl lg:text-7xl font-semibold text-center text-accent tracking-tight"
+      >
+        {heading}
+      </h2>
+      <h3
+        class="my-4 font-semibold text-2xl text-gray-100 font-sans1 text-center"
+      >
+        {subheading}
+      </h3>
+      <a href={linkUrl} class="mt-6 btn-primary-dark btn-animate block"
+        ><span class="relative z-10">{linkText}</span></a
+      >
+    </div>
+  </div>
+</section>
