@@ -24,77 +24,57 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <section class="flex flex-col-reverse lg:flex-col">
-    <div class="py-16 pt-44 px-5 relative overflow-hidden bg-dark-blue">
-      <div
-        class="max-w-7xl mx-auto z-20 relative text-dark-blue flex justify-between lg:items-center items-start flex-col lg:flex-row gap-10"
-      >
-        <div class="flex">
-          <IoPhonePortraitOutline className="lg:size-16 size-12 text-red-700" />
-          <div class="flex flex-col justify-between font-semibold">
-            <a class="text-white font-bold text-2xl" href=`tel:${PHONE_NUMBER}`
-              >{PHONE_NUMBER}</a
-            >
-            <div class="flex flex-col text-gray-300">
-              <p>Monday — Saturday: 8.00am - 5.00pm</p>
-              <p>Sunday: 12.00pm - 5.00pm</p>
+  <section
+    class="px-6 pt-12 pb-36 min-h-screen bg-gradient-to-t from-accent/40 to-primary/70"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="grid grid-cols-4">
+        <div class="col-span-1 px-8 text-right mt-16">
+          <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+            {data.locations[0].title}
+          </h3>
+          <a href={data.locations[0].gMaps}>
+            <div class="flex justify-end gap-3 mt-5 hover:underline">
+              <p class="text-gray-50">
+                {data.locations[0].address}<br />{data.locations[0].city}, {
+                  data.locations[0].state
+                }
+                {data.locations[0].zip}
+              </p>
+              <IoLocationOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
             </div>
-          </div>
-        </div>
-        <div class="flex">
-          <IoLocationOutline className="lg:size-16 size-12 text-red-700" />
-          <div class="flex flex-col justify-between font-semibold">
-            <a
-              class="text-white font-bold text-2xl"
-              href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
-              target="_blank">{AIRPORT}</a
-            >
-            <div class="flex flex-col text-gray-300">
-              <p>{ADDRESS_LINE_1}</p>
-              <p>{ADDRESS_LINE_2}</p>
+          </a>
+          <a href={`tel:${data.locations[0].phone}`}>
+            <div class="flex justify-end gap-3 mt-5 hover:underline">
+              <p class="text-gray-50">{data.locations[0].phone}</p>
+              <IoPhonePortraitOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
             </div>
-          </div>
+          </a>
         </div>
-        <div class="flex gap-5">
-          <TfiEmail className="lg:size-16 size-12 text-red-700" />
-          <div class="flex flex-col justify-between font-semibold">
-            <a
-              class="text-white font-bold text-2xl"
-              href={`mailto:${EMAIL_ADDRESS}`}
-              target="_blank">Email Us</a
-            >
-            <div class="flex flex-col text-gray-300">
-              <a href={`mailto:${EMAIL_ADDRESS}`} target="_blank"
-                >{EMAIL_ADDRESS}</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section class="py-24 px-5">
-      <div class="max-w-7xl mx-auto">
-        <h2 class="text-dark-blue text-5xl font-extrabold mx-auto w-fit">
-          Get in touch
-        </h2>
         <form
           id="contact-form"
-          class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+          class="flex flex-col max-w-2xl mx-auto gap-5 mt-12 p-4 lg:p-12 bg-white/30 col-span-2 shadow-xl h-full"
         >
+          <h2 class="text-primary-dark text-5xl font-extrabold mx-auto w-fit">
+            Get in touch
+          </h2>
           <div class="flex flex-col lg:flex-row gap-5">
             <input
               type="text"
               name="first-name"
               placeholder="Your first name"
-              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
               required
             />
             <input
               type="text"
               name="last-name"
               placeholder="Your last name"
-              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
               required
             />
           </div>
@@ -104,20 +84,20 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
               type="email"
               name="email"
               placeholder="Your email"
-              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
               required
             />
             <input
               type="email"
               name="confirm-email"
               placeholder="Confirm email"
-              class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              class="hidden px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
             />
             <input
               type="tel"
               name="phone"
               placeholder="Your phone number"
-              class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
               required
             />
           </div>
@@ -126,7 +106,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
             required
             name="message"
             placeholder="Your message"
-            class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
+            class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 rounded-xl min-h-48 placeholder:text-primary/60"
           ></textarea>
 
           <div class="flex gap-3">
@@ -138,7 +118,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 
             <label
               for="agree-data-collection"
-              class="text-gray-500 text-sm lg:text-base"
+              class="text-gray-800 text-sm lg:text-base"
             >
               I agree to the terms & conditions provided by the company. By
               providing my phone number, I agree to receive text messages from
@@ -149,16 +129,43 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
             id="submit-button"
             disabled
             type="submit"
-            class="btn-primary mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+            class="btn-primary mt-8 mx-auto cursor-not-allowed bg-primary-darkhover:bg-gray-400"
             >Send message</button
           >
         </form>
+        <div class="col-span-1 px-8 text-left mt-16">
+          <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+            {data.locations[1].title}
+          </h3>
+          <a href={data.locations[1].gMaps}>
+            <div class="flex justify-start gap-3 mt-5 hover:underline">
+              <IoLocationOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+              <p class="text-gray-50">
+                {data.locations[1].address}<br />{data.locations[1].city}, {
+                  data.locations[1].state
+                }
+                {data.locations[1].zip}
+              </p>
+            </div>
+          </a>
+          <a href={`tel:${data.locations[1].phone}`}>
+            <div class="flex justify-start gap-3 mt-5 hover:underline">
+              <IoPhonePortraitOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+              <p class="text-gray-50">{data.locations[1].phone}</p>
+            </div>
+          </a>
+        </div>
       </div>
-    </section>
+    </div>
   </section>
 
-  <section class="w-full overflow-hidden">
-    <GoogleMaps />
+  <section class="w-full flex overflow-hidden">
+    <GoogleMaps gMapUrl={data.gMaps[0]} />
+    <GoogleMaps gMapUrl={data.gMaps[1]} />
   </section>
 
   <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>

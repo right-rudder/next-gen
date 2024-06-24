@@ -30,8 +30,9 @@ const { data } = homePage;
 
   <QuizCTA content={data.quizCTA} />
 
-  <section class="w-full overflow-hidden">
-    <GoogleMaps />
+  <section class="w-full flex overflow-hidden">
+    <GoogleMaps gMapUrl={data.gMaps[0]} />
+    <GoogleMaps gMapUrl={data.gMaps[1]} />
   </section>
 </BaseLayout>
 <script src="../scripts/creativeSlider.js"></script>

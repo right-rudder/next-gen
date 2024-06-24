@@ -4,7 +4,11 @@
 
 @layer components {
   .btn-primary {
-    @apply text-center uppercase font-medium py-5 px-8 bg-primary w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
+    @apply text-center uppercase font-medium py-4 px-8 bg-primary w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
+  }
+
+  .btn-primary-dark {
+    @apply text-center uppercase font-medium py-4 px-8 bg-primary-dark w-fit text-white rounded-bl-lg rounded-tr-lg hover:bg-accent duration-300;
   }
   .btn-animate {
     @apply hover:before:bg-primary-dark relative overflow-hidden px-3 text-white transition-all before:absolute before:bottom-0 before:left-0 before:top-0 before:z-0 before:h-full before:w-0 before:bg-black before:transition-all before:duration-300 hover:before:left-0 hover:before:w-full ease-in-out;

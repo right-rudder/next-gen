@@ -83,7 +83,7 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-gray-900/90 backdrop-blur border-primary/80"
+            ? "bg-primary-dark/80 backdrop-blur border-primary/80"
             : "bg-transparent border-white/20"
         } duration-300 border-b-2`}
       >
@@ -100,7 +100,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/NG Logo White Background 2.webp"
                   alt="NextGen Logo"
-                  className="z-10 bg-white px-3 py-2 rounded-md w-24 h-24 lg:w-36 lg:h-32"
+                  className="z-10 bg-white px-3 py-2 rounded-md w-36 h-24 lg:w-36 lg:h-24"
                 />
               </a>
               <div className="hidden lg:flex justify-center w-full">
@@ -108,19 +108,19 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "btn-animate bg-primary px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "btn-animate bg-primary rounded-tr-lg rounded-bl-lg block px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="text-white font-normal text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
+                          className="text-white font-normal text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative z-10">{item.name}</span>
                         </a>
                       ) : (
-                        <span className="font-normal cursor-default text-white text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-main-red whitespace-nowrap">
+                        <span className="font-normal cursor-default text-white text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap">
                           {item.name}
                         </span>
                       )}
@@ -276,12 +276,12 @@ const Navbar = ({ pathname }) => {
               {item.link ? (
                 <a
                   href={item.link}
-                  className="font-bold p-5 block text-white text-lg duration-300 border-main-red whitespace-nowrap group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
+                  className="font-bold p-5 block text-white text-lg duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
               ) : (
-                <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-main-red whitespace-nowrap">
+                <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
                     className={`p-1 pointer-events-none duration-300 rounded-full ${hoveredIndex === index ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
@@ -308,7 +308,7 @@ const Navbar = ({ pathname }) => {
                           {subitem.name}
                         </a>
                       ) : (
-                        <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-main-red whitespace-nowrap">
+                        <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
                             className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
