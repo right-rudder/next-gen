@@ -1,0 +1,121 @@
+---
+import { IoIosArrowRoundForward } from "react-icons/io";
+import { RiTeamLine } from "react-icons/ri";
+import { GiExitDoor } from "react-icons/gi";
+import { MdFlightTakeoff } from "react-icons/md";
+
+const { content } = Astro.props;
+---
+
+<section
+  id={content.heading.toLowerCase().replace(/\s/g, "-")}
+  class="py-16 px-4 lg:px-24 flex flex-col items-center mx-auto scroll-my-20 bg-primary/20"
+>
+  {
+    content.upperHeading && (
+      <h2 class="uppercase text-primary font-bold tracking-widest">
+        {content.upperHeading}
+      </h2>
+    )
+  }
+  {
+    content.heading && (
+      <h3 class="text-5xl text-primary-dark font-sans font-bold leading-tight max-w-2xl text-center">
+        {content.heading}
+      </h3>
+    )
+  }
+  {
+    content.description && (
+      <p class="text-gray-600 text-center max-w-5xl my-8 leading-loose">
+        {content.description}
+      </p>
+    )
+  }
+  <div class="grid lg:grid-cols-3 mx-auto gap-10">
+    <div
+      class="border border-white/50 py-8 px-12 flex flex-col gap-5 justify-between hover:bg-primary/20 duration-200 group"
+    >
+      <div class="flex flex-col gap-5">
+        <RiTeamLine className="size-14 text-primary" />
+        <h3
+          class="text-lg text-primary-dark uppercase font-semibold tracking-widest duration-200"
+        >
+          {content.cards[0].title}
+        </h3>
+        <p class="text-gray-600 leading-relaxed font-sans1">
+          {content.cards[0].body}
+        </p>
+      </div>
+      <a
+        href={content.cards[0].linkHref}
+        class="flex gap-3 items-center self-end cursor-pointer group"
+      >
+        <p class="text-gray-500 text-sm">{content.cards[0].linkText}</p>
+        <div
+          class="p-3 bg-primary/15 rounded-full group-hover:bg-primary duration-200"
+        >
+          <IoIosArrowRoundForward
+            className="text-primary-dark size-6 group-hover:text-white duration-200"
+          />
+        </div>
+      </a>
+    </div>
+    <div
+      class="border border-white/50 py-8 px-12 flex flex-col gap-5 justify-between hover:bg-primary/20 duration-200 group"
+    >
+      <div class="flex flex-col gap-5">
+        <GiExitDoor className="size-14 text-primary" />
+        <h3
+          class="text-lg text-primary-dark uppercase font-semibold tracking-widest duration-200"
+        >
+          {content.cards[1].title}
+        </h3>
+        <p class="text-gray-600 leading-relaxed font-sans1">
+          {content.cards[1].body}
+        </p>
+      </div>
+      <a
+        href={content.cards[1].linkHref}
+        class="flex gap-3 items-center self-end cursor-pointer group"
+      >
+        <p class="text-gray-500 text-sm">{content.cards[1].linkText}</p>
+        <div
+          class="p-3 bg-primary/15 rounded-full group-hover:bg-primary duration-200"
+        >
+          <IoIosArrowRoundForward
+            className="text-primary-dark size-6 group-hover:text-white duration-200"
+          />
+        </div>
+      </a>
+    </div>
+    <div
+      class="border border-white/50 py-8 px-12 flex flex-col gap-5 justify-between hover:bg-primary/20 duration-200 group"
+    >
+      <div class="flex flex-col gap-5">
+        <MdFlightTakeoff className="size-14 text-primary" />
+        <h3
+          class="text-lg text-primary-dark uppercase font-semibold tracking-widest duration-200"
+        >
+          {content.cards[2].title}
+        </h3>
+        <p class="text-gray-600 leading-relaxed font-sans1">
+          {content.cards[2].body}
+        </p>
+      </div>
+      <a
+        href={content.cards[2].linkHref}
+        class="flex gap-3 items-center self-end cursor-pointer group"
+      >
+        <p class="text-gray-500 text-sm">{content.cards[2].linkText}</p>
+        <div
+          class="p-3 bg-primary/15 rounded-full group-hover:bg-primary duration-200"
+        >
+          <IoIosArrowRoundForward
+            className="text-primary-dark size-6 group-hover:text-white duration-200"
+          />
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
