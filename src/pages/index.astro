@@ -7,6 +7,7 @@ import GridNav from "../components/GridNav.astro";
 import ProgramsSwiper from "../components/ProgramsSwiper.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import Testimonials from "../components/Testimonials.astro";
+import QuizCTA from "../components/QuizCTA.astro";
 
 const { data } = homePage;
 ---
@@ -26,6 +27,8 @@ const { data } = homePage;
   <ProgramsSwiper content={data.programs} />
 
   <Testimonials content={data.testimonials} />
+
+  <QuizCTA content={data.quizCTA} />
 
   <section class="w-full overflow-hidden">
     <GoogleMaps />

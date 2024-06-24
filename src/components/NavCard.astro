@@ -1,7 +1,8 @@
 ---
-const { title, imagePath, imageAlt, link, description } = Astro.props;
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
+
+const { title, imagePath, imageAlt, link, description } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "/src/assets/*.{jpeg,jpg,png,gif}"
 );
@@ -34,11 +35,11 @@ if (!images[imagePath])
   <a
     href={link}
     target="_self"
-    class="absolute bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+    class="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
   >
     <div class="flex h-full w-full justify-center align-middle items-center">
       <p
-        class="text-center text-lg tracking-wide font-bold leading-loose text-white"
+        class="relative z-10 text-center text-lg tracking-wide font-bold leading-loose text-white"
       >
         EXPLORE
       </p>

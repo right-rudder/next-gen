@@ -44,8 +44,36 @@ const newToFlying = {
     discoveryCTA: {
       heading: "Start Now",
       text: "Schedule a discovery flight and see if flying is for you.",
+      imagePath: "/src/assets/nextgen-flight-academy-discovery-flight.jpg",
+      imageAlt: "NextGen Flight Academy Discovery Flight",
       buttonText: "Schedule a Discovery Flight",
       buttonLink: "/contact",
+    },
+
+    whyPilot: {
+      upperHeading: "Love to Fly?",
+      heading: "Why Become a Pilot?",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+      buttonText: "Schedule a Discovery Flight",
+      buttonLink: "/contact",
+      reasons: [
+        {
+          title: "Freedom",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+        },
+        {
+          title: "Adventure",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+        },
+        {
+          title: "Career Opportunities",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+        },
+      ],
     },
 
     //contentOne

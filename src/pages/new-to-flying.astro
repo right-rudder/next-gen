@@ -1,10 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import newToFlying from "../data/new-to-flying";
-import type { ImageMetadata } from "astro";
 import Features from "../components/Features.astro";
 import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
+import WhyPilot from "../components/WhyPilot.astro";
 
 const { data } = newToFlying;
 ---
@@ -14,11 +14,11 @@ const { data } = newToFlying;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
-  <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <!-- FEATURES -->
   <Features content={data.features} />
 
   <TryFlyingCTA content={data.discoveryCTA} />
+
+  <WhyPilot content={data.whyPilot} />
 </BaseLayout>

@@ -1,16 +1,23 @@
 ---
+import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import img from "../assets/nextgen-flight-academy-discovery-flight.jpg";
 
 const { content } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+if (!images[content.imagePath])
+  throw new Error(
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
 ---
 
 <div class="bg-white h-screen-mobile lg:h-screen-3/4 p-0">
   <div class="flex justify-center flex-wrap w-full h-full">
     <div class="lg:h-full w-full lg:w-1/2">
       <Image
-        src={img}
-        alt={"Pilot in cockpit"}
+        src={images[content.imagePath]()}
+        alt={content.imageAlt}
         class="object-cover object-center w-full h-full"
       />
     </div>

@@ -52,7 +52,18 @@ const homePage = {
     discoveryCTA: {
       heading: "Start Now",
       text: "Schedule a discovery flight and see if flying is for you.",
+      imagePath: "/src/assets/nextgen-flight-academy-discovery-flight.jpg",
+      imageAlt: "NextGen Flight Academy Discovery Flight",
       buttonText: "Schedule a Discovery Flight",
+      buttonLink: "/contact",
+    },
+
+    quizCTA: {
+      heading: "Quiz Time",
+      text: "Do you have what it takes to be a pilot? Take our quiz and find out.",
+      imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+      imageAlt: "NextGen Flight Academy Discovery Flight",
+      buttonText: "Take the Quiz",
       buttonLink: "/contact",
     },
 
