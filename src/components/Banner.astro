@@ -1,0 +1,24 @@
+---
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  PHONE_NUMBER,
+  EMAIL_ADDRESS,
+  ADDRESS_LINE_1,
+  ADDRESS_LINE_2,
+} from "../consts";
+import { FaPhoneSquareAlt } from "react-icons/fa";
+---
+
+<div class="w-full bg-gray-900 z-50 h-10">
+  <div class="mx-auto flex max-w-[80rem] items-center h-full justify-end px-4">
+    <a
+      href=`tel:${PHONE_NUMBER}`
+      class="lg:mr-9 text-white text-base lg:text-lg font-sans1 font-normal flex items-center align-middle hover:scale-105 cursor-pointer transition-all"
+      aria-label="Call telephone Link"
+    >
+      <FaPhoneSquareAlt className="text-white mr-2 text-lg lg:text-xl" />
+      {PHONE_NUMBER}</a
+    >
+  </div>
+</div>
