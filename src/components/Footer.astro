@@ -18,21 +18,26 @@ import { navbarLinks } from "../data/navbarLinks";
 const { pathname } = Astro.url;
 ---
 
-<footer class=`bg-dark-blue pt-24 px-5`>
+<footer
+  class=`bg-gradient-to-t from-primary-dark to-primary pt-24 px-5 font-sans1`
+>
   <div class="text-white max-w-xl lg:max-w-7xl mx-auto">
     <div class="flex gap-10 flex-col lg:flex-row">
       <div class="flex flex-col gap-5 lg:w-1/3">
         <a href="/" class="text-4xl font-bold uppercase"
-          ><h2><span class="text-blue-700">XYZ</span> Flight School</h2></a
+          ><h2 class="font-sans">
+            <span class="text-accent">NextGen</span><br />
+            <small>Flight Academy</small>
+          </h2></a
         >
-        <p class="text-gray-400 font-medium max-w-xl">
+        <p class="text-muted font-medium max-w-xl">
           {SITE_DESCRIPTION}
         </p>
         <div class="flex space-x-6">
           <a
             href={FACEBOOK_URL}
             target="_blank"
-            class="text-gray-400 hover:text-blue-700 duration-200"
+            class="text-muted hover:text-accent duration-200"
           >
             <span class="sr-only">Facebook</span>
             <svg
@@ -50,7 +55,7 @@ const { pathname } = Astro.url;
           <a
             href={INSTAGRAM_URL}
             target="_blank"
-            class="text-gray-400 hover:text-blue-700 duration-200"
+            class="text-muted hover:text-accent duration-200"
           >
             <span class="sr-only">Instagram</span>
             <svg
@@ -68,7 +73,7 @@ const { pathname } = Astro.url;
           <a
             href={TIKTOK_URL}
             target="_blank"
-            class="text-gray-400 hover:text-blue-700 duration-200"
+            class="text-muted hover:text-accent duration-200"
           >
             <span class="sr-only">YouTube</span>
             <svg
@@ -87,12 +92,12 @@ const { pathname } = Astro.url;
       </div>
 
       <div class="flex flex-col gap-3">
-        <h3 class="font-semibold pb-5">Quick Links</h3>
-        <ul class="flex flex-col gap-2 text-gray-400">
+        <h3 class="font-semibold pb-5 font-sans">Quick Links</h3>
+        <ul class="flex flex-col gap-2 text-muted">
           <li>
             <a
               href="/why-become-a-pilot"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               New To Flying?
             </a>
@@ -100,7 +105,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/intro-flight"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               Another Link Somewhere
             </a>
@@ -108,7 +113,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/ground-school/private-pilot"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               More link to somewhere
             </a>
@@ -116,7 +121,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/about/learning-center"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               Learning Center
             </a>
@@ -124,12 +129,12 @@ const { pathname } = Astro.url;
         </ul>
       </div>
       <div class="flex flex-col gap-3">
-        <h3 class="font-semibold pb-5">More Links</h3>
-        <ul class="flex flex-col gap-2 text-gray-400">
+        <h3 class="font-semibold pb-5 font-sans">More Links</h3>
+        <ul class="flex flex-col gap-2 text-muted">
           <li>
             <a
               href="/about/our-story"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               About Us
             </a>
@@ -137,7 +142,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/about/our-team"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               Our Team
             </a>
@@ -145,7 +150,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/about/our-fleet"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               Our Fleet
             </a>
@@ -153,7 +158,7 @@ const { pathname } = Astro.url;
           <li>
             <a
               href="/contact"
-              class="hover:text-blue-700 duration-200 font-medium"
+              class="hover:text-accent duration-200 font-medium"
             >
               Contact Us
             </a>
@@ -161,28 +166,28 @@ const { pathname } = Astro.url;
         </ul>
       </div>
       <div class="flex flex-col gap-3">
-        <h3 class="font-semibold pb-5">Contact</h3>
-        <ul class="flex flex-col gap-1 text-gray-400 font-medium">
+        <h3 class="font-semibold pb-5 font-sans">Contact</h3>
+        <ul class="flex flex-col gap-1 text-muted font-medium">
           <li class="flex gap-2 group items-center">
-            <MdEmail className="size-4 group-hover:text-blue-700 duration-200" />
+            <MdEmail className="size-4 group-hover:text-accent duration-200" />
             <a
-              class="group-hover:text-blue-700 duration-200"
+              class="group-hover:text-accent duration-200"
               href=`mailto:${EMAIL_ADDRESS}`>{EMAIL_ADDRESS}</a
             >
           </li>
           <li class="flex gap-2 group items-center">
-            <FaPhone className="size-4 group-hover:text-blue-700 duration-200" />
+            <FaPhone className="size-4 group-hover:text-accent duration-200" />
             <a
-              class="group-hover:text-blue-700 duration-200"
+              class="group-hover:text-accent duration-200"
               href=`tel:${PHONE_NUMBER}`>{PHONE_NUMBER}</a
             >
           </li>
           <li class="flex gap-2 group">
             <IoLocationSharp
-              className="size-4 group-hover:text-blue-700 duration-200 mt-1"
+              className="size-4 group-hover:text-accent duration-200 mt-1"
             />
             <a
-              class="group-hover:text-blue-700 duration-200"
+              class="group-hover:text-accent duration-200"
               href="https://maps.app.goo.gl/jV2NSfU3mHNMf2Rc7"
               target="_blank"
             >
@@ -198,18 +203,18 @@ const { pathname } = Astro.url;
       class="flex flex-col sm:flex-row justify-between border-t border-gray-600 py-5 mt-10 gap-2"
     >
       <p>
-        <span class="font-semibold">XYZ FLIGHT SCHOOL</span> &copy; {
+        <span class="font-semibold">NextGen Flight Academy</span> &copy; {
           today.getFullYear()
         }. All rights reserved. <a
           class="hover:underline"
           href="/privacy-policy">Privacy Policy</a
         >
       </p>
-      <p class="text-xs text-gray-400">
+      <p class="text-xs text-muted">
         Powered by <a
           href="https://rightruddermarketing.com/"
           target="_blank"
-          class="font-semibold hover:text-blue-700 duration-200"
+          class="font-semibold hover:text-accent duration-200"
           >More Right Rudder</a
         >
       </p>

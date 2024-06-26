@@ -1,0 +1,47 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const { content } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+if (!images[content.imagePath])
+  throw new Error(
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
+---
+
+<div class="bg-white h-screen-mobile lg:h-screen-3/4 p-0">
+  <div class="flex justify-center flex-wrap w-full h-full">
+    <div
+      class="w-full lg:w-1/2 flex flex-col justify-center align-middle items-center lg:items-end p-4 lg:p-8 text-center lg:text-right"
+    >
+      <p
+        class="px-4 text-6xl lg:text-8xl font-sans2 font-bold tracking-tight text-primary text-center lg:text-left"
+      >
+        {content.heading}
+      </p>
+      <p
+        class="px-4 mt-6 font-sans1 text-lg leading-6 text-gray-900 text-center lg:text-left"
+      >
+        {content.text}
+      </p>
+      <a
+        href={content.buttonLink}
+        target="_blank"
+        class="btn-primary btn-animate block mt-6 mx-auto lg:mx-0 lg:ml-4"
+        ><span class="relative z-10">
+          {content.buttonText}
+        </span>
+      </a>
+    </div>
+    <div class="lg:h-full w-full lg:w-1/2">
+      <Image
+        src={images[content.imagePath]()}
+        alt={content.imageAlt}
+        class="object-cover object-center w-full h-full"
+      />
+    </div>
+  </div>
+</div>

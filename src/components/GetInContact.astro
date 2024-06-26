@@ -10,24 +10,29 @@ import { Image } from "astro:assets";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
 
-import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airplane.jpg";
-
+import ComponentBackground from "../assets/view-from-the-skies-inside-NextGen-airplane.jpg";
 ---
 
 <section class="py-32 px-5 relative">
   <Image
     src={ComponentBackground}
-    alt="View from the skies inside Alto airplane"
+    alt="View from the skies inside NextGen airplane"
     class="absolute inset-0 object-cover w-full h-full"
   />
   <div class="bg-white/10 w-full h-full absolute inset-0"></div>
   <div
     class="max-w-7xl lg:pb-5 mx-auto z-20 relative text-white flex justify-between lg:items-center items-start flex-col lg:flex-row gap-10"
   >
-    <h2 class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white lg:mt-20">
-      Get in <span class="text-white lg:text-dark-blue">contact with us</span><br class="hidden lg:block"><br class="hidden lg:block"><a href="/contact" class="hidden lg:block btn-red shrink-0 text-sm">CONTACT US</a>
+    <h2
+      class="text-5xl font-bold max-w-sm text-dark-blue lg:text-white lg:mt-20"
+    >
+      Get in <span class="text-white lg:text-dark-blue">contact with us</span
+      ><br class="hidden lg:block" /><br class="hidden lg:block" /><a
+        href="/contact"
+        class="hidden lg:block btn-red shrink-0 text-sm">CONTACT US</a
+      >
     </h2>
-    
+
     <div class="flex items-center">
       <IoPhonePortraitOutline className="size-24" />
       <div class="flex flex-col justify-between font-bold gap-5">
@@ -63,5 +68,4 @@ import ComponentBackground from "../assets/view-from-the-skies-inside-alto-airpl
       <a href="/contact" class="btn-red text-sm">CONTACT US</a>
     </div>
   </div>
-  
 </section>

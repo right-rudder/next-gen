@@ -1,7 +1,13 @@
 ---
 //USE APPLICABLE GMAP
+const { gMapUrl } = Astro.props;
 ---
 
-<section class="">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12976.232413131633!2d-97.7078798!3d35.6016333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b2014e29c352e9%3A0x466ca3f4081dcdf5!2sAlto%20Flight%20Academy!5e0!3m2!1sen!2sus!4v1717008608431!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+<iframe
+  src={gMapUrl}
+  width="100%"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
