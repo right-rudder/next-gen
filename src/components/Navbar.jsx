@@ -79,7 +79,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky top-0 z-50 font-sans tracking-wider">
+    <nav className="w-full h-0 sticky top-0 z-20 font-sans tracking-wider">
       <div
         className={`${
           navBar || openMobile

@@ -4,7 +4,7 @@ import trainingPrograms from "../data/training-programs";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import ProgramsSwiper from "../components/ProgramsSwiper.astro";
 import GridPrograms from "../components/GridPrograms.astro";
-import UnderHeader from "../components/UnderHeader.astro";
+import UnderHeader2 from "../components/UnderHeader2.astro";
 import EnrollNowCTA from "../components/EnrollNowCTA.astro";
 
 const { data } = trainingPrograms;
@@ -18,7 +18,15 @@ const { data } = trainingPrograms;
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
 
-  <UnderHeader content={data.underHeader} />
+  <UnderHeader2
+    upperHeading={data.underHeader.upperHeading}
+    heading={data.underHeader.heading}
+    description={data.underHeader.description}
+    imagePath={data.underHeader.imagePath}
+    imageAlt={data.underHeader.imageAlt}
+    linkText={data.underHeader.linkText}
+    linkUrl={data.underHeader.linkUrl}
+  />
 
   <GridPrograms content={data.programs} />
 

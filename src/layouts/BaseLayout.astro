@@ -8,6 +8,7 @@ import "@fontsource-variable/exo-2";
 import "@fontsource-variable/oswald";
 import Navbar from "../components/Navbar";
 import ChatWidget from "../components/ChatWidget.astro";
+import Banner from "../components/Banner.astro";
 
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
@@ -23,6 +24,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
     />
   </head>
   <body class="font-sans">
+    <Banner />
     <Navbar pathname={pathname} client:load />
     <main transition:animate="none">
       <slot />

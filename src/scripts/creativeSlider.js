@@ -1,5 +1,7 @@
 import Swiper from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -15,9 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
       disableOnInteraction: false,
       pauseOnMouseEnter: true,
     },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     pagination: {
-      el: ".slider-four-slide-pagination-1",
-      clickable: true,
+      el: ".swiper-pagination",
     },
     keyboard: {
       enabled: true,

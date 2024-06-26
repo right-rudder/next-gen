@@ -12,25 +12,25 @@ if (!images[content.imagePath])
   );
 ---
 
-<div class="bg-white h-screen-mobile lg:h-screen-3/4 p-0">
+<section class="bg-gray-100 h-screen-mobile lg:h-screen-3/4 p-0">
   <div class="flex justify-center flex-wrap w-full h-full">
     <div
-      class="w-full lg:w-1/2 flex flex-col justify-center align-middle items-center lg:items-end p-4 lg:p-8 text-center lg:text-right"
+      class="py-12 w-full lg:w-1/2 flex flex-col justify-center align-middle items-center lg:items-end p-4 lg:p-8 text-center lg:text-right"
     >
       <p
-        class="px-4 text-6xl lg:text-8xl font-sans2 font-bold tracking-tight text-primary text-center lg:text-left"
+        class="px-4 text-6xl lg:text-8xl font-sans2 font-bold tracking-tight text-primary text-center lg:text-right"
       >
         {content.heading}
       </p>
       <p
-        class="px-4 mt-6 font-sans1 text-lg leading-6 text-gray-900 text-center lg:text-left"
+        class="px-4 mt-6 font-sans1 text-xl leading-6 text-gray-900 text-center lg:text-right"
       >
         {content.text}
       </p>
       <a
         href={content.buttonLink}
         target="_blank"
-        class="btn-primary btn-animate block mt-6 mx-auto lg:mx-0 lg:ml-4"
+        class="btn-primary btn-animate block mt-12 mx-auto lg:mx-0 lg:ml-4"
         ><span class="relative z-10">
           {content.buttonText}
         </span>
@@ -44,4 +44,4 @@ if (!images[content.imagePath])
       />
     </div>
   </div>
-</div>
+</section>

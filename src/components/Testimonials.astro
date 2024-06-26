@@ -2,12 +2,12 @@
 const { content } = Astro.props;
 ---
 
-<section class="bg-primary/20 py-24 sm:py-32">
+<section id="testimonials" class="bg-primary/20 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div
       class="mx-auto grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
     >
-      <div>
+      <div class="flex flex-col items-center lg:items-end">
         {
           content.upperHeading && (
             <p class="text-lg font-sans text-center lg:text-right font-bold tracking-tight text-primary-dark">
@@ -23,10 +23,21 @@ const { content } = Astro.props;
           )
         }
         {
-          content.headingText && (
+          content.headingText.map((text) => (
             <p class="mt-4 text-base lg:pl-6 font-sans1 text-center lg:text-right font-normal tracking-tight text-gray-700">
-              {content.headingText}
+              {text}
             </p>
+          ))
+        }
+        {
+          content.buttonText && content.buttonLink && (
+            <a
+              href={content.buttonLink}
+              target="_blank"
+              class="mt-12 btn-primary btn-animate block text-right"
+            >
+              <span class="relative z-10">{content.buttonText}</span>
+            </a>
           )
         }
       </div>
