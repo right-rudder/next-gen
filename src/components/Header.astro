@@ -1,34 +1,39 @@
 ---
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
+
 const { data } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif}"
 );
-if (!images[data.headerImage]) {
+if (!images[data.imagePath])
   throw new Error(
-    `"${data.headerImage}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   );
-}
 ---
 
 <header
-  class="relative isolate pt-14 overflow-hidden h-[40vh] lg:h-[65vh] text-white flex
-    items-center"
+  class="relative isolate pt-14 overflow-hidden h-[40vh] lg:h-screen-3/4 text-white flex
+    items-center justify-center align-middle"
 >
   <Image
-    src={data.headerImage}
-    alt={data.headerAlt}
+    src={images[data.imagePath]()}
+    alt={data.imageAlt}
     class="absolute top-0 w-full h-full object-cover -z-50"
     quality={100}
   />
 
-  <div class="absolute inset-0 bg-dark-blue/30 -z-40"></div>
+  <div class="absolute inset-0 bg-black/40 -z-0"></div>
   <div
-    class="flex w-full max-w-7xl mx-auto px-5 font-medium flex-col gap-4 lg:gap-8"
+    class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
   >
-    <h1 class="text-4xl max-w-xl lg:text-6xl font-extrabold lg:max-w-4xl">
-      {data.title}
+    <h1
+      class="text-7xl max-w-4xl text-center font-medium tracking-normal text-gray-100"
+    >
+      {data.headerH1}
     </h1>
+    <h2 class="text-3xl tracking-wide font-sans2">
+      {data.headerH2}
+    </h2>
   </div>
 </header>

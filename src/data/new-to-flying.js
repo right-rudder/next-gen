@@ -47,8 +47,8 @@ const newToFlying = {
       text: "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
       imagePath:
         "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpg",
-      imageAlt: "NextGen Flight Academy Discovery Flight",
-      buttonText: "Schedule a Discovery Flight",
+      imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
+      buttonText: "Schedule an Intro Flight",
       buttonLink: "/contact",
     },
 
@@ -59,7 +59,7 @@ const newToFlying = {
         "/src/assets/completing-a-checkride-at-nextgen-flight-academy.jpg",
       imageAlt: "completing-a-checkride-at-nextgen-flight-academy",
       buttonText: "Take the Quiz",
-      buttonLink: "/contact",
+      buttonLink: "/quiz-form",
     },
 
     whyPilot: {

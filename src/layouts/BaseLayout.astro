@@ -24,7 +24,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
     />
   </head>
   <body class="font-sans">
-    <Banner />
+    <Banner class="z-40" />
     <Navbar pathname={pathname} client:load />
     <main transition:animate="none">
       <slot />
