@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import { FaCheckCircle } from "react-icons/fa";
+import { PHONE_NUMBER, EMAIL_ADDRESS } from "../consts";
+const headerData = {
+  headerH1: "Quiz Successfully Submitted",
+  headerH2: "You are one step closer to becoming a pilot!",
+  imagePath:
+    "/src/assets/nextgen-flight-academy-riverside-redlands-california-home.jpg",
+  imageAlt: "CFI in Cessna",
+};
+---
+
+<BaseLayout siteTitle="Thank You For Contacting Us">
+  <Header data={headerData} />
+
+  <section class="py-16 px-5">
+    <div
+      class="flex flex-col items-center max-w-5xl mx-auto text-2xl text-center gap-8"
+    >
+      <FaCheckCircle
+        className="text-9xl text-accent hover:text-primary-dark duration-1000 ease-in-out"
+      />
+      <p class="text-gray-600 leading-loose">
+        Thank you for taking our Pilot Readiness Quiz! We are looking forward to
+        working with you soon. We will review your quiz and get back with you
+        within 1-5 business days.
+      </p>
+      <p class="text-gray-600 leading-loose">
+        You can also give us a call at <a
+          class="text-primary hover:text-primary-dark hover:underline duration-300"
+          href=`tel:${PHONE_NUMBER}`>{PHONE_NUMBER}</a
+        > or send us an email at <a
+          class="text-primary hover:text-primary-dark hover:underline duration-300"
+          href=`mailto:${EMAIL_ADDRESS}`>{EMAIL_ADDRESS}</a
+        >.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
