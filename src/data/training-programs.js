@@ -8,8 +8,9 @@ const trainingPrograms = {
 
     //top header
     header: {
-      imagePath: "/src/assets/plane-taking-off-from-riverside-airport.jpg",
-      imageAlt: "plane-taking-off-from-riverside-airport",
+      imagePath:
+        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
+      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Pilot Training Programs",
       headerH2:
         "Start flying, complete your ratings, and earn your endorsements",

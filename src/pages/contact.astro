@@ -25,11 +25,13 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   keywords={data.pageKeywords}
 >
   <section
-    class="px-6 pt-12 pb-36 min-h-screen bg-gradient-to-t from-accent/40 to-primary/70"
+    class="px-6 pt-12 pb-16 lg:pb-4 min-h-screen bg-gradient-to-tr from-primary/40 to-primary/70"
   >
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-4">
-        <div class="col-span-1 px-8 text-right mt-16">
+      <div class="flex flex-wrap justify-center align-top items-start">
+        <div
+          class="order-last w-full lg:w-1/4 lg:order-first px-8 text-right mt-16"
+        >
           <h3 class="text-primary-dark text-2xl font-semibold mt-10">
             {data.locations[0].title}
           </h3>
@@ -57,7 +59,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
         </div>
         <form
           id="contact-form"
-          class="flex flex-col max-w-2xl mx-auto gap-5 mt-12 p-4 lg:p-12 bg-white/30 col-span-2 shadow-xl h-full"
+          class="flex flex-col rounded-b-xl max-w-2xl mx-auto gap-5 mt-8 lg:mt-12 p-4 lg:p-12 bg-white/30 w-full lg:w-1/2 shadow-xl h-full"
         >
           <h2 class="text-primary-dark text-5xl font-extrabold mx-auto w-fit">
             Get in touch
@@ -125,13 +127,14 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
           </div>
           <button
             id="submit-button"
+            form="contact-form"
             disabled
             type="submit"
             class="btn-primary mt-8 mx-auto cursor-not-allowed bg-primary-darkhover:bg-gray-400"
             >Send message</button
           >
         </form>
-        <div class="col-span-1 px-8 text-left mt-16">
+        <div class="w-full lg:w-1/4 px-8 text-left mt-16">
           <h3 class="text-primary-dark text-2xl font-semibold mt-10">
             {data.locations[1].title}
           </h3>
@@ -161,7 +164,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
     </div>
   </section>
 
-  <section class="w-full flex overflow-hidden">
+  <section class="w-full flex flex-wrap overflow-hidden">
     <GoogleMaps gMapUrl={data.gMaps[0]} />
     <GoogleMaps gMapUrl={data.gMaps[1]} />
   </section>

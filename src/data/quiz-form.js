@@ -8,8 +8,8 @@ const quizForm = {
 
     //top header
     header: {
-      imagePath: "/src/assets/nextgen-flight-academy-discovery-flight.jpg",
-      imageAlt: "nextgen-flight-academy-discovery-flight",
+      imagePath: "/src/assets/redlands-plane-on-dry-lake-header.jpg",
+      imageAlt: "redlands-plane-on-dry-lake-header",
       headerH1: "Become a Pilot",
       headerH2: "Are You Ready to Become a Pilot?",
     },

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     watchSlidesProgress: true,
     slidesPerView: 4,
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 20,
     loop: true,
     modules: [Navigation, Pagination, Autoplay],
     autoplay: {

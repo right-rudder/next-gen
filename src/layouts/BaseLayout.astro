@@ -15,7 +15,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth" transition:animate="none">
+<html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
       title={siteTitle || SITE_TITLE}
@@ -26,7 +26,7 @@ const { siteTitle, siteDescription, keywords } = Astro.props;
   <body class="font-sans">
     <Banner class="z-40" />
     <Navbar pathname={pathname} client:load />
-    <main transition:animate="none">
+    <main>
       <slot />
     </main>
     <Footer />

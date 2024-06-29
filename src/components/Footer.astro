@@ -17,7 +17,7 @@ import {
   LOCATIONS,
 } from "../consts";
 import { navbarLinks } from "../data/navbarLinks";
-import logo from "../assets/next-gen-logo.png";
+import logo from "../assets/NG Logo White Background 2.png";
 import { Image } from "astro:assets";
 
 const { pathname } = Astro.url;
@@ -25,30 +25,35 @@ const { pathname } = Astro.url;
 
 <footer class="relative bg-gradient-to-b from-primary to-primary-dark">
   <div
-    class="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    class="px-4 pt-24 md:pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
   >
     <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
-      <div class="md:max-w-md lg:col-span-2">
+      <div class="lg:col-span-2">
         <a
           href="/"
           aria-label="Go home"
           title="Company"
-          class="flex justify-center lg:justify-start items-center w-full"
+          class="flex justify-center items-center w-full"
         >
           <Image
             src={logo}
             alt="NextGen Flight Academy Logo"
-            class="h-24 w-auto"
+            class="object-contain h-36 w-auto invert"
           />
         </a>
         <div class="mt-4 lg:max-w-sm">
           <p class="text-sm text-white text-justify">
             {SITE_DESCRIPTION}
           </p>
+          <a
+            href="/privacy-policy"
+            class="mt-3 transition-colors duration-300 text-sm text-white hover:text-accent"
+            >Privacy Policy
+          </a>
         </div>
       </div>
       <div
-        class="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4"
+        class="grid grid-cols-2 gap-8 row-gap-8 lg:col-span-4 md:grid-cols-4"
       >
         <div>
           <p class="font-semibold tracking-wide text-gray-900">Quick Links</p>
@@ -56,61 +61,54 @@ const { pathname } = Astro.url;
             <li>
               <a
                 href="/"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href="/new-to-flying"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >New to Flying?</a
               >
             </li>
             <li>
               <a
                 href="/training-programs"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Training Programs
               </a>
             </li>
             <li>
               <a
-                href="/privacy-policy"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
-                >Privacy Policy
-              </a>
-            </li>
-            <li>
-              <a
                 href="/contact"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Contact Us</a
               >
             </li>
           </ul>
         </div>
-        <div>
+        <div class="text-right md:text-left">
           <p class="font-semibold tracking-wide text-gray-900">Fly Today</p>
           <ul class="mt-2 space-y-2">
             <li>
               <a
                 href="/enrollment"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Enrollment Interest
               </a>
             </li>
             <li>
               <a
                 href="/quiz-form"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Take Our Quiz
               </a>
             </li>
             <li>
               <a
                 href="/intro-flight"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Intro Flights
               </a>
             </li>
@@ -118,22 +116,22 @@ const { pathname } = Astro.url;
               <a
                 href="https://app.process.st/workflows/NextGen-Aircraft-Checkout-qNoL_5yUWfBKy5Jd9PBNaw/run-link"
                 target="_blank"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="transition-colors duration-300 text-white hover:text-accent"
                 >Rent Today</a
               >
             </li>
           </ul>
         </div>
         {
-          LOCATIONS.map((location) => (
-            <div>
+          LOCATIONS.map((location, index) => (
+            <div class={index === 0 ? "text-left" : "text-right md:text-left"}>
               <p class="font-semibold tracking-wide text-gray-900">
                 {location.title}
               </p>
               <a
                 href={location.gMaps}
                 target="_blank"
-                class="transition-colors duration-300 text-white hover:text-primary-dark"
+                class="mt-2 space-y-2 transition-colors duration-300 text-white hover:text-accent"
               >
                 <>
                   <span>{location.address}</span>
@@ -145,7 +143,7 @@ const { pathname } = Astro.url;
               </a>
               <a
                 href={`tel:${location.phone}`}
-                class="transition-colors duration-300 text-white hover:text-primary-dark flex items-center align-middle mt-2"
+                class={`${index === 0 ? "text-left justify-start" : "text-right justify-end md:justify-start md:text-left"} transition-colors duration-300 text-white hover:text-accent flex items-center align-middle mt-1`}
               >
                 <FaPhoneSquareAlt className="mr-2 text-lg" />
                 {location.phone}
@@ -156,12 +154,12 @@ const { pathname } = Astro.url;
       </div>
     </div>
     <div
-      class="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row"
+      class="flex flex-col lg:flex-row justify-between pt-5 pb-10 border-t border-accent"
     >
-      <p class="text-sm text-gray-100">
-        © Copyright 2024 NextGen Fligh Academy. All rights reserved.
+      <p class="text-sm text-gray-100 text-center">
+        © Copyright 2024 NextGen Flight Academy. All rights reserved.
       </p>
-      <span class="text-white">
+      <span class="text-white text-center">
         Powered by
         <a
           href="https://rightruddermarketing.com/"
@@ -171,9 +169,12 @@ const { pathname } = Astro.url;
           More Right Rudder</a
         >
       </span>
-      <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+      <div
+        class="flex items-center justify-center align-middle mt-4 space-x-4 sm:mt-0"
+      >
         <a
           href={LINKEDIN_URL}
+          target="_blank"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 16 16" fill="currentColor" class="h-5">
@@ -184,6 +185,7 @@ const { pathname } = Astro.url;
         </a>
         <a
           href={INSTAGRAM_URL}
+          target="_blank"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 30 30" fill="currentColor" class="h-6">
@@ -195,6 +197,7 @@ const { pathname } = Astro.url;
         </a>
         <a
           href={FACEBOOK_URL}
+          target="_blank"
           class="transition-colors duration-300 text-white hover:text-white/70 hover:scale-105"
         >
           <svg viewBox="0 0 24 24" fill="currentColor" class="h-5">

@@ -1,11 +1,15 @@
 ---
 import Header from "../components/Header.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
 const headerData = {
-  title: "Introductory Flight: Your First Flight Lesson",
-  headerImage: "/src/assets/cessna-172-n4891j-flying-over-bethany-ok.jpg",
-  headerAlt: "Cessna 182 N4891J flying over Bethany, OK",
+  headerH1: "Intro Flight Form",
+  imagePath: "/src/assets/discovery-flight-at-nextgen-flight-academy.jpg",
+  imageAlt: "discovery-flight-at-nextgen-flight-academy",
 };
+
+const checkboxText =
+  "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.";
 
 const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
   .INTRO_FLIGHT_FORM_WEBHOOK_URL;
@@ -15,19 +19,19 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
   siteTitle="Book an Introductory Discovery Flight | Oklahoma City Flight Training"
   siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
 >
-  <Header slot="header" data={headerData} />
+  <Header data={headerData} />
 
   <section class="py-24 px-5">
     <div class="max-w-4xl mx-auto">
       <h2
         class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
       >
-        Request an Intro Flight at Alto Flight Academy
+        Request an Intro Flight at NextGen Flight Academy
       </h2>
       <h3 class="font-medium text-center mx-auto text-xl">
-        Fill out the form below and let's start flying! An Alto team member will
-        get in touch with you and walk you through the next steps on getting you
-        in the air.
+        Fill out the form below and let's start flying! An NextGen team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
       </h3>
       <form
         id="intro-flight-form"
@@ -38,14 +42,14 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
             type="text"
             name="first-name"
             placeholder="Your first name"
-            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
             required
           />
           <input
             type="text"
             name="last-name"
             placeholder="Your last name"
-            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
             required
           />
         </div>
@@ -55,25 +59,25 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
             name="email"
             id="email"
             placeholder="Your email"
-            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
             required
           />
           <input
             type="email"
             name="confirm-email"
             placeholder="Confirm email"
-            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
           />
           <input
             type="tel"
             name="phone"
             placeholder="Your phone number"
-            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500 rounded-full"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
             required
           />
         </div>
 
-        <label for="requested-date">Tentative date to visit Alto:</label>
+        <label for="requested-date">Tentative date to visit NextGen:</label>
 
         <input
           required
@@ -81,7 +85,7 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
           id="requested-date"
           name="requested-date"
           min="2018-01-01"
-          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-full"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500"
         />
 
         <!-- <label for="requested-time">Requested time:</label>
@@ -89,7 +93,7 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
           required
           id="requested-time"
           name="requested-time"
-          class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 rounded-full bg-white"
+          class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 bg-white"
         >
           <option value="" selected> -- select an option -- </option>
           <option>7AM - 9AM</option>
@@ -115,16 +119,14 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
             for="agree-data-collection"
             class="text-gray-500 text-sm lg:text-base"
           >
-            I agree to the terms & conditions provided by the company. By
-            providing my phone number, I agree to receive text messages from
-            Alto Flight Academy.
+            {checkboxText}
           </label>
         </div>
         <button
           id="submit-button"
           disabled
           type="submit"
-          class="btn-dark-blue mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+          class="btn-primary mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
           >Send message</button
         >
       </form>
@@ -168,14 +170,14 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
       submitButton.classList.remove(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     } else {
       submitButton.disabled = true;
       submitButton.classList.add(
         "cursor-not-allowed",
         "bg-gray-400",
-        "hover:bg-gray-400",
+        "hover:bg-gray-400"
       );
     }
   });
@@ -214,7 +216,7 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
         xhr.open("POST", introFlightForm.action);
         xhr.setRequestHeader(
           "Content-Type",
-          "application/x-www-form-urlencoded",
+          "application/x-www-form-urlencoded"
         );
         xhr.onload = function () {
           // Check if the request was successful (status 200)
