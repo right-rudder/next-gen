@@ -38,7 +38,7 @@ const trainingPrograms = {
           imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
           description:
             "The Private Pilot Certificate (PPL) is your first step in flight training, allowing you to fly solo or with passengers under Visual Flight Rules (VFR). It enables you to rent and pilot aircraft for personal use, recreational flying, and travel.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -48,7 +48,7 @@ const trainingPrograms = {
           imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
           description:
             "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -58,7 +58,7 @@ const trainingPrograms = {
           imageAlt: "commercial-pilot-program-nextgen-flight-academy",
           description:
             "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -67,7 +67,7 @@ const trainingPrograms = {
           imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
             "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -76,7 +76,7 @@ const trainingPrograms = {
           imageAlt: "flight-instructor-training-redlands-ca",
           description:
             "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education and mentoring. You can specialize as a Certified Flight Instructor (CFI), Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -86,7 +86,7 @@ const trainingPrograms = {
           imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
           description:
             "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -95,7 +95,7 @@ const trainingPrograms = {
           imageAlt: "planes-flying-over-san-bernadino-ca",
           description:
             "The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -104,7 +104,7 @@ const trainingPrograms = {
           imageAlt: "high-altitude-endorsement",
           description:
             "The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
         {
@@ -114,7 +114,7 @@ const trainingPrograms = {
           imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
             "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
-          link: "/contact",
+          link: "/enrollment",
           linkText: "Enroll Now",
         },
       ],
