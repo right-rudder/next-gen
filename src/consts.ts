@@ -13,6 +13,8 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training";
 
+export const IMAGE = "./next-gen-logo.png";
+
 export const LOCATIONS = [
   {
     title: "Riverside Location",
