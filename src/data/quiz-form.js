@@ -10,8 +10,8 @@ const quizForm = {
     header: {
       imagePath: "/src/assets/redlands-plane-on-dry-lake-header.jpg",
       imageAlt: "redlands-plane-on-dry-lake-header",
-      headerH1: "Become a Pilot",
-      headerH2: "Are You Ready to Become a Pilot?",
+      headerH1: "Pilot Readiness Quiz",
+      headerH2: "Are you ready to become a pilot?",
     },
 
     checkboxText:
