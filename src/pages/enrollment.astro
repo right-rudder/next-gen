@@ -22,7 +22,7 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
   <Header data={headerData} />
 
   <section class="py-24 px-5">
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-3xl mx-auto">
       <h2
         class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
       >
@@ -35,7 +35,7 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
       </h3>
       <form
         id="enrollment-form"
-        class="flex flex-col max-w-4xl mx-auto gap-8 my-5"
+        class="flex flex-col max-w-4xl mx-auto gap-12 my-5"
       >
         <div class="flex flex-col lg:flex-row gap-5">
           <input
@@ -77,7 +77,8 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           />
         </div>
 
-        <label for="experience">How far along are you in pilot training?*</label
+        <label class="mt-4" for="experience"
+          >How far along are you in pilot training?*</label
         >
         <input
           id="experience"
@@ -87,17 +88,128 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
           required
         />
-        <label for="goals">What are your goals?*</label>
-        <input
-          id="goals"
-          name="goals"
-          type="text"
-          placeholder=""
-          class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
-          required
-        />
 
-        <label for="extra-information"
+        <fieldset
+          class="flex flex-col justify-center items-center align-middle mt-4"
+        >
+          <legend class="mb-2 text-gray-800 text-center w-full">
+            Primary Training Program Interest?
+          </legend>
+
+          <div>
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="private-pilot"
+                name="interest"
+                value="private-pilot"
+                required
+              />
+              <label for="private-pilot">Private Pilot Certificate</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="instrument-rating"
+                name="interest"
+                value="instrument-rating"
+                required
+              />
+              <label for="instrument-rating">Instrument Rating</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="commercial-pilot"
+                name="interest"
+                value="commercial-pilot"
+                required
+              />
+              <label for="commercial-pilot">
+                Commercial Pilot Certificate
+              </label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="multiengine"
+                name="interest"
+                value="multiengine"
+                required
+              />
+              <label for="multiengine">Multi-Engine</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="cfi"
+                name="interest"
+                value="cfi"
+                required
+              />
+              <label for="cfi">Flight Instructor (CFI, CFII, MEI)</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="airline-transport"
+                name="interest"
+                value="airline-transport"
+                required
+              />
+              <label for="airline-transport">Airline Transport Pilot</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="high-performance"
+                name="interest"
+                value="high-performance"
+                required
+              />
+              <label for="high-performance">High Performance Endorsement</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="high-altitude"
+                name="interest"
+                value="high-altitude"
+                required
+              />
+              <label for="high-altitude">High Altitude Endorsement</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="complex"
+                name="interest"
+                value="complex"
+                required
+              />
+              <label for="complex">Complex Endorsement</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <label for="extra-information mt-4"
           >Anything else you want us to know about?*</label
         >
         <textarea
@@ -105,10 +217,58 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           id="extra-information"
           name="extra-information"
           placeholder=""
-          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
+          rows="5"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500"
         ></textarea>
 
-        <div class="flex gap-3">
+        <fieldset
+          class="flex flex-col justify-center items-center align-middle mt-4"
+        >
+          <legend class="mb-2 text-gray-800 text-center w-full">
+            Would you like schedule a visit to NextGen Flight Academy?
+          </legend>
+
+          <div>
+            <div>
+              <input
+                type="radio"
+                class="mx-2"
+                id="yes-visit"
+                name="visit-nextgen"
+                value="yes-visit"
+                required
+              />
+              <label for="yes-visit">Yes</label>
+            </div>
+            <input
+              type="radio"
+              class="mx-2"
+              id="no-visit"
+              name="visit-nextgen"
+              value="no-visit"
+              required
+            />
+            <label for="no-visit">No</label>
+          </div>
+        </fieldset>
+
+        <div
+          id="location-container"
+          class="hidden flex-col justify-center items-center align-middle"
+        >
+          <label for="visit-location">Choose a location:</label>
+
+          <select
+            name="visit-location"
+            id="visit-location"
+            class="w-36 px-3 py-2 border border-gray-400 text-center"
+          >
+            <option value="riverside">Riverside</option>
+            <option value="redlands">Redlands</option>
+          </select>
+        </div>
+
+        <div class="flex gap-3 px-8">
           <input
             type="checkbox"
             name="agree-data-collection"
@@ -117,127 +277,148 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
 
           <label
             for="agree-data-collection"
-            class="text-gray-500 text-sm lg:text-base"
+            class="text-gray-500 text-sm lg:text-base mt-4"
           >
             {checkboxText}
           </label>
         </div>
-        <button
-          id="submit-button"
-          disabled
-          type="submit"
-          class="mx-auto btn-primary">Submit</button
-        >
+        <div class="flex justify-center">
+          <button
+            id="submit-button"
+            disabled
+            type="submit"
+            class="btn-primary bg-gray-400 mt-12 cursor-not-allowed hover:bg-gray-500"
+            >Submit</button
+          >
+        </div>
       </form>
     </div>
   </section>
+</BaseLayout>
 
-  <script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
-    // Function to format date as YYYY-MM-DD
-    function formatDate(date) {
-      let day = date.getDate();
-      let month = date.getMonth() + 1; // Months are zero based
-      let year = date.getFullYear();
+<script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
 
-      if (day < 10) {
-        day = "0" + day;
-      }
-      if (month < 10) {
-        month = "0" + month;
-      }
-
-      return `${year}-${month}-${day}`;
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
     }
 
-    // Calculate the date four days from today
-    const today = new Date();
-    const fourDaysFromToday = new Date(today);
-    fourDaysFromToday.setDate(today.getDate() + 4);
+    return `${year}-${month}-${day}`;
+  }
 
-    // Set the min attribute
-    document
-      .getElementById("requested-date")
-      ?.setAttribute("min", formatDate(fourDaysFromToday));
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
 
-    const checkbox = document.getElementById("agree-data-collection");
-    const submitButton = document.getElementById("submit-button");
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
 
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        submitButton.disabled = false;
-        submitButton.classList.remove(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400",
-          "bg-primary"
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+  const yesVisit = document.getElementById("yes-visit");
+  const noVisit = document.getElementById("no-visit");
+
+  yesVisit.addEventListener("change", function () {
+    if (yesVisit.checked) {
+      document.getElementById("location-container").classList.remove("hidden");
+      document.getElementById("location-container").classList.add("flex");
+    } else {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  noVisit.addEventListener("change", function () {
+    if (noVisit.checked) {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-500",
+        "bg-primary"
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "btn-primary",
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-500"
+      );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const enrollmentForm = document.getElementById("enrollment-form");
+
+    // Check if the contactUs form element exists
+    if (enrollmentForm !== null) {
+      // Add submit event listener to the contactUs form
+      enrollmentForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(enrollmentForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", enrollmentForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
         );
-      } else {
-        submitButton.disabled = true;
-        submitButton.classList.add(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400"
-        );
-      }
-    });
-
-    // Wait for the DOM content to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the contactUs form element
-      const enrollmentForm = document.getElementById("enrollment-form");
-
-      // Check if the contactUs form element exists
-      if (enrollmentForm !== null) {
-        // Add submit event listener to the contactUs form
-        enrollmentForm.addEventListener("submit", function (event) {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // Serialize the form data
-          const formData = new FormData(enrollmentForm);
-
-          // Check the value of the honeypot field
-          const confirmEmailValue = formData.get("confirm-email");
-          if (confirmEmailValue === "" || confirmEmailValue === null) {
-            // If the honeypot field is empty, it's a human
-            // Set the form action to the URL for processing the form and redirecting to thank you
-            enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
           }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Enrollment form element not found.");
+    }
+  });
+</script>
 
-          // Convert FormData to URLSearchParams
-          const urlSearchParams = new URLSearchParams();
-          for (const pair of formData.entries()) {
-            urlSearchParams.append(pair[0], pair[1]);
-          }
-
-          // Send an AJAX request to submit the form
-          const xhr = new XMLHttpRequest();
-          xhr.open("POST", enrollmentForm.action);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded"
-          );
-          xhr.onload = function () {
-            // Check if the request was successful (status 200)
-            if (xhr.status === 200) {
-              // Redirect the user after a successful form submission
-              window.location.href = "/enrollment-confirmation";
-            } else {
-              // Handle errors if any
-              console.error("Form submission failed:", xhr.statusText);
-            }
-          };
-          xhr.onerror = function () {
-            // Handle network errors
-            console.error("Network error occurred while submitting the form.");
-          };
-          xhr.send(urlSearchParams);
-        });
-      } else {
-        console.error("Enrollment form element not found.");
-      }
-    });
-  </script>
-
-  <script src="../scripts/emailValidation.js"></script>
-</BaseLayout>
+<script src="../scripts/emailValidation.js"></script>

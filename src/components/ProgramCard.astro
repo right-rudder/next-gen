@@ -30,9 +30,8 @@ if (!images[imagePath])
     </p>
     <p
       class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
-    >
-      {description}
-    </p>
+      set:html={description}
+    />
     <Image
       src={images[imagePath]()}
       alt={imageAlt}

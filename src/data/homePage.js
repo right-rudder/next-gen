@@ -2,9 +2,10 @@ const homePage = {
   data: {
     //SEO Header Stuff
     pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
-    pageDescription: "meta description goes here",
+    pageDescription:
+      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
-      "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
+      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
     //top header
     header: {
@@ -140,16 +141,14 @@ const homePage = {
           title: "High Performance Endorsement",
           imagePath: "/src/assets/planes-flying-over-san-bernadino-ca.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
-          description:
-            "The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.",
+          description: `<small class="uppercase italic font-bold">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
           link: "/training-programs",
         },
         {
           title: "High Altitude Endorsement",
           imagePath: "/src/assets/high-altitude-endorsement.jpg",
           imageAlt: "high-altitude-endorsement",
-          description:
-            "The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.",
+          description: `<small class="uppercase italic font-bold">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
           link: "/training-programs",
         },
         {

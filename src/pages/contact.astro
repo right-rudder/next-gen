@@ -111,6 +111,55 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
             class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 min-h-48 placeholder:text-primary/60"
           ></textarea>
 
+          <div class="">
+            <div class="mt-10 space-y-10"></div>
+            <fieldset
+              class="flex flex-col justify-center items-center align-middle mt-4"
+            >
+              <legend class="mb-2 text-gray-800 text-center w-full">
+                Would you like schedule a visit to NextGen Flight Academy?
+              </legend>
+
+              <div>
+                <div>
+                  <input
+                    type="radio"
+                    class="mx-2"
+                    id="yes-visit"
+                    name="visit-nextgen"
+                    value="yes-visit"
+                    required
+                  />
+                  <label for="yes-visit">Yes</label>
+                </div>
+                <input
+                  type="radio"
+                  class="mx-2"
+                  id="no-visit"
+                  name="visit-nextgen"
+                  value="no-visit"
+                  required
+                />
+                <label for="no-visit">No</label>
+              </div>
+            </fieldset>
+            <div
+              id="location-container"
+              class="hidden flex-col justify-center items-center align-middle"
+            >
+              <label for="visit-location">Choose a location:</label>
+
+              <select
+                name="visit-location"
+                id="visit-location"
+                class="w-36 px-3 py-2 border border-gray-400 text-center"
+              >
+                <option value="riverside">Riverside</option>
+                <option value="redlands">Redlands</option>
+              </select>
+            </div>
+          </div>
+
           <div class="flex gap-3">
             <input
               type="checkbox"
@@ -130,7 +179,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
             form="contact-form"
             disabled
             type="submit"
-            class="btn-primary mt-8 mx-auto cursor-not-allowed bg-primary-darkhover:bg-gray-400"
+            class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
             >Send message</button
           >
         </form>
@@ -172,6 +221,25 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
     const checkbox = document.getElementById("agree-data-collection");
     const submitButton = document.getElementById("submit-button");
+    const yesVisit = document.getElementById("yes-visit");
+    const noVisit = document.getElementById("no-visit");
+
+    yesVisit.addEventListener("change", function () {
+      if (yesVisit.checked) {
+        document
+          .getElementById("location-container")
+          .classList.remove("hidden");
+        document.getElementById("location-container").classList.add("flex");
+      } else {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    noVisit.addEventListener("change", function () {
+      if (noVisit.checked) {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
 
     checkbox.addEventListener("change", function () {
       if (checkbox.checked) {
