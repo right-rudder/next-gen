@@ -9,7 +9,11 @@ const { data } = quizForm;
 const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
 ---
 
-<BaseLayout siteTitle="NextGen's Pilot Readiness Quiz">
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
   <Header data={data.header} />
 
   <section class="py-16 px-5 max-w-5xl mx-auto">

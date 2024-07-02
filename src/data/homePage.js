@@ -141,14 +141,14 @@ const homePage = {
           title: "High Performance Endorsement",
           imagePath: "/src/assets/planes-flying-over-san-bernadino-ca.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
-          description: `<small class="uppercase italic font-bold">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
+          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
           link: "/training-programs",
         },
         {
           title: "High Altitude Endorsement",
           imagePath: "/src/assets/high-altitude-endorsement.jpg",
           imageAlt: "high-altitude-endorsement",
-          description: `<small class="uppercase italic font-bold">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
+          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
           link: "/training-programs",
         },
         {
