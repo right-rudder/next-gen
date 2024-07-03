@@ -64,7 +64,8 @@ const trainingPrograms = {
         },
         {
           title: "Multi-Engine Rating",
-          imagePath: "/src/assets/multi-engine-plane-at-redlands-airport.jpg",
+          imagePath:
+            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
           imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
             "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",

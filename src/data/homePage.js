@@ -64,7 +64,7 @@ const homePage = {
       heading: "Fly Today",
       text: "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
       imagePath:
-        "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpg",
+        "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
       imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
       buttonText: "Schedule an Intro Flight",
       buttonLink: "/contact",
@@ -113,7 +113,8 @@ const homePage = {
         },
         {
           title: "Multi-Engine Rating",
-          imagePath: "/src/assets/multi-engine-plane-at-redlands-airport.jpg",
+          imagePath:
+            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
           imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
             "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",

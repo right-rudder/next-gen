@@ -47,7 +47,7 @@ const newToFlying = {
       heading: "Fly Today",
       text: "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
       imagePath:
-        "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpg",
+        "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
       imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
       buttonText: "Schedule an Intro Flight",
       buttonLink: "/contact",
