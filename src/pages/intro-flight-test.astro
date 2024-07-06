@@ -1,0 +1,166 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const headerData = {
+  headerH1: "Intro Flight Form",
+  imagePath: "/src/assets/discovery-flight-at-nextgen-flight-academy.jpg",
+  imageAlt: "discovery-flight-at-nextgen-flight-academy",
+};
+
+const checkboxText =
+  "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.";
+
+const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
+  .INTRO_FLIGHT_FORM_WEBHOOK_URL;
+---
+
+<BaseLayout
+  siteTitle="Book an Introductory Discovery Flight | Oklahoma City Flight Training"
+  siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
+>
+  <Header data={headerData} />
+
+  <section class="py-24 px-5">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Request an Intro Flight at NextGen Flight Academy
+      </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! An NextGen team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
+      </h3>
+    </div>
+
+    <iframe
+      src="https://msg.flightschoolcrm.com/widget/form/Wrq1QIkummTbXog3asni"
+      class="mx-auto w-full lg:w-2/3 my-5"
+      id="inline-Wrq1QIkummTbXog3asni"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Intro Flight"
+      data-height="1734"
+      data-layout-iframe-id="inline-Wrq1QIkummTbXog3asni"
+      data-form-id="Wrq1QIkummTbXog3asni"
+      title="Intro Flight"
+    >
+    </iframe>
+    <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
+
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
+
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
+
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const introFlightForm = document.getElementById("intro-flight-form");
+
+    // Check if the contactUs form element exists
+    if (introFlightForm !== null) {
+      // Add submit event listener to the contactUs form
+      introFlightForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(introFlightForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          introFlightForm.action = INTRO_FLIGHT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", introFlightForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Intro flight form element not found.");
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>
