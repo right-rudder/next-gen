@@ -67,7 +67,7 @@ const homePage = {
         "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
       imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
       buttonText: "Schedule an Intro Flight",
-      buttonLink: "/contact",
+      buttonLink: "/intro-flight",
     },
 
     quizCTA: {
@@ -140,7 +140,8 @@ const homePage = {
         {
           title: "High Performance Endorsement",
           title: "High Performance Endorsement",
-          imagePath: "/src/assets/planes-flying-over-san-bernadino-ca.jpg",
+          imagePath:
+            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
           link: "/training-programs",

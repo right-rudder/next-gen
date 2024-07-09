@@ -93,7 +93,8 @@ const trainingPrograms = {
         },
         {
           title: "High Performance Endorsement",
-          imagePath: "/src/assets/planes-flying-over-san-bernadino-ca.jpg",
+          imagePath:
+            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
           link: "/enrollment",
@@ -124,7 +125,7 @@ const trainingPrograms = {
       subheading:
         "Book an intro flight to see if flight school is right for you",
       linkText: "Book an Intro Flight",
-      linkUrl: "/contact",
+      linkUrl: "/intro-flight",
       imagePath:
         "/src/assets/nextgen-flight-academy-staff-flying-over-riverside-ca.jpg",
       imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",

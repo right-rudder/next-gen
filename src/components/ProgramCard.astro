@@ -25,13 +25,16 @@ if (!images[imagePath])
   >
     <p
       class="z-10 w-full px-6 text-3xl lg:translate-y-12 drop-shadow-md text-center leading-tight text-white group-hover:-translate-y-3 duration-300 ease-in-out"
-    >
-      {title}
-    </p>
-    <p
-      class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
-      set:html={description}
+      set:html={title}
     />
+    {
+      description && (
+        <p
+          class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
+          set:html={description}
+        />
+      )
+    }
     <Image
       src={images[imagePath]()}
       alt={imageAlt}
@@ -46,7 +49,7 @@ if (!images[imagePath])
   <a
     href={link}
     target="_self"
-    class="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+    class="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300"
   >
     <div class="flex h-full w-full justify-center align-middle items-center">
       <p

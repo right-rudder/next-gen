@@ -50,7 +50,7 @@ const newToFlying = {
         "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
       imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
       buttonText: "Schedule an Intro Flight",
-      buttonLink: "/contact",
+      buttonLink: "/intro-flight",
     },
 
     quizCTA: {
@@ -97,7 +97,7 @@ const newToFlying = {
       description:
         "Training at NextGen Flight Academy extends beyond a flight training syllabus and checkrides. We strive to make our community a family of aviation enthusiasts. Without a comfortable training environment, we don’t believe success would be as possible… or as fun!",
       buttonText: "Book an Intro Flight",
-      buttonLink: "/contact",
+      buttonLink: "/intro-flight",
       reviews: [
         {
           body: "NextGen is a great place to learn to fly. The owner, employees, and all CFI's are wonderful people to talk to. Everyone there goes above and beyond the standards of other flight schools to make sure they give the students the best possible experience when learning to fly. I would recommend this flight school to anyone!",
