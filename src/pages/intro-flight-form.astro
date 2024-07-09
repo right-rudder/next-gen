@@ -1,0 +1,243 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const headerData = {
+  headerH1: "Intro Flight Form",
+  imagePath: "/src/assets/discovery-flight-at-nextgen-flight-academy.jpg",
+  imageAlt: "discovery-flight-at-nextgen-flight-academy",
+};
+
+const checkboxText =
+  "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.";
+
+const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
+  .INTRO_FLIGHT_FORM_WEBHOOK_URL;
+---
+
+<BaseLayout
+  siteTitle="Book an Introductory Discovery Flight | Riverside, CA Flight Training"
+  siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
+>
+  <Header data={headerData} />
+
+  <section class="py-24 px-5">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Request an Intro Flight at NextGen Flight Academy
+      </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! An NextGen team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
+      </h3>
+      <form
+        id="intro-flight-form"
+        class="flex flex-col max-w-4xl mx-auto gap-5 my-5"
+      >
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your first name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Your last name"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+          <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number"
+            class="px-5 py-4 outline-1 w-full border-gray-400 border outline-gray-500"
+            required
+          />
+        </div>
+
+        <label for="requested-date">Tentative date to visit NextGen:</label>
+
+        <input
+          required
+          type="date"
+          id="requested-date"
+          name="requested-date"
+          min="2018-01-01"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500"
+        />
+
+        <!-- <label for="requested-time">Requested time:</label>
+        <select
+          required
+          id="requested-time"
+          name="requested-time"
+          class="px-5 py-4 outline-1 border-gray-300 border outline-gray-400 bg-white"
+        >
+          <option value="" selected> -- select an option -- </option>
+          <option>7AM - 9AM</option>
+          <option>9AM - 11AM</option>
+          <option>11AM - 1PM</option>
+          <option>1PM - 3PM</option>
+        </select> -->
+
+        <textarea
+          placeholder="Additional comments or questions?"
+          name="comments"
+          class="px-5 py-4 outline-1 border-gray-400 border outline-gray-500 rounded-xl min-h-48"
+        ></textarea>
+
+        <div class="flex gap-3">
+          <input
+            type="checkbox"
+            name="agree-data-collection"
+            id="agree-data-collection"
+          />
+
+          <label
+            for="agree-data-collection"
+            class="text-gray-500 text-sm lg:text-base"
+          >
+            {checkboxText}
+          </label>
+        </div>
+        <button
+          id="submit-button"
+          disabled
+          type="submit"
+          class="btn-primary mx-auto cursor-not-allowed bg-gray-400 hover:bg-gray-400"
+          >Send message</button
+        >
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL }}>
+  // Function to format date as YYYY-MM-DD
+  function formatDate(date) {
+    let day = date.getDate();
+    let month = date.getMonth() + 1; // Months are zero based
+    let year = date.getFullYear();
+
+    if (day < 10) {
+      day = "0" + day;
+    }
+    if (month < 10) {
+      month = "0" + month;
+    }
+
+    return `${year}-${month}-${day}`;
+  }
+
+  // Calculate the date four days from today
+  const today = new Date();
+  const fourDaysFromToday = new Date(today);
+  fourDaysFromToday.setDate(today.getDate() + 4);
+
+  // Set the min attribute
+  document
+    .getElementById("requested-date")
+    ?.setAttribute("min", formatDate(fourDaysFromToday));
+
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+
+  checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+      submitButton.disabled = false;
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+    } else {
+      submitButton.disabled = true;
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400"
+      );
+    }
+  });
+
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contactUs form element
+    const introFlightForm = document.getElementById("intro-flight-form");
+
+    // Check if the contactUs form element exists
+    if (introFlightForm !== null) {
+      // Add submit event listener to the contactUs form
+      introFlightForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(introFlightForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          introFlightForm.action = INTRO_FLIGHT_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", introFlightForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/enrollment-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Intro flight form element not found.");
+    }
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>
