@@ -39,8 +39,8 @@ const trainingPrograms = {
           imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
           description:
             "The Private Pilot Certificate (PPL) is your first step in flight training, allowing you to fly solo or with passengers under Visual Flight Rules (VFR). It enables you to rent and pilot aircraft for personal use, recreational flying, and travel.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/private-pilot",
+          linkText: "Explore PPL",
         },
         {
           title: "Instrument Rating",
@@ -49,8 +49,8 @@ const trainingPrograms = {
           imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
           description:
             "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/instrument-rating",
+          linkText: "Explore",
         },
         {
           title: "Commercial Pilot Certificate",

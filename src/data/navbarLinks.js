@@ -12,28 +12,28 @@ export const navbarLinks = [
   {
     name: "Training Programs",
     link: "/training-programs",
-    /* submenu: [
+    submenu: [
       {
         name: "Private Pilot",
-        link: "/private-pilot",
+        link: "/training-programs/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/instrument-rating",
+        link: "/training-programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/commercial-pilot",
+        link: "/training-programs/commercial-pilot",
       },
       {
         name: "Certified Flight Instructor",
-        link: "/certified-flight-instructor",
+        link: "/training-programs/certified-flight-instructor",
       },
       {
         name: "Airline Transport Pilot",
-        link: "/airline-transport-pilot",
+        link: "/training-programs/airline-transport-pilot",
       },
-    ], */
+    ],
   },
 
   /* {
