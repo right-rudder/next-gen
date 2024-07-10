@@ -1,0 +1,40 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const headerData = {
+  headerH1: "Dana Point Intro Flight",
+  headerH2: "Book an Introductory Flight at NextGen Flight Academy",
+  imagePath: "/src/assets/kaushik-panchal-0juC5JIhPks-unsplash.jpg",
+  imageAlt: "clouds in the sky over California, NextGen Flight Academy",
+};
+---
+
+<BaseLayout
+  siteTitle="Book an Introductory Discovery Flight | Riverside, CA Flight Training"
+  siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
+>
+  <Header data={headerData} />
+
+  <section id="intro-lesson-form">
+    <iframe
+      src="https://msg.flightschoolcrm.com/widget/form/HX1sLfN47OKANjPjDLyd"
+      style="width:100%;height:100%;border:none;border-radius:2px"
+      id="inline-HX1sLfN47OKANjPjDLyd"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Dana Point Intro Flight - $220.00"
+      data-height="1340"
+      data-layout-iframe-id="inline-HX1sLfN47OKANjPjDLyd"
+      data-form-id="HX1sLfN47OKANjPjDLyd"
+      title="Dana Point Intro Flight - $220.00"
+    >
+    </iframe>
+  </section>
+  <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
+</BaseLayout>

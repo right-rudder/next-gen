@@ -1,0 +1,58 @@
+---
+import Header from "../components/Header.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const headerData = {
+  headerH1: "Intro Flight Form",
+  imagePath: "/src/assets/discovery-flight-at-nextgen-flight-academy.jpg",
+  imageAlt: "discovery-flight-at-nextgen-flight-academy",
+};
+
+const checkboxText =
+  "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.";
+
+const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
+  .INTRO_FLIGHT_FORM_WEBHOOK_URL;
+---
+
+<BaseLayout
+  siteTitle="Book an Introductory Discovery Flight | Riverside, CA Flight Training"
+  siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
+>
+  <Header data={headerData} />
+
+  <section class="py-24 px-5">
+    <div class="max-w-4xl mx-auto">
+      <h2
+        class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
+      >
+        Request an Intro Flight at NextGen Flight Academy
+      </h2>
+      <h3 class="font-medium text-center mx-auto text-xl">
+        Fill out the form below and let's start flying! An NextGen team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
+      </h3>
+    </div>
+
+    <iframe
+      src="https://msg.flightschoolcrm.com/widget/form/Wrq1QIkummTbXog3asni"
+      class="mx-auto w-full lg:w-2/3 my-5"
+      id="inline-Wrq1QIkummTbXog3asni"
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Intro Flight"
+      data-height="1734"
+      data-layout-iframe-id="inline-Wrq1QIkummTbXog3asni"
+      data-form-id="Wrq1QIkummTbXog3asni"
+      title="Intro Flight"
+    >
+    </iframe>
+    <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
+  </section>
+</BaseLayout>

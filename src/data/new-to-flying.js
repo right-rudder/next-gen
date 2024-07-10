@@ -1,112 +1,131 @@
 const newToFlying = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
-    pageDescription: "meta description goes here",
+    pageTitle: "New to Flying? | NextGen Flight Academy",
+    pageDescription:
+      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
-      "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
+      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
     //top header
     header: {
-      imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+      imagePath:
+        "/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg",
+      imageAlt: "flying-the-duchess-at-riverside-ca-flight-school-nextgen",
       headerH1: "New to Flying?",
-      headerH2: "Riverside's best flight school",
+      headerH2: "Why you should become a pilot",
     },
 
     features: {
       upperHeading: "Why Choose NextGen Flight Academy?",
-      heading: "We're the best flight school in Riverside",
+      heading: "Why should I train with NextGen?",
       headingText:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
       card1: {
-        title: "Experienced Instructors",
+        title: "Unmatched Training Standards",
         description:
-          "Our instructors have thousands of hours of flight experience. They are passionate about teaching and will help you achieve your goals.",
+          "NextGen Flight Academy offers both FAA Part 141 and Part 61 approved programs. Our rigorous Gleim syllabus ensures you receive a top-quality education, covering everything from Private Pilot to Airline Transport Pilot ratings.",
       },
       card2: {
-        title: "Learn in Modern Aircraft",
-        description:
-          "Our fleet of aircraft is modern and well-maintained. You'll learn to fly in the same type of aircraft you'll be flying as a professional pilot.",
-      },
-      card3: {
         title: "Flexible Scheduling",
         description:
-          "We offer flexible scheduling to accommodate your busy life. You can train full-time or part-time, depending on your availability.",
+          "We understand the demands of our students' schedules. Our instructors are available for lessons before and after office hours, providing you with the flexibility to learn at your own pace.",
+      },
+      card3: {
+        title: "Reliable and Advanced Fleet",
+        description:
+          "Our modern fleet includes a variety of aircraft such as Cessna 172s, Cessna 152s, Piper Warriors, and Beechcraft Duchess. These well-maintained planes ensure a safe and efficient learning experience.",
       },
       card4: {
-        title: "Competitive Pricing",
+        title: "Prime Locations",
         description:
-          "We offer competitive pricing on all of our training programs. We also offer financing options to help you achieve your dream of becoming a pilot.",
+          "With training facilities at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI), you have access to 320 flying days a year in Southern California's favorable weather. Enjoy scenic flights over Catalina Island, the Hollywood Sign, and other local landmarks.",
       },
     },
 
     discoveryCTA: {
-      heading: "Start Now",
-      text: "Schedule a discovery flight and see if flying is for you.",
-      imagePath: "/src/assets/nextgen-flight-academy-discovery-flight.jpg",
-      imageAlt: "NextGen Flight Academy Discovery Flight",
-      buttonText: "Schedule a Discovery Flight",
-      buttonLink: "/contact",
+      heading: "Fly Today",
+      text: "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
+      imagePath:
+        "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
+      imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
+      buttonText: "Schedule an Intro Flight",
+      buttonLink: "/intro-flight",
+    },
+
+    quizCTA: {
+      heading: "Have What It Takes?",
+      text: "Learn what it’s like to fly, and see if you have what it takes to be a pilot!",
+      imagePath:
+        "/src/assets/completing-a-checkride-at-nextgen-flight-academy.jpg",
+      imageAlt: "completing-a-checkride-at-nextgen-flight-academy",
+      buttonText: "Take the Quiz",
+      buttonLink: "/quiz-form",
     },
 
     whyPilot: {
-      upperHeading: "Love to Fly?",
-      heading: "Why Become a Pilot?",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-      buttonText: "Schedule a Discovery Flight",
+      upperHeading: "Learn to Fly",
+      heading: "Becoming a Pilot",
+      description: [
+        "Choosing to become a pilot is a decision filled with excitement, commitment, and promise. Whether a career or a recreational hobby, the world of flight is a true gem for those who reach their flight training goals. The reasons to become a pilot are endless, but we can provide you with some of the most important to us.",
+        "Learn more about pilot training by booking a visit to NextGen Flight Academy today.",
+      ],
+      buttonText: "Visit NextGen",
       buttonLink: "/contact",
       reasons: [
         {
-          title: "Freedom",
+          title: "Freedom and Adventure",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-        },
-        {
-          title: "Adventure",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+            "Piloting gives you the freedom to explore new destinations and experience the world from above. Imagine flying over iconic locations such as Catalina Island, Dana Point, the Hollywood Sign, or Disneyland. Every flight presents a new adventure, allowing you to visit places like Big Bear Lake and other scenic areas around Riverside and Redlands, CA. This sense of adventure and exploration is unparalleled, making every journey an exciting and rewarding experience.",
         },
         {
           title: "Career Opportunities",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+            "The aviation industry is rapidly expanding, leading to a high demand for skilled pilots. This growth opens up diverse career paths in commercial airlines, private charters, and cargo transportation, offering stability and advancement. With continuous technological advancements and an ever-increasing need for air travel, becoming a pilot can provide long-term career security. Additionally, pilots have the opportunity to transition into various roles within the industry, such as flight instruction, airline management, and more.",
+        },
+        {
+          title: "Personal Achievement",
+          description:
+            "Earning your wings is a significant personal milestone. The rigorous training and discipline required to become a pilot instill a sense of pride and accomplishment, making it a highly rewarding profession both personally and professionally. The journey to becoming a pilot involves mastering complex skills, passing challenging exams, and maintaining high standards of performance. Training at our Riverside and Redlands locations, surrounded by the supportive aviation community and beautiful landscapes, can further enhance your learning experience and personal growth too.",
         },
       ],
     },
 
     testimonials: {
-      upperHeading: "Testimonials",
-      heading: "Our Students Love Us",
+      upperHeading: "Praise for NextGen",
+      heading: "Hear From Our Students",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-      buttonText: "Schedule a Discovery Flight",
-      buttonLink: "/contact",
+        "Training at NextGen Flight Academy extends beyond a flight training syllabus and checkrides. We strive to make our community a family of aviation enthusiasts. Without a comfortable training environment, we don’t believe success would be as possible… or as fun!",
+      buttonText: "Book an Intro Flight",
+      buttonLink: "/intro-flight",
       reviews: [
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "John Doe",
+          body: "NextGen is a great place to learn to fly. The owner, employees, and all CFI's are wonderful people to talk to. Everyone there goes above and beyond the standards of other flight schools to make sure they give the students the best possible experience when learning to fly. I would recommend this flight school to anyone!",
+          author: "Landry B.",
         },
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "Jane Doe",
+          body: "It has gotten a little busy (but very workable!) at NextGen, and for good reason. They are professionals, and they go the extra mile to help you. If you want a personable, responsive school that will train you right, address any questions and get you there, you've come to the right place. I've had great experiences with all of the staff and instructors, they always raise the bar and amaze me. The instructors will always level with you, and encourage you, and it's a rare talent to do both consistently. And remember: Anyone named Amanda has got your back. :)",
+          author: "Ryan P.",
         },
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "John Foe",
+          body: "Unreal experience! Been wanting to fly planes since I was a kid, and man was this an incredible treat. Got to take off, pull some G's, and land a real plane all in my first lesson! Great price for a great experience, with a great instructor!",
+          author: "Matt L.",
         },
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "Jane Foe",
+          body: "Next Gen Flight Academy is a spot I will always recommend!! My kids and I showed up at the Riverside location this afternoon… It was awesome! The flight lasted a little over an hour round trip. And our instructor let us know that we were flying 120 mph on our way back. It was an overall really great experience. I'm definitely doing another 'intro flight' to Catalina Island next time!!!",
+          author: "Roseanna T. ",
         },
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "Peter Parker",
+          body: "Had the opportunity to fly today with Nextgen Flight Academy and I must say I’m falling short of words to describe the experience I had. It was just so great and exhilarating. I took the intro flight and simulator program. My flight instructor Mr. Devin was so friendly and helped me all the way from the simulator till the actual flight experience. I was actually surprised to know that not many knew about this cool place.",
+          author: "Gunjan A.",
         },
         {
-          body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
-          author: "Tony Stark",
+          body: "I set up a flight experience for my dad, who back in the day, had his pilot's license. I thought it would be a fun experience to celebrate his retirement. The instructor treated my dad like family, gave him a tour of the facility,  and made sure he was happy during the flight. My dad had the best experience ever and has sent over a ton of beautiful pictures! I’m definitely going to be sending my dad back for Father’s Day or another holiday!",
+          author: "Alexandria M.",
+        },
+        {
+          body: "For 4.5 years, I have been actively pursuing my instrument rating license. I have been through many institutions, instructors, and programs. However, one terrible experience after another had left me greatly discouraged and with huge losses of time and money. It wasn’t until I started at NextGen that I found a place with people who would invest in, cultivate, and add to my already hard-earned knowledge and skills. Brandon, Aleksa, Luis, and the rest of the staff genuinely cared for me, treated me with respect, and didn’t take advantage of me as a customer/student.",
+          author: "Sam M.",
         },
       ],
     },

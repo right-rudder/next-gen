@@ -1,6 +1,5 @@
 ---
 import "../styles/global.css";
-import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title: string;
@@ -67,14 +66,12 @@ const {
 
 <link rel="sitemap" href="/sitemap-index.xml" />
 
-<ViewTransitions fallback="animate" />
-
 <!-- UPDATE GTAG PLEASE -->
 <!-- Google tag (gtag.js) -->
 <script
   type="text/partytown"
   async
-  src="https://www.googletagmanager.com/gtag/js?id=YOURIDGOESHERE"></script>
+  src="https://www.googletagmanager.com/gtag/js?id=G-XGVTWZSEFH"></script>
 <script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
@@ -82,7 +79,7 @@ const {
   }
   gtag("js", new Date());
 
-  gtag("config", "YOURIDGOESHERE");
+  gtag("config", "G-XGVTWZSEFH");
 </script>
 
 <!-- NEED TO UPDATE SCHEMA -->
@@ -91,19 +88,19 @@ const {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
     "name": "NextGen Flight Academy",
-    "description": "Discover top-notch flight training at NextGen Flight Academy in Oklahoma City. Since 1995, we've been helping aspiring pilots achieve their dreams with FAA-certified instructors, competitive rates, and comprehensive programs including private pilot training, instrument rating courses, and commercial pilot license training. Join our professional flight school in Yukon, OK, and take the first step towards your aviation career.",
-    "keywords": "flight school, flight training, pilot training, pilot school, flight lessons, flight instruction, flight instructor, flight school near me, flight training near me, pilot training near me, pilot school near me, flight lessons near me, flight instruction near me, flight instructor near me",
-    "image": "pending",
-    "logo": "./NG Logo White Background 2.jpg",
-    "telephone": "(405) 789-1234",
+    "description": "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+    "keywords": "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+    "image": "./next-gen-logo.png",
+    "logo": "./next-gen-logo.png",
+    "telephone": "877-551-1110",
     "email": "customerservice@nextgenflightacademy.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "13000 N Sara Rd",
-      "addressLocality": "Yukon",
-      "addressRegion": "OK",
+      "streetAddress": "6951 Flight Road Suite 106",
+      "addressLocality": "Riverside",
+      "addressRegion": "CA",
       "addressCountry": "US",
-      "postalCode": "73099"
+      "postalCode": "92504​"
     },
     "currenciesAccepted": "USD",
     "paymentAccepted": "Cash, Credit Card, Visa, Mastercard, American Express, Discover, Checks",
@@ -111,42 +108,41 @@ const {
       "@type": "GeoCircle",
       "geoMidpoint": {
         "@type": "GeoCoordinates",
-        "latitude": 35.60320320498056,
-        "longitude": -97.7079658306885
+        "latitude": 33.95089726807398,
+        "longitude": -117.44593563235975
       },
       "geoRadius": 9000
     },
     "aggregateRating": {
       "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "14"
+      "ratingValue": "4.6",
+      "reviewCount": "39"
     },
     "url": "https://flyhere.aero/",
     "priceRange": "$",
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 35.60320320498056,
-      "longitude": -97.7079658306885
+      "latitude": 33.95089726807398,
+      "longitude": -117.44593563235975
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "08:00",
-        "closes": "17:00"
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday"],
+        "opens": "07:00",
+        "closes": "16:00"
       },
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "12:00",
-        "closes": "17:00"
+        "dayOfWeek": ["Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "16:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Saturday", "Sunday"],
+        "opens": "09:00",
+        "closes": "15:30"
       }
     ],
     "makesOffer": {
@@ -158,27 +154,23 @@ const {
       "priceCurrency": "USD",
       "price": "Varies"
     },
-    "memberOf": {
-      "@type": "Organization",
-      "name": "Cessna Pilot Center"
-    },
     "identifier": [
       {
         "@type": "PropertyValue",
         "name": "IATA Code",
-        "value": "HSD"
+        "value": "RAL"
       },
       {
         "@type": "PropertyValue",
         "name": "ICAO Code",
-        "value": "KHSD"
+        "value": "KRAL"
       },
       {
         "@type": "PropertyValue",
         "name": "Airport Code",
-        "value": "HSD"
+        "value": "RAL"
       }
     ],
-    "hasMap": "https://www.google.com/maps/place/13000+N+Sara+Rd,+Yukon,+OK+73099"
+    "hasMap": "https://maps.app.goo.gl/8PRRgEk2GMmxv4bV9"
   }
 </script>

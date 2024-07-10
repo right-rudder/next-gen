@@ -25,11 +25,13 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   keywords={data.pageKeywords}
 >
   <section
-    class="px-6 pt-12 pb-36 min-h-screen bg-gradient-to-t from-accent/40 to-primary/70"
+    class="px-6 pt-12 pb-16 lg:pb-4 min-h-screen bg-gradient-to-tr from-primary/40 to-primary/70"
   >
     <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-4">
-        <div class="col-span-1 px-8 text-right mt-16">
+      <div class="flex flex-wrap justify-center align-top items-start">
+        <div
+          class="order-last w-full lg:w-1/4 lg:order-first px-8 text-right mt-16"
+        >
           <h3 class="text-primary-dark text-2xl font-semibold mt-10">
             {data.locations[0].title}
           </h3>
@@ -57,7 +59,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
         </div>
         <form
           id="contact-form"
-          class="flex flex-col max-w-2xl mx-auto gap-5 mt-12 p-4 lg:p-12 bg-white/30 col-span-2 shadow-xl h-full"
+          class="flex flex-col rounded-b-xl max-w-2xl mx-auto gap-5 mt-8 lg:mt-12 p-4 lg:p-12 bg-white/30 w-full lg:w-1/2 shadow-xl h-full"
         >
           <h2 class="text-primary-dark text-5xl font-extrabold mx-auto w-fit">
             Get in touch
@@ -67,14 +69,14 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
               type="text"
               name="first-name"
               placeholder="Your first name"
-              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
               required
             />
             <input
               type="text"
               name="last-name"
               placeholder="Your last name"
-              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
               required
             />
           </div>
@@ -84,20 +86,20 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
               type="email"
               name="email"
               placeholder="Your email"
-              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
               required
             />
             <input
               type="email"
               name="confirm-email"
               placeholder="Confirm email"
-              class="hidden px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
+              class="hidden px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
             />
             <input
               type="tel"
               name="phone"
               placeholder="Your phone number"
-              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 rounded-full placeholder:text-primary/60"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
               required
             />
           </div>
@@ -106,8 +108,57 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
             required
             name="message"
             placeholder="Your message"
-            class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 rounded-xl min-h-48 placeholder:text-primary/60"
+            class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 min-h-48 placeholder:text-primary/60"
           ></textarea>
+
+          <div class="">
+            <div class="mt-10 space-y-10"></div>
+            <fieldset
+              class="flex flex-col justify-center items-center align-middle mt-4"
+            >
+              <legend class="mb-2 text-gray-800 text-center w-full">
+                Would you like schedule a visit to NextGen Flight Academy?
+              </legend>
+
+              <div>
+                <div>
+                  <input
+                    type="radio"
+                    class="mx-2"
+                    id="yes-visit"
+                    name="visit-nextgen"
+                    value="yes-visit"
+                    required
+                  />
+                  <label for="yes-visit">Yes</label>
+                </div>
+                <input
+                  type="radio"
+                  class="mx-2"
+                  id="no-visit"
+                  name="visit-nextgen"
+                  value="no-visit"
+                  required
+                />
+                <label for="no-visit">No</label>
+              </div>
+            </fieldset>
+            <div
+              id="location-container"
+              class="hidden flex-col justify-center items-center align-middle"
+            >
+              <label for="visit-location">Choose a location:</label>
+
+              <select
+                name="visit-location"
+                id="visit-location"
+                class="w-36 px-3 py-2 border border-gray-400 text-center"
+              >
+                <option value="riverside">Riverside</option>
+                <option value="redlands">Redlands</option>
+              </select>
+            </div>
+          </div>
 
           <div class="flex gap-3">
             <input
@@ -120,20 +171,19 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
               for="agree-data-collection"
               class="text-gray-800 text-sm lg:text-base"
             >
-              I agree to the terms & conditions provided by the company. By
-              providing my phone number, I agree to receive text messages from
-              NextGen Flight Academy.
+              {data.checkboxText}
             </label>
           </div>
           <button
             id="submit-button"
+            form="contact-form"
             disabled
             type="submit"
-            class="btn-primary mt-8 mx-auto cursor-not-allowed bg-primary-darkhover:bg-gray-400"
+            class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
             >Send message</button
           >
         </form>
-        <div class="col-span-1 px-8 text-left mt-16">
+        <div class="w-full lg:w-1/4 px-8 text-left mt-16">
           <h3 class="text-primary-dark text-2xl font-semibold mt-10">
             {data.locations[1].title}
           </h3>
@@ -163,7 +213,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
     </div>
   </section>
 
-  <section class="w-full flex overflow-hidden">
+  <section class="w-full flex flex-wrap overflow-hidden">
     <GoogleMaps gMapUrl={data.gMaps[0]} />
     <GoogleMaps gMapUrl={data.gMaps[1]} />
   </section>
@@ -171,6 +221,25 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
     const checkbox = document.getElementById("agree-data-collection");
     const submitButton = document.getElementById("submit-button");
+    const yesVisit = document.getElementById("yes-visit");
+    const noVisit = document.getElementById("no-visit");
+
+    yesVisit.addEventListener("change", function () {
+      if (yesVisit.checked) {
+        document
+          .getElementById("location-container")
+          .classList.remove("hidden");
+        document.getElementById("location-container").classList.add("flex");
+      } else {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    noVisit.addEventListener("change", function () {
+      if (noVisit.checked) {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
 
     checkbox.addEventListener("change", function () {
       if (checkbox.checked) {

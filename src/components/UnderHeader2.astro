@@ -1,0 +1,56 @@
+---
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const {
+  upperHeading,
+  heading,
+  description,
+  imagePath,
+  imageAlt,
+  linkText,
+  linkUrl,
+} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+if (!images[imagePath])
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
+---
+
+<section class="py-24 px-5">
+  <div
+    class="max-w-xl gap-10 lg:max-w-7xl mx-auto flex flex-col lg:flex-row items-center lg:gap-20"
+  >
+    <div class="flex-1 relative">
+      <Image
+        class="pr-6 object-cover object-center"
+        src={images[imagePath]()}
+        alt={imageAlt}
+        loading={"lazy"}
+      />
+      <div class="h-3/4 bg-accent absolute -z-10 -right-0 w-20 top-[12.5%]">
+      </div>
+    </div>
+    <div class="flex flex-col flex-1">
+      <h2 class="uppercase text-primary font-bold tracking-widest">
+        {upperHeading}
+      </h2>
+      <h3 class="text-5xl text-primary-dark font-bold leading-tight">
+        {heading}
+      </h3>
+      {
+        description.map((text) => (
+          <p class="text-gray-500 leading-relaxed mt-3">{text}</p>
+        ))
+      }
+      <div class="mt-12 flex flex-col sm:flex-row items-center gap-5">
+        <a href={linkUrl} class="btn-primary btn-animate block"
+          ><span class="relative z-10">{linkText}</span></a
+        >
+      </div>
+    </div>
+  </div>
+</section>

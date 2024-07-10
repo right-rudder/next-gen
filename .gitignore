@@ -1,5 +1,8 @@
 node_modules
-node_modules
-.DS_Store
-/.DS_Store
 /dist
+.env
+public/.DS_Store
+src/assets/.DS_Store
+src/.DS_Store
+.DS_Store
+src/.DS_Store

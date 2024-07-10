@@ -23,9 +23,13 @@ const { content } = Astro.props;
           </h3>
         )
       }
-      <p class="text-gray-500 font-sans1 leading-relaxed my-5 px-4 lg:py-0">
-        {content.description}
-      </p>
+      {
+        content.description.map((text) => (
+          <p class="text-gray-500 font-sans1 leading-relaxed my-5 mt-2 pr-5 lg:py-0">
+            {text}
+          </p>
+        ))
+      }
       <a
         href={content.buttonLink}
         class="mx-auto lg:mx-0 btn-primary btn-animate"

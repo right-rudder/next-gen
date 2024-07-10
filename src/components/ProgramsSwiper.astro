@@ -22,8 +22,8 @@ const { content } = Astro.props;
     }
   </div>
   <div class="slider-row">
-    <div class="swiper creativeSwiper magic-cursor">
-      <div class="swiper-wrapper">
+    <div class="swiper creativeSwiper magic-cursor w-full h-full">
+      <div class="swiper-wrapper pb-8">
         {
           content.cards.map((program) => (
             <div class="swiper-slide">
@@ -38,6 +38,9 @@ const { content } = Astro.props;
           ))
         }
       </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </div>
 </section>

@@ -1,30 +1,33 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, KEYWORDS, IMAGE } from "../consts";
 import "@fontsource-variable/raleway";
 import "@fontsource/poppins";
 import "@fontsource-variable/exo-2";
 import "@fontsource-variable/oswald";
 import Navbar from "../components/Navbar";
 import ChatWidget from "../components/ChatWidget.astro";
+import Banner from "../components/Banner.astro";
 
 const { pathname } = Astro.url;
 const { siteTitle, siteDescription, keywords } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth" transition:animate="none">
+<html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
       title={siteTitle || SITE_TITLE}
       description={siteDescription || SITE_DESCRIPTION}
       keywords={keywords || KEYWORDS}
+      image={IMAGE}
     />
   </head>
   <body class="font-sans">
+    <Banner class="z-40" />
     <Navbar pathname={pathname} client:load />
-    <main transition:animate="none">
+    <main>
       <slot />
     </main>
     <Footer />

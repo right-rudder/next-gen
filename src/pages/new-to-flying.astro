@@ -6,6 +6,7 @@ import TryFlyingCTA from "../components/TryFlyingCTA.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import WhyPilot from "../components/WhyPilot.astro";
 import IntroFlightTestimonials from "../components/IntroFlightTestimonials.astro";
+import QuizCTA from "../components/QuizCTA.astro";
 
 const { data } = newToFlying;
 ---
@@ -17,12 +18,14 @@ const { data } = newToFlying;
 >
   <HeaderScreen content={data.header} />
 
+  <WhyPilot content={data.whyPilot} />
+
   <Features content={data.features} />
 
   <TryFlyingCTA content={data.discoveryCTA} />
 
-  <WhyPilot content={data.whyPilot} />
-
   <IntroFlightTestimonials content={data.testimonials} />
+
+  <QuizCTA content={data.quizCTA} />
 </BaseLayout>
 <script src="../scripts/SliderOnePerView.js"></script>

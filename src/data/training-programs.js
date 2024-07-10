@@ -1,129 +1,134 @@
 const trainingPrograms = {
   data: {
     //SEO Header Stuff
-    pageTitle: "XYZ Flight School in Rudderville, RRM",
-    pageDescription: "meta description goes here",
+    pageTitle: "Training Programs | NextGen Flight Academy",
+    pageDescription:
+      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
-      "add keywords here.  take a look at the consts.ts file for more guidance on keywords",
+      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
     //top header
     header: {
-      imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
-      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
-      headerH1: "Training Programs",
-      headerH2: "Riverside's best flight school",
+      imagePath:
+        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
+      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+      headerH1: "Pilot Training Programs",
+      headerH2:
+        "Start flying, complete your ratings, and earn your endorsements",
     },
     underHeader: {
-      upperHeading: "Our Programs",
-      heading: "Flight Training Programs",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-      cards: [
-        {
-          title: "Meet The Team",
-          body: "Reach out and connect with a member of the High Tide team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those dreams.",
-          linkText: "Contact Us",
-          linkHref: "/contact",
-        },
-        {
-          title: "Visit NextGen",
-          body: "Come and see our facilities and fleet at either of our locations. Experience a discovery flight with one of our Certified Flight Instructors (CFIs) and get a real feel of what it’s like to train and fly with High Tide Aviation.",
-          linkText: "Book a Visit",
-          linkHref: "/contact",
-        },
-        {
-          title: "Start Flying",
-          body: "Whether you aim to fly as a career or just for the sheer joy of it, High Tide Aviation is here to equip you with the skills and knowledge needed to be a safe and proficient pilot.",
-          linkText: "Enroll Now",
-          linkHref: "/contact",
-        },
+      upperHeading: "Featured Program",
+      heading: "Career Track Pilot Training",
+      description: [
+        "Our Career Track program (also known as a “Zero to Hero” program) takes you from no flying experience to becoming a professional pilot. This start-to-finish course prepares you for a career in aviation, offering opportunities in commercial aviation, airlines, and more.",
+        "Submit your enrollment interest today to learn more about our timelines and training structure.",
       ],
+      imagePath: "/src/assets/redlands-plane-on-dry-lake.jpg",
+      imageAlt: "redlands-plane-on-dry-lake",
+      linkText: "Enroll with NextGen",
+      linkUrl: "/contact",
     },
     programs: {
       upperHeading: "Explore",
       heading: "Our Programs",
       cards: [
         {
-          title: "Private Pilot",
-          imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          title: "Private Pilot Certificate",
+          imagePath:
+            "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
+          imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "The Private Pilot Certificate (PPL) is your first step in flight training, allowing you to fly solo or with passengers under Visual Flight Rules (VFR). It enables you to rent and pilot aircraft for personal use, recreational flying, and travel.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
           title: "Instrument Rating",
-          imagePath: "/src/assets/dominik-dancs-3Eqc3Ph4oRg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          imagePath:
+            "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
+          imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
-          title: "Commercial Pilot",
-          imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          title: "Commercial Pilot Certificate",
+          imagePath:
+            "/src/assets/commercial-pilot-program-nextgen-flight-academy.jpg",
+          imageAlt: "commercial-pilot-program-nextgen-flight-academy",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
           title: "Multi-Engine Rating",
-          imagePath: "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          imagePath:
+            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
+          imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
-        },
-        {
-          title: "Airline Transport Pilot",
-          imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
-          description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
           title: "Flight Instructor (CFI, CFII, MEI)",
-          imagePath: "/src/assets/dominik-dancs-3Eqc3Ph4oRg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          imagePath: "/src/assets/flight-instructor-training-redlands-ca.jpg",
+          imageAlt: "flight-instructor-training-redlands-ca",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education and mentoring. You can specialize as a Certified Flight Instructor (CFI), Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
+          link: "/enrollment",
+          linkText: "Enroll Now",
+        },
+        {
+          title: "Airline Transport Pilot",
+          imagePath:
+            "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
+          imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
+          description:
+            "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
           title: "High Performance Endorsement",
-          imagePath: "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
-          description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+          imagePath:
+            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
+          imageAlt: "planes-flying-over-san-bernadino-ca",
+          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
           title: "High Altitude Endorsement",
-          imagePath: "/src/assets/tom-barrett-hgGplX3PFBg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
-          description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+          imagePath: "/src/assets/high-altitude-endorsement.jpg",
+          imageAlt: "high-altitude-endorsement",
+          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
         {
-          title: "Complex​ Endorsement",
-          imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
-          imageAlt: "Lorem Ipsum Dolor Sit Amet",
+          title: "Complex Endorsement",
+          imagePath:
+            "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
+          imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
-            "Lorem Ipsum Dolor Sit Amet, consectetur adipiscing elit.",
-          link: "/training-programs",
+            "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
+          link: "/enrollment",
+          linkText: "Enroll Now",
         },
       ],
     },
     enrollCTA: {
-      heading: "Let's Get Started?",
-      subheading: "Submit your enrollment interest today",
-      linkText: "Enroll Now",
-      linkUrl: "/contact",
-      imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
-      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+      heading: "Want a Test Ride?",
+      subheading:
+        "Book an intro flight to see if flight school is right for you",
+      linkText: "Book an Intro Flight",
+      linkUrl: "/intro-flight",
+      imagePath:
+        "/src/assets/nextgen-flight-academy-staff-flying-over-riverside-ca.jpg",
+      imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",
     },
   },
 };
