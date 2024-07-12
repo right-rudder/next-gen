@@ -1,53 +1,62 @@
 ---
-const { data, slug } = Astro.props;
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-import { FaCheck } from "react-icons/fa";
+
+const {
+  title,
+  imagePath,
+  imageAlt,
+  link,
+  linkText = "Explore",
+  description,
+} = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
+  "/src/assets/*.{jpeg,jpg,png,gif}"
 );
-if (!images[data.imagePath]) {
+if (!images[imagePath])
   throw new Error(
-    `"${data.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   );
-}
 ---
 
-<a
-  href=`/acquisitions-sales/${slug}`
-  class="flex max-w-sm gap-2 group outline outline-dark-blue flex-col rounded-sm p-8 text-dark-blue hover:scale-[1.02] duration-200 relative"
->
-  {
-    data.hasRibbon && data.ribbonTitle && (
-      <div class="absolute right-[-5px] rtl:right-auto rtl:left-[-8px] top-[-5px] z-[1] h-[100px] w-[100px] overflow-hidden text-right">
-        <span
-          class={`absolute top-[19px] right-[-21px] rtl:right-auto rtl:left-[-21px] block w-full rotate-45 rtl:-rotate-45 ${data.ribbonColor} text-center text-[10px] font-bold uppercase leading-5 text-white shadow-[0_3px_10px_-5px_rgba(0,0,0,0.3)] before:absolute before:left-0 before:top-full before:z-[-1] before:border-[3px] before:border-r-transparent before:border-b-transparent before:border-l-green-800 before:border-t-green-800 before:content-[''] after:absolute after:right-0 after:top-full after:z-[-1] after:border-[3px] after:border-l-transparent after:border-b-transparent after:border-r-green-800 after:border-t-green-800 after:content-['']`}
-        >
-          {data.ribbonTitle}
-        </span>
-      </div>
-    )
-  }
-  <h2 class="font-extrabold text-2xl h-16 line-clamp-2">
-    {data.year}
-    {data.model}
-  </h2>
-
-  <div class="flex-1 flex">
-    <Image
-      src={images[data.imagePath]()}
-      alt={data.alt}
-      class="h-full w-full object-cover aspect-video max-h-[8rem]"
-      quality={50}
-    />
-  </div>
-  <p class="font-semibold text-xl">{data.price}</p>
+<div class="flex flex-col bg-white group relative overflow-hidden">
   <div
-    class="flex-1 text-dark-blue flex flex-col max-h-[28rem] justify-between"
+    class="w-full h-[27rem] overflow-hidden flex flex-col justify-center items-center align-middle"
   >
-    <p class="line-clamp-4 paragraph text-sm">{data.description[0]}</p>
-    <button class="btn-dark-blue mt-5 block w-full group-hover:bg-red-700"
-      >More info</button
+    <p
+      class="z-10 w-full px-6 text-3xl lg:translate-y-12 drop-shadow-md text-center leading-tight text-white group-hover:-translate-y-3 duration-300 ease-in-out"
+      set:html={title}
+    />
+    {
+      description && (
+        <p
+          class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out"
+          set:html={description}
+        />
+      )
+    }
+    <Image
+      src={images[imagePath]()}
+      alt={imageAlt}
+      class="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-105 duration-100 ease-out"
+      quality={60}
+    />
+    <div
+      class="absolute z-0 w-full h-full bg-black/30 group-hover:bg-black/50 duration-500"
     >
+    </div>
   </div>
-</a>
+  <a
+    href={link}
+    target="_self"
+    class="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+  >
+    <div class="flex h-full w-full justify-center align-middle items-center">
+      <p
+        class="relative z-10 text-center text-lg tracking-wide font-bold leading-loose text-white uppercase"
+      >
+        {linkText}
+      </p>
+    </div>
+  </a>
+</div>
