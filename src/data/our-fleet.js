@@ -16,98 +16,123 @@ const ourFleet = {
       headerH2:
         "Explore our aircraft at NextGen Flight Academy and learn to fly with the best",
     },
-    programs: {
-      upperHeading: "Explore",
-      heading: "Our Fleet",
-      cards: [
-        {
-          title: "Private Pilot Certificate",
-          imagePath:
-            "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-          imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
-          description:
-            "The Private Pilot Certificate (PPL) is your first step in flight training, allowing you to fly solo or with passengers under Visual Flight Rules (VFR). It enables you to rent and pilot aircraft for personal use, recreational flying, and travel.",
-          link: "/training-programs/private-pilot",
-          linkText: "Explore PPL",
-        },
-        {
-          title: "Instrument Rating",
-          imagePath:
-            "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
-          imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
-          description:
-            "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
-          link: "/training-programs/instrument-rating",
-          linkText: "Explore",
-        },
-        {
-          title: "Commercial Pilot Certificate",
-          imagePath:
-            "/src/assets/commercial-pilot-program-nextgen-flight-academy.jpg",
-          imageAlt: "commercial-pilot-program-nextgen-flight-academy",
-          description:
-            "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
-          link: "/training-programs/commercial-pilot",
-          linkText: "Explore",
-        },
-        {
-          title: "Multi-Engine Rating",
-          imagePath:
-            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
-          imageAlt: "multi-engine-plane-at-redlands-airport",
-          description:
-            "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
-          link: "/training-programs/multi-engine-rating",
-          linkText: "Explore",
-        },
-        {
-          title: "Flight Instructor (CFI, CFII, MEI)",
-          imagePath: "/src/assets/flight-instructor-training-redlands-ca.jpg",
-          imageAlt: "flight-instructor-training-redlands-ca",
-          description:
-            "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education and mentoring. You can specialize as a Certified Flight Instructor (CFI), Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
-          link: "/training-programs/certified-flight-instructor",
-          linkText: "Explore",
-        },
-        {
-          title: "Airline Transport Pilot",
-          imagePath:
-            "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
-          imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
-          description:
-            "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
-          link: "/training-programs/airline-transport-pilot",
-          linkText: "Explore",
-        },
-        {
-          title: "High Performance Endorsement",
-          imagePath:
-            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
-          imageAlt: "planes-flying-over-san-bernadino-ca",
-          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
-          link: "/training-programs/high-performance-endorsement",
-          linkText: "Explore",
-        },
-        {
-          title: "High Altitude Endorsement",
-          imagePath: "/src/assets/high-altitude-endorsement.jpg",
-          imageAlt: "high-altitude-endorsement",
-          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
-          link: "/training-programs/high-altitude-endorsement",
-          linkText: "Explore",
-        },
-        {
-          title: "Complex Endorsement",
-          imagePath:
-            "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
-          imageAlt: "completing-an-endorsement-at-riverside-airport",
-          description:
-            "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
-          link: "/training-programs/complex-endorsement",
-          linkText: "Explore",
-        },
-      ],
-    },
+
+    fleet: [
+      {
+        location: "Riverside Municipal Airport (RAL)",
+        aircraft: [
+          {
+            title: "Cessna 172",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
+            imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            description:
+              "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
+            link: "/training-programs/private-pilot",
+            linkText: "Details",
+          },
+          {
+            title: "Instrument Rating",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
+            imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
+            description:
+              "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
+            link: "/training-programs/instrument-rating",
+            linkText: "Explore",
+          },
+          {
+            title: "Commercial Pilot Certificate",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/commercial-pilot-program-nextgen-flight-academy.jpg",
+            imageAlt: "commercial-pilot-program-nextgen-flight-academy",
+            description:
+              "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
+            link: "/training-programs/commercial-pilot",
+            linkText: "Explore",
+          },
+          {
+            title: "Multi-Engine Rating",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
+            imageAlt: "multi-engine-plane-at-redlands-airport",
+            description:
+              "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
+            link: "/training-programs/multi-engine-rating",
+            linkText: "Explore",
+          },
+        ],
+      },
+      {
+        location: "Redlands Municipal Airport (REI)",
+        aircraft: [
+          {
+            title: "Flight Instructor (CFI, CFII, MEI)",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath: "/src/assets/flight-instructor-training-redlands-ca.jpg",
+            imageAlt: "flight-instructor-training-redlands-ca",
+            description:
+              "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education and mentoring. You can specialize as a Certified Flight Instructor (CFI), Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
+            link: "/training-programs/certified-flight-instructor",
+            linkText: "Explore",
+          },
+          {
+            title: "Airline Transport Pilot",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
+            imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
+            description:
+              "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
+            link: "/training-programs/airline-transport-pilot",
+            linkText: "Explore",
+          },
+          {
+            title: "High Performance Endorsement",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
+            imageAlt: "planes-flying-over-san-bernadino-ca",
+            description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
+            link: "/training-programs/high-performance-endorsement",
+            linkText: "Explore",
+          },
+          {
+            title: "High Altitude Endorsement",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath: "/src/assets/high-altitude-endorsement.jpg",
+            imageAlt: "high-altitude-endorsement",
+            description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
+            link: "/training-programs/high-altitude-endorsement",
+            linkText: "Explore",
+          },
+          {
+            title: "Complex Endorsement",
+            normalRate: 154.99,
+            blockRate: 149.99,
+            imagePath:
+              "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
+            imageAlt: "completing-an-endorsement-at-riverside-airport",
+            description:
+              "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
+            link: "/training-programs/complex-endorsement",
+            linkText: "Explore",
+          },
+        ],
+      },
+    ],
     enrollCTA: {
       heading: "Want a Test Ride?",
       subheading:
