@@ -1,9 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import ImageComp from "../../components/ImageComp.astro";
-import CTAcard from "../../components/CTAcard.astro";
 import UnderHeader from "../../components/UnderHeader.astro";
 import instrumentRating from "../../data/instrument-rating";
+import ProgramInfo from "../../components/ProgramInfo.astro";
 
 const { data } = instrumentRating;
 ---
@@ -15,120 +14,8 @@ const { data } = instrumentRating;
 >
   <!-- HEADER -->
   <div class="h-24 w-full bg-primary/70 brightness-75"></div>
-  <section
-    class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-6 lg:space-x-6 pb-12"
-  >
-    <div class="col-span-4 w-full h-full">
-      <div class="w-full h-auto my-6">
-        <ImageComp
-          imagePath={data.topImage.imagePath}
-          imageAlt={data.topImage.imageAlt}
-          quality={60}
-          styles="w-full h-full object-cover"
-        />
-      </div>
-      <h1 class="font-sans mt-16 text-6xl tracking-wide font-bold">
-        {data.program.header}
-      </h1>
-      <div class="my-8">
-        {
-          data.program.description.map((desc) => (
-            <p
-              class="font-sans1 text-base font-light leading-relaxed mt-4"
-              set:html={desc}
-            />
-          ))
-        }
-      </div>
-      <div class="my-8">
-        <h3
-          set:html={data.program.availability}
-          class="text-3xl italic uppercase font-bold text-center bg-primary/80 text-white py-3"
-        />
-      </div>
-      <div class="mt-12">
-        <h3 class="text-4xl font-bold my-4">Training Details</h3>
-        <p
-          class="my-4 text-lg"
-          set:html={data.program.trainingDetails.description}
-        />
-        <ul>
-          <li
-            class="flex justify-between items-center align-middle border-t-2 py-6"
-          >
-            <span class="text-2xl font-semibold">Program Prerequisites: </span>
-            <ul class="list-disc w-full lg:w-1/2">
-              {
-                data.program.trainingDetails.requisites.map((req) => (
-                  <li class="font-sans1 text-base font-light leading-relaxed">
-                    {req}
-                  </li>
-                ))
-              }
-            </ul>
-          </li>
-          <li
-            class="flex justify-between items-center align-middle border-t-2 py-6"
-          >
-            <span class="text-2xl font-semibold">Training Aircraft: </span>
-            <ul class="list-disc w-full lg:w-1/2">
-              {
-                data.program.trainingDetails.aircraft.map((req) => (
-                  <li class="font-sans1 text-base font-light leading-relaxed">
-                    {req}
-                  </li>
-                ))
-              }
-            </ul>
-          </li>
-          <li
-            class="flex justify-between items-center align-middle border-y-2 py-6"
-          >
-            <span class="text-2xl font-semibold">Starting Price: </span>
-            <span class="w-full lg:w-1/2"
-              >$ {data.program.trainingDetails.startingPrice}</span
-            >
-          </li>
-        </ul>
-        <a
-          href={data.program.trainingDetails.buttonLink}
-          class="btn-primary btn-animate block mt-8 text-center"
-          ><span class="relative z-10 text-xl">
-            {data.program.trainingDetails.buttonText}
-          </span>
-        </a>
-      </div>
-    </div>
-    <div
-      class="col-span-2 w-full h-full flex flex-col justify-start align-top items-start"
-    >
-      <div class="mx-auto my-6 border-y-2 border-primary/70 w-3/4">
-        <ul class="py-3">
-          {
-            data.program.related.map((detail) => (
-              <li class="font-sans1 text-base font-light leading-relaxed group hover:bg-gradient-to-br hover:from-primary hover:to-primary-dark/60 duration-200">
-                <a
-                  href={detail.link}
-                  class="px-2 group-hover:text-white duration-100"
-                >
-                  {detail.title}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-      <div class="mx-auto my-12 w-3/4">
-        <CTAcard
-          title={data.CTAcard.title}
-          imagePath={data.CTAcard.imagePath}
-          imageAlt={data.CTAcard.imageAlt}
-          link={data.CTAcard.link}
-          linkText={data.CTAcard.linkText}
-          description={data.CTAcard.description}
-        />
-      </div>
-    </div>
-  </section>
+
+  <ProgramInfo data={data} />
+
   <UnderHeader content={data.underHeader} />
 </BaseLayout>

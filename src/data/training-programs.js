@@ -59,8 +59,8 @@ const trainingPrograms = {
           imageAlt: "commercial-pilot-program-nextgen-flight-academy",
           description:
             "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/commercial-pilot",
+          linkText: "Explore",
         },
         {
           title: "Multi-Engine Rating",
@@ -69,8 +69,8 @@ const trainingPrograms = {
           imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
             "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/multi-engine-rating",
+          linkText: "Explore",
         },
         {
           title: "Flight Instructor (CFI, CFII, MEI)",
@@ -78,8 +78,8 @@ const trainingPrograms = {
           imageAlt: "flight-instructor-training-redlands-ca",
           description:
             "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education and mentoring. You can specialize as a Certified Flight Instructor (CFI), Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/certified-flight-instructor",
+          linkText: "Explore",
         },
         {
           title: "Airline Transport Pilot",
@@ -88,8 +88,8 @@ const trainingPrograms = {
           imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
           description:
             "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/airline-transport-pilot",
+          linkText: "Explore",
         },
         {
           title: "High Performance Endorsement",
@@ -97,16 +97,16 @@ const trainingPrograms = {
             "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/high-performance-endorsement",
+          linkText: "Explore",
         },
         {
           title: "High Altitude Endorsement",
           imagePath: "/src/assets/high-altitude-endorsement.jpg",
           imageAlt: "high-altitude-endorsement",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/high-altitude-endorsement",
+          linkText: "Explore",
         },
         {
           title: "Complex Endorsement",
@@ -115,8 +115,8 @@ const trainingPrograms = {
           imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
             "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
-          link: "/enrollment",
-          linkText: "Enroll Now",
+          link: "/training-programs/complex-endorsement",
+          linkText: "Explore",
         },
       ],
     },

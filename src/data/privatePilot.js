@@ -79,7 +79,7 @@ const privatePilot = {
           title: "Start Flying",
           body: "Whether you aim to fly as a career or just for the sheer joy of it, NextGen Flight Academy is here to equip you with the skills and knowledge needed to be a safe and proficient pilot.",
           linkText: "Enroll Now",
-          linkHref: "/contact",
+          linkHref: "/enrollment",
         },
       ],
     },

@@ -54,7 +54,7 @@ const homePage = {
           imagePath:
             "/src/assets/nextgen-flight-academy-fleet-at-riverside-ca.jpg",
           imageAlt: "nextgen-flight-academy-fleet-at-riverside-ca",
-          link: "/",
+          link: "/intro-flight",
           description: "Learn to fly with our experienced instructors.",
         },
       ],

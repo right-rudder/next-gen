@@ -8,8 +8,7 @@ const instrumentRating = {
       "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
     topImage: {
-      imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
+      imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -20,16 +19,16 @@ const instrumentRating = {
       availability: "Available at Riverside and Redlands",
       related: [
         {
-          title: "Instrument Rating",
-          link: "/training-programs/instrument-rating",
-        },
-        {
           title: "Commercial Pilot Certificate",
           link: "/training-programs/commercial-pilot",
         },
         {
-          title: "Certified Flight Instructor",
-          link: "/training-programs/certified-flight-instructor",
+          title: "Multi-Engine Rating",
+          link: "/training-programs/multi-engine-rating",
+        },
+        {
+          title: "Airline Transport Pilot",
+          link: "/training-programs/airline-transport-pilot",
         },
       ],
       trainingDetails: {
