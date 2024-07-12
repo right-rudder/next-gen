@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import UnderHeader from "../../components/UnderHeader.astro";
+import ProgramInfo from "../../components/ProgramInfo.astro";
+import airlineTransportPilot from "../../data/airline-transport-pilot";
+
+const { data } = airlineTransportPilot;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <div class="h-24 w-full bg-primary-dark brightness-75"></div>
+
+  <ProgramInfo data={data} />
+
+  <UnderHeader content={data.underHeader} />
+</BaseLayout>
