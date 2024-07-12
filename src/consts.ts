@@ -23,7 +23,7 @@ export const LOCATIONS = [
     state: "CA",
     zip: "92504​",
     gMaps: "https://maps.app.goo.gl/Ce95uuGW7nuxAhGD7",
-    phone: "877-551-1110",
+    phone: "+1 951-590-3572",
   },
   {
     title: "Redlands Location",
@@ -32,7 +32,7 @@ export const LOCATIONS = [
     state: "CA",
     zip: "92374",
     gMaps: "https://maps.app.goo.gl/LoGv3dpuEuMAmL2t5",
-    phone: "833-777-3500",
+    phone: "+1 951-468-9700",
   },
 ];
 
