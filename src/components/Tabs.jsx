@@ -1,0 +1,101 @@
+import { useState } from "react";
+
+const Tabs = ({ data }) => {
+  const [currentTab, setCurrentTab] = useState(data[0]);
+
+  return (
+    <div>
+      <div className="sm:hidden">
+        <label htmlFor="tabs" className="sr-only">
+          Select a tab
+        </label>
+        <select
+          id="tabs"
+          name="tabs"
+          className="block w-full border-gray-300 focus:border-primary focus:ring-primary"
+          defaultValue={currentTab.location}
+          onChange={(e) => setCurrentTab(e.target.value)}
+        >
+          {data.map((tab) => (
+            <option>{tab.location}</option>
+          ))}
+        </select>
+      </div>
+
+      <div className="hidden sm:block">
+        <div
+          className="isolate flex divide-x divide-gray-200 rounded-lg shadow"
+          aria-label="Tabs"
+        >
+          {data.map((tab) => (
+            <div
+              className={`${currentTab.location === tab.location ? "text-gray-900" : "text-gray-500 hover:text-primary-dark"} cursor-pointer group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-accent/10 duration-100 focus:z-10`}
+              onClick={() => setCurrentTab(tab)}
+            >
+              <span>{tab.location}</span>
+              <span
+                aria-hidden="true"
+                className={`${currentTab.location === tab.location ? "bg-primary" : "bg-transparent"} absolute inset-x-0 bottom-0 h-1`}
+              ></span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <section className="bg-gray-200 py-16 lg:py-24">
+        <div className="mx-auto max-w-9xl px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <ul
+              role="list"
+              className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            >
+              {currentTab.aircraft.map((plane) => (
+                <div className="flex flex-col bg-white group relative overflow-hidden">
+                  <div className="w-full h-[27rem] overflow-hidden flex flex-col justify-center items-center align-middle">
+                    <p className="z-10 w-full font-bold px-6 text-5xl lg:translate-y-12 drop-shadow-md text-center leading-tight text-white/80 group-hover:text-white group-hover:-translate-y-5 duration-300 ease-in-out">
+                      {plane.title}
+                    </p>
+                    <div className="z-10 w-1/2 px-6 text-lg text-accent lg:translate-y-12 drop-shadow-md text-center opacity-0 group-hover:opacity-100 leading-tight group-hover:-translate-y-5 duration-500 ease-in-out">
+                      <span>
+                        <small className="text-white">Normal Rate: </small>$
+                        <strong>{plane.normalRate}</strong>
+                      </span>
+                      <br />
+                      <span>
+                        <small className="text-white">Block Rate: </small>$
+                        <strong>{plane.blockRate}</strong>
+                      </span>
+                    </div>
+                    {plane.description && (
+                      <p className="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-100 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 ease-out">
+                        {plane.description}
+                      </p>
+                    )}
+                    <img
+                      src={plane.imagePath}
+                      alt={plane.imageAlt}
+                      className="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-110 duration-700 ease-out"
+                    />
+                    <div className="absolute z-0 w-full h-full bg-black/10 group-hover:bg-gray-900/70 duration-500"></div>
+                  </div>
+                  <a
+                    href={plane.link}
+                    target="_self"
+                    className="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+                  >
+                    <div className="flex h-full w-full justify-center align-middle items-center">
+                      <p className="relative z-10 text-center text-lg tracking-wide font-bold leading-loose text-white uppercase">
+                        {plane.linkText}
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Tabs;
