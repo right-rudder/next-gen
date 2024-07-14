@@ -3,6 +3,11 @@ import { useState } from "react";
 const Tabs = ({ data }) => {
   const [currentTab, setCurrentTab] = useState(data[0]);
 
+  const setLocation = (location) => {
+    const tab = data.find((tab) => tab.location === location);
+    setCurrentTab(tab);
+  };
+
   return (
     <div>
       <div className="sm:hidden">
@@ -14,7 +19,7 @@ const Tabs = ({ data }) => {
           name="tabs"
           className="block w-full border-gray-300 focus:border-primary focus:ring-primary"
           defaultValue={currentTab.location}
-          onChange={(e) => setCurrentTab(e.target.value)}
+          onChange={(e) => setLocation(e.target.value)}
         >
           {data.map((tab) => (
             <option>{tab.location}</option>
@@ -22,14 +27,14 @@ const Tabs = ({ data }) => {
         </select>
       </div>
 
-      <div className="hidden sm:block">
+      <div className="hidden sm:block sticky top-24 z-20">
         <div
           className="isolate flex divide-x divide-gray-200 rounded-lg shadow"
           aria-label="Tabs"
         >
           {data.map((tab) => (
             <div
-              className={`${currentTab.location === tab.location ? "text-gray-900" : "text-gray-500 hover:text-primary-dark"} cursor-pointer group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-accent/10 duration-100 focus:z-10`}
+              className={`${currentTab.location === tab.location ? "text-gray-900" : "text-gray-500 hover:text-primary-dark"} cursor-pointer group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-accent hover:text-gray-100 duration-200 ease-out focus:z-20`}
               onClick={() => setCurrentTab(tab)}
             >
               <span>{tab.location}</span>
@@ -42,6 +47,14 @@ const Tabs = ({ data }) => {
         </div>
       </div>
       <section className="bg-gray-200 py-16 lg:py-24">
+        <div className="mx-auto text-center mb-16">
+          <h3 className="font-bold text-5xl text-primary">
+            {currentTab.location}
+          </h3>
+          <p className="text-2xl mt-4 px-4 lg:px-16">
+            {currentTab.locationDescription}
+          </p>
+        </div>
         <div className="mx-auto max-w-9xl px-6 lg:px-8">
           <div className="mx-auto max-w-6xl">
             <ul

@@ -80,7 +80,7 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="w-full h-0 sticky inset-0 z-20 font-sans tracking-wider">
+    <nav className="w-full h-0 sticky inset-0 z-30 font-sans tracking-wider">
       <div
         className={`${
           navBar || openMobile
@@ -106,7 +106,7 @@ const Navbar = ({ pathname }) => {
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
-                      className={`${isActive(item, pathname) ? "btn-animate bg-primary rounded-tr-lg rounded-bl-lg block px-4 py-2" : ""} font-sans1 relative group last:no-underline last:px-0`}
+                      className={`${isActive(item, pathname) ? "decoration-transparent underline" : ""} font-sans1 relative group last:no-underline last:px-0`}
                       onMouseEnter={() => setHoveredIndex(index)}
                       onMouseLeave={() => setHoveredIndex(null)}
                     >

@@ -20,6 +20,8 @@ const ourFleet = {
     fleet: [
       {
         location: "Riverside Municipal Airport (RAL)",
+        locationDescription:
+          "The NextGen Flight Academy fleet includes Cessna 172s, Piper Arrow, Cessna 120, Duchess, and a Cessna 152. Thorough VFR and IFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time. Renters and students must carry renters insurance.",
         aircraft: [
           {
             title: "Cessna 172",
@@ -30,7 +32,7 @@ const ourFleet = {
             imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
-            link: "/training-programs/private-pilot",
+            link: "/our-fleet/cessna-172",
             linkText: "Details",
           },
           {
@@ -73,6 +75,8 @@ const ourFleet = {
       },
       {
         location: "Redlands Municipal Airport (REI)",
+        locationDescription:
+          "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172 and a Piper Warrior. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
         aircraft: [
           {
             title: "Flight Instructor (CFI, CFII, MEI)",
