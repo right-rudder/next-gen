@@ -1,0 +1,30 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import cessna172 from "../../data/cessna-172";
+import AircraftInfo from "../../components/AircraftInfo.astro";
+
+const { data } = cessna172;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <!-- <Header data={data.header} /> -->
+  <div class="h-24 w-full bg-primary-dark brightness-75"></div>
+
+  <AircraftInfo data={data.aircraft} />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>
