@@ -21,12 +21,26 @@ const cessna172 = {
       title: "Cessna 172",
       normalRate: 154.99,
       blockRate: 149.99,
+      images: [
+        {
+          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
+          imageAlt: "cessna-172-landing-at-airport",
+        },
+        {
+          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
+          imageAlt: "cessna-172-cockpit",
+        },
+        {
+          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
+          imageAlt: "cessna-172-interior",
+        },
+      ],
       rentUrl:
         "https://app.process.st/templates/NextGen-Aircraft-Checkout-qNoL_5yUWfBKy5Jd9PBNaw/checklists/run",
       documentation: [
         {
           docTitle: "Pilot Operating Handbook",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl: "/Cessna-172H-1967-POH.pdf",
         },
         {
           docTitle: "Weight & Balance",

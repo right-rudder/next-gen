@@ -1,11 +1,12 @@
 ---
 import { FaDownload } from "react-icons/fa";
+import ImageComp from "./ImageComp.astro";
 
 const { data } = Astro.props;
 ---
 
-<section class="mx-auto max-w-6xl w-full py-24 z-0">
-  <div class="grid grid-cols-1 lg:grid-cols-4 space-x-9">
+<section class="mx-auto max-w-7xl w-full lg:py-24 z-0">
+  <div class="grid grid-cols-1 lg:grid-cols-4">
     <div class="col-span-2 px-4 lg:px-12">
       <h1 class="text-primary text-6xl font-bold">{data.title}</h1>
       <p class="mt-6 leading-relaxed text-lg font-sans1">{data.description}</p>
@@ -22,6 +23,7 @@ const { data } = Astro.props;
               <li class="text-white">
                 <a
                   href={doc.docUrl}
+                  target="_blank"
                   class="flex font-sans1 w-fit text-xl mt-4 gap-x-2 items-center group hover:text-primary-dark duration-200 ease-out"
                 >
                   <FaDownload />
@@ -33,7 +35,11 @@ const { data } = Astro.props;
         </ul>
       </div>
       <div class="mt-8 w-full flex justify-center gap-x-8">
-        <a href={data.rentUrl} class="btn-primary block btn-animate">
+        <a
+          href={data.rentUrl}
+          target="_blank"
+          class="btn-primary block btn-animate"
+        >
           <span class="relative z-10">Rent with Us</span>
         </a>
         <a href="/enrollment" class="btn-primary-dark block btn-animate">
@@ -41,8 +47,42 @@ const { data } = Astro.props;
         </a>
       </div>
     </div>
-    <div class="col-span-2 px-4 lg:px-12 h-full">
-      <div class="bg-primary/70 mt-8 p-4 h-full"></div>
+    <div class="col-span-2 mt-8 lg:mt-0">
+      <div class="swiper mySwiper2 bg-gray-900">
+        <div class="swiper-wrapper">
+          {
+            data.images.map((image) => (
+              <div class="swiper-slide">
+                <ImageComp
+                  imagePath={image.imagePath}
+                  imageAlt={image.imageAlt}
+                  styles="object-cover w-full h-full"
+                  quality={90}
+                />
+              </div>
+            ))
+          }
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper bg-gray-900 py-3">
+          {
+            data.images.map((image) => (
+              <div class="swiper-slide">
+                <ImageComp
+                  imagePath={image.imagePath}
+                  imageAlt={image.imageAlt}
+                  styles="object-cover w-full h-full"
+                  quality={90}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<script src="../scripts/SwiperThumbnails.js"></script>
