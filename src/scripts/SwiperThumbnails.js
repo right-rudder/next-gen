@@ -14,6 +14,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   spaceBetween: 10,
+  effect: "fade",
   modules: [Navigation, Autoplay, Thumbs],
   autoplay: {
     delay: 2700,
