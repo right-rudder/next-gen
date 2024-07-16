@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import Header from "../../components/Header.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import ourFleet from "../../data/our-fleet";
-import Tabs from "../../components/Tabs";
+import FleetTabs from "../../components/FleetTabs";
 
 const { data } = ourFleet;
 ---
@@ -16,7 +16,7 @@ const { data } = ourFleet;
   <!-- HEADER -->
   <Header data={data.header} />
 
-  <Tabs data={data.fleet} client:load />
+  <FleetTabs data={data.fleet} client:load />
 
   <EnrollNowCTA
     heading={data.enrollCTA.heading}

@@ -21,6 +21,10 @@ const cessna172 = {
       title: "Cessna 172",
       normalRate: 154.99,
       blockRate: 149.99,
+      location: [
+        "Riverside Municipal Airport (RAL)",
+        "Redlands Municipal Airport (REI)",
+      ],
       images: [
         {
           imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
@@ -48,7 +52,8 @@ const cessna172 = {
         },
         {
           docTitle: "Renter’s Agreement",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl:
+            "https://docs.google.com/document/d/1c2laMGTFODpA9KyX-Vfyq2UPJ4dwCZQk/edit?usp=sharing&ouid=110319322993279427090&rtpof=true&sd=true",
         },
       ],
       description:
