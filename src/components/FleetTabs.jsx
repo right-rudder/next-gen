@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Tabs = ({ data }) => {
+const FleetTabs = ({ data }) => {
   const [currentTab, setCurrentTab] = useState(data[0]);
 
   const setLocation = (location) => {
@@ -17,6 +17,7 @@ const Tabs = ({ data }) => {
         <select
           id="tabs"
           name="tabs"
+          value={currentTab.location}
           className="block w-full border-gray-300 focus:border-primary focus:ring-primary"
           defaultValue={currentTab.location}
           onChange={(e) => setLocation(e.target.value)}
@@ -62,12 +63,12 @@ const Tabs = ({ data }) => {
               className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
             >
               {currentTab.aircraft.map((plane) => (
-                <div className="flex flex-col bg-white group relative overflow-hidden">
+                <div className="flex flex-col bg-white group relative overflow-hidden last:lg:col-start-2">
                   <div className="w-full h-[27rem] overflow-hidden flex flex-col justify-center items-center align-middle">
-                    <p className="z-10 w-full font-bold px-6 text-5xl lg:translate-y-12 drop-shadow-md text-center leading-tight text-white/80 group-hover:text-white group-hover:-translate-y-5 duration-300 ease-in-out">
+                    <p className="z-10 w-full font-bold px-6 text-5xl lg:translate-y-12 drop-shadow-md text-center leading-10 text-white lg:text-white/80 group-hover:text-white group-hover:-translate-y-5 duration-300 ease-in-out">
                       {plane.title}
                     </p>
-                    <div className="z-10 w-1/2 px-6 text-lg text-accent lg:translate-y-12 drop-shadow-md text-center opacity-0 group-hover:opacity-100 leading-tight group-hover:-translate-y-5 duration-500 ease-in-out">
+                    <div className="z-10 mt-2 w-1/2 px-6 text-lg text-accent lg:translate-y-12 drop-shadow-md text-center lg:opacity-0 group-hover:opacity-100 leading-tight group-hover:-translate-y-5 duration-500 ease-in-out">
                       <span>
                         <small className="text-white">Normal Rate: </small>$
                         <strong>{plane.normalRate}</strong>
@@ -86,17 +87,17 @@ const Tabs = ({ data }) => {
                     <img
                       src={plane.imagePath}
                       alt={plane.imageAlt}
-                      className="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-110 duration-700 ease-out"
+                      className="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:saturate-150 group-hover:scale-110 duration-700 ease-out"
                     />
-                    <div className="absolute z-0 w-full h-full bg-black/10 group-hover:bg-gray-900/70 duration-500"></div>
+                    <div className="absolute z-0 w-full h-full bg-gray-900/40 lg:bg-black/20 group-hover:bg-gray-900/60 duration-500"></div>
                   </div>
                   <a
                     href={plane.link}
                     target="_self"
-                    className="absolute btn-animate bottom-0 w-full h-16 bg-black opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300"
+                    className="absolute btn-animate bottom-0 w-full h-16 bg-black lg:opacity-50 lg:translate-y-[101%] group-hover:brightness-125 group-hover:opacity-100 group-hover:translate-y-0 duration-300"
                   >
                     <div className="flex h-full w-full justify-center align-middle items-center">
-                      <p className="relative z-10 text-center text-lg tracking-wide font-bold leading-loose text-white uppercase">
+                      <p className="relative z-10 text-center text-lg tracking-wider font-bold leading-loose text-white uppercase block">
                         {plane.linkText}
                       </p>
                     </div>
@@ -111,4 +112,4 @@ const Tabs = ({ data }) => {
   );
 };
 
-export default Tabs;
+export default FleetTabs;
