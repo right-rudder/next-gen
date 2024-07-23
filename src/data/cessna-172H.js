@@ -3,7 +3,7 @@ const cessna172H = {
     //SEO Header Stuff
     pageTitle: "Cessna 172H - Our Fleet | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Fly in one of NextGen Flight Academy's Cessna 172 series airplanes and get started in your initial certifications and ratings.",
     pageKeywords:
       "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
@@ -14,7 +14,7 @@ const cessna172H = {
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Cessna 172H",
       headerH2:
-        "Explore our Cessna 172H at NextGen Flight Academy and learn to fly with the best",
+        "Explore our Cessna 172H at NextGen Flight Academy and learn to fly with the best.",
     },
 
     aircraft: {

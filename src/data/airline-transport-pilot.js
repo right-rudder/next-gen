@@ -1,11 +1,11 @@
 const airlineTransportPilot = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Airline Transport Pilot| NextGen Flight Academy",
+    pageTitle: "Airline Transport Pilot | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Achieve the highest level of pilot certification with an ATP license from NextGen Flight Academy in Riverside and Redlands, CA. Become an airline captain with our expert training.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Airline Transport Pilot, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
       imagePath:
@@ -15,56 +15,57 @@ const airlineTransportPilot = {
     program: {
       header: "Airline Transport Pilot",
       description: [
-        "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
+        "The Airline Transport Pilot (ATP) certification is the pinnacle of aircraft pilot certifications. It allows you to act as the pilot-in-command of an airline aircraft and is required for those aspiring to be airline captains. This certification is essential for those pursuing a career as an airline pilot, as it demonstrates the highest level of aeronautical knowledge, experience, and skill.",
+        "The ATP certification is highly regarded in the aviation industry and opens up numerous career opportunities. Achieving this certification signifies that you have reached the highest standard of piloting proficiency and are capable of handling the most complex flight operations. It requires a deep understanding of advanced aerodynamics, systems management, and operational procedures.",
       ],
       availability: "Available at Riverside and Redlands",
       related: [
         {
-          title: "Multi-Engine Rating",
-          link: "/training-programs/multi-engine-rating",
-        },
-        {
-          title: "Certified Flight Instructor",
-          link: "/training-programs/certified-flight-instructor",
-        },
-        {
           title: "High Performance Endorsement",
           link: "/training-programs/high-performance-endorsement",
         },
+        {
+          title: "High Altitude Endorsement",
+          link: "/training-programs/high-altitude-endorsement",
+        },
+        {
+          title: "Complex Endorsement",
+          link: "/training-programs/complex-endorsement",
+        }
       ],
       trainingDetails: {
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nibh id dui facilisis, eu sollicitudin quam condimentum. Sed interdum metus dui, sit amet hendrerit eros tempor sed. Mauris eget sapien tellus.",
+          "Our pilot training is distinct for each certification and endorsement. Checkout what you need before getting started, which aircraft you can use to train for this certification, and get a pricing estimate.",
         requisites: [
-          "Be at least 17 years old",
-          "Be able to read, speak, write, and understand English",
-          "Hold at least a third-class medical certificate",
+          "Hold a Certified Flight Instructor Certificate",
+          "Log 1,500 flight hours",
+          "Hold a first-class medical certificate",
         ],
-        aircraft: ["Cessna 172", "Piper Warrior", "Piper Arrow"],
-        startingPrice: 9999,
+        aircraft: ["BE76 Beechcraft Duchess"],
+        startingPrice: "3,000",
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
     },
     CTAcard: {
-      title: "Ready to start your journey?",
+      title: "Want to become an airline pilot?",
       imagePath:
         "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
       imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:
-        "Begin your training with NextGen Flight Academy and earn your Private Pilot Certificate.",
+        "Get your ATP Certification with NextGen Flight Academy now.",
     },
     underHeader: {
       upperHeading: "Enrollment Steps",
       heading: "How to Enroll at NextGen",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
+        "Getting started with NextGen Flight Academy is simple. We welcome students from all over the San Bernadino Valley and beyond!",
       cards: [
         {
           title: "Meet The Team",
-          body: "Reach out and connect with a member of the NextGen team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those dreams.",
+          body: "Reach out and connect with a member of the NextGen team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those goals.",
           linkText: "Contact Us",
           linkHref: "/contact",
         },
@@ -78,7 +79,7 @@ const airlineTransportPilot = {
           title: "Start Flying",
           body: "Whether you aim to fly as a career or just for the sheer joy of it, NextGen Flight Academy is here to equip you with the skills and knowledge needed to be a safe and proficient pilot.",
           linkText: "Enroll Now",
-          linkHref: "/contact",
+          linkHref: "/enrollment",
         },
       ],
     },

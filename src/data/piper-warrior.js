@@ -19,8 +19,8 @@ const piperWarrior = {
 
     aircraft: {
       title: "Piper Warrior",
-      normalRate: 154.99,
-      blockRate: 149.99,
+      normalRate: 179.99,
+      blockRate: 174.99,
       location: ["Redlands Municipal Airport (REI)"],
       images: [
         {
@@ -56,7 +56,7 @@ const piperWarrior = {
       ],
       description:
         "The Piper Warrior Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling, it is the most popular aircraft for flight training. Its stable flight characteristics, simple control systems, and forgiving landing gear make it ideal for student pilots. Features include a high-wing design for excellent visibility, sturdy tricycle landing gear, and a robust airframe that can withstand the rigors of frequent training flights.",
-      link: "/our-fleet/cessna-172",
+      link: "/our-fleet/piper-warrior",
       linkText: "Details",
     },
 

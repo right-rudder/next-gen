@@ -3,9 +3,9 @@ const privatePilot = {
     //SEO Header Stuff
     pageTitle: "Private Pilot Certificate | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Start your aviation journey with NextGen Flight Academy's Private Pilot Certificate in Riverside and Redlands, CA. Full-scale career training, expert instructors, and modern aircraft for aspiring pilots.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Private Pilot Certificate, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
       imagePath:
@@ -15,8 +15,7 @@ const privatePilot = {
     program: {
       header: "Private Pilot Certificate",
       description: [
-        "A Private Pilot Certificate is the first significant step for individuals aspiring to pilot aircraft. It authorizes the holder to operate aircraft for personal and business purposes under visual flight rules (VFR), which require clear weather conditions where the pilot must be able to see where the aircraft is going. This certification opens up new horizons, allowing pilots to fly single-engine aircraft during the day or night, provided they stay out of commercial airspace and adhere to all aviation regulations.",
-        "The journey to obtaining a Private Pilot Certificate involves rigorous training, both practical and theoretical. Candidates must complete a minimum number of flying hours and pass a series of written exams that test their understanding of aircraft operations, navigation, weather, and aviation law. The training equips pilots with the necessary skills to handle an aircraft safely, understand weather impacts on flying, and make informed decisions in real-time flying situations. Ultimately, this certification lays the foundational skills for all advanced pilot training.",
+        "The Private Pilot Certificate allows you to fly single-engine aircraft for personal use, travel, and recreation. This certification provides essential skills and knowledge for safe and competent flying. To earn this license, you must complete a minimum of 40 flight hours, which includes 20 hours of flight training with an instructor and 10 hours of solo flight. The training covers cross-country flight, night flight, instrument training, and preparation for the practical test. You must also pass a medical exam to obtain a third-class medical certificate. With this certificate, you can fly solo, carry passengers, and enjoy the freedom of personal aviation. It also prepares you for advanced ratings and certifications if you wish to pursue a career in aviation.",
       ],
       availability: "Available at Riverside and Redlands",
       related: [
@@ -26,29 +25,29 @@ const privatePilot = {
         },
         {
           title: "Commercial Pilot Certificate",
-          link: "/training-programs/commercial-pilot",
+          link: "/training-programs/multi-engine-rating",
         },
         {
-          title: "Certified Flight Instructor",
-          link: "/training-programs/certified-flight-instructor",
+          title: "High Altitude Endorsement",
+          link: "/training-programs/high-altitude-endorsement",
         },
       ],
       trainingDetails: {
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie nibh id dui facilisis, eu sollicitudin quam condimentum. Sed interdum metus dui, sit amet hendrerit eros tempor sed. Mauris eget sapien tellus.",
+          "Our pilot training is distinct for each certification and endorsement. Checkout what you need before getting started, which aircraft you can use to train for this certification, and get a pricing estimate.",
         requisites: [
           "Be at least 17 years old",
           "Be able to read, speak, write, and understand English",
           "Hold at least a third-class medical certificate",
         ],
-        aircraft: ["Cessna 172", "Piper Warrior", "Piper Arrow"],
-        startingPrice: 9999,
+        aircraft: ["Cessna 172 series", "Cessna 152", "Piper Warrior", "PA-28R-180 Cherokee Arrow", "BE76 Beechcraft Duchess", "Redbird Simulator (SEL/MEL)"],
+        startingPrice: "12,000",
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
     },
     CTAcard: {
-      title: "Ready to start your journey?",
+      title: "Ready to start?",
       imagePath:
         "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
       imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -61,11 +60,11 @@ const privatePilot = {
       upperHeading: "Enrollment Steps",
       heading: "How to Enroll at NextGen",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
+        "Getting started with NextGen Flight Academy is simple. We welcome students from all over the San Bernadino Valley and beyond!",
       cards: [
         {
           title: "Meet The Team",
-          body: "Reach out and connect with a member of the NextGen team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those dreams.",
+          body: "Reach out and connect with a member of the NextGen team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those goals.",
           linkText: "Contact Us",
           linkHref: "/contact",
         },
