@@ -49,7 +49,7 @@ const privatePilot = {
     CTAcard: {
       title: "Ready to start?",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
+        "/src/assets/checkride-successful-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
       imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
       link: "/enrollment",
       linkText: "Enroll Now",
