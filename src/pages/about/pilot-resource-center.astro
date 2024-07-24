@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import pilotResources from "../../data/pilot-resource-center";
+import Header from "../../components/Header.astro";
+import NavCard from "../../components/NavCard.astro";
+
+const { data } = pilotResources;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <section class="mx-auto bg-white py-16 lg:py-24">
+    <h2
+      class="font-bold text-4xl lg:text-6xl text-center border-b-4 border-primary pb-3"
+    >
+      {data.resources.heading}
+    </h2>
+    <div class="mt-12">
+      {
+        data.resources.publications.map((publication) => (
+          <div class="p-4 lg:p-12 border-b-2 border-accent">
+            <h3 class="font-bold text-2xl lg:text-4xl text-center">
+              {publication.name}
+            </h3>
+            <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+              {publication.cards.map((card) => (
+                <NavCard
+                  title={card.title}
+                  imagePath={card.imagePath}
+                  imageAlt={card.imageAlt}
+                  link={card.link}
+                  linkText={card.linkText}
+                />
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>
