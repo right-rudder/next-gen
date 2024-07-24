@@ -60,6 +60,10 @@ export const navbarLinks = [
         name: "Our Fleet",
         link: "/our-fleet",
       },
+      {
+        name: "Pilot Resources",
+        link: "/about/pilot-resource-center",
+      },
     ],
   },
   {

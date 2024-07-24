@@ -20,7 +20,7 @@
     @apply text-center font-bold py-5 px-14 bg-gradient-to-br from-primary to-secondary w-fit text-white hover:from-white hover:to-gray-100 hover:text-dark-blue rounded-full duration-300;
   }
   .paragraph {
-    @apply text-gray-500 lg:text-lg leading-loose;
+    @apply text-gray-600 lg:text-base leading-loose font-sans1;
   }
 }
 
