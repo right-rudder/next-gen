@@ -27,8 +27,7 @@ const ourFleet = {
             title: "Cessna 172",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath:
-              "/src/assets/N7561G-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
@@ -39,8 +38,7 @@ const ourFleet = {
             title: "Cessna 172L",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath:
-              "/src/assets/N7561G-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
             description:
               "The Cessna 172L is a variant of the Cessna 172, featuring a more streamlined design and minor performance improvements.",
@@ -51,8 +49,7 @@ const ourFleet = {
             title: "Cessna 172H",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath:
-              "/src/assets/N7561G-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "commercial-pilot-program-nextgen-flight-academy",
             description:
               "The Cessna 172H, another variant in the 172 series, offers slight performance upgrades over earlier models.",
@@ -63,8 +60,7 @@ const ourFleet = {
             title: "Cessna 152",
             normalRate: 145.99,
             blockRate: 139.99,
-            imagePath:
-              "/src/assets/N4793O-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N4793O-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "multi-engine-plane-at-redlands-airport",
             description:
               "The Cessna 152 is a two-seat, single-engine aircraft specifically designed for flight training.",
@@ -75,8 +71,7 @@ const ourFleet = {
             title: "Piper Cherokee Arrow",
             normalRate: 179.99,
             blockRate: 174.99,
-            imagePath:
-              "/src/assets/N3848T-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N3848T-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "multi-engine-plane-at-redlands-airport",
             description:
               "The Piper (PA-28R-180) Cherokee Arrow is a single-engine, four-seat aircraft with retractable landing gear and a variable-pitch propeller.",
@@ -87,8 +82,7 @@ const ourFleet = {
             title: "BE76 Beechcraft Duchess",
             normalRate: 319.99,
             blockRate: 304.99,
-            imagePath:
-              "/src/assets/N6716Z-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/fleet/N6716Z-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt:
               "The Beechcraft Duchess multi-engine rating training aircraft at Riverside Airport (KRAL)",
             description:
@@ -101,7 +95,7 @@ const ourFleet = {
             normalRate: 74.99,
             blockRate: 69.99,
             imagePath:
-              "/src/assets/redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+              "/fleet/redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
             imageAlt:
               "NextGen Flight Academy's Redbird SEL / MEL Flight Simulator in Riverside, CA",
             description:
@@ -121,7 +115,7 @@ const ourFleet = {
             normalRate: 154.99,
             blockRate: 149.99,
             imagePath:
-              "/src/assets/N7815C-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
+              "/fleet/N7815C-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
@@ -133,7 +127,7 @@ const ourFleet = {
             normalRate: 179.99,
             blockRate: 174.99,
             imagePath:
-              "/src/assets/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
+              "/fleet/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt:
               "NextGen Flight Academy's Learn to Fly Piper Warrior aircraft in Redlands, CA",
             description:
