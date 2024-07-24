@@ -87,9 +87,9 @@ const FleetTabs = ({ data }) => {
                     <img
                       src={plane.imagePath}
                       alt={plane.imageAlt}
-                      className="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:saturate-150 group-hover:scale-110 duration-700 ease-out"
+                      className="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:blur-sm group-hover:saturate-150 group-hover:scale-110 duration-700 ease-out"
                     />
-                    <div className="absolute z-0 w-full h-full bg-gray-900/40 lg:bg-black/20 group-hover:bg-gray-900/60 duration-500"></div>
+                    <div className="absolute z-0 w-full h-full bg-black/40 lg:bg-black/20 group-hover:bg-gray-900/50 duration-500"></div>
                   </div>
                   <a
                     href={plane.link}
