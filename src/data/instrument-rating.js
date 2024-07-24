@@ -48,8 +48,8 @@ const instrumentRating = {
     CTAcard: {
       title: "Let's earn an Instrument Rating?",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
+          imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

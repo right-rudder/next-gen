@@ -50,8 +50,8 @@ const commercialPilot = {
     CTAcard: {
       title: "Ready to earn your CPL?",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            "/src/assets/commercial-pilot-program-nextgen-flight-academy.jpg",
+          imageAlt: "commercial-pilot-program-nextgen-flight-academy",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

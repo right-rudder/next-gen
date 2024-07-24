@@ -49,8 +49,8 @@ const highPerformance = {
     CTAcard: {
       title: "Let's fly high-performance aircraft",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
+          imageAlt: "planes-flying-over-san-bernadino-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

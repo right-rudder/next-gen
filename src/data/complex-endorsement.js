@@ -8,8 +8,9 @@ const complex = {
       "Complex Aircraft Endorsement, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath: "/src/assets/plane-taking-off-from-riverside-airport.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+      imagePath:
+            "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
+          imageAlt: "completing-an-endorsement-at-riverside-airport",
     },
     program: {
       header: "Complex Endorsement",
@@ -47,9 +48,8 @@ const complex = {
     },
     CTAcard: {
       title: "Ready to fly complex aircraft?",
-      imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+      imagePath: "/src/assets/plane-taking-off-from-riverside-airport.jpg",
+      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

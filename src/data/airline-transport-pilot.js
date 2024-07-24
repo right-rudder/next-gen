@@ -50,8 +50,8 @@ const airlineTransportPilot = {
     CTAcard: {
       title: "Want to become an airline pilot?",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
+          imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

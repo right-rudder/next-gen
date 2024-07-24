@@ -47,9 +47,8 @@ const certifiedFlightInstructor = {
     },
     CTAcard: {
       title: "Teach the next class",
-      imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+      imagePath: "/src/assets/flight-instructor-training-redlands-ca.jpg",
+          imageAlt: "flight-instructor-training-redlands-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

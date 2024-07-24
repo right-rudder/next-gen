@@ -49,8 +49,8 @@ const multiEngine = {
     CTAcard: {
       title: "Ready to fly Multi-Engine Aircraft?",
       imagePath:
-        "/src/assets/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg",
-      imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
+          imageAlt: "multi-engine-plane-at-redlands-airport",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:
