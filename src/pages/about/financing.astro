@@ -1,0 +1,29 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import financing from "../../data/financing";
+import FinanceTabs from "../../components/FinanceTabs";
+
+const { data } = financing;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <FinanceTabs data={data.finance} client:load />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>
