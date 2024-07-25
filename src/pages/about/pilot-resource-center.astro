@@ -3,7 +3,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import pilotResources from "../../data/pilot-resource-center";
 import Header from "../../components/Header.astro";
-import NavCard from "../../components/NavCard.astro";
+import ResourceCard from "../../components/ResourceCard.astro";
 
 const { data } = pilotResources;
 ---
@@ -16,28 +16,33 @@ const { data } = pilotResources;
   <!-- HEADER -->
   <Header data={data.header} />
 
-  <section class="mx-auto bg-white py-16 lg:py-24">
-    <h2
-      class="font-bold text-4xl lg:text-6xl text-center border-b-4 border-primary pb-3"
-    >
+  <section id="faa-publications">
+    <h2 class="font-bold text-4xl lg:text-6xl text-center pt-16">
       {data.resources.heading}
     </h2>
-    <div class="mt-12">
+    <p
+      class="font-normal text-lg text-center border-b-8 border-primary pb-12 mt-3"
+    >
+      {data.resources.description}
+    </p>
+    <div class="">
       {
         data.resources.publications.map((publication) => (
-          <div class="p-4 lg:p-12 border-b-2 border-accent">
-            <h3 class="font-bold text-2xl lg:text-4xl text-center">
+          <div class="pb-12 lg:pb-16 bg-gradient-to-b from-primary/10 to-primary-dark/10 border-b-4 border-primary">
+            <h3 class="font-bold text-primary-dark text-2xl lg:text-4xl text-center py-12 sticky top-20 z-20 bg-white/95">
               {publication.name}
             </h3>
-            <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+            <div class="mt-12 flex flex-wrap justify-center align-middle items-center gap-1 lg:gap-3">
               {publication.cards.map((card) => (
-                <NavCard
-                  title={card.title}
-                  imagePath={card.imagePath}
-                  imageAlt={card.imageAlt}
-                  link={card.link}
-                  linkText={card.linkText}
-                />
+                <div class="w-full md:w-1/3 lg:w-1/4">
+                  <ResourceCard
+                    title={card.title}
+                    imagePath={card.imagePath}
+                    imageAlt={card.imageAlt}
+                    link={card.link}
+                    linkText={card.linkText}
+                  />
+                </div>
               ))}
             </div>
           </div>

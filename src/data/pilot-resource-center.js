@@ -31,6 +31,7 @@ const pilotResources = {
     resources: {
       upperHeading: "Explore",
       heading: "FAA Publications",
+      description: "Download the latest FAA publications and study materials.",
       publications: [
         {
           name: "Airman Certification Standards (ACS)",
