@@ -17,7 +17,8 @@ const about = {
     },
 
     ourStory: {
-      imagePath: "/src/assets/cfi-and-admin-team-at-nextgen-flight-academy.jpg",
+      imagePath:
+        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
       imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",
       about: [
         "Welcome to NextGen Flight Academy, where we are dedicated to providing aspiring pilots with top-quality flight training. Located at Riverside Municipal Airport (RAL), we also operate our sister school, Learn to Fly, at Redlands Municipal Airport (REI). Our mission is to help you achieve your aviation goals efficiently and effectively through top-quality education and extensive flying lessons.",
