@@ -47,7 +47,7 @@ const pilotResources = {
             {
               title: "ACS Instrument Pilot Airplane",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/Instrument Rating – Airplane Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
               link: "https://drive.google.com/file/d/1_6aYUa7tQ7jSbIi8LX91985HjEu14aaS/view?usp=drive_link",
               linkText: "Download",
@@ -55,7 +55,7 @@ const pilotResources = {
             {
               title: "ACS Commercial Pilot Airplane",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/Commercial Pilot for Airplane Category Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
               link: "https://drive.google.com/file/d/1ob5c0c1U6PnDm4HS3cDl5owVjfF8wtt_/view?usp=drive_link",
               linkText: "Download",
@@ -63,7 +63,7 @@ const pilotResources = {
             {
               title: "ACS ATP & Type Ratings Certificate",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/Airline Transport Pilot and Type Rating for Airplane Category Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
               link: "https://drive.google.com/file/d/1w_n8OOhf-xei68vqYziRrq53a8kJUqMJ/view?usp=drive_link",
               linkText: "Download",
@@ -71,7 +71,7 @@ const pilotResources = {
             {
               title: "ACS Remote Pilot Small Unmanned",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/Remote Pilot ‒ Small Unmanned Aircraft Systems Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
               link: "https://drive.google.com/file/d/1h104vlc__OmGIT8ToY5qOcVwfrwcMhS0/view?usp=drive_link",
               linkText: "Download",
@@ -85,15 +85,15 @@ const pilotResources = {
               title: "PTS Flight Instructor Airplane Land and Sea",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+              imageAlt: "PTS Flight Instructor Airplane Land and Sea",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
             {
               title: "PTS Flight Instructor Instrument Airplane & Helicopter",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Flight Instructor Instrument Practical Test Standards for Airplane Rating and Helicopter Rating.jpg",
+              imageAlt: "PTS Flight Instructor Instrument Airplane & Helicopter",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
@@ -101,7 +101,7 @@ const pilotResources = {
               title: "PTS Flight Instructor Airplane Multi-Engine Land and Sea",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+              imageAlt: "PTS Flight Instructor Airplane Multi-Engine Land and Sea",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
@@ -113,24 +113,24 @@ const pilotResources = {
             {
               title: "Airplane Flying Handbook",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Airplane Flying Handbook.jpg",
+              imageAlt: "Airplane Flying Handbook",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
             {
               title: "Pilot’s Handbook of Aeronautical Knowledge",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Pilots-Handbook-of-Aeronautical-Knowledge.jpeg",
+              imageAlt: "Pilot’s Handbook of Aeronautical Knowledge",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
             {
               title: "Aviation Weather",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Aviation Weather Handbook.jpg",
+              imageAlt: "Aviation Weather Handbook",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
@@ -145,8 +145,8 @@ const pilotResources = {
             {
               title: "Weight and Balance Handbook",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Weight & Balance Handbook.jpg",
+              imageAlt: "Weight & Balance Handbook",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
@@ -169,24 +169,24 @@ const pilotResources = {
             {
               title: "Instrument Procedures Handbook",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Instrument Procedures Handbook (IPH).jpg",
+              imageAlt: "Instrument Procedures Handbook (IPH)",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
             {
               title: "Risk Management Handbook",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Risk Management Handbook.jpg",
+              imageAlt: "Risk Management Handbook",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
             {
               title: "Aviation Instructor’s Handbook",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/aviation-instructors-handbook.jpg",
+              imageAlt: "Aviation Instructor’s Handbook",
               link: "/training-programs/private-pilot",
               linkText: "Download",
             },
