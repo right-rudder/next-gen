@@ -9,7 +9,7 @@ const certifiedFlightInstructor = {
 
     topImage: {
       imagePath:
-        "/src/assets/cfi-team-at-nextgen-flight-academy-riverside-ca-pilot-training-school.jpg",
+        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
