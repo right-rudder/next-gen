@@ -1,0 +1,93 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { Icon } from "astro-icon/components";
+import PageHeader from "../../components/PageHeader.astro";
+
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<BaseLayout
+  pageTitle="Blog | Summit Flight Academy"
+  pageDescription="Explore the latest happenings in the world of flight training at Summit Flight Academy. Gain valuable insights and tips to ease pre-flight jitters and prepare effectively for your important milestones."
+  pageKeywords="blog, private pilot's license, written exam, pilot resources, flight training, kansas city flight school, exam preparation, pilot licensing, aviation blog, pilot tips"
+>
+  <!-- <PageHeader
+    title="Blog"
+    subtitle="Read our latest articles on health and wellness."
+    headerImg="blog"
+    imgPosition="top"
+    imgStartOpacity="30"
+    imgEndOpacity="10"
+  /> -->
+
+  <!-- Header -->
+  <header
+    class="relative top-0 h-screen-1/2 bg-blog bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div
+      class="absolute bg-gradient-to-b from-gray-900/90 to-black/20 w-full h-full z-0"
+    >
+    </div>
+    <!-- Text -->
+    <div
+      class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">Blog</h1>
+      <h2 class="text-3xl tracking-wide">
+        Read up on our latest updates and pilot resources
+      </h2>
+      <!-- <a href="#contactUs" class="btn-red">Enroll Today</a> -->
+    </div>
+    <!-- <Partners /> -->
+  </header>
+
+  <section class="max-w-7xl mx-auto my-24 p-5 bg-gray-100">
+    <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
+      {
+        posts.map((post, index) => (
+          <li class="h-36 border border-black overflow-hidden p-2 lg:first:col-span-2 lg:first:h-96 hover:bg-gray-200 duration-200">
+            <a
+              href={`/blog/${post.slug}/`}
+              class={`flex gap-5 h-full ${index === 0 ? "" : ""}`}
+            >
+              <div class="flex-[1.7_1.7_0] h-full flex flex-col justify-between">
+                <div
+                  class={`flex flex-col ${index === 0 ? "gap-1 lg:gap-5" : "gap-1"}`}
+                >
+                  <div class="flex items-center gap-1">
+                    <p class="font-medium text-sm">{post.data.author}</p>
+                  </div>
+                  <h4
+                    class={`font-semibold leading-5 ${index === 0 ? "text-xl lg:text-3xl" : "text-xl"}`}
+                  >
+                    {post.data.title}
+                  </h4>
+                  <p class={`${index === 0 ? "hidden lg:block" : "hidden"}`}>
+                    {post.data.description}
+                  </p>
+                </div>
+                <p class="text-gray-500 text-sm">
+                  {post.data.readingTime} read ·{" "}
+                  <FormattedDate date={post.data.pubDate} />
+                </p>
+              </div>
+              <div class="flex-1 h-full">
+                <img
+                  src={post.data.heroImage}
+                  alt=""
+                  class="h-full object-cover w-full"
+                />
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>
