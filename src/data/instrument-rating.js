@@ -8,7 +8,7 @@ const instrumentRating = {
       "Instrument Rating, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath: "/src/assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg",
+      imagePath: "/src/assets/cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {

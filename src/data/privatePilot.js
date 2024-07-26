@@ -9,8 +9,8 @@ const privatePilot = {
 
     topImage: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+        "/src/assets/passing-checkride-in-cessna-172-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+      imageAlt: "Student passes private pilot checkride in Riverside, CA",
     },
     program: {
       header: "Private Pilot Certificate",

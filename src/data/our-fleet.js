@@ -10,8 +10,8 @@ const ourFleet = {
     //top header
     header: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+        "/src/assets/riverside-airplane-fleet-nextgen-learn-to-fly.jpg",
+      imageAlt: "Riverside location fleet of Cessna 172s, Beechcraft Duchess, and Piper Cherokee Arrow",
       headerH1: "Our Fleet",
       headerH2:
         "Explore our aircraft at NextGen Flight Academy and learn to fly with the best",

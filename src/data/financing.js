@@ -10,8 +10,8 @@ const financing = {
     //top header
     header: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+        "/src/assets/pilot-shop-at-nextgen-riverside-airport.jpg",
+      imageAlt: "Find financing options at NextGen Flight Academy in Riverside and Redlands, CA",
       headerH1: "Financing",
       headerH2:
         "Learn about financing options and scholarships available to aspiring pilots",

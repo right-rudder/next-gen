@@ -10,8 +10,8 @@ const partnerships = {
     //top header
     header: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+        "/src/assets/learn-to-fly-redlands-ca-office.jpg",
+      imageAlt: "NextGen's Redlands location, named Learn to Fly",
       headerH1: "Partnerships",
       headerH2:
         "NextGen Flight Academy has partnered with the best in the industry to provide you with the best flight training experience.",

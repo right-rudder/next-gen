@@ -9,7 +9,7 @@ const highPerformance = {
 
     topImage: {
       imagePath:
-        "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
+        "/src/assets/high-performance-airplane.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {

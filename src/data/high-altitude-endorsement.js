@@ -47,7 +47,7 @@ const highAltitude = {
     },
     CTAcard: {
       title: "Are you ready to fly higher?",
-      imagePath: "/src/assets/high-altitude-endorsement.jpg",
+      imagePath: "/src/assets/high-altitude-endorsement-airplane.png",
           imageAlt: "high-altitude-endorsement",
       link: "/enrollment",
       linkText: "Enroll Now",

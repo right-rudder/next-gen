@@ -9,7 +9,7 @@ const airlineTransportPilot = {
 
     topImage: {
       imagePath:
-        "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
+        "/src/assets/nextgen-atp-training-program.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {

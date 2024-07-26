@@ -10,7 +10,7 @@ const introFlights = {
     //top header
     header: {
       imagePath:
-        "/src/assets/nextgen-flight-academy-staff-flying-over-riverside-ca.jpg",
+        "/src/assets/on-an-intro-flight-with-nextgen-flight-academy.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Intro Flights",
     },

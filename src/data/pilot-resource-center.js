@@ -10,8 +10,8 @@ const pilotResources = {
     //top header
     header: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+        "/src/assets/pilot-resource-center-at-riverside-airport.jpg",
+      imageAlt: "NextGen Flight Academy's Pilot Center at Riverside Airport",
       headerH1: "Pilot Resource Center",
       headerH2:
         "Start flying, complete your ratings, and earn your endorsements",
@@ -37,9 +37,9 @@ const pilotResources = {
           name: "Airman Certification Standards (ACS)",
           cards: [
             {
-              title: "ACS Private Pilot Airplane",
+              title: "",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/acs-private-pilot-thumb.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
               link: "/training-programs/private-pilot",
               linkText: "Download",

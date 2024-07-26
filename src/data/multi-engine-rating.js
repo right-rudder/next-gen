@@ -9,7 +9,7 @@ const multiEngine = {
 
     topImage: {
       imagePath:
-        "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
+        "/src/assets/N6716Z-nextgen-flight-academy-riverside-ca.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {

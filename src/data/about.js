@@ -10,7 +10,7 @@ const about = {
     //top header
     header: {
       imagePath:
-        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
+        "/src/assets/front-office-of-nextgen-flight-academy-redlands-riverside-ca-pilot-school.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "About NextGen",
       headerH2:
@@ -19,7 +19,7 @@ const about = {
 
     ourStory: {
       imagePath:
-        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
+        "/src/assets/cfi-and-admin-team-at-nextgen-flight-academy.jpg",
       imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",
       about: [
         "Welcome to NextGen Flight Academy, where we are dedicated to providing aspiring pilots with top-quality flight training. Located at Riverside Municipal Airport (RAL), we also operate our sister school, Learn to Fly, at Redlands Municipal Airport (REI). Our mission is to help you achieve your aviation goals efficiently and effectively through top-quality education and extensive flying lessons.",
@@ -34,10 +34,10 @@ const about = {
     },
 
     enrollCTA: {
-      heading: "Want a Test Ride?",
+      heading: "Come Visit Us",
       subheading:
-        "Book an intro flight to see if flight school is right for you",
-      linkText: "Book an Intro Flight",
+        "Book an intro flight over iconic Southern California sights and see if flight school is right for you",
+      linkText: "Fly with NextGen",
       linkUrl: "/intro-flight",
       imagePath:
         "/src/assets/student-pilot-takes-piper-cherokee-out-from-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
