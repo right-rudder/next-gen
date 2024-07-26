@@ -144,8 +144,14 @@ declare module 'astro:content' {
   data: any
 } & { render(): Render[".md"] };
 };
-"blog": {
-};
+"blog": Record<string, {
+  id: string;
+  slug: string;
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">;
+  render(): Render[".md"];
+}>;
 
 	};
 

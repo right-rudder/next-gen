@@ -15,6 +15,8 @@ const certifiedFlightInstructor = {
       header: "Certified Flight Instructor",
       description: [
         "Becoming a Certified Flight Instructor (CFI) allows you to share your passion for aviation by teaching others to fly. This certification provides an opportunity to build flight hours and gain experience while opening pathways to advanced piloting careers. CFIs play a critical role in the aviation industry by ensuring that new pilots receive high-quality training and develop the necessary skills for safe and effective flying. Many CFIs eventually move on to careers as commercial or airline pilots, making this an excellent step for those pursuing long-term aviation goals.",
+        "The Certified Flight Instructor - Instrument (CFII) rating allows you to teach instrument flying, enabling students to fly safely in various weather conditions and low visibility. This certification is essential for those who wish to specialize in instrument training and ensures that new pilots are well-equipped to handle instrument flight rules (IFR).",
+        "Becoming a Multi-Engine Instructor (MEI) allows you to teach students how to operate aircraft with multiple engines, preparing them for advanced piloting roles. This certification builds on your existing flight instructor experience and adds the ability to train others in more complex flight operations, enhancing your skills and expanding your teaching opportunities.",
       ],
       availability: "Available at Riverside and Redlands",
       related: [
