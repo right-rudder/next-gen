@@ -8,7 +8,8 @@ const instrumentRating = {
       "Instrument Rating, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath: "/src/assets/cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+      imagePath:
+        "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -39,7 +40,11 @@ const instrumentRating = {
           "Be able to read, speak, write, and understand English",
           "Hold at least a third-class medical certificate",
         ],
-        aircraft: ["Cessna 172 series", "PA-28R-180 Cherokee Arrow", "Redbird Simulator (SEL/MEL)"],
+        aircraft: [
+          "Cessna 172 series",
+          "PA-28R-180 Cherokee Arrow",
+          "Redbird Simulator (SEL/MEL)",
+        ],
         startingPrice: "14,000",
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
@@ -48,8 +53,8 @@ const instrumentRating = {
     CTAcard: {
       title: "Let's earn an Instrument Rating?",
       imagePath:
-            "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
-          imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
+        "/src/assets/instrument-rating-training-at-nextgen-flight-academy.jpg",
+      imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:
