@@ -8,7 +8,8 @@ const certifiedFlightInstructor = {
       "Certified Flight Instructor, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath: "/src/assets/cfi-team-at-nextgen-flight-academy-riverside-ca-pilot-training-school.jpg",
+      imagePath:
+        "/src/assets/cfi-team-at-nextgen-flight-academy-riverside-ca-pilot-training-school.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -41,7 +42,11 @@ const certifiedFlightInstructor = {
           "Hold a valid FAA second-class medical certificate",
           "Suggested to hold an Instrument Rating (IR)",
         ],
-        aircraft: ["Cessna 172 series", "PA-28R-180 Cherokee Arrow", "Redbird Simulator (SEL/MEL)"],
+        aircraft: [
+          "Cessna 172 series",
+          "PA-28R-180 Cherokee Arrow",
+          "Redbird Simulator (SEL/MEL)",
+        ],
         startingPrice: "5,000",
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
@@ -49,12 +54,12 @@ const certifiedFlightInstructor = {
     },
     CTAcard: {
       title: "Teach the next class",
-      imagePath: "/src/assets/cfi-and-admin-team-at-nextgen-flight-academy.jpg",
-          imageAlt: "flight-instructor-training-redlands-ca",
+      imagePath:
+        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
+      imageAlt: "flight-instructor-training-redlands-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
-      description:
-        "Become a CFI and start instructing other students!",
+      description: "Become a CFI and start instructing other students!",
     },
     underHeader: {
       upperHeading: "Enrollment Steps",
