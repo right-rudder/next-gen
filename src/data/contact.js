@@ -11,8 +11,20 @@ const contact = {
       "By providing my email and phone number, I agree to receive email and text messages from NextGen Flight Academy and understand I can opt-out anytime.",
 
     gMaps: [
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.627392285859!2d-117.44849982418127!3d33.95071037319536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1373a59a741%3A0xad098c31f424e525!2sNextGen%20Flight%20Academy!5e0!3m2!1sen!2sco!4v1718894671435!5m2!1sen!2sco",
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
+      {
+        location: "Riverside, CA",
+        inverted: false,
+        body: "Our Riverside location is conveniently located at Riverside Municipal Airport (RAL), providing easy access to the Inland Empire and surrounding areas.",
+        gMapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.627392285859!2d-117.44849982418127!3d33.95071037319536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1373a59a741%3A0xad098c31f424e525!2sNextGen%20Flight%20Academy!5e0!3m2!1sen!2sco!4v1718894671435!5m2!1sen!2sco",
+      },
+      {
+        location: "Redlands, CA",
+        inverted: true,
+        body: "Our Redlands location is situated at Redlands Municipal Airport (REI), offering a convenient location for students in the Inland Empire and surrounding areas.",
+        gMapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
+      },
     ],
 
     locations: [

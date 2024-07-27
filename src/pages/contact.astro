@@ -214,8 +214,8 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
   </section>
 
   <section class="w-full flex flex-wrap overflow-hidden">
-    <GoogleMaps gMapUrl={data.gMaps[0]} />
-    <GoogleMaps gMapUrl={data.gMaps[1]} />
+    <GoogleMaps data={data.gMaps[0]} />
+    <GoogleMaps data={data.gMaps[1]} />
   </section>
 
   <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
