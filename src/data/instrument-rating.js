@@ -9,7 +9,7 @@ const instrumentRating = {
 
     topImage: {
       imagePath:
-        "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca.jpg",
+        "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca-fix.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {

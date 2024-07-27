@@ -9,7 +9,7 @@ const multiEngine = {
 
     topImage: {
       imagePath:
-        "/src/assets/N6716Z-nextgen-flight-academy-riverside-ca.jpg",
+        "/src/assets/N6716Z-nextgen-flight-academy-riverside-ca-fix.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -24,8 +24,8 @@ const multiEngine = {
           link: "/training-programs/instrument-rating",
         },
         {
-        title: "Commercial Pilot Certificate",
-        link: "/training-programs/commercial-pilot",
+          title: "Commercial Pilot Certificate",
+          link: "/training-programs/commercial-pilot",
         },
         {
           title: "High Performance Endorsement",
@@ -49,8 +49,8 @@ const multiEngine = {
     CTAcard: {
       title: "Ready to fly Multi-Engine Aircraft?",
       imagePath:
-            "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
-          imageAlt: "multi-engine-plane-at-redlands-airport",
+        "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
+      imageAlt: "multi-engine-plane-at-redlands-airport",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:
