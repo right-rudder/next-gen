@@ -1,0 +1,70 @@
+---
+import EnrollNowCTA from "../components/EnrollNowCTA.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import PriceCalcZero2Hero from "../components/priceCalcZero2Hero";
+import Zero2Hero from "../components/Zero2Hero";
+import careerTrack from "../data/career-track";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const { data } = careerTrack;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+
+  <section id="hero-to-zero-program">
+    <div class="bg-gradient-to-b from-gray-50 to-gray-200 py-12 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <h2
+            class="text-5xl font-bold tracking-tight text-main-red text-center"
+          >
+            Expectations for Career Track Students
+          </h2>
+        </div>
+        <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+          <div
+            class="w-full lg:max-w-3xl mt-12 py-4 lg:py-12 lg:px-8 rounded bg-primary flex flex-col items-center lg:flex-1 mx-auto"
+          >
+            <h3
+              class="mb-4 text-center px-4 text-gray-100 text-2xl lg:text-4xl font-bold"
+            >
+              Our Training Program Breakdown
+            </h3>
+            <p class="text-gray-50 mb-8 px-2 lg:px-6 leading-6 text-center">
+              Our Career Track Program at Lee’s Summit Airport is structured to
+              ensure progressive learning and skill acquisition through hands-on
+              training, expert instruction, and access to modern aircraft. This
+              program covers all necessary ground and flight training courses*,
+              culminating in a Multi-Engine Rating and flight instructor
+              certifications.
+            </p>
+            <p
+              class="text-gray-50 italic text-sm mb-8 px-2 lg:px-6 leading-6 text-center"
+            >
+              *Pricing varies depending on your training preferences. Use the
+              cost estimator below to calculate your relative cost of training
+              and then contact us to get started!
+            </p>
+            <Zero2Hero programs={data.programs} client:visible />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <PriceCalcZero2Hero programs={data.priceCalc} client:visible />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>
