@@ -3,9 +3,9 @@ const pilotResources = {
     //SEO Header Stuff
     pageTitle: "Pilot Resource Center | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Access essential resources for pilot training at NextGen Flight Academy. Download FAA publications, study materials, and find out about our comprehensive training programs at Riverside and Redlands airports.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "NextGen Flight Academy, FAA publications, Pilot training resources, Flight school Riverside, Flight school Redlands, Private pilot training, Instrument rating, Commercial pilot license, Flight instructor certification, Aviation study materials, Pilot handbooks, Aeronautical charts, Aviation weather, Career track pilot training",
 
     //top header
     header: {
@@ -14,7 +14,7 @@ const pilotResources = {
       imageAlt: "NextGen Flight Academy's Pilot Center at Riverside Airport",
       headerH1: "Pilot Resource Center",
       headerH2:
-        "Start flying, complete your ratings, and earn your endorsements",
+        "Your home for all important FAA publications while pilot training",
     },
     underHeader: {
       upperHeading: "Featured Program",
@@ -46,7 +46,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "ACS Instrument Pilot Airplane",
+              title: "",
               description: "Criteria for obtaining an instrument rating.",
               imagePath:
                 "/src/assets/Instrument Rating – Airplane Airman Certification Standards.jpg",
@@ -55,7 +55,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "ACS Commercial Pilot Airplane",
+              title: "",
               description: "Requirements for commercial pilot certification.",
               imagePath:
                 "/src/assets/Commercial Pilot for Airplane Category Airman Certification Standards.jpg",
@@ -64,7 +64,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "ACS ATP & Type Ratings Certificate",
+              title: "",
               description: "Standards for airline transport pilot certification.",
               imagePath:
                 "/src/assets/Airline Transport Pilot and Type Rating for Airplane Category Airman Certification Standards.jpg",
@@ -73,7 +73,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "ACS Remote Pilot Small Unmanned",
+              title: "",
               description: "Guidelines for small unmanned aircraft certification.",
               imagePath:
                 "/src/assets/Remote Pilot ‒ Small Unmanned Aircraft Systems Airman Certification Standards.jpg",
@@ -96,7 +96,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "PTS Flight Instructor Instrument Airplane & Helicopter",
+              title: "",
               description: "Criteria for instrument flight instructor certification.",
               imagePath:
                 "/src/assets/Flight Instructor Instrument Practical Test Standards for Airplane Rating and Helicopter Rating.jpg",
@@ -119,7 +119,7 @@ const pilotResources = {
           name: "Pilot Handbooks",
           cards: [
             {
-              title: "Airplane Flying Handbook",
+              title: "",
               description: "General guide to flying airplanes.",
               imagePath:
                 "/src/assets/Airplane Flying Handbook.jpg",
@@ -128,7 +128,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Pilot’s Handbook of Aeronautical Knowledge",
+              title: "",
               description: "Fundamental aviation knowledge for pilots.",
               imagePath:
                 "/src/assets/Pilots-Handbook-of-Aeronautical-Knowledge.jpeg",
@@ -137,7 +137,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Aviation Weather",
+              title: "",
               description: "Essential guide to understanding aviation weather.",
               imagePath:
                 "/src/assets/Aviation Weather Handbook.jpg",
@@ -155,7 +155,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Weight and Balance Handbook",
+              title: "",
               description: "Guide to managing aircraft weight and balance.",
               imagePath:
                 "/src/assets/Weight & Balance Handbook.jpg",
@@ -182,7 +182,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Instrument Procedures Handbook",
+              title: "",
               description: "Procedures and best practices for instrument flight.",
               imagePath:
                 "/src/assets/Instrument Procedures Handbook (IPH).jpg",
@@ -191,7 +191,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Risk Management Handbook",
+              title: "",
               description: "Strategies for managing aviation risks.",
               imagePath:
                 "/src/assets/Risk Management Handbook.jpg",
@@ -200,7 +200,7 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Aviation Instructor’s Handbook",
+              title: "",
               description: "Resource for flight instructors on teaching methods.",
               imagePath:
                 "/src/assets/aviation-instructors-handbook.jpg",

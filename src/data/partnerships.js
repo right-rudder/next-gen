@@ -3,9 +3,9 @@ const partnerships = {
     //SEO Header Stuff
     pageTitle: "Partnerships | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Discover the partnerships that enhance your flight training experience at NextGen Flight Academy. Learn about our collaborations with Spartan College, American English Institute, and Excel Charter Academy School.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "NextGen Flight Academy, Flight training partnerships, Spartan College 15-15 Program, American English Institute, Excel Charter Academy School, Aviation education, Flight training collaboration, Pilot training programs, Aviation partnerships, Flight school",
 
     //top header
     header: {
@@ -14,7 +14,7 @@ const partnerships = {
       imageAlt: "NextGen's Redlands location, named Learn to Fly",
       headerH1: "Partnerships",
       headerH2:
-        "NextGen Flight Academy has partnered with the best in the industry to provide you with the best flight training experience.",
+        "Aligned to provide you with the best flight training experience.",
     },
 
     partners: [

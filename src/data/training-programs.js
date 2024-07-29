@@ -3,9 +3,9 @@ const trainingPrograms = {
     //SEO Header Stuff
     pageTitle: "Training Programs | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Explore the selection of pilot training programs at NextGen Flight Academy. From private pilot to airline transport pilot, we offer a range of certifications and endorsements to help you achieve your aviation career goals.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "NextGen Flight Academy, Pilot training programs, Flight school Riverside, Flight school Redlands, Private pilot certificate, Instrument rating, Commercial pilot certificate, Multi-engine rating, Certified flight instructor, Airline transport pilot, High performance endorsement, High altitude endorsement, Complex endorsement, Aviation career training",
 
     //top header
     header: {
