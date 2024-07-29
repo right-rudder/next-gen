@@ -108,15 +108,25 @@ const careerTrack = {
     ],
 
     priceCalc: {
+      title: "Price Calculator",
+      subtitle: "How much does pilot training cost?",
+
+      calcHeading: "NextGen Flight Academy Training Calculator",
+      calcSubheading: "Fly for a career, within a year!",
+
       pricePpl: 1111,
       priceInstrument: 2222,
-      priceCplShared: 3333,
-      priceCplSolo: 4444,
+      priceCpl: 4444,
       priceCfi: 5555,
       priceCfii: 6666,
       priceMe: 7777,
       priceMei: 8888,
-      priceMeTbd: 9999,
+      priceAtp: 11212,
+
+      zeroTotal: "Choose your training goals",
+
+      totalTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      meTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
 
     enrollCTA: {
