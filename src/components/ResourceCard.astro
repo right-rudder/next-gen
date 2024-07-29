@@ -21,13 +21,23 @@ if (!images[imagePath])
 
 <div class="flex flex-col bg-white group relative overflow-hidden">
   <div
-    class="w-full h-96 lg:h-[25rem] overflow-hidden flex justify-center items-center align-middle"
+    class="w-full h-96 lg:h-[25rem] overflow-hidden flex flex-col justify-center items-center align-middle"
   >
-    <p
-      class="z-10 font-normal w-full px-6 drop-shadow-sm text-3xl lg:translate-y-6 text-center leading-tight text-primary-dark group-hover:-translate-y-3 duration-300 delay-150"
-    >
-      {title}
-    </p>
+    {
+      title && (
+        <p class="z-10 font-normal w-full px-6 drop-shadow-sm text-3xl lg:translate-y-6 text-center leading-tight text-primary-dark group-hover:-translate-y-3 duration-300 delay-150">
+          {title}
+        </p>
+      )
+    }
+    {
+      description && (
+        <p
+          class="z-10 mt-3 lg:mt-0 px-8 w-full lg:leading-3 lg:translate-y-10 font-sans1 lg:opacity-0 text-base text-center leading-tight text-gray-900 group-hover:opacity-95 group-hover:-translate-y-1 group-hover:leading-tight duration-500 delay-150 ease-out"
+          set:html={description}
+        />
+      )
+    }
     <Image
       src={images[imagePath]()}
       alt={imageAlt}
