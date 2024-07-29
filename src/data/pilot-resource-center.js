@@ -38,6 +38,7 @@ const pilotResources = {
           cards: [
             {
               title: "",
+              description: "Standards for earning a private pilot license.",
               imagePath:
                 "/src/assets/acs-private-pilot-thumb.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -46,6 +47,7 @@ const pilotResources = {
             },
             {
               title: "ACS Instrument Pilot Airplane",
+              description: "Criteria for obtaining an instrument rating.",
               imagePath:
                 "/src/assets/Instrument Rating – Airplane Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -54,6 +56,7 @@ const pilotResources = {
             },
             {
               title: "ACS Commercial Pilot Airplane",
+              description: "Requirements for commercial pilot certification.",
               imagePath:
                 "/src/assets/Commercial Pilot for Airplane Category Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -62,6 +65,7 @@ const pilotResources = {
             },
             {
               title: "ACS ATP & Type Ratings Certificate",
+              description: "Standards for airline transport pilot certification.",
               imagePath:
                 "/src/assets/Airline Transport Pilot and Type Rating for Airplane Category Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -70,6 +74,7 @@ const pilotResources = {
             },
             {
               title: "ACS Remote Pilot Small Unmanned",
+              description: "Guidelines for small unmanned aircraft certification.",
               imagePath:
                 "/src/assets/Remote Pilot ‒ Small Unmanned Aircraft Systems Airman Certification Standards.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -83,6 +88,7 @@ const pilotResources = {
           cards: [
             {
               title: "PTS Flight Instructor Airplane Land and Sea",
+              description: "Requirements for airplane flight instructor certification.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "PTS Flight Instructor Airplane Land and Sea",
@@ -91,6 +97,7 @@ const pilotResources = {
             },
             {
               title: "PTS Flight Instructor Instrument Airplane & Helicopter",
+              description: "Criteria for instrument flight instructor certification.",
               imagePath:
                 "/src/assets/Flight Instructor Instrument Practical Test Standards for Airplane Rating and Helicopter Rating.jpg",
               imageAlt: "PTS Flight Instructor Instrument Airplane & Helicopter",
@@ -99,6 +106,7 @@ const pilotResources = {
             },
             {
               title: "PTS Flight Instructor Airplane Multi-Engine Land and Sea",
+              description: "Standards for multi-engine flight instructor certification.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "PTS Flight Instructor Airplane Multi-Engine Land and Sea",
@@ -112,6 +120,7 @@ const pilotResources = {
           cards: [
             {
               title: "Airplane Flying Handbook",
+              description: "General guide to flying airplanes.",
               imagePath:
                 "/src/assets/Airplane Flying Handbook.jpg",
               imageAlt: "Airplane Flying Handbook",
@@ -120,6 +129,7 @@ const pilotResources = {
             },
             {
               title: "Pilot’s Handbook of Aeronautical Knowledge",
+              description: "Fundamental aviation knowledge for pilots.",
               imagePath:
                 "/src/assets/Pilots-Handbook-of-Aeronautical-Knowledge.jpeg",
               imageAlt: "Pilot’s Handbook of Aeronautical Knowledge",
@@ -128,6 +138,7 @@ const pilotResources = {
             },
             {
               title: "Aviation Weather",
+              description: "Essential guide to understanding aviation weather.",
               imagePath:
                 "/src/assets/Aviation Weather Handbook.jpg",
               imageAlt: "Aviation Weather Handbook",
@@ -136,6 +147,7 @@ const pilotResources = {
             },
             {
               title: "Aviation Weather Services",
+              description: "Information on weather services for pilots.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -144,6 +156,7 @@ const pilotResources = {
             },
             {
               title: "Weight and Balance Handbook",
+              description: "Guide to managing aircraft weight and balance.",
               imagePath:
                 "/src/assets/Weight & Balance Handbook.jpg",
               imageAlt: "Weight & Balance Handbook",
@@ -152,6 +165,7 @@ const pilotResources = {
             },
             {
               title: "Advanced Avionics Handbook",
+              description: "Introduction to advanced avionics systems.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -160,6 +174,7 @@ const pilotResources = {
             },
             {
               title: "Instrument Flying Handbook",
+              description: "Detailed guide to instrument flight techniques.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -168,6 +183,7 @@ const pilotResources = {
             },
             {
               title: "Instrument Procedures Handbook",
+              description: "Procedures and best practices for instrument flight.",
               imagePath:
                 "/src/assets/Instrument Procedures Handbook (IPH).jpg",
               imageAlt: "Instrument Procedures Handbook (IPH)",
@@ -176,6 +192,7 @@ const pilotResources = {
             },
             {
               title: "Risk Management Handbook",
+              description: "Strategies for managing aviation risks.",
               imagePath:
                 "/src/assets/Risk Management Handbook.jpg",
               imageAlt: "Risk Management Handbook",
@@ -184,6 +201,7 @@ const pilotResources = {
             },
             {
               title: "Aviation Instructor’s Handbook",
+              description: "Resource for flight instructors on teaching methods.",
               imagePath:
                 "/src/assets/aviation-instructors-handbook.jpg",
               imageAlt: "Aviation Instructor’s Handbook",
@@ -197,6 +215,7 @@ const pilotResources = {
           cards: [
             {
               title: "FAR/AIM 2021",
+              description: "Compilation of Federal Aviation Regulations and Aeronautical Information.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -205,6 +224,7 @@ const pilotResources = {
             },
             {
               title: "Aeronautical Chart User Guide",
+              description: "Instructions on reading and using aeronautical charts.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -213,6 +233,7 @@ const pilotResources = {
             },
             {
               title: "Gleim Private Pilot Syllabus",
+              description: "Structured curriculum for private pilot training.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -221,6 +242,7 @@ const pilotResources = {
             },
             {
               title: "Gleim Instrument Pilot Syllabus",
+              description: "Detailed syllabus for instrument pilot training.",
               imagePath:
                 "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
               imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
