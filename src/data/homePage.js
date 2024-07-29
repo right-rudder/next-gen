@@ -4,7 +4,7 @@ const homePage = {
     pageTitle:
       "Pilot Training in Riverside & Redlands, CA | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
       "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
@@ -29,7 +29,7 @@ const homePage = {
       {
         location: "Redlands, CA",
         inverted: true,
-        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification 25 months ago, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too.",
+        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification 25 months ago, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too, continuing our commitment to excellence in flight training.",
         gMapUrl:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
       },
@@ -173,7 +173,7 @@ const homePage = {
             "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
           imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
-            "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
+            `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
           link: "/training-programs",
         },
       ],

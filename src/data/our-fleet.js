@@ -14,12 +14,12 @@ const ourFleet = {
       imageAlt: "Riverside location fleet of Cessna 172s, Beechcraft Duchess, and Piper Cherokee Arrow",
       headerH1: "Our Fleet",
       headerH2:
-        "Explore our aircraft at NextGen Flight Academy and learn to fly with the best",
+        "Learn to fly with the best aircraft in San Bernardino",
     },
 
     fleet: [
       {
-        location: "Riverside Municipal Airport (RAL)",
+        location: "Riverside Municipal Airport (KRAL)",
         locationDescription:
           "The NextGen Flight Academy fleet includes Cessna 172s, Piper Arrow, Cessna 120, Duchess, and a Cessna 152. Thorough VFR and IFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time. Renters and students must carry renters insurance.",
         aircraft: [
@@ -106,7 +106,7 @@ const ourFleet = {
         ],
       },
       {
-        location: "Redlands Municipal Airport (REI)",
+        location: "Redlands Municipal Airport (KREI)",
         locationDescription:
           "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172 and a Piper Warrior. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
         aircraft: [

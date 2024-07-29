@@ -20,8 +20,6 @@ tags:
   ]
 ---
 
-# The Written Exam: What Is It and Why Do I Need It?
-
 Embarking on the journey to become a private pilot is an exciting and challenging adventure. One crucial milestone in this journey is the [Private Pilot License (PPL)](/training-programs/private-pilot) written exam. At NextGen Flight Academy, we understand the importance of this exam and are committed to helping our students succeed. In this blog post, we’ll explore what the PPL written exam is, why it’s essential, and how to prepare for it effectively.
 
 ## Understanding the PPL Written Exam

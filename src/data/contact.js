@@ -14,14 +14,14 @@ const contact = {
       {
         location: "Riverside, CA",
         inverted: false,
-        body: "Our Riverside location is conveniently located at Riverside Municipal Airport (RAL), providing easy access to the Inland Empire and surrounding areas.",
+        body: "Founded in February 2016, our Riverside location at KRAL has quickly become a premier flight training institution. Offering FAA Part 141 and Part 61 approved programs, we provide top-quality education with a fleet that includes Cessna 172s, Piper Arrow, Cessna 120, Beechcraft Duchess, and Cessna 152.",
         gMapUrl:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.627392285859!2d-117.44849982418127!3d33.95071037319536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1373a59a741%3A0xad098c31f424e525!2sNextGen%20Flight%20Academy!5e0!3m2!1sen!2sco!4v1718894671435!5m2!1sen!2sco",
       },
       {
         location: "Redlands, CA",
         inverted: true,
-        body: "Our Redlands location is situated at Redlands Municipal Airport (REI), offering a convenient location for students in the Inland Empire and surrounding areas.",
+        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification 25 months ago, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too, continuing our commitment to excellence in flight training.",
         gMapUrl:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
       },

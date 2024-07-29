@@ -1,7 +1,7 @@
 const careerTrack = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Career Track | NextGen Flight Academy",
+    pageTitle: "Career Pilot Training | NextGen Flight Academy",
     pageDescription:
       "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
@@ -14,7 +14,7 @@ const careerTrack = {
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Career Track",
       headerH2:
-        "Zero to Hero Pilot Training Programs at NextGen Flight Academy",
+        "Zero-to-Hero Flight Training at NextGen Flight Academy",
     },
     underHeader: {
       upperHeading: "Featured Program",
@@ -34,98 +34,87 @@ const careerTrack = {
         title: "Private Pilot Certificate (PPL)",
         linkTo: {
           title: "Learn More",
-          url: "/flight-programs/private-pilot-training",
+          url: "/training-programs/private-pilot",
         },
         content:
-          "Your private training is your first step as a professional pilot. This certificate allow you to fly single-engine piston aircraft for non-commercial purposes.",
-        content2:
-          "Your training includes flight instruction and aircraft time along with the associated ground school and instructor time to prepare your for your first FAA pilot certificate.",
+          "The Private Pilot Certificate allows you to fly single-engine aircraft for personal use, travel, and recreation. This certification provides essential skills and knowledge for safe and competent flying. To earn this license, you must complete a minimum of 40 flight hours, which includes 20 hours of flight training with an instructor and 10 hours of solo flight. The training covers cross-country flight, night flight, instrument training, and preparation for the practical test. You must also pass a medical exam to obtain a third-class medical certificate."
       },
       {
         title: "Instrument Rating",
         linkTo: {
           title: "Learn More",
-          url: "/flight-programs/instrument-rating",
+          url: "/training-programs/instrument-rating",
         },
-        content: `An instrument rating gives you the skills and confidence to safely fly through clouds and in weather conditions that would keep you grounded with only a private pilot certificate.  We strive to provide every student as much "actual" instrument conditions to train in as is safely possible.`,
-        content2: `You'll learn procedures in a RedBird simulator and fly in our Garmin-equipped aircraft to earn your instrument rating and build cross-country and additional night flight experience.`,
+        content: `An Instrument Rating (IR) enhances your flying skills by allowing you to fly in various weather conditions using only your aircraft's instruments. This rating is critical for increasing flight safety and expanding your flying opportunities. It prepares you to handle flights in clouds, fog, and low visibility, making you a more versatile and capable pilot. To earn this rating, you must already hold a Private Pilot Certificate and complete additional flight training focused on instrument navigation.`,
       },
       {
         title: "Commercial Pilot Certificate (CPL)",
         linkTo: {
           title: "Learn More",
-          url: "/flight-programs/commercial-pilot-training",
+          url: "/training-programs/commercial-pilot",
         },
         content:
-          "A commercial pilot certificate refines your flying skills and teaches you the regulations related to commercial aviation. You'll spend about 50 flight hours prepping for your commercial certificate, along with associated ground instruction. ",
-        content2:
-          "To obtain the remaining hours needed to sit for the commercial checkride, students have a variety of options.",
-      },
-      {
-        title: "Certified Flight Instructor (CFI)",
-        linkTo: {
-          title: "Learn More",
-          url: "/career/instructor-training",
-        },
-        content:
-          "A Certificated Flight Instructor (CFI) is often the most challenging, yet rewarding, certificate many pilots earn. It entrusts you with training the next generation of pilots. The CFI certificate typically enables you to build time efficiently towards the 1500 hours you need to qualify for an Airline Transport Pilot (ATP) certificate.",
-        content2:
-          "Your training will include approximately 15 hours of right seat flight time plus extensive ground school refining your lesson plans and developing effective teaching techniques on the ground and in the air.",
-      },
-      {
-        title: "Certificated Flight Instructor-Instrument (CFII)",
-        linkTo: {
-          title: "Learn More",
-          url: "/career/instructor-training",
-        },
-        content:
-          "Many flight schools strongly prefer instructors who can teach private/commercial and instrument students to help maintain a student-instructor relationship throughout training.   For those pilots without significant instrument time, this add-on certificate will hone your instrument stills and provide a more diverse set of students to teach.",
-        content2:
-          "Your CFI-I training will include additional simulator time to learn how to effectively teach in a simulator environment. Your right-seat flying skills on instruments will be honed and you'll learn additional skills in teaching instrument pilots.​",
+          "The Commercial Pilot Certificate (CPL) is your ticket to a professional aviation career. This certification allows you to be compensated for your flying services, opening doors to various opportunities such as charter services, agricultural aviation, and corporate aviation. The training focuses on refining your piloting skills to meet high commercial standards. It includes advanced maneuvers, complex flight operations, and emergency procedures.",
       },
       {
         title: "Multi-Engine Rating",
         linkTo: {
           title: "Learn More",
-          url: "/flight-programs/multi-engine-rating",
+          url: "/training-programs/multi-engine-rating",
         },
         content:
-          "Adding on a multi-engine rating and building 25-50 multi-engine hours is often a pre-requisite of most professional pilot jobs.",
-        content2:
-          "Your training starts with time in a RedBird simulator to learn multi-engine procedures. Then, we offer the option of earning your multi-engine certificate and 25 hours in a Piper Twin Commanche multi-engine aircraft or earning your multi-engine certificate plus multi-engine instructor rating to build further multi-engine hours.",
+          "A Multi-Engine Rating (MER) allows you to fly aircraft with more than one engine, significantly enhancing your piloting skills and expanding your career opportunities. This rating is essential for pilots who aim to fly larger, faster, and more complex aircraft, including those used in commercial aviation. The training focuses on multi-engine aerodynamics, engine-out procedures, and the operation of multi-engine aircraft systems. Achieving a Multi-Engine Rating demonstrates your ability to manage the increased complexity of multi-engine aircraft. This certification opens up new opportunities for pilots, including the potential to fly more advanced and higher-performance aircraft. It also makes you more competitive in the job market, as many commercial and corporate aviation roles require or prefer pilots with multi-engine experience.",
       },
       {
-        title: "Multi-Engine Instructor (MEI)",
+        title: "Certified Flight Instructor (CFI)",
         linkTo: {
           title: "Learn More",
-          url: "/career/instructor-training",
+          url: "/training-programs/certified-flight-instructor",
+        },
+        content:
+          "Becoming a Certified Flight Instructor (CFI) allows you to share your passion for aviation by teaching others to fly. This certification provides an opportunity to build flight hours and gain experience while opening pathways to advanced piloting careers. CFIs play a critical role in the aviation industry by ensuring that new pilots receive high-quality training and develop the necessary skills for safe and effective flying. Many CFIs eventually move on to careers as commercial or airline pilots, making this an excellent step for those pursuing long-term aviation goals.",
+      },
+      {
+        title: "Certified Flight Instructor-Instrument (CFII)",
+        linkTo: {
+          title: "Learn More",
+          url: "/training-programs/certified-flight-instructor",
+        },
+        content:
+          "The Certified Flight Instructor - Instrument (CFII) rating allows you to teach instrument flying, enabling students to fly safely in various weather conditions and low visibility. This certification is essential for those who wish to specialize in instrument training and ensures that new pilots are well-equipped to handle instrument flight rules (IFR).",
+      },
+      {
+        title: "Airline Transport Pilot (ATP)",
+        linkTo: {
+          title: "Learn More",
+          url: "/training-programs/airline-transport-pilot",
         },
         content:
           "With this certification, you'll gain expertise in instructing in multi-engine aircraft, imparting knowledge and skills essential for operating these high-performance machines.",
         content2:
-          "This is also where you can reach your required 25 hours of time building for your Multi-Engine Rating.",
+          "The ATP certification is highly regarded in the aviation industry and opens up numerous career opportunities. Achieving this certification signifies that you have reached the highest standard of piloting proficiency and are capable of handling the most complex flight operations. It requires a deep understanding of advanced aerodynamics, systems management, and operational procedures.",
       },
     ],
 
     priceCalc: {
-      title: "Price Calculator",
-      subtitle: "How much does pilot training cost?",
+      title: "Training Price Estimator",
+      subtitle: "How much could pilot training cost?",
 
-      calcHeading: "NextGen Flight Academy Training Calculator",
-      calcSubheading: "Fly for a career, within a year!",
+      calcHeading: "NextGen Flight Academy Training Estimator",
+      calcSubheading: "Make flying your career with NextGen",
 
-      pricePpl: 1111,
-      priceInstrument: 2222,
-      priceCpl: 4444,
-      priceCfi: 5555,
-      priceCfii: 6666,
-      priceMe: 7777,
-      priceMei: 8888,
-      priceAtp: 11212,
+      pricePpl: 12000,
+      priceInstrument: 14000,
+      priceCpl: 20000,
+      priceCfi: 5000,
+      priceCfii: 5000,
+      priceMe: 4000,
+      priceMei: 3000,
+      priceAtp: 3000,
 
-      zeroTotal: "Choose your training goals",
+      zeroTotal: "Please select a training goal to begin.",
 
-      totalTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      totalTooltip: "Note that pilot training is highly subjective and billed by time spent training. While it may be possible to achieve your certifications in this time frame, please understand that this is an esitmate and could be higher depending on the efficacy of your training.",
       meTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
 
@@ -136,7 +125,7 @@ const careerTrack = {
       linkText: "Book an Intro Flight",
       linkUrl: "/intro-flight",
       imagePath:
-        "/src/assets/nextgen-flight-academy-staff-flying-over-riverside-ca.jpg",
+        "/src/assets/on-an-intro-flight-with-nextgen-flight-academy.jpg",
       imageAlt: "nextgen-flight-academy-staff-flying-over-riverside-ca",
     },
   },
