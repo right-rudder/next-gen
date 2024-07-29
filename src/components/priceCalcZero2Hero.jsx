@@ -9,12 +9,11 @@ const PriceCalcZero2Hero = ({ programs }) => {
   const pricePpl = programs.pricePpl;
   const priceInstrument = programs.priceInstrument;
   const priceCplShared = programs.priceCplShared;
-  const priceCplSolo = programs.priceCplSolo;
+  const priceCpl = programs.priceCpl;
   const priceCfi = programs.priceCfi;
   const priceCfii = programs.priceCfii;
   const priceMe = programs.priceMe;
   const priceMei = programs.priceMei;
-  const priceMeTbd = programs.priceMeTbd;
 
   const priceStarter = 600;
   const priceCheckride = 6600;
@@ -28,13 +27,11 @@ const PriceCalcZero2Hero = ({ programs }) => {
 
   const [ppl, setPpl] = useState(false);
   const [instrument, setInstrument] = useState(false);
-  const [cplShared, setCplShared] = useState(false);
-  const [cplSolo, setCplSolo] = useState(false);
+  const [cpl, setCpl] = useState(false);
   const [cfi, setCfi] = useState(false);
   const [cfii, setCfii] = useState(false);
   const [me, setMe] = useState(false);
   const [mei, setMei] = useState(false);
-  const [meTbd, setMeTbd] = useState(false);
 
   const [heldPpl, setHeldPpl] = useState(false);
   const [heldInstrument, setHeldInstrument] = useState(false);
@@ -46,7 +43,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
   useEffect(() => {
     setPpl(true);
     setInstrument(true);
-    setCplShared(true);
+    setCpl(true);
     setCfi(true);
     setCfii(true);
     setMe(true);
@@ -55,7 +52,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
       total +
         pricePpl +
         priceInstrument +
-        priceCplShared +
+        priceCpl +
         priceCfi +
         priceCfii +
         priceMe +
@@ -69,10 +66,10 @@ const PriceCalcZero2Hero = ({ programs }) => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto w-full lg:mx-0">
             <h2 className="xl:text-6xl text-5xl font-bold tracking-tight text-main-red text-center">
-              Cost Estimator
+              {programs.title}
             </h2>
-            <p className="mt-4 text-lg leading-8 text-black text-center">
-              How much does pilot training cost?
+            <p className="mt-3 text-xl leading-8 text-black text-center">
+              {programs.subtitle}
             </p>
           </div>
           <div className="mt-12 m-auto -space-y-4 items-center justify-center lg:flex md:space-y-0 xl:w-full">
@@ -139,19 +136,35 @@ const PriceCalcZero2Hero = ({ programs }) => {
                           name="heldCpl"
                           onChange={(e) => {
                             setHeldCpl(!heldCpl);
-                            if (cplShared) {
-                              setTotal(total - priceCplShared);
-                              setCplShared(!cplShared);
-                            }
-                            if (cplSolo) {
-                              setTotal(total - priceCplSolo);
-                              setCplSolo(!cplSolo);
+                            if (cpl) {
+                              setTotal(total - priceCpl);
+                              setCpl(!cpl);
                             }
                           }}
                         />
                         <label htmlFor="heldCpl" className="text-sm">
                           Commercial Pilot Certificate{" "}
                           <small className="font-bold">(CPL)</small>
+                        </label>
+                      </div>
+
+                      <div className="">
+                        <input
+                          type="checkbox"
+                          checked={heldMe}
+                          className="mx-2"
+                          id="heldMe"
+                          name="heldMe"
+                          onChange={(e) => {
+                            setHeldMe(!heldMe);
+                            if (me) {
+                              setTotal(total - priceMe);
+                              setMe(!me);
+                            }
+                          }}
+                        />
+                        <label htmlFor="heldMe" className="text-sm">
+                          Multi-Engine Rating
                         </label>
                       </div>
 
@@ -196,26 +209,6 @@ const PriceCalcZero2Hero = ({ programs }) => {
                           <small className="font-bold">(CFII)</small>
                         </label>
                       </div>
-
-                      <div className="">
-                        <input
-                          type="checkbox"
-                          checked={heldMe}
-                          className="mx-2"
-                          id="heldMe"
-                          name="heldMe"
-                          onChange={(e) => {
-                            setHeldMe(!heldMe);
-                            if (me) {
-                              setTotal(total - priceMe);
-                              setMe(!me);
-                            }
-                          }}
-                        />
-                        <label htmlFor="heldMe" className="text-sm">
-                          Multi-Engine Rating
-                        </label>
-                      </div>
                     </fieldset>
                     <div className="mt-4 flex justify-around lg:hidden">
                       <div className="flex items-center">
@@ -241,23 +234,13 @@ const PriceCalcZero2Hero = ({ programs }) => {
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="p-6 space-y-6 lg:p-8">
                   <h3 className="text-3xl text-gray-800 font-bold text-center">
-                    NextGen Flight Academy Training Calculator
+                    {programs.calcHeading}
                   </h3>
                   <p className="italic text-center text-gray-700">
-                    Fly for a career, within a year!
+                    {programs.calcSubheading}
                   </p>
                   <div className="flex justify-around has-tooltip">
-                    <span class="tooltip">
-                      This pricing is based on <strong>250 hours</strong> and
-                      flying full-time. While pricing can vary within our other
-                      programs, it does less so for our Zero to Hero Program.
-                      However, the speed at which you can achieve the level you
-                      wish will be based upon your availability and time
-                      commitment. There is no way to go Zero to Hero in a year
-                      doing anything less than full-time. Flying 3-4 days a week
-                      makes Zero to Hero achievable in 12-15 months and flying
-                      2-3 days a week is achievable in 15-18 months.
-                    </span>
+                    <span class="tooltip">{programs.totalTooltip}</span>
                     <div className="flex items-center">
                       <div className="">
                         <span className="block text-3xl text-gray-700 font-bold">
@@ -275,9 +258,9 @@ const PriceCalcZero2Hero = ({ programs }) => {
                     className="w-full px-3 space-y-2 text-sm pb-6 m-auto text-gray-600 grid grid-cols-1 lg:grid-cols-2 gap-4"
                   >
                     {total == 0 && (
-                      <li className="space-x-2 flex flex-nowrap align-middle justify-center items-center">
+                      <li className="space-x-2 col-span-full flex flex-nowrap align-middle justify-center items-center">
                         <span className="font-semibold text-xl text-center">
-                          Choose your training goal
+                          {programs.zeroTotal}
                         </span>
                       </li>
                     )}
@@ -295,7 +278,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                         <span>Instrument Rating</span>
                       </li>
                     )}
-                    {(cplShared || cplSolo) && (
+                    {cpl && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-sky-500 font-semibold">
                           <FaCheckCircle className="text-green-600 text-xl" />
@@ -327,7 +310,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                         <span>Multi-Engine Rating</span>
                       </li>
                     )}
-                    {(mei || meTbd) && (
+                    {mei && (
                       <li className="space-x-2 flex flex-nowrap align-middle items-center">
                         <span className="text-sky-500 font-semibold">
                           <FaCheckCircle className="text-green-600 text-xl" />
@@ -336,7 +319,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                       </li>
                     )}
                   </ul>
-                  <fieldset className="flex flex-col justify-center items-center align-top w-full text-left">
+                  {/* <fieldset className="flex flex-col justify-center items-center align-top w-full text-left">
                     <legend className="mb-2 text-xl text-center w-full text-gray-800 font-semibold">
                       Add Ons:
                     </legend>
@@ -437,15 +420,15 @@ const PriceCalcZero2Hero = ({ programs }) => {
                         </label>
                       </div>
                     </div>
-                  </fieldset>
+                  </fieldset> */}
                 </div>
                 <div className="mt-8 mx-auto text-center">
                   CONTACT US
                   <a
                     href={`tel: ${PHONE_NUMBER}`}
-                    className="mt-6 flex space-x-3 justify-center flex-nowrap hover:font-bold hover:scale-105 transition-all duration-500"
+                    className="mt-6 flex space-x-3 justify-center align-middle items-center flex-nowrap hover:scale-105 transition-all duration-500"
                   >
-                    <FaPhone />
+                    <FaPhone className="size-6" />
                     <span>{PHONE_NUMBER}</span>
                   </a>
                 </div>
@@ -467,7 +450,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                       type="checkbox"
                       checked={ppl}
                       disabled={heldPpl}
-                      className="mx-2"
+                      className="mx-2 disabled:opacity-50"
                       id="ppl"
                       name="ppl"
                       onChange={(e) => {
@@ -488,7 +471,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                       type="checkbox"
                       checked={instrument}
                       disabled={heldInstrument}
-                      className="mx-2"
+                      className="mx-2 disabled:opacity-50"
                       id="instrument"
                       name="instrument"
                       onChange={(e) => {
@@ -503,49 +486,48 @@ const PriceCalcZero2Hero = ({ programs }) => {
                     </label>
                   </div>
 
-                  <div className="has-tooltip">
+                  <div className="">
                     <input
                       type="checkbox"
-                      checked={cplShared}
-                      disabled={heldCpl || cplSolo}
-                      className="mx-2"
-                      id="cplShared"
-                      name="cplShared"
+                      checked={cpl}
+                      disabled={heldCpl}
+                      className="mx-2 disabled:opacity-50"
+                      id="cpl"
+                      name="cpl"
                       onChange={(e) => {
-                        cplShared
-                          ? setTotal(total - priceCplShared)
-                          : setTotal(total + priceCplShared);
-                        setCplShared(!cplShared);
+                        cpl
+                          ? setTotal(total - priceCpl)
+                          : setTotal(total + priceCpl);
+                        setCpl(!cpl);
                       }}
                     />
-                    <span class="tooltip text-sm">
-                      Shared time building will make this certification
-                      achievable in a shorter time.
-                    </span>
-                    <label htmlFor="cplShared" className="text-sm">
+                    <label htmlFor="cpl" className="text-sm">
                       Commercial Pilot Certificate{" "}
-                      <small className="font-bold">(Shared)</small>
                     </label>
                   </div>
 
                   <div className="">
                     <input
                       type="checkbox"
-                      checked={cplSolo}
-                      disabled={heldCpl || cplShared}
-                      className="mx-2"
-                      id="cplSolo"
-                      name="cplSolo"
+                      checked={me}
+                      disabled={heldMe}
+                      className="mx-2 disabled:opacity-50"
+                      id="me"
+                      name="me"
                       onChange={(e) => {
-                        cplSolo
-                          ? setTotal(total - priceCplSolo)
-                          : setTotal(total + priceCplSolo);
-                        setCplSolo(!cplSolo);
+                        me
+                          ? setTotal(total - priceMe)
+                          : setTotal(total + priceMe);
+                        setMe(!me);
                       }}
                     />
-                    <label htmlFor="cplSolo" className="text-sm">
-                      Commercial Pilot Certificate{" "}
-                      <small className="font-bold">(Solo)</small>
+                    <label htmlFor="me" className="text-sm has-tooltip">
+                      {programs.meTooltip && (
+                        <span className="tooltip text-sm">
+                          {programs.meTooltip}
+                        </span>
+                      )}
+                      Multi-Engine Rating
                     </label>
                   </div>
 
@@ -554,7 +536,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                       type="checkbox"
                       checked={cfi}
                       disabled={heldCfi}
-                      className="mx-2"
+                      className="mx-2 disabled:opacity-50"
                       id="cfi"
                       name="cfi"
                       onChange={(e) => {
@@ -575,7 +557,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
                       type="checkbox"
                       checked={cfii}
                       disabled={heldCfii}
-                      className="mx-2"
+                      className="mx-2 disabled:opacity-50"
                       id="cfii"
                       name="cfii"
                       onChange={(e) => {
@@ -594,35 +576,8 @@ const PriceCalcZero2Hero = ({ programs }) => {
                   <div className="">
                     <input
                       type="checkbox"
-                      checked={me}
-                      disabled={heldMe}
-                      className="mx-2"
-                      id="me"
-                      name="me"
-                      onChange={(e) => {
-                        me
-                          ? setTotal(total - priceMe)
-                          : setTotal(total + priceMe);
-                        setMe(!me);
-                      }}
-                    />
-                    <label htmlFor="me" className="text-sm has-tooltip">
-                      <span className="tooltip text-sm">
-                        Career track students need 25 total ME hours to reach a
-                        Multi-Engine certification. You can achieve this by
-                        either getting your MEI or flying 15 hours via time
-                        building.
-                      </span>
-                      Multi-Engine Rating
-                    </label>
-                  </div>
-
-                  <div className="">
-                    <input
-                      type="checkbox"
                       checked={mei}
-                      disabled={meTbd}
-                      className="mx-2"
+                      className="mx-2 disabled:opacity-50"
                       id="mei"
                       name="mei"
                       onChange={(e) => {
@@ -635,27 +590,6 @@ const PriceCalcZero2Hero = ({ programs }) => {
                     <label htmlFor="mei" className="text-sm">
                       Multi-Engine Instructor{" "}
                       <small className="font-bold">(MEI)</small>
-                    </label>
-                  </div>
-
-                  <div className="">
-                    <input
-                      type="checkbox"
-                      checked={meTbd}
-                      disabled={mei}
-                      className="mx-2"
-                      id="meTbd"
-                      name="meTbd"
-                      onChange={(e) => {
-                        meTbd
-                          ? setTotal(total - priceMeTbd)
-                          : setTotal(total + priceMeTbd);
-                        setMeTbd(!meTbd);
-                      }}
-                    />
-                    <label htmlFor="meTbd" className="text-sm">
-                      Multi-Engine Time Building{" "}
-                      <small className="font-bold">(15 Hours)</small>
                     </label>
                   </div>
                 </fieldset>
