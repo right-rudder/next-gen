@@ -84,6 +84,15 @@ const careerTrack = {
           "The Certified Flight Instructor - Instrument (CFII) rating allows you to teach instrument flying, enabling students to fly safely in various weather conditions and low visibility. This certification is essential for those who wish to specialize in instrument training and ensures that new pilots are well-equipped to handle instrument flight rules (IFR).",
       },
       {
+        title: "Multi-Engine Instructor (MEI)",
+        linkTo: {
+          title: "Learn More",
+          url: "/training-programs/certified-flight-instructor",
+        },
+        content:
+          "Becoming a Multi-Engine Instructor (MEI) allows you to teach students how to operate aircraft with multiple engines, preparing them for advanced piloting roles. This certification builds on your existing flight instructor experience and adds the ability to train others in more complex flight operations, enhancing your skills and expanding your teaching opportunities.",
+      },
+      {
         title: "Airline Transport Pilot (ATP)",
         linkTo: {
           title: "Learn More",
@@ -109,7 +118,7 @@ const careerTrack = {
       priceCfi: 5000,
       priceCfii: 5000,
       priceMe: 4000,
-      priceMei: 3000,
+      priceMei: 5000,
       priceAtp: 3000,
 
       zeroTotal: "Please select a training goal to begin.",
