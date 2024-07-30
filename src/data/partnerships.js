@@ -24,7 +24,7 @@ const partnerships = {
         imagePath: "/financing/Stratus_financial_logo.webp",
         imageAlt: "Straus Financial Logo",
         linkText: "Learn More",
-        linkUrl: "https://stratus.finance/apply/nextgenflightacademy/",
+        linkUrl: "https://www.spartan.edu/affiliate-partner-program/",
       },
       {
         provider: "American English Institute",
@@ -33,7 +33,8 @@ const partnerships = {
         imagePath: "/financing/Stratus_financial_logo.webp",
         imageAlt: "Straus Financial Logo",
         linkText: "Learn More",
-        linkUrl: "https://stratus.finance/apply/nextgenflightacademy/",
+        linkUrl:
+          "https://www.american-english-institute.com/find-an-aviation-english-program",
       },
       {
         provider: "Excel Charter Academy School",
