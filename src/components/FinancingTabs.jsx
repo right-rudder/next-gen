@@ -29,6 +29,13 @@ const FinancingTabs = () => {
             financing you need.
           </p>
         </div>
+        <a
+          href="https://www.yourfinancingnow.com/ngfa/"
+          target="_blank"
+          className="btn-primary btn-animate block mt-12 mx-auto w-4/5 lg:w-1/3 md:w-1/2"
+        >
+          <span className="relative z-10">Apply Now</span>
+        </a>
       </div>
     </section>
   );
@@ -92,6 +99,13 @@ const FinancingTabs = () => {
               </ol>
             </div>
           </div>
+          <a
+            href="https://stratus.finance/apply/nextgenflightacademy/"
+            target="_blank"
+            className="btn-primary btn-animate block mt-12 mx-auto w-4/5 lg:w-1/3 md:w-1/2"
+          >
+            <span className="relative z-10">Apply Now</span>
+          </a>
         </div>
       </div>
     </section>
@@ -198,6 +212,13 @@ const FinancingTabs = () => {
             </li>
           </ul>
         </div>
+        <a
+          href="https://www.flighttrainingfinancellc.com/"
+          target="_blank"
+          className="btn-primary btn-animate block mt-12 mx-auto w-4/5 lg:w-1/3 md:w-1/2"
+        >
+          <span className="relative z-10">Apply Now</span>
+        </a>
       </div>
     </section>
   );
@@ -221,7 +242,7 @@ const FinancingTabs = () => {
         </select>
       </div>
 
-      <div className="hidden sm:block">
+      <div className="hidden sm:block sticky top-24 z-20">
         <div
           className="isolate flex divide-x divide-gray-200 rounded-lg shadow"
           aria-label="Tabs"

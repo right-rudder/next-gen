@@ -8,8 +8,7 @@ const airlineTransportPilot = {
       "Airline Transport Pilot, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath:
-        "/src/assets/nextgen-atp-training-program.jpg",
+      imagePath: "/src/assets/nextgen-atp-training-program.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -31,7 +30,7 @@ const airlineTransportPilot = {
         {
           title: "Complex Endorsement",
           link: "/training-programs/complex-endorsement",
-        }
+        },
       ],
       trainingDetails: {
         description:
@@ -41,8 +40,10 @@ const airlineTransportPilot = {
           "Log 1,500 flight hours",
           "Hold a first-class medical certificate",
         ],
-        aircraft: ["BE76 Beechcraft Duchess"],
-        startingPrice: "3,000",
+        aircraft: [
+          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a>`,
+        ],
+        startingPrice: 3000,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
@@ -50,8 +51,8 @@ const airlineTransportPilot = {
     CTAcard: {
       title: "Want to become an airline pilot?",
       imagePath:
-            "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
-          imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
+        "/src/assets/atp-training-at-nextgen-flight-academy-riverside-ca.jpg",
+      imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

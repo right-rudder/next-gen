@@ -49,12 +49,19 @@ const PartnersTabs = ({ data }) => {
       </div>
       <section className="bg-white py-8 lg:py-16">
         <div className="mx-auto text-center">
-          <h3 className="text-4xl text-center font-bold">
+          <h3 className="text-6xl text-center font-bold">
             {currentTab.provider}
           </h3>
-          <p className="text-2xl mt-4 px-4 lg:px-16 font-sans1">
+          <p className="text-xl mt-6 px-4 lg:px-16 font-sans1">
             {currentTab.providerDescription}
           </p>
+          <a
+            href={currentTab.linkUrl}
+            target="_blank"
+            className="block mt-8 btn-primary btn-animate mx-auto w-4/5 md:w-1/2 lg:w-1/3"
+          >
+            <span className="relative z-10">{currentTab.linkText}</span>
+          </a>
         </div>
       </section>
     </div>

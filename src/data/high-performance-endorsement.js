@@ -8,8 +8,7 @@ const highPerformance = {
       "High-Performance Endorsement, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
 
     topImage: {
-      imagePath:
-        "/src/assets/high-performance-airplane.jpg",
+      imagePath: "/src/assets/high-performance-airplane.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
     },
     program: {
@@ -41,7 +40,7 @@ const highPerformance = {
           "Hold at least a third-class medical certificate",
         ],
         aircraft: ["High-performance aircraft provided by the student"],
-        startingPrice: "Please contact us for a price estimate.",
+        startingPrice: `Please <a href="/contact" class="hover:underline hover:text-accent"> contact us</a> for a price estimate.`,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
@@ -49,8 +48,8 @@ const highPerformance = {
     CTAcard: {
       title: "Let's fly high-performance aircraft",
       imagePath:
-            "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
-          imageAlt: "planes-flying-over-san-bernadino-ca",
+        "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
+      imageAlt: "planes-flying-over-san-bernadino-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

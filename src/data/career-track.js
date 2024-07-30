@@ -11,7 +11,8 @@ const careerTrack = {
     header: {
       imagePath:
         "/src/assets/student-and-cfi-completing-career-zero-to-hero-flight-training-at-nextgen-flight-academy.jpg",
-      imageAlt: "CFI and student on the runway at NextGen Flight Academy at Riverside Municipal Airport",
+      imageAlt:
+        "CFI and student on the runway at NextGen Flight Academy at Riverside Municipal Airport",
       headerH1: "Career Track Pilots",
       headerH2: "Zero to Hero Flight Training at NextGen Flight Academy",
     },
@@ -23,7 +24,8 @@ const careerTrack = {
         "This program aims to provide students with the skills, knowledge, and experience required to pursue successful careers in aviation, including opportunities in commercial airlines, corporate aviation, and more.",
         "If you’re already a pilot in some capacity, you can also start with whichever certification you're at!",
       ],
-      imagePath: "/src/assets/commercial-pilot-passes-checkride-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+      imagePath:
+        "/src/assets/commercial-pilot-passes-checkride-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school-fix.jpg",
       imageAlt: "Student at NextGen Flight Academy in the Zero to Hero program",
       linkText: "Enroll with NextGen",
       linkUrl: "/contact",
@@ -36,7 +38,8 @@ const careerTrack = {
       containerDescription: [
         "NextGen Flight Academy is proud to provide flight lessons from Private Pilot all the way up to Airline Transport Pilot at our Riverside and Redlands locations. This is our most popular training structure and what we recommend to anyone looking to pursue a career in aviation.",
       ],
-      containerSmallPrint: "Choose your desired training program below to learn more about our curriculum and potential career opportunities.",
+      containerSmallPrint:
+        "Choose your desired training program below to learn more about our curriculum and potential career opportunities.",
     },
 
     programs: [

@@ -42,8 +42,10 @@ const multiEngine = {
           "Be able to read, speak, write, and understand English",
           "Hold at least a third-class medical certificate",
         ],
-        aircraft: ["BE76 Beechcraft Duchess"],
-        startingPrice: "4,000",
+        aircraft: [
+          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a>`,
+        ],
+        startingPrice: 4000,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },

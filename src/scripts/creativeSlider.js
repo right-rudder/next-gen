@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     pagination: {
       el: ".swiper-pagination",
+      clickable: true,
     },
     keyboard: {
       enabled: true,

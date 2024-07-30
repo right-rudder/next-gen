@@ -52,19 +52,10 @@ const { pathname } = Astro.url;
           </a>
         </div>
       </div>
-      <div
-        class="grid grid-cols-2 gap-8 row-gap-8 lg:col-span-4 md:grid-cols-4"
-      >
+      <div class="grid grid-cols-2 gap-9 lg:col-span-4 lg:grid-cols-4">
         <div>
-          <p class="font-semibold tracking-wide text-gray-900">Quick Links</p>
+          <p class="font-semibold tracking-wide text-gray-50/90">Quick Links</p>
           <ul class="mt-2 space-y-2">
-            <li>
-              <a
-                href="/"
-                class="transition-colors duration-300 text-white hover:text-accent inline-flex"
-                >Home</a
-              >
-            </li>
             <li>
               <a
                 href="/new-to-flying"
@@ -74,10 +65,10 @@ const { pathname } = Astro.url;
             </li>
             <li>
               <a
-                href="/training-programs"
+                href="/intro-flight"
                 class="transition-colors duration-300 text-white hover:text-accent"
-                >Training Programs
-              </a>
+                >Book a Flight</a
+              >
             </li>
             <li>
               <a
@@ -89,6 +80,13 @@ const { pathname } = Astro.url;
             </li>
             <li>
               <a
+                href="/our-fleet"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Rent Today
+              </a>
+            </li>
+            <li>
+              <a
                 href="/contact"
                 class="transition-colors duration-300 text-white hover:text-accent"
                 >Contact Us</a
@@ -96,73 +94,139 @@ const { pathname } = Astro.url;
             </li>
           </ul>
         </div>
-        <div class="text-right md:text-left">
-          <p class="font-semibold tracking-wide text-gray-900">Fly Today</p>
+        <div class="text-right lg:text-left">
+          <p class="font-semibold tracking-wide text-gray-50/90">
+            Training Programs
+          </p>
           <ul class="mt-2 space-y-2">
             <li>
               <a
-                href="/enrollment"
+                href="/training-programs/career"
                 class="transition-colors duration-300 text-white hover:text-accent"
-                >Enrollment Interest
+                >Career Track
               </a>
             </li>
             <li>
               <a
-                href="/quiz-form"
+                href="/training-programs/private-pilot"
                 class="transition-colors duration-300 text-white hover:text-accent"
-                >Take Our Quiz
+                >Private Pilot
               </a>
             </li>
             <li>
               <a
-                href="/intro-flight"
+                href="/training-programs/instrument-rating"
                 class="transition-colors duration-300 text-white hover:text-accent"
-                >Intro Flights
+                >Instrument Rating
               </a>
             </li>
             <li>
               <a
-                href="https://app.process.st/workflows/NextGen-Aircraft-Checkout-qNoL_5yUWfBKy5Jd9PBNaw/run-link"
-                target="_blank"
+                href="/training-programs/commercial-pilot"
                 class="transition-colors duration-300 text-white hover:text-accent"
-                >Rent Today</a
+                >Commercial Pilot</a
+              >
+            </li>
+            <li>
+              <a
+                href="/training-programs/multi-engine-rating"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Multi-Engine Rating</a
+              >
+            </li>
+            <li>
+              <a
+                href="/training-programs/certified-flight-instructor"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Flight Instructor</a
+              >
+            </li>
+            <li>
+              <a
+                href="/training-programs/airline-transport-pilot"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Airline Transport Pilot</a
               >
             </li>
           </ul>
         </div>
-        {
-          LOCATIONS.map((location, index) => (
-            <div class={index === 0 ? "text-left" : "text-right md:text-left"}>
-              <p class="font-semibold tracking-wide text-gray-900">
-                {location.title}
-              </p>
+        <div>
+          <p class="font-semibold tracking-wide text-gray-50/90">About</p>
+          <ul class="mt-2 space-y-2">
+            <li>
               <a
-                href={location.gMaps}
-                target="_blank"
-                class="mt-2 space-y-2 transition-colors duration-300 text-white hover:text-accent"
+                href="/our-fleet"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Our Fleet</a
               >
-                <>
-                  <span>{location.address}</span>
-                  <br />
-                  <span>
-                    {location.city}, {location.state} {location.zip}
-                  </span>
-                </>
-              </a>
+            </li>
+            <li>
               <a
-                href={`tel:${location.phone}`}
-                class={`${index === 0 ? "text-left justify-start" : "text-right justify-end md:justify-start md:text-left"} transition-colors duration-300 text-white hover:text-accent flex items-center align-middle mt-1`}
+                href="/about/pilot-resource-center"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Pilot Resources</a
               >
-                <FaPhoneSquareAlt className="mr-2 text-lg" />
-                {location.phone}
-              </a>
-            </div>
-          ))
-        }
+            </li>
+            <li>
+              <a
+                href="/about/financing"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Financing</a
+              >
+            </li>
+            <li>
+              <a
+                href="/about/partnerships"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Partnerships</a
+              >
+            </li>
+            <li>
+              <a
+                href="/blog"
+                class="transition-colors duration-300 text-white hover:text-accent"
+                >Blog</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="grid grid-cols-1 gap-y-4">
+          {
+            LOCATIONS.map((location, index) => (
+              <div class="text-right lg:text-left bg-white/20 rounded p-3">
+                <p class="font-semibold tracking-wide text-gray-50/90">
+                  {location.title}
+                </p>
+                <a
+                  href={location.gMaps}
+                  target="_blank"
+                  class="mt-2 space-y-2 transition-colors duration-300 text-white hover:text-accent"
+                >
+                  <>
+                    <span>{location.address}</span>
+                    <br />
+                    <span>
+                      {location.city}, {location.state} {location.zip}
+                    </span>
+                  </>
+                </a>
+                <a
+                  href={`tel:${location.phone}`}
+                  class="text-right justify-end lg:justify-start lg:text-left transition-colors duration-300 text-white hover:text-accent flex items-center align-middle mt-1"
+                >
+                  <FaPhoneSquareAlt className="mr-2 text-lg" />
+                  {location.phone}
+                </a>
+              </div>
+            ))
+          }
+        </div>
       </div>
     </div>
+  </div>
+  <div class="pt-5 pb-10 border-t border-accent">
     <div
-      class="flex flex-col lg:flex-row justify-between pt-5 pb-10 border-t border-accent"
+      class="mx-auto flex flex-col gap-2 lg:flex-row justify-between items-center align-middle max-w-6xl"
     >
       <p class="text-sm text-gray-100 text-center">
         © Copyright 2024 NextGen Flight Academy. All rights reserved.

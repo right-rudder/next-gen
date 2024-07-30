@@ -40,9 +40,12 @@ const commercialPilot = {
           "Obtain an Instrument Rating",
           "Hold at least a second-class medical certificate",
         ],
-        aircraft: ["Cessna 172 series", "PA-28R-180 Cherokee Arrow", "BE76 Beechcraft Duchess"]
-        ,
-        startingPrice: "20,000",
+        aircraft: [
+          `<a href="/our-fleet/cessna-172" class="hover:underline hover:text-accent">Cessna 172</a>`,
+          `<a href="/our-fleet/cherokee-arrow" class="hover:underline hover:text-accent">PA-28R-180 Cherokee Arrow</a>`,
+          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a>`,
+        ],
+        startingPrice: 20000,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
@@ -50,8 +53,8 @@ const commercialPilot = {
     CTAcard: {
       title: "Ready to earn your CPL?",
       imagePath:
-            "/src/assets/completing-an-endorsement-at-riverside-airport.jpg",
-          imageAlt: "commercial-pilot-program-nextgen-flight-academy",
+        "/src/assets/completing-an-endorsement-at-riverside-airport.jpg",
+      imageAlt: "commercial-pilot-program-nextgen-flight-academy",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

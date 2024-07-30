@@ -9,8 +9,7 @@ const partnerships = {
 
     //top header
     header: {
-      imagePath:
-        "/src/assets/learn-to-fly-redlands-ca-office.jpg",
+      imagePath: "/src/assets/learn-to-fly-redlands-ca-office.jpg",
       imageAlt: "NextGen's Redlands location, named Learn to Fly",
       headerH1: "Partnerships",
       headerH2:
@@ -43,7 +42,7 @@ const partnerships = {
         imagePath: "/financing/Stratus_financial_logo.webp",
         imageAlt: "Straus Financial Logo",
         linkText: "Learn More",
-        linkUrl: "https://stratus.finance/apply/nextgenflightacademy/",
+        linkUrl: "https://excelacademy.education/",
       },
     ],
 

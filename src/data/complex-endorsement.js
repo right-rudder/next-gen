@@ -9,8 +9,8 @@ const complex = {
 
     topImage: {
       imagePath:
-            "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
-          imageAlt: "completing-an-endorsement-at-riverside-airport",
+        "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
+      imageAlt: "completing-an-endorsement-at-riverside-airport",
     },
     program: {
       header: "Complex Endorsement",
@@ -41,7 +41,7 @@ const complex = {
           "Hold at least a third-class medical certificate",
         ],
         aircraft: ["Complex aircraft provided by the student"],
-        startingPrice: "Please contact us for a price estimate.",
+        startingPrice: `Please <a href="/contact" class="hover:underline hover:text-accent"> contact us</a> for a price estimate.`,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },

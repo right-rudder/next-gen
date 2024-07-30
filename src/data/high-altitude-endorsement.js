@@ -40,7 +40,7 @@ const highAltitude = {
           "Hold at least a third-class medical certificate",
         ],
         aircraft: ["Pressurized aircraft provided by the student"],
-        startingPrice: "Please contact us for a price estimate.",
+        startingPrice: `Please <a href="/contact" class="hover:underline hover:text-accent"> contact us</a> for a price estimate.`,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
@@ -48,7 +48,7 @@ const highAltitude = {
     CTAcard: {
       title: "Are you ready to fly higher?",
       imagePath: "/src/assets/high-altitude-endorsement-airplane.png",
-          imageAlt: "high-altitude-endorsement",
+      imageAlt: "high-altitude-endorsement",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:

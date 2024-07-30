@@ -40,12 +40,20 @@ const privatePilot = {
           "Be able to read, speak, write, and understand English",
           "Hold at least a third-class medical certificate",
         ],
-        aircraft: ["Cessna 172 series", "Cessna 152", "Piper Warrior", "PA-28R-180 Cherokee Arrow", "BE76 Beechcraft Duchess", "Redbird Simulator (SEL/MEL)"],
-        startingPrice: "12,000",
+        aircraft: [
+          `<a href="/our-fleet/cessna-172" class="hover:underline hover:text-accent">Cessna 172</a>`,
+          `<a href="/our-fleet/cessna-152" class="hover:underline hover:text-accent">Cessna 152</a>`,
+          `<a href="/our-fleet/piper-warrior" class="hover:underline hover:text-accent">Piper Warrior</a>`,
+          `<a href="/our-fleet/cherokee-arrow" class="hover:underline hover:text-accent">PA-28R-180 Cherokee Arrow</a>`,
+          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a>`,
+          `<a href="/our-fleet/redbird-simulator" class="hover:underline hover:text-accent">Redbird Simulator (SEL/MEL)</a>`,
+        ],
+        startingPrice: 12000,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
       },
     },
+
     CTAcard: {
       title: "Ready to start?",
       imagePath:

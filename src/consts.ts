@@ -13,12 +13,12 @@ export const SITE_DESCRIPTION =
 export const KEYWORDS =
   "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training";
 
-export const IMAGE = "./next-gen-logo.png";
+export const IMAGE = "/next-gen-logo.png";
 
 export const LOCATIONS = [
   {
     title: "Riverside Location",
-    address: "6951 Flight Road Suite 106",
+    address: "6951 Flight Rd Suite 106",
     city: "Riverside",
     state: "CA",
     zip: "92504​",
@@ -27,7 +27,7 @@ export const LOCATIONS = [
   },
   {
     title: "Redlands Location",
-    address: "1745 Sessums Drive Unit 160",
+    address: "1745 Sessums Dr Unit 160",
     city: "Redlands",
     state: "CA",
     zip: "92374",
@@ -37,7 +37,7 @@ export const LOCATIONS = [
 ];
 
 // CHANGE client business info
-export const PHONE_NUMBER = "+1(951)590-3572";
+export const PHONE_NUMBER = "877-551-1110";
 export const AIRPORT = "Jedrek Airfield";
 export const ADDRESS_LINE_1 = "888 Right Rudder Street";
 export const ADDRESS_LINE_2 = "Right Rudderville, RRM 12345";
