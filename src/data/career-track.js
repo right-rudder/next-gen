@@ -13,8 +13,7 @@ const careerTrack = {
         "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Career Track",
-      headerH2:
-        "Zero to Hero Pilot Training at NextGen Flight Academy",
+      headerH2: "Zero to Hero Pilot Training at NextGen Flight Academy",
     },
     underHeader: {
       upperHeading: "Featured Program",
@@ -29,6 +28,17 @@ const careerTrack = {
       linkUrl: "/contact",
     },
 
+    sectionPrograms: {
+      upperHeading: "Explore",
+      heading: "Our Career Track Programs",
+      containerHeading: "Pilot Training Programs",
+      containerDescription: [
+        "NextGen Flight Academy offers a range of training programs designed to take you from zero experience to a professional pilot. Our Career Track programs provide comprehensive training for aspiring pilots, preparing you for a successful career in aviation.",
+        "Choose your desired training program below to learn more about the requirements, curriculum, and career opportunities available to you.",
+      ],
+      containerSmallPrint: "All prices are estimates and subject to change.",
+    },
+
     programs: [
       {
         title: "Private Pilot Certificate (PPL)",
@@ -37,7 +47,7 @@ const careerTrack = {
           url: "/training-programs/private-pilot",
         },
         content:
-          "The Private Pilot Certificate allows you to fly single-engine aircraft for personal use, travel, and recreation. This certification provides essential skills and knowledge for safe and competent flying. To earn this license, you must complete a minimum of 40 flight hours, which includes 20 hours of flight training with an instructor and 10 hours of solo flight. The training covers cross-country flight, night flight, instrument training, and preparation for the practical test. You must also pass a medical exam to obtain a third-class medical certificate."
+          "The Private Pilot Certificate allows you to fly single-engine aircraft for personal use, travel, and recreation. This certification provides essential skills and knowledge for safe and competent flying. To earn this license, you must complete a minimum of 40 flight hours, which includes 20 hours of flight training with an instructor and 10 hours of solo flight. The training covers cross-country flight, night flight, instrument training, and preparation for the practical test. You must also pass a medical exam to obtain a third-class medical certificate.",
       },
       {
         title: "Instrument Rating",
@@ -123,7 +133,8 @@ const careerTrack = {
 
       zeroTotal: "Please select a training goal to begin.",
 
-      totalTooltip: "Note that pilot training is highly subjective and billed by time spent training. While it may be possible to achieve your certifications in this time frame, please understand that this is an esitmate and could be higher depending on the efficacy of your training.",
+      totalTooltip:
+        "Note that pilot training is highly subjective and billed by time spent training. While it may be possible to achieve your certifications in this time frame, please understand that this is an esitmate and could be higher depending on the efficacy of your training.",
       meTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
 
