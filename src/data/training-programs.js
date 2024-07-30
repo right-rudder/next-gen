@@ -25,8 +25,8 @@ const trainingPrograms = {
       ],
       imagePath: "/src/assets/redlands-plane-on-dry-lake.jpg",
       imageAlt: "redlands-plane-on-dry-lake",
-      linkText: "Enroll with NextGen",
-      linkUrl: "/contact",
+      linkText: "Go from Zero to Hero",
+      linkUrl: "/training-programs/career",
     },
     programs: {
       upperHeading: "Explore",

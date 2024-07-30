@@ -1,11 +1,11 @@
 const careerTrack = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Career Pilot Training | NextGen Flight Academy",
+    pageTitle: "Pilot Career Training | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "Embark on a professional aviation career with NextGen Flight Academy's Career Track program. From zero experience to professional pilot, our comprehensive training prepares you for opportunities in commercial aviation, airlines, and more.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "NextGen Flight Academy, Pilot career training, Zero to Hero program, Professional pilot training, Private Pilot Certificate, Instrument Rating, Commercial Pilot Certificate, Multi-Engine Rating, Certified Flight Instructor, Airline Transport Pilot, Flight training programs, Aviation career opportunities",
 
     //top header
     header: {
@@ -14,11 +14,11 @@ const careerTrack = {
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "Career Track",
       headerH2:
-        "Zero-to-Hero Flight Training at NextGen Flight Academy",
+        "Zero to Hero Pilot Training at NextGen Flight Academy",
     },
     underHeader: {
       upperHeading: "Featured Program",
-      heading: "Career Track Pilot Training",
+      heading: "Career Track Flight Training",
       description: [
         "Our Career Track program (also known as a “Zero to Hero” program) takes you from no flying experience to becoming a professional pilot. This start-to-finish course prepares you for a career in aviation, offering opportunities in commercial aviation, airlines, and more.",
         "Submit your enrollment interest today to learn more about our timelines and training structure.",
