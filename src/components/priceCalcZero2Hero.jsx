@@ -8,12 +8,12 @@ const PriceCalcZero2Hero = ({ programs }) => {
   const [total, setTotal] = useState(0);
   const pricePpl = programs.pricePpl;
   const priceInstrument = programs.priceInstrument;
-  const priceCplShared = programs.priceCplShared;
   const priceCpl = programs.priceCpl;
   const priceCfi = programs.priceCfi;
   const priceCfii = programs.priceCfii;
   const priceMe = programs.priceMe;
   const priceMei = programs.priceMei;
+  const priceAtp = programs.priceAtp;
 
   const priceStarter = 600;
   const priceCheckride = 6600;
@@ -32,6 +32,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
   const [cfii, setCfii] = useState(false);
   const [me, setMe] = useState(false);
   const [mei, setMei] = useState(false);
+  const [atp, setAtp] = useState(false);
 
   const [heldPpl, setHeldPpl] = useState(false);
   const [heldInstrument, setHeldInstrument] = useState(false);
@@ -48,6 +49,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
     setCfii(true);
     setMe(true);
     setMei(true);
+    setAtp(true);
     setTotal(
       total +
         pricePpl +
@@ -56,7 +58,8 @@ const PriceCalcZero2Hero = ({ programs }) => {
         priceCfi +
         priceCfii +
         priceMe +
-        priceMei
+        priceMei +
+        priceAtp
     );
   }, []);
 
@@ -76,7 +79,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-br from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded bg-gradient-to-br from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pl-10 lg:p-12">
                 <div className="mt-2 flex justify-between gap-6 w-full">
@@ -229,7 +232,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
             <div className="relative z-10 min-h-[screen-1/2] m-0 lg:-mx-4 group w-full lg:w-3/5 lg:max-w-3/5">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-b from-gray-300 to-gray-200 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded bg-gradient-to-b from-gray-300 to-gray-200 shadow-xl transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-6 space-y-6 lg:p-8">
                 <div className="p-6 space-y-6 lg:p-8">
@@ -316,6 +319,14 @@ const PriceCalcZero2Hero = ({ programs }) => {
                           <FaCheckCircle className="text-green-600 text-xl" />
                         </span>
                         <span>Multi-Engine Instructor</span>
+                      </li>
+                    )}
+                    {atp && (
+                      <li className="space-x-2 flex flex-nowrap align-middle items-center">
+                        <span className="text-sky-500 font-semibold">
+                          <FaCheckCircle className="text-green-600 text-xl" />
+                        </span>
+                        <span>Airline Transport Pilot</span>
                       </li>
                     )}
                   </ul>
@@ -423,13 +434,15 @@ const PriceCalcZero2Hero = ({ programs }) => {
                   </fieldset> */}
                 </div>
                 <div className="mt-8 mx-auto text-center">
-                  CONTACT US
+                  <span className="text-3xl text-center font-light">
+                    Contact Us
+                  </span>
                   <a
                     href={`tel: ${PHONE_NUMBER}`}
-                    className="mt-6 flex space-x-3 justify-center align-middle items-center flex-nowrap hover:scale-105 transition-all duration-500"
+                    className="mt-6 flex justify-center align-middle items-center flex-nowrap hover:scale-105 transition-all duration-500"
                   >
-                    <FaPhone className="size-6" />
-                    <span>{PHONE_NUMBER}</span>
+                    <FaPhone className="mr-2 size-6 text-primary" />
+                    <span className="text-2xl font-medium">{PHONE_NUMBER}</span>
                   </a>
                 </div>
               </div>
@@ -437,7 +450,7 @@ const PriceCalcZero2Hero = ({ programs }) => {
             <div className="relative group w-full lg:w-1/2">
               <div
                 aria-hidden="true"
-                className="absolute top-0 w-full h-full rounded-2xl bg-gradient-to-tl from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
+                className="absolute top-0 w-full h-full rounded bg-gradient-to-tl from-gray-200 to-gray-100 shadow-lg transition duration-500 group-hover:scale-105 transform-gpu"
               ></div>
               <div className="relative p-5 pt-12 md:p-8 md:pl-8 md:rounded-r-2xl lg:pr-10 lg:p-12">
                 <fieldset>
@@ -590,6 +603,26 @@ const PriceCalcZero2Hero = ({ programs }) => {
                     <label htmlFor="mei" className="text-sm">
                       Multi-Engine Instructor{" "}
                       <small className="font-bold">(MEI)</small>
+                    </label>
+                  </div>
+
+                  <div className="">
+                    <input
+                      type="checkbox"
+                      checked={atp}
+                      className="mx-2 disabled:opacity-50"
+                      id="mei"
+                      name="mei"
+                      onChange={(e) => {
+                        atp
+                          ? setTotal(total - priceAtp)
+                          : setTotal(total + priceAtp);
+                        setAtp(!atp);
+                      }}
+                    />
+                    <label htmlFor="mei" className="text-sm">
+                      Airline Transport Pilot{" "}
+                      <small className="font-bold">(ATP)</small>
                     </label>
                   </div>
                 </fieldset>
