@@ -3,7 +3,7 @@ pubDate: "July 26, 2024"
 author: Amanda Heveran
 title: "What is The Written Exam?"
 description: "Discover the importance of the Private Pilot License (PPL) written exam, its role in your pilot training, and how NextGen Flight Academy prepares you for success."
-heroImage: "/src/assets/reviewing-checkride-info-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg"
+heroImage: "/blog/reviewing-checkride-info-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school-fix.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:
