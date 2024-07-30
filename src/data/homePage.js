@@ -29,7 +29,7 @@ const homePage = {
       {
         location: "Redlands, CA",
         inverted: true,
-        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification 25 months ago, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too, continuing our commitment to excellence in flight training.",
+        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification in May 2022, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too, continuing our commitment to excellence in flight training.",
         gMapUrl:
           "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
       },
@@ -60,7 +60,7 @@ const homePage = {
           imagePath:
             "/src/assets/pilots-and-cfi-at-riverside-california-airport-at-nextgen.jpg",
           imageAlt: "pilots-and-cfi-at-riverside-california-airport-at-nextgen",
-          link: "/training-programs",
+          link: "/training-programs/career",
           description: "Explore our career track (zero to hero) training program structure.",
         },
         {

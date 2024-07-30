@@ -10,33 +10,33 @@ const careerTrack = {
     //top header
     header: {
       imagePath:
-        "/src/assets/in-flight-cfi-and-student-fly-over-los-angeles-ca.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
-      headerH1: "Career Track",
-      headerH2: "Zero to Hero Pilot Training at NextGen Flight Academy",
+        "/src/assets/student-and-cfi-completing-career-zero-to-hero-flight-training-at-nextgen-flight-academy.jpg",
+      imageAlt: "CFI and student on the runway at NextGen Flight Academy at Riverside Municipal Airport",
+      headerH1: "Career Track Pilots",
+      headerH2: "Zero to Hero Flight Training at NextGen Flight Academy",
     },
     underHeader: {
-      upperHeading: "Featured Program",
-      heading: "Career Track Flight Training",
+      upperHeading: "Fly for a Career",
+      heading: `What Does "Zero to Hero" Training Mean?`,
       description: [
-        "Our Career Track program (also known as a “Zero to Hero” program) takes you from no flying experience to becoming a professional pilot. This start-to-finish course prepares you for a career in aviation, offering opportunities in commercial aviation, airlines, and more.",
-        "Submit your enrollment interest today to learn more about our timelines and training structure.",
+        "Zero to Hero training is the name given to pilot career training that transforms individuals with no prior flying experience into professional pilots through a full-range, structured program. This all-inclusive course covers every essential certification and rating, starting from the Private Pilot Certificate (PPL) and advancing up to Airline Transport Pilot (ATP).",
+        "This program aims to provide students with the skills, knowledge, and experience required to pursue successful careers in aviation, including opportunities in commercial airlines, corporate aviation, and more.",
+        "If you’re already a pilot in some capacity, you can also start with whichever certification you're at!",
       ],
-      imagePath: "/src/assets/redlands-plane-on-dry-lake.jpg",
-      imageAlt: "redlands-plane-on-dry-lake",
+      imagePath: "/src/assets/commercial-pilot-passes-checkride-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+      imageAlt: "Student at NextGen Flight Academy in the Zero to Hero program",
       linkText: "Enroll with NextGen",
       linkUrl: "/contact",
     },
 
     sectionPrograms: {
       upperHeading: "Explore",
-      heading: "Our Career Track Programs",
-      containerHeading: "Pilot Training Programs",
+      heading: "Our Course Structure",
+      containerHeading: "Career Track Training Flow",
       containerDescription: [
-        "NextGen Flight Academy offers a range of training programs designed to take you from zero experience to a professional pilot. Our Career Track programs provide comprehensive training for aspiring pilots, preparing you for a successful career in aviation.",
-        "Choose your desired training program below to learn more about the requirements, curriculum, and career opportunities available to you.",
+        "NextGen Flight Academy is proud to provide flight lessons from Private Pilot all the way up to Airline Transport Pilot at our Riverside and Redlands locations. This is our most popular training structure and what we recommend to anyone looking to pursue a career in aviation.",
       ],
-      containerSmallPrint: "All prices are estimates and subject to change.",
+      containerSmallPrint: "Choose your desired training program below to learn more about our curriculum and potential career opportunities.",
     },
 
     programs: [
@@ -120,7 +120,7 @@ const careerTrack = {
       subtitle: "How much could pilot training cost?",
 
       calcHeading: "NextGen Flight Academy Training Estimator",
-      calcSubheading: "Make flying your career with NextGen",
+      calcSubheading: "Make flying your career!",
 
       pricePpl: 12000,
       priceInstrument: 14000,
@@ -135,7 +135,6 @@ const careerTrack = {
 
       totalTooltip:
         "Note that pilot training is highly subjective and billed by time spent training. While it may be possible to achieve your certifications in this time frame, please understand that this is an esitmate and could be higher depending on the efficacy of your training.",
-      meTooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     },
 
     enrollCTA: {

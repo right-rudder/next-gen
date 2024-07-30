@@ -13,7 +13,7 @@ const about = {
         "/src/assets/front-office-of-nextgen-flight-academy-redlands-riverside-ca-pilot-school.jpg",
       imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
       headerH1: "About NextGen",
-      headerH2: "Learn to Fly in Redlands and Riverside, CA",
+      headerH2: "Learn to Fly in Riverside and Redlands, CA",
     },
 
     ourStory: {

@@ -13,7 +13,7 @@ const newToFlying = {
         "/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg",
       imageAlt: "flying-the-duchess-at-riverside-ca-flight-school-nextgen",
       headerH1: "New to Flying?",
-      headerH2: "Why you should become a pilot",
+      headerH2: "Our Guide for First-Time Pilots",
     },
 
     features: {
