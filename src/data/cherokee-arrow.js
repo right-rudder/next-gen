@@ -24,16 +24,16 @@ const cherokeeArrow = {
       location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
-          imageAlt: "cessna-172-landing-at-airport",
+          imagePath: "/src/assets/N3848T-nextgen-flight-academy-riverside-ca.jpg",
+          imageAlt: "N3848T-nextgen-flight-academy-riverside-ca",
         },
         {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
-          imageAlt: "cessna-172-cockpit",
+          imagePath: "/src/assets/piper-cherokee-arrow-nextgen-flight-academy.jpg",
+          imageAlt: "piper-cherokee-arrow-nextgen-flight-academy",
         },
         {
-          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
-          imageAlt: "cessna-172-interior",
+          imagePath: "/src/assets/piper-arrow-instrument-panel.jpg",
+          imageAlt: "piper-arrow-instrument-panel.jpg",
         },
       ],
       rentUrl:

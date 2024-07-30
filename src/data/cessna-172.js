@@ -27,16 +27,16 @@ const cessna172 = {
       ],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
-          imageAlt: "cessna-172-landing-at-airport",
+          imagePath: "/src/assets/side-of-cessna-172l-at-redlands-airport-REI.jpg",
+          imageAlt: "side-of-cessna-172-at-redlands-airport-REI",
         },
         {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
-          imageAlt: "cessna-172-cockpit",
+          imagePath: "/src/assets/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
+          imageAlt: "N7561G-nextgen-flight-academy-riverside-ca",
         },
         {
-          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
-          imageAlt: "cessna-172-interior",
+          imagePath: "/src/assets/instrument-panel-of-cessna-172l-at-redlands-airport-REI.jpg",
+          imageAlt: "instrument-panel-of-cessna-172l-at-redlands-airport-REI",
         },
       ],
       rentUrl:

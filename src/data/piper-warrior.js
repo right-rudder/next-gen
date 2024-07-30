@@ -24,16 +24,16 @@ const piperWarrior = {
       location: ["Redlands Municipal Airport (REI)"],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
-          imageAlt: "cessna-172-landing-at-airport",
-        },
-        {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
-          imageAlt: "cessna-172-cockpit",
-        },
-        {
-          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
+          imagePath: "/src/assets/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca-copy.jpg",
           imageAlt: "cessna-172-interior",
+        },
+        {
+          imagePath: "/src/assets/side-of-piper-warrior-at-redlands-airport-REI.jpg",
+          imageAlt: "side-of-piper-warrior-at-redlands-airport-REI",
+        },
+        {
+          imagePath: "/src/assets/front-of-piper-warrior-at-redlands-airport-REI.jpg",
+          imageAlt: "front-of-piper-warrior-at-redlands-airport-REI",
         },
       ],
       rentUrl:

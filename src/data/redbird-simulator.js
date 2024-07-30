@@ -23,33 +23,24 @@ const redbirdSimulator = {
       blockRate: 69.99,
       location: [
         "Riverside Municipal Airport (RAL)",
-        "Redlands Municipal Airport (REI)",
       ],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
-          imageAlt: "cessna-172-landing-at-airport",
+          imagePath: "/src/assets/redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school.jpg",
+          imageAlt: "redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school",
         },
         {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
-          imageAlt: "cessna-172-cockpit",
+          imagePath: "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca-fix.jpg",
+          imageAlt: "Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca",
         },
         {
-          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
-          imageAlt: "cessna-172-interior",
+          imagePath: "/src/assets/cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+          imageAlt: "cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school",
         },
       ],
       rentUrl:
         "https://app.process.st/templates/NextGen-Aircraft-Checkout-qNoL_5yUWfBKy5Jd9PBNaw/checklists/run",
       documentation: [
-        {
-          docTitle: "Pilot Operating Handbook",
-          docUrl: "/Cessna-172H-1967-POH.pdf",
-        },
-        {
-          docTitle: "Weight & Balance",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
-        },
         {
           docTitle: "Renter’s Agreement",
           docUrl:

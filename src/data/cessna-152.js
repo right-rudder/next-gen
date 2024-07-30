@@ -24,16 +24,16 @@ const cessna152 = {
       location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
-          imageAlt: "cessna-172-landing-at-airport",
+          imagePath: "/src/assets/side-of-cessna-152-at-riverside-airport-RAL.jpg",
+          imageAlt: "side-of-cessna-152-at-riverside-airport-RAL",
         },
         {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
-          imageAlt: "cessna-172-cockpit",
+          imagePath: "/src/assets/front-of-cessna-152-at-riverside-airport-RAL.jpg",
+          imageAlt: "front-of-cessna-152-at-riverside-airport-RAL",
         },
         {
-          imagePath: "/src/assets/tadeu-jnr-kAzSa_azENM-unsplash.jpg",
-          imageAlt: "cessna-172-interior",
+          imagePath: "/src/assets/instrument-panel-of-cessna-152-at-riverside-airport-RAL.jpg",
+          imageAlt: "instrument-panel-of-cessna-152-at-riverside-airport-RAL",
         },
       ],
       rentUrl:

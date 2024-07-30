@@ -27,8 +27,8 @@ const ourFleet = {
             title: "Cessna 172",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
-            imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+            imagePath: "/src/assets/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
+            imageAlt: "N7561G-nextgen-flight-academy-riverside-ca",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
             link: "/our-fleet/cessna-172",
@@ -38,7 +38,7 @@ const ourFleet = {
             title: "Cessna 172L",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/src/assets/N7561G-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
             description:
               "The Cessna 172L is a variant of the Cessna 172, featuring a more streamlined design and minor performance improvements.",
@@ -49,7 +49,7 @@ const ourFleet = {
             title: "Cessna 172H",
             normalRate: 154.99,
             blockRate: 149.99,
-            imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/src/assets/side-of-cessna-172h-at-riverside-airport-RAL.jpg",
             imageAlt: "commercial-pilot-program-nextgen-flight-academy",
             description:
               "The Cessna 172H, another variant in the 172 series, offers slight performance upgrades over earlier models.",
@@ -82,7 +82,7 @@ const ourFleet = {
             title: "BE76 Beechcraft Duchess",
             normalRate: 319.99,
             blockRate: 304.99,
-            imagePath: "/fleet/N6716Z-nextgen-flight-academy-riverside-ca.jpg",
+            imagePath: "/src/assets/side-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
             imageAlt:
               "The Beechcraft Duchess multi-engine rating training aircraft at Riverside Airport (KRAL)",
             description:

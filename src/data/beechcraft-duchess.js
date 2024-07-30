@@ -24,11 +24,11 @@ const beechcraftDuchess = {
       location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/greg-rosenke-0DizjoNOCrw-unsplash.jpg",
+          imagePath: "/src/assets/side-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
           imageAlt: "cessna-172-landing-at-airport",
         },
         {
-          imagePath: "/src/assets/mila-young-pgGnvJF7p20-unsplash.jpg",
+          imagePath: "/src/assets/front-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
           imageAlt: "cessna-172-cockpit",
         },
         {
