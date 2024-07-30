@@ -14,6 +14,10 @@ export const navbarLinks = [
     link: "/training-programs",
     submenu: [
       {
+        name: "Career Pilot",
+        link: "/training-programs/career",
+      },
+      {
         name: "Private Pilot",
         link: "/training-programs/private-pilot",
       },
@@ -71,6 +75,10 @@ export const navbarLinks = [
       {
         name: "Partnerships",
         link: "/about/partnerships",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
       },
     ],
   },
