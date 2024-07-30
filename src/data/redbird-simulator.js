@@ -21,21 +21,25 @@ const redbirdSimulator = {
       title: "Redbird Simulator",
       normalRate: 74.99,
       blockRate: 69.99,
-      location: [
-        "Riverside Municipal Airport (RAL)",
-      ],
+      location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school.jpg",
-          imageAlt: "redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school",
+          imagePath:
+            "/src/assets/redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school.jpg",
+          imageAlt:
+            "redbird-flight-simulator-nextgen-flight-academy-redlands-riverside-ca-pilot-training-flight-school",
         },
         {
-          imagePath: "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca-fix.jpg",
-          imageAlt: "Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca",
+          imagePath:
+            "/src/assets/Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca-fix.jpg",
+          imageAlt:
+            "Redbird-SEL-MEL-flight-simulator-nextgen-flight-academy-riverside-ca",
         },
         {
-          imagePath: "/src/assets/cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
-          imageAlt: "cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school",
+          imagePath:
+            "/src/assets/cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school-fix.jpg",
+          imageAlt:
+            "cfi-training-in-the-redbird-simulator-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school",
         },
       ],
       rentUrl:
