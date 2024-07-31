@@ -15,10 +15,10 @@ const { data } = Astro.props;
         styles="w-full h-full object-cover"
       />
     </div>
-    <h1 class="font-sans mt-16 text-6xl tracking-wide font-bold">
+    <h1 class="font-sans px-6 mt-16 text-6xl tracking-wide font-bold">
       {data.program.header}
     </h1>
-    <div class="my-8">
+    <div class="my-8 px-6">
       {
         data.program.description.map((desc) => (
           <p
@@ -34,7 +34,7 @@ const { data } = Astro.props;
         class="text-3xl italic uppercase font-bold text-center bg-primary/80 text-white py-3"
       />
     </div>
-    <div class="mt-12">
+    <div class="mt-12 px-6">
       <h3 class="text-4xl font-bold my-4">Training Details</h3>
       <p
         class="my-4 text-lg"
@@ -45,7 +45,7 @@ const { data } = Astro.props;
           class="flex justify-between items-center align-middle border-t-2 py-6"
         >
           <span class="text-2xl font-semibold">Program Prerequisites: </span>
-          <ul class="list-disc w-full lg:w-1/2">
+          <ul class="list-disc pl-3 w-full lg:w-1/2">
             {
               data.program.trainingDetails.requisites.map((req) => (
                 <li class="font-sans1 text-base font-light leading-relaxed">
@@ -59,7 +59,7 @@ const { data } = Astro.props;
           class="flex justify-between items-center align-middle border-t-2 py-6"
         >
           <span class="text-2xl font-semibold">Training Aircraft: </span>
-          <ul class="list-disc w-full lg:w-1/2">
+          <ul class="list-disc pl-3 w-full lg:w-1/2">
             {
               data.program.trainingDetails.aircraft.map((aircraft) => (
                 <li
@@ -76,7 +76,7 @@ const { data } = Astro.props;
           <span class="text-2xl font-semibold">Starting Price: </span>
           {
             typeof data.program.trainingDetails.startingPrice == "number" ? (
-              <span class="w-full lg:w-1/2">
+              <span class="w-full lg:w-1/2 text-lg">
                 $ {data.program.trainingDetails.startingPrice.toLocaleString()}
               </span>
             ) : (
