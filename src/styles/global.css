@@ -20,7 +20,15 @@
     @apply text-center font-bold py-5 px-14 bg-gradient-to-br from-primary to-secondary w-fit text-white hover:from-white hover:to-gray-100 hover:text-dark-blue rounded-full duration-300;
   }
   .paragraph {
-    @apply text-gray-500 lg:text-lg leading-loose;
+    @apply text-gray-600 lg:text-base leading-loose font-sans1;
+  }
+
+  .tooltip {
+  @apply invisible opacity-0 absolute p-4 rounded-lg shadow-md shadow-slate-800/50 bg-gray-50 text-center text-gray-800 mt-5;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible opacity-95 transition-all duration-300 cursor-help;
   }
 }
 

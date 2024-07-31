@@ -19,7 +19,7 @@ if (!images[data.imagePath])
   <Image
     src={images[data.imagePath]()}
     alt={data.imageAlt}
-    class="absolute top-0 w-full h-full object-cover -z-50"
+    class="absolute top-0 w-full h-full object-cover -z-10"
     quality={100}
   />
 
@@ -35,7 +35,7 @@ if (!images[data.imagePath])
         )}
         {data.headerH1 && (
           <h2
-            class="text-2xl lg:text-3xl p-3 lg:p-6 tracking-wide font-sans2"
+            class="text-2xl lg:text-3xl p-3 lg:p-6 text-center tracking-wide font-sans2"
             set:html={data.headerH2}
           />
         )}

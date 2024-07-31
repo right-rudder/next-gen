@@ -1,13 +1,48 @@
 ---
 //USE APPLICABLE GMAP
-const { gMapUrl } = Astro.props;
+const { data } = Astro.props;
 ---
 
-<iframe
-  src={gMapUrl}
-  class="w-full md:w-1/2"
-  height="450"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade"></iframe>
+<section id={data.location} class="w-full">
+  <div
+    class="overflow-hidden bg-gradient-to-br from-gray-100 to-primary/60 py-4 sm:py-16 font-sans"
+  >
+    <div class="mx-auto max-w-7xl px-6 py-12 lg:py-0 lg:px-10">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <div class="flex align-middle items-center">
+          <div
+            class="lg:max-w-lg flex justify-center flex-wrap text-white dark:text-gray-500"
+          >
+            <h2
+              class="text-3xl text-center text-accent font-semibold leading-7 w-full"
+            >
+              Come Fly Over
+            </h2>
+            <p
+              class="mt-2 text-center lg:text-7xl font-bold tracking-tight text-primary-dark text-4xl w-full"
+            >
+              {data.location}
+            </p>
+            <p
+              class="mt-6 text-center text-lg leading-8 text-gray-900 w-full font-sans1"
+            >
+              {data.body}
+            </p>
+          </div>
+        </div>
+        <div class={data.inverted ? "lg:order-first" : ""}>
+          <iframe
+            src={data.gMapUrl}
+            class="w-full"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

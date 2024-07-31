@@ -1,0 +1,45 @@
+---
+import type { ImageMetadata } from "astro";
+import { ImQuotesLeft } from "react-icons/im";
+import { ImQuotesRight } from "react-icons/im";
+
+import { Image } from "astro:assets";
+
+const { imagePath, imageAlt, about, quotes } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/*.{jpeg,jpg,png,gif}"
+);
+if (!images[imagePath]) {
+  throw new Error(
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  );
+}
+---
+
+<section class="pb-12 pt-24 px-5">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <div class="flex flex-col gap-5 lg:col-span-4">
+      <h2 class="text-5xl text-dark-blue font-bold leading-tight">About Us</h2>
+      {about.map((parag) => <p class="paragraph">{parag}</p>)}
+    </div>
+    <div class="max-h-80 sm:max-h-[35rem] lg:max-h-none lg:col-span-4">
+      <Image
+        src={images[imagePath]()}
+        alt={imageAlt}
+        class="h-full w-full object-cover object-center lg:max-h-none"
+      />
+    </div>
+    <div
+      class="bg-primary-dark text-white p-4 lg:p-12 flex flex-col items-center align-middle justify-center gap-6 lg:col-span-4"
+    >
+      <ImQuotesLeft className="text-accent size-12 w-full text-left" />
+      {
+        quotes.map((quote) => (
+          <p class="text-xl font-semibold text-gray-100">{quote}</p>
+        ))
+      }
+      <ImQuotesRight className="text-accent size-12 w-full text-right" />
+    </div>
+  </div>
+</section>

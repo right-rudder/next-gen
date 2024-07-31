@@ -1,0 +1,110 @@
+---
+import { FaDownload } from "react-icons/fa";
+import ImageComp from "./ImageComp.astro";
+import "../styles/swiper-thumnails.css";
+
+const { data } = Astro.props;
+---
+
+<section class="mx-auto max-w-7xl w-full py-8 lg:py-16 z-0">
+  <div class="grid grid-cols-1 lg:grid-cols-12">
+    <div class="lg:col-span-5 px-4 lg:px-12">
+      <h1
+        class="text-primary pb-4 text-7xl tracking-wide font-bold border-b-4 border-primary-dark"
+      >
+        {data.title}
+      </h1>
+      <p
+        class="mt-10 leading-relaxed tracking-wide text-lg font-sans1 font-light"
+      >
+        {data.description}
+      </p>
+      <p class="text-accent mt-10 italic text-2xl font-normal">
+        **Must carry 50K in aircraft damage insurance
+      </p>
+      <div class="bg-primary/80 mt-12 rounded-bl-lg rounded-tr-lg py-12 px-10">
+        <h3 class="text-4xl text-primary-dark font-light tracking-wide">
+          Documentation:
+        </h3>
+        <ul class="mt-6">
+          {
+            data.documentation.map((doc) => (
+              <li class="text-white">
+                <a
+                  href={doc.docUrl}
+                  target="_blank"
+                  class="flex font-sans1 w-fit text-xl mt-4 gap-x-2 items-center group hover:text-primary-dark duration-200 ease-out"
+                >
+                  <FaDownload />
+                  {doc.docTitle}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div class="mt-8 w-full flex justify-center gap-x-8">
+        <a
+          href={data.rentUrl}
+          target="_blank"
+          class="btn-primary block btn-animate"
+        >
+          <span class="relative z-10">Rent with Us</span>
+        </a>
+        <a href="/enrollment" class="btn-primary-dark block btn-animate">
+          <span class="relative z-10">Train in the {data.title}</span>
+        </a>
+      </div>
+    </div>
+    <div class="lg:col-span-7 mt-8 lg:mt-0">
+      <div class="swiper mySwiper2 bg-gray-900">
+        <div class="swiper-wrapper">
+          {
+            data.images.map((image) => (
+              <div class="swiper-slide">
+                <ImageComp
+                  imagePath={image.imagePath}
+                  imageAlt={image.imageAlt}
+                  styles="object-cover w-full h-full"
+                  quality={90}
+                />
+              </div>
+            ))
+          }
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper bg-gray-900 py-1">
+          {
+            data.images.map((image) => (
+              <div class="swiper-slide cursor-pointer overflow-hidden">
+                <ImageComp
+                  imagePath={image.imagePath}
+                  imageAlt={image.imageAlt}
+                  styles="object-cover w-full h-full hover:scale-105 duration-300 ease-out"
+                  quality={90}
+                />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <div
+        class="bg-primary-dark py-9 lg:h-1/4 flex flex-col justify-center items-center align-middle mx-2 lg:mx-0 mt-6"
+      >
+        <h5 class="text-accent text-3xl font-medium">Avaiable at:</h5>
+        {
+          data.location.map((local) => (
+            <p class="text-center text-4xl text-white font-semibold px-3">
+              {local}
+            </p>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../scripts/SwiperThumbnails.js"></script>

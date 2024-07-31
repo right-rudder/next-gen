@@ -1,63 +1,46 @@
 export const mobileNavbarLinks = [
   {
-    name: "Home",
-    link: "/",
-    submenu: [],
-  },
-  {
     name: "New to Flying?",
     link: "/new-to-flying",
     submenu: [],
   },
   {
+    name: "Book a Flight",
+    link: "/intro-flight",
+    submenu: [],
+  },
+  {
     name: "Training Programs",
     link: "/training-programs",
-    /* submenu: [
-      {
-        name: "Private Pilot",
-        link: "/private-pilot",
-      },
-      {
-        name: "Instrument Rating",
-        link: "/instrument-rating",
-      },
-      {
-        name: "Commercial Pilot",
-        link: "/commercial-pilot",
-      },
-      {
-        name: "Certified Flight Instructor",
-        link: "/certified-flight-instructor",
-      },
-      {
-        name: "Airline Transport Pilot",
-        link: "/airline-transport-pilot",
-      },
-    ], */
+    submenu: [],
   },
 
-  /* {
+  {
     name: "About",
-    link: "/about",
+    link: "",
     submenu: [
       {
-        name: "Our Story",
-        link: "/about/our-story",
-      },
-      {
-        name: "Our Team",
-        link: "/about/our-team",
-      },
-      {
         name: "Our Fleet",
-        link: "/about/our-fleet",
+        link: "/our-fleet",
       },
       {
-        name: "Learning Center",
-        link: "/about/learning-center",
+        name: "Pilot Resources",
+        link: "/about/pilot-resource-center",
+      },
+      {
+        name: "Financing",
+        link: "/about/financing",
+      },
+      {
+        name: "Partnerships",
+        link: "/about/partnerships",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
       },
     ],
-  }, */
+  },
   {
     name: "CONTACT US",
     link: "/contact",

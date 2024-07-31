@@ -1,0 +1,35 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import about from "../../data/about";
+import OurStory from "../../components/OurStory.astro";
+
+const { data } = about;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <!-- OUR STORY -->
+  <OurStory
+    imagePath={data.ourStory.imagePath}
+    imageAlt={data.ourStory.imageAlt}
+    about={data.ourStory.about}
+    quotes={data.ourStory.quotes}
+  />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>

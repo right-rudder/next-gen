@@ -145,6 +145,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "blog": {
+"what-is-the-written-exam.md": {
+	id: "what-is-the-written-exam.md";
+  slug: "what-is-the-written-exam";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};

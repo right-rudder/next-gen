@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import pilotResources from "../../data/pilot-resource-center";
+import Header from "../../components/Header.astro";
+import ResourceCard from "../../components/ResourceCard.astro";
+
+const { data } = pilotResources;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <section id="faa-publications">
+    <h2 class="font-bold text-4xl lg:text-6xl text-center pt-16">
+      {data.resources.heading}
+    </h2>
+    <p
+      class="font-normal text-lg text-center border-b-8 border-primary pb-12 mt-3"
+    >
+      {data.resources.description}
+    </p>
+    <div class="">
+      {
+        data.resources.publications.map((publication) => (
+          <div class="pb-12 lg:pb-16 bg-gradient-to-b from-primary/10 to-primary-dark/10 border-b-4 border-primary">
+            <h3 class="font-bold text-primary-dark text-2xl lg:text-4xl text-center py-12 sticky top-20 z-20 bg-white/95">
+              {publication.name}
+            </h3>
+            <div class="mt-12 flex flex-wrap justify-center align-middle items-center gap-1 lg:gap-3">
+              {publication.cards.map((card) => (
+                <div class="w-full md:w-1/3 lg:w-1/4">
+                  <ResourceCard
+                    title={card.title}
+                    description={card.description}
+                    imagePath={card.imagePath}
+                    imageAlt={card.imageAlt}
+                    link={card.link}
+                    linkText={card.linkText}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>

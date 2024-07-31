@@ -50,7 +50,7 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
   safelist: [
     "[counter-set:_num_var(--num-graduates)]",
     "[counter-set:_num_var(--num-professionals)]",

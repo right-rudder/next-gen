@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import partnerships from "../../data/partnerships";
+import PartnersTabs from "../../components/PartnersTabs";
+
+const { data } = partnerships;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <Header data={data.header} />
+
+  <div class="mx-auto py-16">
+    <h3 class="mx-auto text-6xl font-bold text-center">Our Proud Partners</h3>
+    <p class="mx-auto max-w-5xl text-center text-lg font-sans1 mt-4">
+      At NextGen Flight Academy, we are proud to collaborate with Spartan's
+      15-15 Program, the American English Institute, and Excel Charter Academy
+      School. Together, we strive to offer accessible training and education,
+      preparing our students for successful careers in aviation.
+    </p>
+    <p class="mx-auto font-semibold text-center text-lg font-sans1 my-4">
+      Check out the details for each partnership below.
+    </p>
+  </div>
+  <PartnersTabs data={data.partners} client:load />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>

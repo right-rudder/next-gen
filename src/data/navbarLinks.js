@@ -12,52 +12,76 @@ export const navbarLinks = [
   {
     name: "Training Programs",
     link: "/training-programs",
-    /* submenu: [
+    submenu: [
+      {
+        name: "Career Pilot",
+        link: "/training-programs/career",
+      },
       {
         name: "Private Pilot",
-        link: "/private-pilot",
+        link: "/training-programs/private-pilot",
       },
       {
         name: "Instrument Rating",
-        link: "/instrument-rating",
+        link: "/training-programs/instrument-rating",
       },
       {
         name: "Commercial Pilot",
-        link: "/commercial-pilot",
+        link: "/training-programs/commercial-pilot",
+      },
+      {
+        name: "Multi-Engine Rating",
+        link: "/training-programs/multi-engine-rating",
       },
       {
         name: "Certified Flight Instructor",
-        link: "/certified-flight-instructor",
+        link: "/training-programs/certified-flight-instructor",
       },
       {
         name: "Airline Transport Pilot",
-        link: "/airline-transport-pilot",
+        link: "/training-programs/airline-transport-pilot",
       },
-    ], */
+      {
+        name: "High Performance Endorsement",
+        link: "/training-programs/high-performance-endorsement",
+      },
+      {
+        name: "High Altitude Endorsement",
+        link: "/training-programs/high-altitude-endorsement",
+      },
+      {
+        name: "Complex Endorsement",
+        link: "/training-programs/complex-endorsement",
+      },
+    ],
   },
 
-  /* {
+  {
     name: "About",
     link: "/about",
     submenu: [
       {
-        name: "Our Story",
-        link: "/about/our-story",
-      },
-      {
-        name: "Our Team",
-        link: "/about/our-team",
-      },
-      {
         name: "Our Fleet",
-        link: "/about/our-fleet",
+        link: "/our-fleet",
       },
       {
-        name: "Learning Center",
-        link: "/about/learning-center",
+        name: "Pilot Resources",
+        link: "/about/pilot-resource-center",
+      },
+      {
+        name: "Financing",
+        link: "/about/financing",
+      },
+      {
+        name: "Partnerships",
+        link: "/about/partnerships",
+      },
+      {
+        name: "Blog",
+        link: "/blog",
       },
     ],
-  }, */
+  },
   {
     name: "CONTACT US",
     link: "/contact",

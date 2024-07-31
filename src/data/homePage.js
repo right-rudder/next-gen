@@ -1,24 +1,38 @@
 const homePage = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Pilot Training in Riverside, CA | NextGen Flight Academy",
+    pageTitle:
+      "Pilot Training in Riverside & Redlands, CA | NextGen Flight Academy",
     pageDescription:
-      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
+      "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
     pageKeywords:
       "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
 
     //top header
     header: {
       imagePath:
-        "/src/assets/nextgen-flight-academy-riverside-redlands-california-home.webp",
-      imageAlt: "Plane flying overhead XYZ location at ABC Flight School",
+        "/src/assets/nextgen-flight-academy-riverside-redlands-california-home.jpg",
+      imageAlt:
+        "Smiling pilot completing a checkride at NextGen Flight Academy.",
       headerH1: "NextGen Flight Academy",
       headerH2: "Premier Pilot Training from Riverside to Redlands",
     },
 
     gMaps: [
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.627392285859!2d-117.44849982418127!3d33.95071037319536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1373a59a741%3A0xad098c31f424e525!2sNextGen%20Flight%20Academy!5e0!3m2!1sen!2sco!4v1718894671435!5m2!1sen!2sco",
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
+      {
+        location: "Riverside, CA",
+        inverted: false,
+        body: "Founded in February 2016, our Riverside location at KRAL has quickly become a premier flight training institution. Offering FAA Part 141 and Part 61 approved programs, we provide top-quality education with a fleet that includes Cessna 172s, Piper Arrow, Cessna 120, Beechcraft Duchess, and Cessna 152.",
+        gMapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.627392285859!2d-117.44849982418127!3d33.95071037319536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1373a59a741%3A0xad098c31f424e525!2sNextGen%20Flight%20Academy!5e0!3m2!1sen!2sco!4v1718894671435!5m2!1sen!2sco",
+      },
+      {
+        location: "Redlands, CA",
+        inverted: true,
+        body: "In 2018, we expanded to Redlands with our sister school, Learn to Fly LLC, at KREI. Achieving FAA Part 141 certification in May 2022, this location offers high-quality training with a fleet that includes a Cessna 172 and Piper Warrior. Our students benefit from thorough VFR checkout flights and the option for an FAA Flight Review too, continuing our commitment to excellence in flight training.",
+        gMapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.450303921188!2d-117.14332642417573!3d34.08360297314522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db55373e387eab%3A0xa91f19e63a0daf06!2sNextGen%20Flight%20Academy%20-%20Redlands!5e0!3m2!1sen!2sco!4v1719269983050!5m2!1sen!2sco",
+      },
     ],
 
     gridNav: {
@@ -30,7 +44,7 @@ const homePage = {
           imagePath: "/src/assets/student-pilot-at-nextgen-flight-academy.jpg",
           imageAlt: "student-pilot-at-nextgen-flight-academy",
           link: "/new-to-flying",
-          description: "Learn to fly with our experienced instructors.",
+          description: "Learn why you should become a pilot!",
         },
         {
           title: "Student Reviews",
@@ -39,22 +53,22 @@ const homePage = {
           imageAlt:
             "src/assets/student-and-cfi-at-nextgen-head-office-in-riverside-ca",
           link: "#testimonials",
-          description: "Learn to fly with our experienced instructors.",
+          description: "Read what other students have to say about NextGen Flight Academy.",
         },
         {
           title: "Career Track Pilots",
           imagePath:
             "/src/assets/pilots-and-cfi-at-riverside-california-airport-at-nextgen.jpg",
           imageAlt: "pilots-and-cfi-at-riverside-california-airport-at-nextgen",
-          link: "/training-programs",
-          description: "Learn to fly with our experienced instructors.",
+          link: "/training-programs/career",
+          description: "Explore our career track (zero to hero) training program structure.",
         },
         {
-          title: "Book a Discovery Flight",
+          title: "Book an Intro Flight",
           imagePath:
-            "/src/assets/nextgen-flight-academy-fleet-at-riverside-ca.jpg",
-          imageAlt: "nextgen-flight-academy-fleet-at-riverside-ca",
-          link: "/",
+            "/src/assets/cfi-and-student-training-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpeg",
+          imageAlt: "CFI and student on an intro flight over Disneyland, CA",
+          link: "/intro-flight",
           description: "Learn to fly with our experienced instructors.",
         },
       ],
@@ -159,7 +173,7 @@ const homePage = {
             "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
           imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
-            "The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.",
+            `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
           link: "/training-programs",
         },
       ],

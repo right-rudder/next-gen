@@ -1,5 +1,7 @@
 import Swiper from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 document.addEventListener("DOMContentLoaded", function () {
