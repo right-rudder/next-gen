@@ -149,10 +149,10 @@ const pilotResources = {
               linkText: "Download",
             },
             {
-              title: "Aviation Weather Services",
+              title: "",
               description: "Information on weather services for pilots.",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/aviation-weather-services-guide.jpg",
               imageAlt: "NOAA FAA Aviation Weather Services Cover",
               link: "https://www.faa.gov/documentlibrary/media/advisory_circular/ac_00-45g_chg_1-2.pdf",
               linkText: "Download",
@@ -213,21 +213,21 @@ const pilotResources = {
           name: "GLEIM Syllabus / Miscellaneous",
           cards: [
             {
-              title: "FAR/AIM 2021",
+              title: "",
               description:
                 "Compilation of Federal Aviation Regulations and Aeronautical Information.",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
-              imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
+                "/src/assets/Aeronautical Information Manual.jpeg",
+              imageAlt: "Aeronautical Information Manual",
               link: "https://www.faa.gov/Air_traffic/publications/media/AIM-Basic-w-Chg1-and-Chg2-dtd-3-21-24.pdf",
               linkText: "Download",
             },
             {
-              title: "Aeronautical Chart User Guide",
+              title: "",
               description:
                 "Instructions on reading and using aeronautical charts.",
               imagePath:
-                "/src/assets/jason-mavrommatis-ap3LXI0fPJY-unsplash.jpg",
+                "/src/assets/Aeronautical-Chart-Users-Guide.jpg",
               imageAlt: "Aeronautical Chart User Guide Cover",
               link: "https://aeronav.faa.gov/user_guide/20240516/cug-complete.pdf",
               linkText: "Download",
