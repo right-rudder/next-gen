@@ -24,15 +24,18 @@ const cessna172L = {
       location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/side-of-cessna-172l-at-riverside-airport-RAL.jpg",
+          imagePath:
+            "/src/assets/side-of-cessna-172l-at-riverside-airport-RAL.jpg",
           imageAlt: "side-of-cessna-172l-at-riverside-airport-RAL",
         },
         {
-          imagePath: "/src/assets/front-of-cessna-172l-at-riverside-airport-RAL.jpg",
+          imagePath:
+            "/src/assets/front-of-cessna-172l-at-riverside-airport-RAL.jpg",
           imageAlt: "front-of-cessna-172l-at-riverside-airport-RAL",
         },
         {
-          imagePath: "/src/assets/instrument-panel-of-cessna-172l-at-riverside-airport-RAL.jpg",
+          imagePath:
+            "/src/assets/instrument-panel-of-cessna-172l-at-riverside-airport-RAL.jpg",
           imageAlt: "instrument-panel-of-cessna-172l-at-riverside-airport-RAL",
         },
       ],
@@ -45,7 +48,8 @@ const cessna172L = {
         },
         {
           docTitle: "Weight & Balance",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl:
+            "https://drive.google.com/file/d/1LYORjd_tAiRnSNDCGuxm1Hzkk_65RBn0/view?usp=drive_link",
         },
         {
           docTitle: "Renter’s Agreement",

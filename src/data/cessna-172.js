@@ -27,15 +27,18 @@ const cessna172 = {
       ],
       images: [
         {
-          imagePath: "/src/assets/side-of-cessna-172l-at-redlands-airport-REI.jpg",
+          imagePath:
+            "/src/assets/side-of-cessna-172l-at-redlands-airport-REI.jpg",
           imageAlt: "side-of-cessna-172-at-redlands-airport-REI",
         },
         {
-          imagePath: "/src/assets/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
+          imagePath:
+            "/src/assets/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
           imageAlt: "N7561G-nextgen-flight-academy-riverside-ca",
         },
         {
-          imagePath: "/src/assets/instrument-panel-of-cessna-172l-at-redlands-airport-REI.jpg",
+          imagePath:
+            "/src/assets/instrument-panel-of-cessna-172l-at-redlands-airport-REI.jpg",
           imageAlt: "instrument-panel-of-cessna-172l-at-redlands-airport-REI",
         },
       ],
@@ -48,7 +51,8 @@ const cessna172 = {
         },
         {
           docTitle: "Weight & Balance",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl:
+            "https://drive.google.com/file/d/1d8Op4hWggSixP3keE8TIF0AAhYI6CnlQ/view?usp=drive_link",
         },
         {
           docTitle: "Renter’s Agreement",

@@ -24,11 +24,13 @@ const beechcraftDuchess = {
       location: ["Riverside Municipal Airport (RAL)"],
       images: [
         {
-          imagePath: "/src/assets/side-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
+          imagePath:
+            "/src/assets/side-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
           imageAlt: "cessna-172-landing-at-airport",
         },
         {
-          imagePath: "/src/assets/front-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
+          imagePath:
+            "/src/assets/front-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
           imageAlt: "cessna-172-cockpit",
         },
         {
@@ -46,7 +48,8 @@ const beechcraftDuchess = {
         },
         {
           docTitle: "Weight & Balance",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl:
+            "https://drive.google.com/file/d/13wdLmRsjFIhFeFf7iF2y6hB_Nld-EmhQ/view?usp=drive_link",
         },
         {
           docTitle: "Renter’s Agreement",

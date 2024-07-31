@@ -48,7 +48,8 @@ const cherokeeArrow = {
         },
         {
           docTitle: "Weight & Balance",
-          docUrl: "/src/assets/cessna-172-poh.pdf",
+          docUrl:
+            "https://drive.google.com/file/d/1t6VhblpsK15hfLzW0tyQCqCw7H7Kr5nK/view?usp=drive_link",
         },
         {
           docTitle: "Renter’s Agreement",
