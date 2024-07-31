@@ -231,10 +231,10 @@ const Navbar = ({ pathname }) => {
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`text-white h-6 w-6 cursor-pointer`}
+            className={`text-white h-6 w-6 cursor-pointer z-50`}
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth="2.0"
+            strokeWidth="2.5"
             stroke="currentColor"
             aria-hidden="true"
             id="hamburger-icon"
@@ -252,14 +252,14 @@ const Navbar = ({ pathname }) => {
           href="/"
           className="text-white px-10 w-full text-center block leading-none uppercase font-bold text-lg z-40 relative"
         >
-          <h1 className="text-4xl font-sans">NextGen</h1>
-          <h2 className="text-primary-dark font-medium font-sans">
+          <p className="text-4xl font-sans">NextGen</p>
+          <p className="text-primary-dark font-medium font-sans">
             Flight Academy
-          </h2>
+          </p>
         </a>
 
         <div
-          className={`absolute w-full h-20 bg-accent top-16 z-30 duration-500 ease-in-out  ${
+          className={`absolute w-full h-40 bg-accent/60 top-0 z-30 duration-500 ease-in-out  ${
             openMobile
               ? "translate-x-0 delay-300 opacity-90"
               : "-translate-x-full opacity-0"
@@ -270,45 +270,45 @@ const Navbar = ({ pathname }) => {
           {mobileNavbarLinks.map((item, index) => (
             <li
               key={index}
-              className="relative group"
+              className="relative group border-b border-white/20 last:border-none w-full text-center"
               onClick={() => handleItemClick(index)}
             >
               {item.link ? (
                 <a
                   href={item.link}
-                  className="font-bold p-5 block text-white text-lg duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
+                  className="font-light p-5 block text-white text-xl duration-300 border-accent whitespace-nowrap group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-full group-last:mt-4 group-last:text-center group-last:mx-5"
                 >
                   {item.name}
                 </a>
               ) : (
-                <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
+                <div className="font-light relative p-5 w-full justify-center flex cursor-pointer text-white text-xl duration-300  border-accent whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`p-1 pointer-events-none duration-300 rounded-full ${hoveredIndex === index ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-accent/40 -rotate-90" : "bg-accent/20 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
-                      className={`${hoveredIndex === index ? "text-accent" : "text-white"} size-5`}
+                      className={`${hoveredIndex === index ? "text-white/90" : "text-white"} size-5`}
                     />
                   </div>
                 </div>
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`z-10 ml-5 bg-primary whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[28rem]" : "max-h-0"}`}
+                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[28rem]" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
                       key={subIndex}
-                      className="relative"
+                      className="relative border-b border-accent/20 w-full"
                       onClick={(event) => handleSubItemClick(event, subIndex)}
                     >
                       {subitem.link ? (
-                        <a className="p-5 block font-bold" href={subitem.link}>
+                        <a className="p-5 block font-light" href={subitem.link}>
                           {subitem.name}
                         </a>
                       ) : (
-                        <div className="font-bold p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
+                        <div className="font-light p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
                             className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
@@ -348,15 +348,6 @@ const Navbar = ({ pathname }) => {
         <div className="p-5 px-10 text-white flex flex-col justify-center align-middle items-center gap-5 overflow-hidden">
           <div className="flex gap-3 items-center">
             <a
-              href={`mailto:${EMAIL_ADDRESS}`}
-              className="border p-2 w-fit border-white rounded-full bg-white cursor-pointer"
-            >
-              <MdEmail className="size-4 text-accent" />
-            </a>
-            <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
-          </div>
-          <div className="flex gap-3 items-center">
-            <a
               href={`tel:${PHONE_NUMBER}`}
               className="border p-2 w-fit border-white rounded-full bg-white"
             >
@@ -365,7 +356,7 @@ const Navbar = ({ pathname }) => {
             <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
           </div>
 
-          <div className="flex gap-3 mt-2">
+          <div className="flex gap-3 mt-2 mb-16">
             <a href={FACEBOOK_URL} target="_blank">
               <span className="sr-only">Facebook</span>
               <svg
