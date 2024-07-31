@@ -13,11 +13,11 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   siteDescription={description}
   keywords={description}
 >
-  <div class="h-24 w-full bg-primary/70 brightness-75"></div>
+  <div class="h-20 lg:h-24 w-full bg-primary/70 brightness-75"></div>
 
   <section class="flex justify-center items-start align-top pt-4 pb-20">
     <article>
-      <div class="w-full aspect-square">
+      <div class="w-full aspect-square mb-12 lg:mb-0">
         {
           heroImage && (
             <img
@@ -28,7 +28,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           )
         }
       </div>
-      <div class="prose font-sans1">
+      <div class="prose font-sans1 px-5">
         <div class="title">
           <div class="date">
             <FormattedDate date={pubDate} />
