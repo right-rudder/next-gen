@@ -55,8 +55,8 @@ const certifiedFlightInstructor = {
     CTAcard: {
       title: "Teach the next class",
       imagePath:
-        "/src/assets/nextgen-flight-academy-cfi-team-riverside-learn-to-fly-redlands.jpg",
-      imageAlt: "flight-instructor-training-redlands-ca",
+        "/src/assets/father-and-son-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg",
+      imageAlt: "father-and-son-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school",
       link: "/enrollment",
       linkText: "Enroll Now",
       description: "Become a CFI and start instructing other students!",

@@ -105,7 +105,7 @@ const homePage = {
           imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
           description:
             "The Private Pilot Certificate (PPL) is your first step in flight training, allowing you to fly solo or with passengers under Visual Flight Rules (VFR). It enables you to rent and pilot aircraft for personal use, recreational flying, and travel.",
-          link: "/training-programs",
+          link: "/training-programs/private-pilot",
         },
         {
           title: "Instrument Rating",
@@ -114,7 +114,7 @@ const homePage = {
           imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
           description:
             "The Instrument Rating (IR) enables you to fly in various weather conditions by using instruments for navigation. This rating is essential for advancing to commercial piloting and providing more consistent flight opportunities regardless of weather.",
-          link: "/training-programs",
+          link: "/training-programs/instrument-rating",
         },
         {
           title: "Commercial Pilot Certificate",
@@ -123,7 +123,7 @@ const homePage = {
           imageAlt: "commercial-pilot-program-nextgen-flight-academy",
           description:
             "The Commercial Pilot Certificate (CPL) allows you to earn money as a pilot. It opens career paths in commercial aviation, such as flight instruction, banner towing, and aerial photography, laying the foundation for airline transport roles.",
-          link: "/training-programs",
+          link: "/training-programs/commercial-pilot",
         },
         {
           title: "Multi-Engine Rating",
@@ -132,7 +132,7 @@ const homePage = {
           imageAlt: "multi-engine-plane-at-redlands-airport",
           description:
             "The Multi-Engine Rating (ME) qualifies you to fly aircraft with more than one engine. It is crucial for piloting more complex and faster aircraft, which is essential for commercial and airline transport pilots.",
-          link: "/training-programs",
+          link: "/training-programs/multi-engine-rating",
         },
         {
           title: "Flight Instructor (CFI, CFII, MEI)",
@@ -140,7 +140,7 @@ const homePage = {
           imageAlt: "flight-instructor-training-redlands-ca",
           description:
             "Becoming a Flight Instructor allows you to teach others to fly. This role not only helps build your flight hours but also opens career opportunities in aviation education. You can specialize as a CFI, Certified Flight Instructor-Instrument (CFII), or Multi-Engine Instructor (MEI).",
-          link: "/training-programs",
+          link: "/training-programs/certified-flight-instructor",
         },
         {
           title: "Airline Transport Pilot",
@@ -149,7 +149,7 @@ const homePage = {
           imageAlt: "atp-training-at-nextgen-flight-academy-riverside-ca",
           description:
             "The Airline Transport Pilot (ATP) certification is the highest level of pilot certification. It qualifies you to command multi-crew aircraft and pursue top-tier positions with airlines, corporate flight departments, and cargo carriers.",
-          link: "/training-programs",
+          link: "/training-programs/airline-transport-pilot",
         },
         {
           title: "High Performance Endorsement",
@@ -158,14 +158,14 @@ const homePage = {
             "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
           imageAlt: "planes-flying-over-san-bernadino-ca",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Performance Endorsement allows you to fly aircraft with an engine of more than 200 horsepower. It grants access to faster, more powerful aircraft.`,
-          link: "/training-programs",
+          link: "/training-programs/high-performance-endorsement",
         },
         {
           title: "High Altitude Endorsement",
           imagePath: "/src/assets/high-altitude-endorsement.jpg",
           imageAlt: "high-altitude-endorsement",
           description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The High Altitude Endorsement prepares you to operate pressurized aircraft above 25,000 feet. It allows you to fly higher and more efficient routes, often necessary for certain commercial operations.`,
-          link: "/training-programs",
+          link: "/training-programs/high-altitude-endorsement",
         },
         {
           title: "Complex Endorsement",
@@ -174,7 +174,7 @@ const homePage = {
           imageAlt: "completing-an-endorsement-at-riverside-airport",
           description:
             `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
-          link: "/training-programs",
+          link: "/training-programs/complex-endorsement",
         },
       ],
     },
