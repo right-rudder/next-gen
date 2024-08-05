@@ -19,8 +19,8 @@ const piperWarrior = {
 
     aircraft: {
       title: "Piper Warrior",
-      normalRate: 179.99,
-      blockRate: 174.99,
+      normalRate: 154.99,
+      blockRate: 149.99,
       location: ["Redlands Municipal Airport (REI)"],
       images: [
         {
