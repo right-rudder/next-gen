@@ -5,6 +5,7 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
 import Header from "../../components/Header.astro";
+import ImageComp from "../../components/ImageComp.astro";
 
 const data = {
   imagePath:
@@ -63,7 +64,7 @@ const posts = (await getCollection("blog")).sort(
               <div class="flex-1 h-full overflow-hidden">
                 <img
                   src={post.data.heroImage}
-                  alt=""
+                  alt={post.data.title}
                   class="h-full object-cover w-full"
                 />
               </div>
