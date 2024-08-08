@@ -1,40 +1,63 @@
 ---
 import Header from "../components/Header.astro";
+import catalinaIntroFlight from "../data/catalina-intro-flight";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-const headerData = {
-  headerH1: "Catalina Intro Flight",
-  headerH2: "Book an Introductory Flight at NextGen Flight Academy",
-  imagePath: "/src/assets/kaushik-panchal-0juC5JIhPks-unsplash.jpg",
-  imageAlt: "clouds in the sky over California, NextGen Flight Academy",
-};
+const content = catalinaIntroFlight;
 ---
 
 <BaseLayout
   siteTitle="Book an Introductory Discovery Flight | Riverside, CA Flight Training"
   siteDescription="Completing an introductory flight, also known as a discovery flight, is the first step in becoming a pilot.  It's your first lesson where you'll be paired up with a certified flight instructor.  Your instructor will help you with take offs and landings, but you'll be at the controls for the majority of the time.  After the flight, you can learn more about the pilot training process and see if it's right for you."
 >
-  <Header data={headerData} />
+  <Header data={content.header} />
 
-  <section id="intro-lesson-form">
-    <iframe
-      src="https://msg.flightschoolcrm.com/widget/form/a6qIDHenWwsQwdpSQn1E"
-      style="width:100%;height:100%;border:none;border-radius:2px"
-      id="inline-a6qIDHenWwsQwdpSQn1E"
-      data-layout="{'id':'INLINE'}"
-      data-trigger-type="alwaysShow"
-      data-trigger-value=""
-      data-activation-type="alwaysActivated"
-      data-activation-value=""
-      data-deactivation-type="neverDeactivate"
-      data-deactivation-value=""
-      data-form-name="Catalina Intro Flight - $295.00"
-      data-height="1340"
-      data-layout-iframe-id="inline-a6qIDHenWwsQwdpSQn1E"
-      data-form-id="a6qIDHenWwsQwdpSQn1E"
-      title="Catalina Intro Flight - $295.00"
-    >
-    </iframe>
+  <section id="local-intro-form" class="flex flex-wrap">
+    <div class="w-full lg:w-1/2 py-16 px-6 lg:px-10 bg-accent/10">
+      <div class="sticky top-40">
+        <h2 class="text-5xl font-bold text-center text-primary-dark">
+          {content.flight.title}
+        </h2>
+        <h3 class="mt-9 text-2xl font-bold text-center text-gray-600">
+          DESCRIPTION
+        </h3>
+        <p class="paragraph mt-3 text-center">
+          {content.flight.description}
+        </p>
+        <h3 class="mt-9 text-2xl font-bold text-center text-gray-600">
+          RETURN & REFUND POLICY
+        </h3>
+        <p class="paragraph mt-3 text-center">No Returns or Refunds.</p>
+        <h3 class="mt-9 text-2xl font-bold text-center text-gray-600">
+          NOTICE ABOUT WEATHER
+        </h3>
+        <p class="paragraph mt-3 text-center">
+          In flying, there can be unexpected weather or maintenance that can
+          cause delays or last minute cancelations. We will do our best to
+          ensure you have a flight that departs on time and as expected.
+        </p>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2">
+      <iframe
+        src="https://msg.flightschoolcrm.com/widget/form/a6qIDHenWwsQwdpSQn1E"
+        style="width:100%;height:100%;border:none;border-radius:2px"
+        id="inline-a6qIDHenWwsQwdpSQn1E"
+        data-layout="{'id':'INLINE'}"
+        data-trigger-type="alwaysShow"
+        data-trigger-value=""
+        data-activation-type="alwaysActivated"
+        data-activation-value=""
+        data-deactivation-type="neverDeactivate"
+        data-deactivation-value=""
+        data-form-name="Catalina Intro Flight - $295.00"
+        data-height="1340"
+        data-layout-iframe-id="inline-a6qIDHenWwsQwdpSQn1E"
+        data-form-id="a6qIDHenWwsQwdpSQn1E"
+        title="Catalina Intro Flight - $295.00"
+      >
+      </iframe>
+    </div>
   </section>
   <script src="https://msg.flightschoolcrm.com/js/form_embed.js"></script>
 </BaseLayout>

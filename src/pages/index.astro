@@ -8,6 +8,7 @@ import ProgramsSwiper from "../components/ProgramsSwiper.astro";
 import HeaderScreen from "../components/HeaderScreen.astro";
 import Testimonials from "../components/Testimonials.astro";
 import QuizCTA from "../components/QuizCTA.astro";
+import BlogFeed from "../components/BlogFeed.astro";
 
 const { data } = homePage;
 ---
@@ -29,6 +30,8 @@ const { data } = homePage;
   <Testimonials content={data.testimonials} />
 
   <QuizCTA content={data.quizCTA} />
+
+  <BlogFeed data={data.blogFeed} />
 
   <section class="w-full flex flex-wrap overflow-hidden">
     <GoogleMaps data={data.gMaps[0]} />
