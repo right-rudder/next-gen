@@ -41,24 +41,28 @@ const about = {
           imagePath:
             "/src/assets/braden-cfi-nextgen-flight-academy-learn-to-fly.jpg",
           imageAlt: "Braden portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI",
         },
         {
           name: "Sara",
           imagePath:
             "/src/assets/sara-cfi-nextgen-flight-academy-learn-to-fly.png",
           imageAlt: "Sara portrait, he is a CFI at NextGen Flight Academy",
+          rank: "AGI",
         },
         {
           name: "Eric",
           imagePath:
             "/src/assets/eric-cfi-nextgen-flight-academy-learn-to-fly.jpg",
           imageAlt: "Eric portrait, he is a CFI at NextGen Flight Academy",
+          rank: "Chief Pilot - CFI/CFII/MEI",
         },
         {
           name: "Stan",
           imagePath:
             "/src/assets/stan-cfi-nextgen-flight-academy-learn-to-fly.jpg",
           imageAlt: "Stan portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI/CFII/MEI",
         },
         {
           name: "Max",
@@ -89,6 +93,7 @@ const about = {
           imagePath:
             "/src/assets/dave-cfi-nextgen-flight-academy-learn-to-fly.jpg",
           imageAlt: "Dave portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI/CFII",
         },
       ],
     },
