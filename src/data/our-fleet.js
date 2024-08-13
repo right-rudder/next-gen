@@ -28,8 +28,8 @@ const ourFleet = {
             normalRate: 154.99,
             blockRate: 149.99,
             imagePath:
-              "/fleet/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
-            imageAlt: "N7561G-nextgen-flight-academy-riverside-ca",
+              "/src/assets/N7320J-cessna-172-side.jpg",
+            imageAlt: "Cessna 172 at Riverside Airport",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
             link: "/our-fleet/cessna-172",
