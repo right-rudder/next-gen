@@ -17,7 +17,7 @@ if (!images[imagePath]) {
 }
 ---
 
-<section class="pb-12 pt-24 px-5">
+<section class="pb-16 pt-24 px-5">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10">
     <div class="flex flex-col gap-5 lg:col-span-4">
       <h2 class="text-5xl text-dark-blue font-bold leading-tight">About Us</h2>
@@ -31,15 +31,19 @@ if (!images[imagePath]) {
       />
     </div>
     <div
-      class="bg-primary-dark text-white p-4 lg:p-12 flex flex-col items-center align-middle justify-center gap-6 lg:col-span-4"
+      class="relative bg-primary-dark text-white p-4 lg:p-12 flex flex-col items-center align-middle justify-center gap-6 lg:col-span-4"
     >
-      <ImQuotesLeft className="text-accent size-12 w-full text-left" />
+      <ImQuotesLeft
+        className="absolute z-0 left-6 top-3 lg:top-9 text-accent/30 size-24"
+      />
       {
         quotes.map((quote) => (
-          <p class="text-xl font-semibold text-gray-100">{quote}</p>
+          <p class="text-xl z-10 font-semibold text-gray-100">{quote}</p>
         ))
       }
-      <ImQuotesRight className="text-accent size-12 w-full text-right" />
+      <ImQuotesRight
+        className="absolute z-0 right-6 bottom-3 lg:bottom-9 text-accent/30 size-24"
+      />
     </div>
   </div>
 </section>

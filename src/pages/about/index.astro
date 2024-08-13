@@ -4,6 +4,7 @@ import Header from "../../components/Header.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import about from "../../data/about";
 import OurStory from "../../components/OurStory.astro";
+import TeamGrid from "../../components/TeamGrid.astro";
 
 const { data } = about;
 ---
@@ -22,6 +23,12 @@ const { data } = about;
     imageAlt={data.ourStory.imageAlt}
     about={data.ourStory.about}
     quotes={data.ourStory.quotes}
+  />
+
+  <TeamGrid
+    heading={data.teamGrid.heading}
+    subheading={data.teamGrid.subheading}
+    instructors={data.teamGrid.instructors}
   />
 
   <EnrollNowCTA
