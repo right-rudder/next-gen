@@ -32,6 +32,72 @@ const about = {
       ],
     },
 
+    teamGrid: {
+      heading: "Flight Instructors",
+      subheading: "Meet the Team",
+      instructors: [
+        {
+          name: "Braden",
+          imagePath:
+            "/src/assets/braden-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Braden portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI",
+        },
+        {
+          name: "Sara",
+          imagePath:
+            "/src/assets/sara-cfi-nextgen-flight-academy-learn-to-fly.png",
+          imageAlt: "Sara portrait, he is a CFI at NextGen Flight Academy",
+          rank: "AGI",
+        },
+        {
+          name: "Eric",
+          imagePath:
+            "/src/assets/eric-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Eric portrait, he is a CFI at NextGen Flight Academy",
+          rank: "Chief Pilot - CFI/CFII/MEI",
+        },
+        {
+          name: "Stan",
+          imagePath:
+            "/src/assets/stan-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Stan portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI/CFII/MEI",
+        },
+        {
+          name: "Max",
+          imagePath:
+            "/src/assets/max-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Max portrait, he is a CFI at NextGen Flight Academy",
+        },
+        {
+          name: "Anika",
+          imagePath:
+            "/src/assets/Anika-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Anika portrait, he is a CFI at NextGen Flight Academy",
+        },
+        {
+          name: "Ryan",
+          imagePath:
+            "/src/assets/ryan-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Ryan portrait, he is a CFI at NextGen Flight Academy",
+        },
+        {
+          name: "Devin",
+          imagePath:
+            "/src/assets/devin-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Devin portrait, he is a CFI at NextGen Flight Academy",
+        },
+        {
+          name: "Dave",
+          imagePath:
+            "/src/assets/dave-cfi-nextgen-flight-academy-learn-to-fly.jpg",
+          imageAlt: "Dave portrait, he is a CFI at NextGen Flight Academy",
+          rank: "CFI/CFII",
+        },
+      ],
+    },
+
     enrollCTA: {
       heading: "Come Visit Us",
       subheading:

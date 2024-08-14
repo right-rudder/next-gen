@@ -1,0 +1,37 @@
+---
+import InstructorCard from "./InstructorCard.astro";
+
+const { heading, subheading, instructors } = Astro.props;
+---
+
+<div class="bg-primary/20 py-32">
+  <div class="mx-auto max-w-7xl px-6 text-center lg:px-8">
+    <div class="mx-auto max-w-2xl">
+      <h2
+        class="text-4xl font-bold tracking-tight text-primary-dark lg:text-6xl"
+      >
+        {heading}
+      </h2>
+      <p class="mt-2 text-2xl lg:text-3xl font-sans1 leading-8 text-gray-600">
+        {subheading}
+      </p>
+    </div>
+    <ul
+      role="list"
+      class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+    >
+      {
+        instructors.map((instructor) => (
+          <InstructorCard
+            name={instructor.name}
+            imagePath={instructor.imagePath}
+            imageAlt={instructor.imageAlt}
+            rank={instructor.rank}
+          />
+        ))
+      }
+
+      <!-- More people... -->
+    </ul>
+  </div>
+</div>

@@ -53,7 +53,8 @@ const homePage = {
           imageAlt:
             "src/assets/student-and-cfi-at-nextgen-head-office-in-riverside-ca",
           link: "#testimonials",
-          description: "Read what other students have to say about NextGen Flight Academy.",
+          description:
+            "Read what other students have to say about NextGen Flight Academy.",
         },
         {
           title: "Career Track Pilots",
@@ -61,7 +62,8 @@ const homePage = {
             "/src/assets/pilots-and-cfi-at-riverside-california-airport-at-nextgen.jpg",
           imageAlt: "pilots-and-cfi-at-riverside-california-airport-at-nextgen",
           link: "/training-programs/career",
-          description: "Explore our career track (zero to hero) training program structure.",
+          description:
+            "Explore our career track (zero to hero) training program structure.",
         },
         {
           title: "Book an Intro Flight",
@@ -172,8 +174,7 @@ const homePage = {
           imagePath:
             "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
           imageAlt: "completing-an-endorsement-at-riverside-airport",
-          description:
-            `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
+          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
           link: "/training-programs/complex-endorsement",
         },
       ],
@@ -217,44 +218,11 @@ const homePage = {
       ],
     },
 
-    //contentOne
-    contentOneImage: "../assets/nextgen-flight-academy-discovery-flight.jpg",
-    contentOneImageAlt: "",
-    contentOneImageCaption: "",
-    contentOneH3: "",
-    contentOneParagraphs: ["", ""],
-    contentOneButtonText: "",
-    contentOneButtonLink: "",
-
-    //contentTwo
-    contentTwoImage: "",
-    contentTwoImageAlt: "",
-    contentTwoImageCaption: "",
-    contentTwoH3: "",
-    contentTwoParagraphs: ["", ""],
-    contentTwoButtonText: "",
-    contentTwoButtonLink: "",
-
-    //contentThree
-    contentThreeImage: "",
-    contentThreeImageAlt: "",
-    contentThreeImageCaption: "",
-    contentThreeH3: "",
-    contentThreeParagraphs: ["", ""],
-    contentThreeButtonText: "",
-    contentThreeButtonLink: "",
-
-    //Bottom CTAOne
-    CTAOneH2: "",
-    CTAOneH3: "",
-    CTAOneButtonText: "",
-    CTAOneButtonLink: "",
-
-    //Bottom CTATwo
-    CTATwoH2: "",
-    CTATwoH3: "",
-    CTATwoButtonText: "",
-    CTATwoButtonLink: "",
+    blogFeed: {
+      title: "From the Blog",
+      subtitle:
+        "Stay up to date with the latest news and insights from NextGen Flight Academy.",
+    },
   },
 };
 
