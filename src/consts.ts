@@ -37,13 +37,13 @@ export const LOCATIONS = [
 ];
 
 // CHANGE client business info
-export const PHONE_NUMBER = "877-551-1110";
-export const AIRPORT = "Jedrek Airfield";
-export const ADDRESS_LINE_1 = "888 Right Rudder Street";
-export const ADDRESS_LINE_2 = "Right Rudderville, RRM 12345";
+export const PHONE_NUMBER = "951-468-9700";
+export const AIRPORT = "Riverside Municipal Airport";
+export const ADDRESS_LINE_1 = "6951 Flight Road, Suite 106";
+export const ADDRESS_LINE_2 = "Riverside, CA 92504";
 export const FACEBOOK_URL = "https://www.facebook.com/FlyNextGen/";
 export const INSTAGRAM_URL = " https://www.instagram.com/nextgenflightacademy/";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/company/nextgen-flight-academy";
-export const TIKTOK_URL = "https://www.tiktok.com/";
-export const EMAIL_ADDRESS = "customerservice@nextgenflightacademy.com";
+export const TIKTOK_URL = "";
+export const EMAIL_ADDRESS = "";

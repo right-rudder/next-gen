@@ -28,7 +28,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
           )
         }
       </div>
-      <div class="prose font-sans1 px-5">
+      <div class="prose font-sans1 py-12 px-5">
         <div class="title">
           <div class="date">
             <FormattedDate date={pubDate} />
@@ -40,7 +40,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
               )
             }
           </div>
-          <h1 class="text-5xl">{title}</h1>
+          <h1 class="text-5xl font-sans">{title}</h1>
           <hr />
         </div>
         <slot />

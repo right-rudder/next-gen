@@ -145,6 +145,13 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "blog": {
+"choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md": {
+	id: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md";
+  slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "what-is-the-written-exam.md": {
 	id: "what-is-the-written-exam.md";
   slug: "what-is-the-written-exam";

@@ -46,11 +46,11 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: black !important;
+  color: #055250 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: black !important;
+  background-color: #055250 !important;
 }
 
 /* .swiper-wrapper {
