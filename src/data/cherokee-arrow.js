@@ -26,16 +26,16 @@ const cherokeeArrow = {
         {
           imagePath:
             "/src/assets/N3848T-nextgen-flight-academy-riverside-ca-fix.jpg",
-          imageAlt: "N3848T-nextgen-flight-academy-riverside-ca",
+          imageAlt: "N3848T at NextGen Flight Academy",
         },
         {
           imagePath:
             "/src/assets/piper-cherokee-arrow-nextgen-flight-academy.jpg",
-          imageAlt: "piper-cherokee-arrow-nextgen-flight-academy",
+          imageAlt: "Side angle of Piper Cherokee airplane",
         },
         {
-          imagePath: "/src/assets/piper-arrow-instrument-panel.jpg",
-          imageAlt: "piper-arrow-instrument-panel.jpg",
+          imagePath: "/src/assets/N3848T-glass-instrument-panel.jpg",
+          imageAlt: "Glass insturment panel of a Piper Arrow at NextGen",
         },
       ],
       rentUrl:
