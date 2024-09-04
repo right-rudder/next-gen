@@ -24,7 +24,7 @@ const trainingPrograms = {
         "Submit your enrollment interest today to learn more about our timelines and training structure.",
       ],
       imagePath: "/src/assets/redlands-plane-on-dry-lake.jpg",
-      imageAlt: "redlands-plane-on-dry-lake",
+      imageAlt: "Professional pilot landing on a dry lake bed near Redlands, CA",
       linkText: "Go from Zero to Hero",
       linkUrl: "/training-programs/career",
     },

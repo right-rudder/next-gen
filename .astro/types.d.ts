@@ -159,6 +159,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md": {
+	id: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md";
+  slug: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
