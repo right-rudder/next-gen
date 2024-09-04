@@ -3,7 +3,7 @@ pubDate: "September 4, 2024"
 author: Amanda Heveran
 title: "Why Zero Hero Flight Training is Key to a Successful Career as a Pilot"
 description: "Discover the benefits of training from zero-to-hero at NextGen Flight Academy in Riverside, CA, and Learn to Fly in Redlands, CA. Learn why full-path training sets the foundation for a successful aviation career."
-heroImage: "/src/assets/redlands-plane-on-dry-lake.jpg"
+heroImage: "/blog/redlands-plane-on-dry-lake-header.webp"
 readingTime: 6
 category: "Pilot Resources"
 tags:
@@ -48,7 +48,7 @@ When you commit to full-path training, you’re immersing yourself in the world 
 Zero-to-hero programs are designed with a clear progression in mind. Each phase of training is strategically planned to build on previous knowledge, making it easier for students to understand and retain complex concepts. At NextGen Flight Academy and Learn to Fly, our curriculum is tailored to ensure that you move seamlessly from one level of training to the next, reducing the likelihood of setbacks and allowing you to achieve your goals efficiently.
 
 ![Pilot and child at Redlands Airport with Cessna 172](/src/assets/pilot-and-child-at-redlands-airport-with-cessna-172.jpg)
-*A pilot introduces a young aviator to the Cessna 172 at Redlands Airport.*
+_A pilot introduces a young aviator to the Cessna 172 at Redlands Airport._
 
 ### Building a Strong Foundation
 
@@ -75,7 +75,7 @@ One of the most significant advantages of zero-to-hero training is the speed at 
 Training at reputable academies like NextGen and Learn to Fly provides you with opportunities to network with industry professionals and fellow students. These connections can be invaluable when it comes to finding job placements and advancing your career. Our alumni network and industry partnerships mean that you’ll have access to a wide range of resources and support as you transition from student to professional pilot.
 
 ![Taxiing a Cessna 152 at Riverside Airport](/src/assets/taxiing-a-cessna-152-at-riverside-airport.jpg)
-*Students taxi a Cessna 152 at Riverside Airport, preparing for another day of training at NextGen Flight Academy.*
+_Students taxi a Cessna 152 at Riverside Airport, preparing for another day of training at NextGen Flight Academy._
 
 **3. Competitive Edge in the Job Market**
 
@@ -106,4 +106,3 @@ Beyond the training, NextGen offers a supportive community where students are mo
 ### Come Visit Us in Riverside and Redlands
 
 Choosing to train from zero-to-hero at NextGen Flight Academy and Learn to Fly is a decision that sets the foundation for a successful aviation career. By committing to a full-path training program, you gain the skills, experience, and confidence needed to thrive as a professional pilot. If you’re ready to take the next step in your aviation journey, explore our [Career Track](https://flyhere.aero/training-programs/career) program and get started by filling out the [Enrollment Interest Form](https://flyhere.aero/enrollment) today.
-
