@@ -16,12 +16,16 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
   <div class="h-20 lg:h-24 w-full bg-primary/70 brightness-75"></div>
 
   <section class="flex justify-center items-start align-top pt-4 pb-20">
-    <article>
-      <div class="w-full aspect-square mb-12 lg:mb-0">
+    <article
+      class="max-w-4xl flex flex-col justify-center align-middle items-center"
+    >
+      <div
+        class="aspect-square max-w-2xl mb-12 lg:mb-0 flex justify-center align-middle"
+      >
         {
           heroImage && (
             <img
-              class="object-cover h-full w-full"
+              class="object-cover w-full h-full"
               src={heroImage}
               alt={title}
             />
