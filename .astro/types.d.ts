@@ -152,6 +152,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"understanding-flight-instruments-for-safer-navigation.md": {
+	id: "understanding-flight-instruments-for-safer-navigation.md";
+  slug: "understanding-flight-instruments-for-safer-navigation";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "what-is-the-written-exam.md": {
 	id: "what-is-the-written-exam.md";
   slug: "what-is-the-written-exam";
