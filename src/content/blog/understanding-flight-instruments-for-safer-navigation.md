@@ -1,12 +1,20 @@
 ---
+pubDate: "October 10, 2024"
 author: "Amanda Heveran"
-title: "understanding-flight-instruments-for-safer-navigation"
+title: "Understanding Flight Instruments for Safer Navigation"
 description: "Learn about essential flight instruments and how mastering them can lead to safer and more efficient flying at NextGen Flight Academy."
-heroImage: "/src/assets/planes-flying-over-san-bernadino-ca.webp"
-pubDate: "Oct 10, 2024"
+heroImage: "/blog/planes-flying-over-san-bernadino-ca.webp"
 category: "Pilot Resources"
-tags: ["pilot-resources", "aviation-training", "flight-instruments", "nextgen-flight-academy", "instrument-rating", "flight-training"]
-readingTime: "6 min"
+tags:
+  [
+    "pilot-resources",
+    "aviation-training",
+    "flight-instruments",
+    "nextgen-flight-academy",
+    "instrument-rating",
+    "flight-training",
+  ]
+readingTime: 6
 ---
 
 Flight instruments play an essential role in navigating safely and efficiently. At [NextGen Flight Academy](https://flyhere.aero/about), we emphasize the importance of mastering flight instruments early in your training. This post will dive into the key flight instruments and their functions, and why understanding these tools is crucial for any aspiring pilot.
@@ -15,8 +23,7 @@ Flight instruments play an essential role in navigating safely and efficiently. 
 
 In every cockpit, six core instruments provide vital flight information:
 
-1. **Airspeed Indicator (ASI):** The airspeed indicator measures how fast the aircraft is moving through the air. This instrument is crucial for maintaining safe flight speeds, ensuring the pilot avoids stall speeds or exceeding structural limits. 
-   
+1. **Airspeed Indicator (ASI):** The airspeed indicator measures how fast the aircraft is moving through the air. This instrument is crucial for maintaining safe flight speeds, ensuring the pilot avoids stall speeds or exceeding structural limits.
 2. **Attitude Indicator (AI):** Also known as the artificial horizon, the attitude indicator shows the aircraft's orientation relative to the horizon. It helps pilots maintain level flight, especially when visibility is limited.
 
 3. **Altimeter:** The altimeter measures the aircraft's altitude above mean sea level. Knowing your altitude is vital for maintaining safe clearances and navigating properly.
@@ -32,13 +39,11 @@ In every cockpit, six core instruments provide vital flight information:
 Modern aircraft are often equipped with additional instruments to further assist in navigation and safety.
 
 - **Magnetic Compass:** The compass is the most basic navigation tool. Though subject to errors in certain conditions, it serves as an essential backup to the heading indicator.
-  
 - **VOR, ADF, and GPS Systems:** These advanced navigation systems provide pilots with additional tools for tracking courses and navigating in low-visibility conditions or over long distances.
-  
 - **Engine Instruments:** These include the tachometer, oil pressure gauge, and fuel quantity indicators. They are essential for monitoring the aircraft’s health and ensuring safe engine performance.
 
-![Instrument panel of a Cessna 172L at Riverside Airport](/src/assets/instrument-panel-of-cessna-172l-at-riverside-airport-RAL.webp)
-*Instrument panel of a Cessna 172L used for training at NextGen Flight Academy*
+![Instrument panel of a Cessna 172L at Riverside Airport](/blog/instrument-panel-of-cessna-172l-at-riverside-airport-RAL.jpg)
+_Instrument panel of a Cessna 172L used for training at NextGen Flight Academy_
 
 ### Practical Tips for Mastering Flight Instruments
 
@@ -52,8 +57,8 @@ Spending time familiarizing yourself with the layout of the cockpit is a great w
 
 A common technique used by pilots is the "instrument scan," which involves regularly checking all instruments to maintain situational awareness. By developing a systematic scan pattern, you can ensure that you are constantly aware of your aircraft's performance and position.
 
-![Piper Arrow instrument panel at NextGen](/src/assets/piper-arrow-instrument-panel.webp)
-*Piper Arrow instrument panel showing modern avionics at NextGen Flight Academy*
+![Piper Arrow instrument panel at NextGen](/blog/piper-arrow-instrument-panel.jpg)
+_Piper Arrow instrument panel showing modern avionics at NextGen Flight Academy_
 
 ### Instrument Flight Rules (IFR) Training
 
@@ -61,8 +66,8 @@ For pilots looking to advance their skills, obtaining an [Instrument Rating (IR)
 
 By mastering IFR procedures, pilots gain the skills and confidence needed to handle more complex flight situations, enhancing both safety and professionalism.
 
-![N415MS aircraft ready for IFR training](/src/assets/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca-copy.webp)
-*N415MS aircraft used for instrument training at NextGen Flight Academy*
+![N415MS aircraft ready for IFR training](/blog/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca-copy.jpg)
+_N415MS aircraft used for instrument training at NextGen Flight Academy_
 
 ### Why Mastering Flight Instruments is Essential
 
