@@ -19,7 +19,7 @@ const introFlights = {
       heading: "Choose your path to the skies",
       cards: [
         {
-          title: `Local Intro Flight<br><span class="font-bold text-accent">$99.99<span>`,
+          title: `Local Intro Flight<br><span class="font-bold text-accent">$129.99<span>`,
           description:
             "Take a 30-minute flight in a Cessna 172 over beautiful Riverside and Lake Mathews. Learn how to fly the plane and let our FAA-Certified Flight Instructors show you the ropes of being in the air! Ground and flight portions will last approximately 1 hour. Take flight today!",
           imagePath:
@@ -48,7 +48,17 @@ const introFlights = {
           linkText: "Book Now",
         },
         {
-          title: `Dana Point Intro Flight<br><span class="font-bold text-accent">$220.00<span>`,
+          title: `Hollywood Sign Intro Flight<br><span class="font-bold text-accent">$220<span>`,
+          description:
+            "The Hollywood Sign Intro Flight includes 15 minutes of ground instruction with an FAA-Certified Flight Instructor to review the basics of flight including flight controls and airplane components.",
+          imagePath:
+            "/src/assets/nextgen-flight-academy-hollywood-sign-intro-flight.jpg",
+          imageAlt: "flying over the hollywood sign in a cessna 172",
+          link: "/hollywood-sign-intro-flight",
+          linkText: "Book Now",
+        },
+        {
+          title: `Dana Point Intro Flight<br><span class="font-bold text-accent">$320<span>`,
           description:
             "The Dana Point Intro Flight includes 15 minutes of ground instruction with an FAA-Certified Flight Instructor to review the basics of flight including flight controls and airplane components.",
           imagePath: "/src/assets/spencer-bergen-T38QxgsDQOs-unsplash.jpg",
@@ -57,7 +67,7 @@ const introFlights = {
           linkText: "Book Now",
         },
         {
-          title: `Catalina Intro Flight<br><span class="font-bold text-accent">$295.00<span>`,
+          title: `Catalina Intro Flight<br><span class="font-bold text-accent">$320<span>`,
           description:
             "The Catalina Intro Flight includes 15 minutes of ground instruction with an FAA-Certified Flight Instructor. The instructor will then take up the prospective student and up to two friends in a Cessna 172 out of the Riverside airport to Catalina for a 90-minute intro flight.",
           imagePath: "/src/assets/benoit-debaix-f1Wl5gYejUM-unsplash.jpg",

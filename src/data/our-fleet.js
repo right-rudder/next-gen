@@ -25,8 +25,8 @@ const ourFleet = {
         aircraft: [
           {
             title: "Cessna 172",
-            normalRate: 154.99,
-            blockRate: 149.99,
+            normalRate: 169.0,
+            blockRate: 159.0,
             imagePath: "/fleet/N7320J-cessna-172-side.jpg",
             imageAlt: "Cessna 172 at Riverside Airport",
             description:
@@ -36,8 +36,8 @@ const ourFleet = {
           },
           {
             title: "Cessna 172L",
-            normalRate: 154.99,
-            blockRate: 149.99,
+            normalRate: 169.0,
+            blockRate: 159.0,
             imagePath: "/fleet/N7561G-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "instrument-rating-training-at-nextgen-flight-academy",
             description:
@@ -47,8 +47,8 @@ const ourFleet = {
           },
           {
             title: "Cessna 172H",
-            normalRate: 154.99,
-            blockRate: 149.99,
+            normalRate: 169.0,
+            blockRate: 159.0,
             imagePath:
               "/fleet/side-of-cessna-172h-at-riverside-airport-RAL.jpg",
             imageAlt: "commercial-pilot-program-nextgen-flight-academy",
@@ -59,8 +59,8 @@ const ourFleet = {
           },
           {
             title: "Cessna 152",
-            normalRate: 145.99,
-            blockRate: 139.99,
+            normalRate: 150.0,
+            blockRate: 140.0,
             imagePath: "/fleet/N4793O-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "multi-engine-plane-at-redlands-airport",
             description:
@@ -70,8 +70,8 @@ const ourFleet = {
           },
           {
             title: "Piper Cherokee Arrow",
-            normalRate: 179.99,
-            blockRate: 174.99,
+            normalRate: 190.0,
+            blockRate: 180.0,
             imagePath: "/fleet/N3848T-nextgen-flight-academy-riverside-ca.jpg",
             imageAlt: "multi-engine-plane-at-redlands-airport",
             description:
@@ -81,8 +81,8 @@ const ourFleet = {
           },
           {
             title: "BE76 Beechcraft Duchess",
-            normalRate: 319.99,
-            blockRate: 304.99,
+            normalRate: 330.0,
+            blockRate: 315.0,
             imagePath:
               "/fleet/side-of-beechcraft-duchess-at-riverside-airport-RAL.jpg",
             imageAlt:
@@ -114,8 +114,8 @@ const ourFleet = {
         aircraft: [
           {
             title: "Cessna 172",
-            normalRate: 154.99,
-            blockRate: 149.99,
+            normalRate: 169.0,
+            blockRate: 159.0,
             imagePath:
               "/fleet/N7815C-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt: "passing-a-checkride-at-nextgen-flight-learn-to-fly",
@@ -126,8 +126,8 @@ const ourFleet = {
           },
           {
             title: "Piper Warrior",
-            normalRate: 179.99,
-            blockRate: 174.99,
+            normalRate: 169.0,
+            blockRate: 159.0,
             imagePath:
               "/fleet/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt:
