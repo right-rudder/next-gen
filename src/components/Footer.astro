@@ -19,6 +19,7 @@ import {
 import { navbarLinks } from "../data/navbarLinks";
 import logo from "../assets/NG Logo White Background 2.png";
 import { Image } from "astro:assets";
+import ImageComp from "./ImageComp.astro";
 
 const { pathname } = Astro.url;
 ---
@@ -231,13 +232,18 @@ const { pathname } = Astro.url;
       <p class="text-sm text-gray-100 text-center">
         © Copyright 2024 NextGen Flight Academy. All rights reserved.
       </p>
-      <span class="text-white text-center">
+      <span class="text-white text-center flex gap-2">
         Powered by
         <a
           href="https://rightruddermarketing.com/"
           target="_blank"
-          class="text-bold hover:underline hover:text-white/70"
+          class="text-bold group hover:underline hover:text-white/70 flex gap-2 duration-200"
         >
+          <ImageComp
+            imagePath="/src/assets/RRM-R-symbol-474.webp"
+            imageAlt="Right Rudder Marketing Logo"
+            styles="h-6 w-auto group-hover:scale-105 group-hover:brightness-125 drop-shadow-md duration-300"
+          />
           More Right Rudder</a
         >
       </span>
