@@ -21,9 +21,10 @@ if (!images[data.imagePath])
     alt={data.imageAlt}
     class="absolute top-0 w-full h-full object-cover -z-10"
     quality={100}
+    loading={"eager"}
   />
 
-  <div class="absolute inset-0 bg-black/40 -z-0"></div>
+  <div class="absolute inset-0 bg-slate-950/50 -z-0"></div>
   {
     (data.headerH1 || data.headerH2) && (
       <div class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center">
@@ -35,7 +36,7 @@ if (!images[data.imagePath])
         )}
         {data.headerH1 && (
           <h2
-            class="text-2xl lg:text-3xl p-3 lg:p-6 text-center tracking-wide font-sans2"
+            class="text-3xl text-accent brightness-110 font-semibold tracking-wide font-sans2"
             set:html={data.headerH2}
           />
         )}

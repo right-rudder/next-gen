@@ -101,7 +101,7 @@ const about = {
     enrollCTA: {
       heading: "Come Visit Us",
       subheading:
-        "Book an intro flight over iconic Southern California sights and see if flight school is right for you",
+        "Book an intro flight over iconic Southern California sights and see if flight school is right for you. Our experienced instructors will guide you through the basics and answer any questions you may have.",
       linkText: "Fly with NextGen",
       linkUrl: "/intro-flight",
       imagePath:

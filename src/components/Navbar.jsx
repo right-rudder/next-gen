@@ -99,6 +99,7 @@ const Navbar = ({ pathname }) => {
                   src="/NG Logo White Background 2.webp"
                   alt="NextGen Logo"
                   className="z-10 object-contain lg:h-24 h-20 w-auto invert"
+                  loading="lazy"
                 />
               </a>
               <div className="hidden lg:flex justify-center w-full">
@@ -113,7 +114,7 @@ const Navbar = ({ pathname }) => {
                       {item.link ? (
                         <a
                           href={item.link}
-                          className="text-white font-normal text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
+                          className="text-white font-normal text-lg duration-300 hover:underline decoration-secondary decoration-4 underline-offset-[10px] py-12 border-accent whitespace-nowrap group-last:font-bold group-last:text-black group-last:hover:text-primary-dark group-last:bg-accent group-last:py-4 group-last:px-8 group-last:rounded-bl-lg group-last:rounded-tr-lg group-last:hover:bg-white group-last:hover:no-underline"
                         >
                           <span className="relative z-10">{item.name}</span>
                         </a>

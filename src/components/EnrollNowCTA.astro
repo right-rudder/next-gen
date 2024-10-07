@@ -33,20 +33,18 @@ if (!images[imagePath]) {
     class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
-    class="lg:w-1/2 w-full h-full lg:h-5/6 flex flex-col items-center justify-center align-middle lg:py-16 z-10 bg-primary/80 rounded-bl-3xl rounded-tr-3xl shadow-xl"
+    class="lg:w-1/2 w-full h-full lg:h-5/6 flex flex-col items-center justify-center align-middle lg:py-16 z-10 bg-primary-dark/90 rounded-bl-3xl rounded-tr-3xl shadow-xl"
   >
     <div class="max-w-5xl px-5 flex flex-col items-center justify-end">
       <h2
-        class="text-5xl lg:text-7xl font-semibold text-center text-white tracking-tight"
+        class="text-5xl lg:text-7xl font-semibold text-center text-accent tracking-tight drop-shadow-lg"
       >
         {heading}
       </h2>
-      <h3
-        class="my-4 font-semibold text-2xl text-gray-100 font-sans1 text-center"
-      >
+      <h3 class="mt-6 font-thin p-6 text-xl text-white font-sans1 text-center">
         {subheading}
       </h3>
-      <a href={linkUrl} class="mt-6 btn-primary-dark btn-animate block"
+      <a href={linkUrl} class="mt-6 btn-white btn-animate block"
         ><span class="relative z-10">{linkText}</span></a
       >
     </div>
