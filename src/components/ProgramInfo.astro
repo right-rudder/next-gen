@@ -5,8 +5,10 @@ import ImageComp from "./ImageComp.astro";
 const { data } = Astro.props;
 ---
 
-<section class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-6 pb-12">
-  <div class="col-span-4 w-full h-full">
+<section class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-6 pb-8">
+  <div
+    class="col-span-4 w-full h-full bg-gradient-to-b from-primary/5 to-primary/10 pb-8"
+  >
     <div class="w-full h-[30rem] my-6">
       <ImageComp
         imagePath={data.topImage.imagePath}
