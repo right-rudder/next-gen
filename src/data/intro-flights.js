@@ -19,7 +19,7 @@ const introFlights = {
       heading: "Choose your path to the skies",
       cards: [
         {
-          title: `Local Intro Flight<br><span class="font-bold text-accent">$129.99<span>`,
+          title: `Local Intro Flight<br><span class="font-bold text-accent">$99.99<span>`,
           description:
             "Take a 30-minute flight in a Cessna 172 over beautiful Riverside and Lake Mathews. Learn how to fly the plane and let our FAA-Certified Flight Instructors show you the ropes of being in the air! Ground and flight portions will last approximately 1 hour. Take flight today!",
           imagePath:

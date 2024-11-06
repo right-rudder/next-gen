@@ -2,29 +2,29 @@
 const { content } = Astro.props;
 ---
 
-<section id="testimonials" class="bg-primary/20 py-24 sm:py-32">
+<section id="testimonials" class="bg-accent/10 lg:py-24">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div
-      class="mx-auto grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3"
-    >
-      <div class="flex flex-col items-center lg:items-end">
+    <div class="flex flex-wrap justify-evenly items-start align-middle">
+      <div
+        class="w-full lg:w-1/3 flex flex-col items-center lg:items-end lg:sticky top-52"
+      >
         {
           content.upperHeading && (
-            <p class="text-lg font-sans text-center lg:text-right font-bold tracking-tight text-primary-dark">
+            <p class="text-xl font-sans text-center uppercase lg:text-right font-semibold tracking-tight text-primary">
               {content.upperHeading}
             </p>
           )
         }
         {
           content.heading && (
-            <h2 class="text-5xl lg:text-6xl font-sans text-center lg:text-right font-bold tracking-tight text-primary">
+            <h2 class="text-5xl lg:text-6xl font-sans text-center lg:text-right font-bold tracking-tight text-primary-dark">
               {content.heading}
             </h2>
           )
         }
         {
           content.headingText.map((text) => (
-            <p class="mt-4 text-base lg:pl-6 font-sans1 text-center lg:text-right font-normal tracking-tight text-gray-700">
+            <p class="mt-4 text-lg lg:pl-6 font-sans text-center lg:text-right font-normal text-gray-700">
               {text}
             </p>
           ))
@@ -33,26 +33,23 @@ const { content } = Astro.props;
           content.buttonText && content.buttonLink && (
             <a
               href={content.buttonLink}
-              target="_blank"
-              class="mt-12 btn-primary btn-animate block text-right"
+              class="btn-primary btn-animate block mt-12 mx-auto lg:mx-0 lg:ml-4"
             >
               <span class="relative z-10">{content.buttonText}</span>
             </a>
           )
         }
       </div>
-      <div
-        class="mx-auto lg:col-span-2 lg:overflow-y-auto lg:max-h-[30rem] p-8"
-      >
+      <div class="w-full lg:w-2/3 lg:max-w-2xl px-4 mt-12 lg:mt-0 lg:px-12">
         <ul
-          class="flex flex-col justify-center align-middle items-center gap-y-12"
+          class="flex flex-col justify-center align-middle items-center divide-y-2 divide-primary/30"
         >
           {
-            content.reviews.map((review) => (
-              <li class="mx-auto">
+            content.reviews.map((review, index) => (
+              <li class={`${index > 3 ? "hidden lg:block" : ""} py-12`}>
                 <blockquote class="relative mx-auto">
                   <svg
-                    class="absolute -top-6 -start-8 size-16 text-primary-dark/30"
+                    class="absolute -top-6 -start-8 size-16 text-primary/20"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -66,7 +63,7 @@ const { content } = Astro.props;
                     />
                   </svg>
                   <svg
-                    class="absolute bottom-6 end-8 size-16 text-primary-dark/30 rotate-180"
+                    class="absolute bottom-6 end-8 size-16 text-primary/20 rotate-180"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -81,11 +78,11 @@ const { content } = Astro.props;
                   </svg>
 
                   <div class="relative z-10">
-                    <p class="text-gray-800 text-lg font-sans1 px-2">
+                    <p class="text-gray-700 font-medium text-lg leading-relaxed font-sans2 px-2">
                       <em>{review.body}</em>
                     </p>
                   </div>
-                  <p class="ml-2 text-2xl font-bold font-sans text-left">
+                  <p class="mt-4 text-3xl text-primary-dark/80 font-bold italic font-sans text-center">
                     {review.author}
                   </p>
                 </blockquote>

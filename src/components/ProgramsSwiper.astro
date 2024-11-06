@@ -5,17 +5,17 @@ const { content } = Astro.props;
 ---
 
 <section class="bg-gray-200 py-16 lg:py-24 overflow-hidden">
-  <div class="">
+  <div class="mb-12">
     {
       content.upperHeading && (
-        <h2 class="mx-auto mt-12 uppercase text-lg lg:text-xl lg:max-w-3xl font-sans1 text-center font-bold tracking-tight text-primary-dark">
+        <h2 class="text-xl font-sans text-center uppercase font-semibold tracking-tight text-primary">
           {content.upperHeading}
         </h2>
       )
     }
     {
       content.heading && (
-        <h2 class="mx-auto mb-12 text-3xl lg:text-4xl lg:max-w-3xl font-sans1 text-center font-bold tracking-tight text-gray-800">
+        <h2 class="text-5xl lg:text-6xl font-sans text-center font-bold tracking-tight text-gray-800">
           {content.heading}
         </h2>
       )
