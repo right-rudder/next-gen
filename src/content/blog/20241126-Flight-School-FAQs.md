@@ -3,7 +3,7 @@ pubDate: "November 26, 2024"
 author: Amanda Heveran
 title: "Flight School FAQs: Everything You Need to Know"
 description: "Find answers to common questions about flight school! Learn about pilot training programs, costs, and requirements at NextGen Flight Academy in Riverside and Redlands, CA. Enroll today!"
-heroImage: "/blog/cfi-and-student-training-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpeg"
+heroImage: "/blog/father-and-son-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:
