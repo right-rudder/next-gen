@@ -9,11 +9,11 @@ category: "Pilot Resources"
 tags:
   [
     "Flight School FAQs",
+    "FAA Part 141 Training",
+    "FAA Part 61 Training",
     "Pilot Training Riverside CA",
     "Pilot Training Redlands CA",
     "NextGen Flight Academy",
-    "FAA Part 141 Training",
-    "FAA Part 61 Training",
     "Zero to Hero Pilot Program",
     "Flight Lessons Riverside",
     "Flight Lessons Redlands",
@@ -24,7 +24,7 @@ tags:
     "Become a Pilot",
     "Pilot Training Costs",
     "Private Pilot License CA",
-    "Instrument Rating Training CA"
+    "Instrument Rating Training CA",
   ]
 ---
 
@@ -77,6 +77,12 @@ Both are FAA-approved paths to becoming a pilot. Part 61 offers flexibility, all
 
 Yes! NextGen Flight Academy offers demonstration flights at both our Riverside and Redlands locations. This is a great way to experience flying firsthand before committing to a full training program.
 
+---
+
+![NextGen Flight Academy in Redlands and Riverside, CA](/blog/cfi-and-student-training-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpeg)
+
+---
+
 ## Why Choose NextGen Flight Academy?
 
 NextGen Flight Academy stands out for:
@@ -86,14 +92,14 @@ NextGen Flight Academy stands out for:
 - **Experienced instructors**: Flexible scheduling to match your availability
 - **High aircraft readiness rate**: Ensures minimal delays in training
 
-Our mission is to provide quality pilot training tailored to your goals, whether you aim to fly recreationally or pursue a professional aviation career.
+Our mission is to provide quality pilot training tailored to your goals, whether you aim to fly recreational or pursue a professional aviation career.
 
 ## Ready to Get Started?
 
 If you’re ready to take the first step toward becoming a pilot, contact NextGen Flight Academy today. Our team is here to answer your questions and guide you through the enrollment process.
 
-- **Website**: [flyhere.aero](https://flyhere.aero/)  
-- **Riverside Location**: 877-551-1110  
-- **Redlands Location**: 833-777-3500  
+- **Website**: [flyhere.aero](https://flyhere.aero/)
+- **Riverside Location**: 877-551-1110
+- **Redlands Location**: 833-777-3500
 
 Enroll now and begin your flight training at NextGen Flight Academy in Riverside or Redlands, California!

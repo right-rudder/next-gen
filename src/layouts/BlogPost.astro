@@ -52,7 +52,7 @@ const { title, author, description, pubDate, updatedDate, heroImage, tags } =
           {
             tags && (
               <div class="flex flex-wrap gap-2 w-full font-semibold font-sans2">
-                {tags.map((tag) => (
+                {tags.slice(0, 3).map((tag) => (
                   <span class="bg-green-200 py-1 px-2 rounded-sm capitalize text-xs">
                     {tag}
                   </span>
@@ -62,7 +62,9 @@ const { title, author, description, pubDate, updatedDate, heroImage, tags } =
           }
           <hr />
         </div>
-        <div class="mt-8 px-6 flex justify-center">
+        <div
+          class="mt-8 px-6 flex justify-center prose-img:aspect-square prose-img:object-cover"
+        >
           <slot />
         </div>
       </div>
