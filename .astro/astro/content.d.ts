@@ -168,6 +168,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"flight-school-faqs-everything-you-need-to-know.md": {
+	id: "flight-school-faqs-everything-you-need-to-know.md";
+  slug: "flight-school-faqs-everything-you-need-to-know";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "understanding-flight-instruments-for-safer-navigation.md": {
 	id: "understanding-flight-instruments-for-safer-navigation.md";
   slug: "understanding-flight-instruments-for-safer-navigation";
