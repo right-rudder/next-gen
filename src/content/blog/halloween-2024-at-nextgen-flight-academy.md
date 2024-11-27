@@ -39,6 +39,6 @@ The event was filled with fun and excitement, including:
 
 The event was a great opportunity for the NextGen Flight Academy community to bond, have fun, and celebrate the spirit of Halloween. It also showcased the academy's commitment to fostering a positive and engaging learning environment.
 
-**[Add a quote from a student or staff member about the event]**
-
 By organizing such events, NextGen Flight Academy continues to create memorable experiences for its students and staff, making aviation education even more enjoyable.
+
+For more information about NextGen Flight Academy and their upcoming events, visit our [website](https://flyhere.aero/).
