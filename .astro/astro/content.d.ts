@@ -166,35 +166,42 @@ declare module 'astro:content' {
   slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"flabob-veterans-day-2024.md": {
+	id: "flabob-veterans-day-2024.md";
+  slug: "flabob-veterans-day-2024";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "flight-school-faqs-everything-you-need-to-know.md": {
 	id: "flight-school-faqs-everything-you-need-to-know.md";
   slug: "flight-school-faqs-everything-you-need-to-know";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "understanding-flight-instruments-for-safer-navigation.md": {
 	id: "understanding-flight-instruments-for-safer-navigation.md";
   slug: "understanding-flight-instruments-for-safer-navigation";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "what-is-the-written-exam.md": {
 	id: "what-is-the-written-exam.md";
   slug: "what-is-the-written-exam";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md": {
 	id: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md";
   slug: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -206,5 +213,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
