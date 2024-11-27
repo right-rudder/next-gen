@@ -182,6 +182,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".md"] };
+"halloween-2024-at-nextgen-flight-academy.md": {
+	id: "halloween-2024-at-nextgen-flight-academy.md";
+  slug: "halloween-2024-at-nextgen-flight-academy";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "understanding-flight-instruments-for-safer-navigation.md": {
 	id: "understanding-flight-instruments-for-safer-navigation.md";
   slug: "understanding-flight-instruments-for-safer-navigation";
