@@ -84,9 +84,9 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-primary-dark/80 backdrop-blur border-primary/80"
-            : "bg-gradient-to-b from-gray-900/30 to-transparent border-white/20"
-        } duration-700 border-b-2`}
+            ? "bg-primary-dark/90 backdrop-blur-md border-accent/50"
+            : "bg-gradient-to-b from-gray-900/30 to-transparent border-transparent border-b-0"
+        } duration-500 border-b-2 ease-out`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
@@ -94,15 +94,20 @@ const Navbar = ({ pathname }) => {
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
-              <a href="/" className="relative">
+              <a
+                href="/"
+                className={`${
+                  navBar || openMobile ? "h-24 mt-0" : "h-28 mt-4"
+                } duration-500 ease-out w-1/6 rounded-full`}
+              >
                 <img
                   src="/NG Logo White Background 2.webp"
                   alt="NextGen Logo"
-                  className="z-10 object-contain lg:h-24 h-20 w-auto invert"
+                  className="z-10 object-contain w-full h-full invert"
                   loading="lazy"
                 />
               </a>
-              <div className="hidden lg:flex justify-center w-full">
+              <div className="hidden lg:flex justify-center w-5/6">
                 <ul className="flex justify-between align-middle w-9/12 items-center">
                   {navbarLinks.map((item, index) => (
                     <li
