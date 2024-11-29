@@ -84,26 +84,33 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-primary-dark/80 backdrop-blur border-primary/80"
-            : "bg-gradient-to-b from-gray-900/30 to-transparent border-white/20"
-        } duration-700 border-b-2`}
+            ? "bg-primary-dark/90 backdrop-blur-md border-accent/50"
+            : "bg-gradient-to-b from-gray-900/30 to-transparent border-transparent border-b-0"
+        } duration-500 border-b-2 ease-out`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
-            className={`lg:h-24 relative flex h-20 items-center justify-between transition-all`}
+            className={`h-24 relative flex items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
-              <a href="/" className="relative">
+              <a
+                href="/#top"
+                className={`${
+                  navBar || openMobile
+                    ? "lg:h-24 h-20 mt-0"
+                    : "lg:h-28 h-24 mt-4"
+                } duration-500 ease-out w-full lg:w-1/6 rounded-full`}
+              >
                 <img
                   src="/NG Logo White Background 2.webp"
                   alt="NextGen Logo"
-                  className="z-10 object-contain lg:h-24 h-20 w-auto invert"
+                  className="z-10 object-contain w-full h-full invert"
                   loading="lazy"
                 />
               </a>
-              <div className="hidden lg:flex justify-center w-full">
-                <ul className="flex justify-between align-middle w-9/12 items-center">
+              <div className="hidden lg:flex justify-center w-4/6">
+                <ul className="flex justify-between align-middle w-full items-center">
                   {navbarLinks.map((item, index) => (
                     <li
                       key={index}
@@ -179,7 +186,7 @@ const Navbar = ({ pathname }) => {
             <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
               <button
                 type="button"
-                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 text-white"
+                className="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 text-accent/70"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 onClick={handleHamburgerClick}
@@ -227,12 +234,12 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           openMobile ? "max-h-screen" : "max-h-0 delay-150"
-        } overflow-x-hidden duration-700 ease-in-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-50 top-0`}
+        } overflow-x-hidden duration-500 ease-out h-screen lg:hidden absolute w-full bg-gradient-to-b from-primary to-primary-dark z-50 top-0`}
         id="mobile-menu"
       >
         <div className="flex justify-end pl-5 pr-[26px] py-6">
           <svg
-            className={`text-white h-6 w-6 cursor-pointer z-50`}
+            className={`text-accent h-6 w-6 cursor-pointer z-50`}
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth="2.5"
@@ -251,18 +258,21 @@ const Navbar = ({ pathname }) => {
 
         <a
           href="/"
-          className="text-white px-10 w-full text-center block leading-none uppercase font-bold text-lg z-40 relative"
+          className="z-30 relative flex justify-center items-center align-middle"
         >
-          <p className="text-4xl font-sans">NextGen</p>
-          <p className="text-primary-dark font-medium font-sans">
-            Flight Academy
-          </p>
+          <img
+            src="/NG Logo White Background 2.webp"
+            alt="NextGen Flight Academy Logo"
+            aria-label="NextGen Flight Academy Logo"
+            title="NextGen Flight Academy Logo"
+            className="object-contain h-24 w-auto drop-shadow-sm"
+          />
         </a>
 
         <div
-          className={`absolute w-full h-40 bg-accent/60 top-0 z-30 duration-500 ease-in-out  ${
+          className={`absolute w-full h-48 bg-white/90 top-0 z-20 duration-300 ease-in-out  ${
             openMobile
-              ? "translate-x-0 delay-300 opacity-90"
+              ? "translate-x-0 opacity-90"
               : "-translate-x-full opacity-0"
           }`}
         ></div>

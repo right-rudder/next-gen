@@ -168,9 +168,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"flabob-veterans-day-2024.md": {
+	id: "flabob-veterans-day-2024.md";
+  slug: "flabob-veterans-day-2024";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "flight-school-faqs-everything-you-need-to-know.md": {
 	id: "flight-school-faqs-everything-you-need-to-know.md";
   slug: "flight-school-faqs-everything-you-need-to-know";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"halloween-2024-at-nextgen-flight-academy.md": {
+	id: "halloween-2024-at-nextgen-flight-academy.md";
+  slug: "halloween-2024-at-nextgen-flight-academy";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
