@@ -11,6 +11,8 @@ tags:
     "Veterans Day",
     "Flabob Airport",
     "aviation",
+    "flight training",
+    "KRIR",
     "military",
     "veteran",
     "pilot training",
@@ -24,7 +26,7 @@ tags:
   ]
 ---
 
-Flabob Airport, a historic aviation landmark, recently hosted a truly memorable Veterans Day celebration. The event was a heartwarming tribute to our nation's heroes and an inspiring showcase of the future of aviation. NextGen Flight Academy was proud to be a part of this special day, honoring veterans and inspiring future aviators.
+Flabob Airport (KRIR), a historic aviation landmark in Riverside CA, recently hosted a truly memorable Veterans Day celebration. The event was a heartwarming tribute to our nation's heroes and an inspiring showcase of the future of aviation. [NextGen Flight Academy](/) was proud to be a part of this special day, honoring veterans and inspiring future aviators.
 
 ## A Day Filled with Honor and Fun
 
@@ -32,7 +34,7 @@ The celebration was a perfect blend of honoring the past and inspiring the futur
 
 ## NextGen Flight Academy's Participation
 
-NextGen Flight Academy, a renowned flight training institution, played a significant role in the event. Their dedicated team of instructors and staff engaged with attendees, sharing their passion for aviation and inspiring the next generation of pilots.
+[NextGen Flight Academy](/), a renowned flight training institution, played a significant role in the event. Their dedicated team of [instructors and staff](/about) engaged with attendees, sharing their passion for aviation and inspiring the next generation of pilots.
 
 ---
 
@@ -55,4 +57,4 @@ NextGen Flight Academy, a renowned flight training institution, played a signifi
 
 The Veterans Day celebration at Flabob Airport was more than just an event; it was an experience. It was a day filled with gratitude, admiration, and excitement. Flabob Airport continues to be a vital part of the aviation community, and events like Veterans Day solidify its position as a place where history, heritage, and the future of flight converge.
 
-For more information about NextGen Flight Academy and their upcoming events, visit our [website](https://flyhere.aero/).
+For more information about [NextGen Flight Academy](/) and their upcoming events, visit our [website](/) or [contact us](/contact).
