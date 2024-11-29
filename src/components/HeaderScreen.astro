@@ -23,7 +23,7 @@ if (!images[content.imagePath]) {
     class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
-    class="absolute bg-gradient-to-b from-slate-950/50 to-slate-950/40 w-full h-full z-0"
+    class="absolute bg-gradient-to-b from-slate-950/20 via-50% via-slate-950/70 to-slate-950/40 w-full h-full z-0"
   >
   </div>
   <!-- Text -->
@@ -31,11 +31,11 @@ if (!images[content.imagePath]) {
     class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
   >
     <h1
-      class="text-5xl md:text-6xl lg:text-7xl xl:text-9xl text-center font-medium tracking-normal text-gray-100"
+      class="text-6xl md:text-8xl xl:text-9xl text-center drop-shadow-md font-medium tracking-normal text-white"
       set:html={content.headerH1}
     />
     <h2
-      class="text-3xl text-accent brightness-110 font-semibold tracking-wide font-sans2"
+      class="text-xl text-pretty px-6 md:text-3xl max-w-xl lg:max-w-5xl text-center text-accent brightness-150 drop-shadow-md font-semibold tracking-wide font-sans2"
       set:html={content.headerH2}
     />
   </div>
