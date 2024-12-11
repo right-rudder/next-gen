@@ -132,7 +132,7 @@ const Navbar = ({ pathname }) => {
                       )}
                       {item.submenu && item.submenu.length > 0 && (
                         <ul
-                          className={`absolute z-10 top-12 bg-primary whitespace-nowrap text-white left-0 duration-500 ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                          className={`absolute z-10 min-w-48 top-12 bg-primary whitespace-nowrap text-white left-0 duration-500 ${hoveredIndex === index ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
                         >
                           {item.submenu.map((subitem, subIndex) => (
                             <li
@@ -154,13 +154,13 @@ const Navbar = ({ pathname }) => {
                               {subitem.subsubmenu &&
                                 subitem.subsubmenu.length > 0 && (
                                   <ul
-                                    className={`absolute z-20 top-0 bg-primary whitespace-nowrap left-full duration-500 ${subHoveredIndex === subIndex ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
+                                    className={`absolute z-20 top-0 bg-primary/95 whitespace-nowrap left-full duration-500 ${subHoveredIndex === subIndex ? "h-auto w-auto opacity-100" : "h-0 w-0 opacity-0 overflow-hidden"}`}
                                   >
                                     {subitem.subsubmenu.map(
                                       (subsubitem, subsubIndex) => (
                                         <li
                                           key={subsubIndex}
-                                          className={`${isActive(subsubitem, pathname) ? "bg-accent" : ""} relative hover:bg-secondary`}
+                                          className={`${isActive(subsubitem, pathname) ? "bg-accent" : ""} relative hover:bg-secondary hover:text-primary-dark`}
                                         >
                                           <a
                                             href={subsubitem.link}
@@ -295,18 +295,18 @@ const Navbar = ({ pathname }) => {
                 <div className="font-light relative p-5 w-full justify-center flex cursor-pointer text-white text-xl duration-300  border-accent whitespace-nowrap">
                   <p>{item.name}</p>
                   <div
-                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-accent/40 -rotate-90" : "bg-accent/20 rotate-90"} 
+                    className={`absolute right-3 p-2 pointer-events-none duration-500 ease-in-out rounded-full ${hoveredIndex === index ? "bg-white/90 -rotate-90" : "bg-accent/60 rotate-90"} 
                     `}
                   >
                     <IoIosArrowForward
-                      className={`${hoveredIndex === index ? "text-white/90" : "text-white"} size-5`}
+                      className={`${hoveredIndex === index ? "text-accent" : "text-white"} size-5`}
                     />
                   </div>
                 </div>
               )}
               {item.submenu && item.submenu.length > 0 && (
                 <ul
-                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white left-0 duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-[28rem]" : "max-h-0"}`}
+                  className={`z-10 mx-auto bg-primary/50 whitespace-nowrap text-white ease-in-out duration-500 overflow-hidden ${hoveredIndex === index ? "max-h-screen" : "max-h-0"}`}
                 >
                   {item.submenu.map((subitem, subIndex) => (
                     <li
@@ -319,14 +319,14 @@ const Navbar = ({ pathname }) => {
                           {subitem.name}
                         </a>
                       ) : (
-                        <div className="font-light p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
+                        <div className="font-normal p-5 w-full justify-between flex cursor-pointer text-white text-lg duration-300  border-accent whitespace-nowrap">
                           <p>{subitem.name}</p>
                           <div
-                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white rotate-90" : "bg-accent -rotate-90"} 
+                            className={`p-1 pointer-events-none duration-300 rounded-full ${subHoveredIndex === subIndex ? "bg-white/60 -rotate-90" : "bg-accent/50 rotate-90"} 
                     `}
                           >
                             <IoIosArrowForward
-                              className={`${subHoveredIndex === subIndex ? "text-accent" : "text-white"} size-5`}
+                              className={`${subHoveredIndex === subIndex ? "text-primary" : "text-white"} size-5`}
                             />
                           </div>
                         </div>
@@ -334,13 +334,16 @@ const Navbar = ({ pathname }) => {
 
                       {subitem.subsubmenu && subitem.subsubmenu.length > 0 && (
                         <ul
-                          className={`z-20 ml-8 bg-primary whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-32" : "max-h-0"}`}
+                          className={`z-20 text-lg bg-white/20 whitespace-nowrap left-full duration-500 overflow-hidden ${subHoveredIndex === subIndex ? "max-h-screen" : "max-h-0"}`}
                         >
                           {subitem.subsubmenu.map((subsubitem, subsubIndex) => (
-                            <li key={subsubIndex} className="relative">
+                            <li
+                              key={subsubIndex}
+                              className="relative border-b border-white/10"
+                            >
                               <a
                                 href={subsubitem.link}
-                                className="block p-5 font-bold"
+                                className="block p-5 font-light"
                               >
                                 {subsubitem.name}
                               </a>
