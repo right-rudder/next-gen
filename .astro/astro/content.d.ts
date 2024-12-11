@@ -151,16 +151,7 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"articles": {
-"Choosing-the-Right-Flight-School-six-Factors-to-Consider.md": {
-	id: "Choosing-the-Right-Flight-School-six-Factors-to-Consider.md";
-  slug: "choosing-the-right-flight-school-six-factors-to-consider";
-  body: string;
-  collection: "articles";
-  data: any
-} & { render(): Render[".md"] };
-};
-"blog": {
+		"blog": {
 "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md": {
 	id: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md";
   slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
