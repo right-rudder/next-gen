@@ -7,9 +7,9 @@ const { data } = Astro.props;
 
 <section class="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-6 pb-8">
   <div
-    class="col-span-4 w-full h-full bg-gradient-to-b from-primary/5 to-primary/10 pb-8"
+    class="col-span-4 w-full h-full bg-gradient-to-b from-primary/5 to-primary/20 pb-8"
   >
-    <div class="w-full h-[30rem] my-6">
+    <div class="w-full h-[27rem] my-6">
       <ImageComp
         imagePath={data.topImage.imagePath}
         imageAlt={data.topImage.imageAlt}
@@ -17,7 +17,9 @@ const { data } = Astro.props;
         styles="w-full h-full object-cover"
       />
     </div>
-    <h1 class="font-sans px-6 mt-16 text-6xl tracking-wide font-bold">
+    <h1
+      class="font-sans px-6 mt-16 text-6xl text-primary-dark tracking-wide font-bold"
+    >
       {data.program.header}
     </h1>
     <div class="my-8 px-6">
@@ -33,20 +35,24 @@ const { data } = Astro.props;
     <div class="my-8">
       <h3
         set:html={data.program.availability}
-        class="text-3xl italic uppercase font-bold text-center bg-primary/80 text-white py-3"
+        class="text-3xl italic uppercase font-bold text-center bg-primary/80 text-muted py-3"
       />
     </div>
     <div class="mt-12 px-6">
-      <h3 class="text-4xl font-bold my-4">Training Details</h3>
+      <h3 class="text-4xl font-bold my-4 text-primary-dark">
+        Training Details
+      </h3>
       <p
         class="my-4 text-lg"
         set:html={data.program.trainingDetails.description}
       />
-      <ul>
+      <ul class="bg-white/80">
         <li
           class="flex justify-between items-center align-middle border-t-2 py-6"
         >
-          <span class="text-2xl font-semibold">Program Prerequisites: </span>
+          <span class="text-2xl font-semibold pl-4"
+            >Program Prerequisites:
+          </span>
           <ul class="list-disc pl-3 w-full lg:w-1/2">
             {
               data.program.trainingDetails.requisites.map((req) => (
@@ -60,7 +66,7 @@ const { data } = Astro.props;
         <li
           class="flex justify-between items-center align-middle border-t-2 py-6"
         >
-          <span class="text-2xl font-semibold">Training Aircraft: </span>
+          <span class="text-2xl font-semibold pl-4">Training Aircraft: </span>
           <ul class="list-disc pl-3 w-full lg:w-1/2">
             {
               data.program.trainingDetails.aircraft.map((aircraft) => (
@@ -75,7 +81,7 @@ const { data } = Astro.props;
         <li
           class="flex justify-between items-center align-middle border-y-2 py-6"
         >
-          <span class="text-2xl font-semibold">Starting Price: </span>
+          <span class="text-2xl font-semibold pl-4">Starting Price: </span>
           {
             typeof data.program.trainingDetails.startingPrice == "number" ? (
               <span class="w-full lg:w-1/2 text-lg">
@@ -114,10 +120,12 @@ const { data } = Astro.props;
     </div>
     <div class="mx-auto my-6 border-y-2 border-primary/70 w-3/4">
       <h3 class="text-4xl font-bold my-4">Related Programs</h3>
-      <ul class="py-3">
+      <ul
+        class="pb-3 flex flex-wrap justify-between gap-1 items-center align-middle"
+      >
         {
           data.program.related.map((detail) => (
-            <li class="font-sans1 text-base font-light leading-relaxed group hover:list-disc hover:bg-gradient-to-br hover:from-primary hover:to-primary-dark/60 duration-200">
+            <li class="font-sans1 flex justify-start hover:scale-105 align-middle items-center w-full bg-muted h-10 text-base font-light leading-relaxed group hover:bg-gradient-to-br hover:from-primary hover:to-primary-dark/60 duration-200">
               <a
                 href={detail.link}
                 class="px-2 group-hover:text-white duration-100"
