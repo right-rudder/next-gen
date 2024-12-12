@@ -157,49 +157,49 @@ declare module 'astro:content' {
   slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "flabob-veterans-day-2024.md": {
 	id: "flabob-veterans-day-2024.md";
   slug: "flabob-veterans-day-2024";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "flight-school-faqs-everything-you-need-to-know.md": {
 	id: "flight-school-faqs-everything-you-need-to-know.md";
   slug: "flight-school-faqs-everything-you-need-to-know";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "halloween-2024-at-nextgen-flight-academy.md": {
 	id: "halloween-2024-at-nextgen-flight-academy.md";
   slug: "halloween-2024-at-nextgen-flight-academy";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "understanding-flight-instruments-for-safer-navigation.md": {
 	id: "understanding-flight-instruments-for-safer-navigation.md";
   slug: "understanding-flight-instruments-for-safer-navigation";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "what-is-the-written-exam.md": {
 	id: "what-is-the-written-exam.md";
   slug: "what-is-the-written-exam";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md": {
 	id: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md";
   slug: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 "location": {
@@ -208,119 +208,119 @@ declare module 'astro:content' {
   slug: "coachella-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "corona-ca.md": {
 	id: "corona-ca.md";
   slug: "corona-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "fontana-ca.md": {
 	id: "fontana-ca.md";
   slug: "fontana-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "grand-terrace-ca.md": {
 	id: "grand-terrace-ca.md";
   slug: "grand-terrace-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "highland-ca.md": {
 	id: "highland-ca.md";
   slug: "highland-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "indio-ca.md": {
 	id: "indio-ca.md";
   slug: "indio-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "loma-linda-ca.md": {
 	id: "loma-linda-ca.md";
   slug: "loma-linda-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "moreno-valley-ca.md": {
 	id: "moreno-valley-ca.md";
   slug: "moreno-valley-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "ontario-ca.md": {
 	id: "ontario-ca.md";
   slug: "ontario-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "palm-desert-ca.md": {
 	id: "palm-desert-ca.md";
   slug: "palm-desert-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "palm-springs-ca.md": {
 	id: "palm-springs-ca.md";
   slug: "palm-springs-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "perris-ca.md": {
 	id: "perris-ca.md";
   slug: "perris-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "rancho-cucamonga-ca.md": {
 	id: "rancho-cucamonga-ca.md";
   slug: "rancho-cucamonga-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "riverside-ca.md": {
 	id: "riverside-ca.md";
   slug: "riverside-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "san-bernardino-ca.md": {
 	id: "san-bernardino-ca.md";
   slug: "san-bernardino-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "upland-ca.md": {
 	id: "upland-ca.md";
   slug: "upland-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 "yucaipa-ca.md": {
 	id: "yucaipa-ca.md";
   slug: "yucaipa-ca";
   body: string;
   collection: "location";
-  data: any
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 };
 
@@ -332,5 +332,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
