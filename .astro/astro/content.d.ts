@@ -151,16 +151,7 @@ declare module 'astro:content' {
 	>;
 
 	type ContentEntryMap = {
-		"articles": {
-"Choosing-the-Right-Flight-School-six-Factors-to-Consider.md": {
-	id: "Choosing-the-Right-Flight-School-six-Factors-to-Consider.md";
-  slug: "choosing-the-right-flight-school-six-factors-to-consider";
-  body: string;
-  collection: "articles";
-  data: any
-} & { render(): Render[".md"] };
-};
-"blog": {
+		"blog": {
 "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md": {
 	id: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md";
   slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
@@ -209,6 +200,127 @@ declare module 'astro:content' {
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+};
+"location": {
+"coachella-ca.md": {
+	id: "coachella-ca.md";
+  slug: "coachella-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"corona-ca.md": {
+	id: "corona-ca.md";
+  slug: "corona-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"fontana-ca.md": {
+	id: "fontana-ca.md";
+  slug: "fontana-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"grand-terrace-ca.md": {
+	id: "grand-terrace-ca.md";
+  slug: "grand-terrace-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"highland-ca.md": {
+	id: "highland-ca.md";
+  slug: "highland-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"indio-ca.md": {
+	id: "indio-ca.md";
+  slug: "indio-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"loma-linda-ca.md": {
+	id: "loma-linda-ca.md";
+  slug: "loma-linda-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"moreno-valley-ca.md": {
+	id: "moreno-valley-ca.md";
+  slug: "moreno-valley-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"ontario-ca.md": {
+	id: "ontario-ca.md";
+  slug: "ontario-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"palm-desert-ca.md": {
+	id: "palm-desert-ca.md";
+  slug: "palm-desert-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"palm-springs-ca.md": {
+	id: "palm-springs-ca.md";
+  slug: "palm-springs-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"perris-ca.md": {
+	id: "perris-ca.md";
+  slug: "perris-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"rancho-cucamonga-ca.md": {
+	id: "rancho-cucamonga-ca.md";
+  slug: "rancho-cucamonga-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"riverside-ca.md": {
+	id: "riverside-ca.md";
+  slug: "riverside-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"san-bernardino-ca.md": {
+	id: "san-bernardino-ca.md";
+  slug: "san-bernardino-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"upland-ca.md": {
+	id: "upland-ca.md";
+  slug: "upland-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"yucaipa-ca.md": {
+	id: "yucaipa-ca.md";
+  slug: "yucaipa-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
 };
 

@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import GridPrograms from "../../components/GridPrograms.astro";
+import UnderHeader2 from "../../components/UnderHeader2.astro";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import redlandsTrainingPrograms from "../../data/relands-training-programs";
+
+const { data } = redlandsTrainingPrograms;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <!-- HEADER -->
+  <HeaderScreen content={data.header} />
+
+  <UnderHeader2
+    upperHeading={data.underHeader.upperHeading}
+    heading={data.underHeader.heading}
+    description={data.underHeader.description}
+    imagePath={data.underHeader.imagePath}
+    imageAlt={data.underHeader.imageAlt}
+    linkText={data.underHeader.linkText}
+    linkUrl={data.underHeader.linkUrl}
+  />
+
+  <GridPrograms content={data.programs} />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>

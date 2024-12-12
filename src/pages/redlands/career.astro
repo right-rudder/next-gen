@@ -1,0 +1,83 @@
+---
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import HeaderScreen from "../../components/HeaderScreen.astro";
+import PriceCalcZero2Hero from "../../components/priceCalcZero2Hero";
+import UnderHeader2 from "../../components/UnderHeader2.astro";
+import Zero2Hero from "../../components/Zero2Hero";
+import careerTrack from "../../data/career-track";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const { data } = careerTrack;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+
+  <UnderHeader2
+    upperHeading={data.underHeader.upperHeading}
+    heading={data.underHeader.heading}
+    description={data.underHeader.description}
+    imagePath={data.underHeader.imagePath}
+    imageAlt={data.underHeader.imageAlt}
+    linkText={data.underHeader.linkText}
+    linkUrl={data.underHeader.linkUrl}
+  />
+
+  <section id="hero-to-zero-program">
+    <div class="bg-gradient-to-b from-gray-50 to-gray-200 py-12 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <p
+            class="text-gray-500 text-center text-xl lg:text-2xl font-semibold"
+          >
+            {data.sectionPrograms.upperHeading}
+          </p>
+          <h2
+            class="text-6xl font-bold tracking-tight text-main-red text-center"
+          >
+            {data.sectionPrograms.heading}
+          </h2>
+        </div>
+        <div class="my-8 flex flex-wrap justify-center gap-8 lg:gap-0">
+          <div
+            class="w-full lg:max-w-3xl mt-12 py-4 lg:py-12 lg:px-8 rounded bg-primary flex flex-col items-center lg:flex-1 mx-auto"
+          >
+            <h3
+              class="mb-4 text-center text-gray-200 px-4 text-2xl lg:text-4xl font-bold"
+            >
+              {data.sectionPrograms.containerHeading}
+            </h3>
+            {
+              data.sectionPrograms.containerDescription.map((text) => (
+                <p class="text-white mb-2 font-sans1 px-2 lg:px-6 leading-6 text-center">
+                  {text}
+                </p>
+              ))
+            }
+            <p
+              class="text-white/90 italic text-sm my-6 px-2 lg:px-6 leading-6 text-center"
+            >
+              {data.sectionPrograms.containerSmallPrint}
+            </p>
+            <Zero2Hero programs={data.programs} client:visible />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <PriceCalcZero2Hero programs={data.priceCalc} client:visible />
+
+  <EnrollNowCTA
+    heading={data.enrollCTA.heading}
+    subheading={data.enrollCTA.subheading}
+    imagePath={data.enrollCTA.imagePath}
+    imageAlt={data.enrollCTA.imageAlt}
+    linkText={data.enrollCTA.linkText}
+    linkUrl={data.enrollCTA.linkUrl}
+  />
+</BaseLayout>
