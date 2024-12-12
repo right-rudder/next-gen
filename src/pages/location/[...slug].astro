@@ -22,9 +22,9 @@ const location = Astro.props;
 
 const headerContent = {
   imagePath: `${location.data.baseLocation === "Riverside" ? "/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg" : "/src/assets/redlands-plane-on-dry-lake.jpg"}`,
-  imageAlt: "sun city aviation academy airplane flying over the city of miami",
-  headerH1: ` Become a Pilot</br><span class="text-accent-300">in ${location.data.city}, ${location.data.stateShort}</span>`,
-  paragraph: `We offer a comprehensive pilot training program designed to help you achieve your dream of flying. Get to the skies and fly over ${location.data.keyPlace1} and ${location.data.keyPlace2} with Sun City Aviation Academy.`,
+  imageAlt: "NextGen Flight Academy - Riverside, CA - Redlands, CA",
+  headerH1: ` Become a Pilot</br><span class="text-muted">in ${location.data.city}, ${location.data.stateShort}</span>`,
+  headerH2: `<small class="leading-3">Get to the skies and fly over ${location.data.keyPlace1} and ${location.data.keyPlace2} with NextGen Flight Academy.</small>`,
   buttons: [
     {
       name: "Enroll Now",
@@ -41,7 +41,7 @@ const headerContent = {
 
 const whyPilot = {
   upperHeading: "Learn to Fly",
-  heading: "Becoming a Pilot",
+  heading: `Become a Pilot in ${location.data.city}`,
   description: [
     "Choosing to become a pilot is a decision filled with excitement, commitment, and promise. Whether a career or a recreational hobby, the world of flight is a true gem for those who reach their flight training goals. The reasons to become a pilot are endless, but we can provide you with some of the most important to us.",
     "Learn more about pilot training by booking a visit to NextGen Flight Academy today.",
@@ -96,7 +96,9 @@ const features = {
 
 const discoveryCTA = {
   heading: "Fly Today",
-  text: "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
+  text: `Discover the true beauty of <strong>${location.data.stateLong}</strong> and see <strong>${location.data.city}</strong> from a new perspective. Flight over <strong>${location.data.keyPlace1}</strong> and <strong>${location.data.keyPlace2}</strong>.`,
+  text2:
+    "Interested in what it’s like to be in the pilot seat? Schedule an introductory flight with us to try it out!",
   imagePath:
     "/src/assets/student-taking-a-discovery-flight-at-nextgen-flight-academy.jpeg",
   imageAlt: "student-taking-a-discovery-flight-at-nextgen-flight-academy",
@@ -107,8 +109,7 @@ const discoveryCTA = {
 const testimonials = {
   upperHeading: "Praise for NextGen",
   heading: "Hear From Our Students",
-  description:
-    "Training at NextGen Flight Academy extends beyond a flight training syllabus and checkrides. We strive to make our community a family of aviation enthusiasts. Without a comfortable training environment, we don’t believe success would be as possible… or as fun!",
+  description: `Our ${location.data.baseLocation} location students are part of a great aviation community. Training at NextGen Flight Academy extends beyond a flight training syllabus and checkrides. We strive to make our community a family of aviation enthusiasts. Without a comfortable training environment, we don’t believe success would be as possible… or as fun!`,
   buttonText: "Book an Intro Flight",
   buttonLink: "/intro-flight",
   reviews: [
@@ -145,7 +146,7 @@ const testimonials = {
 
 const quizCTA = {
   heading: "Have What It Takes?",
-  text: "Learn what it’s like to fly, and see if you have what it takes to be a pilot!",
+  text: `Learn what it’s like to fly, and see if you have what it takes to be a pilot! Take our quiz to find out.`,
   imagePath: "/src/assets/completing-a-checkride-at-nextgen-flight-academy.jpg",
   imageAlt: "completing-a-checkride-at-nextgen-flight-academy",
   buttonText: "Take the Quiz",
