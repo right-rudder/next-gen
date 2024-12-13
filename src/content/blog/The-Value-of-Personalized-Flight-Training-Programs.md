@@ -3,7 +3,7 @@ pubDate: "August 8, 2024"
 author: Amanda Heveran
 title: "The Value of Personalized Flight Training Programs"
 description: "Discover why personalized flight training programs at NextGen Flight Academy in Riverside and Redlands, CA, are essential for aspiring pilots. Flexible scheduling, expert instructors, and FAA-approved training make the difference."
-heroImage: "/blog/personalized-flight-training-nextgen-riverside-redlands.webp"
+heroImage: "/blog/flight-training-with-the-pros.avif"
 readingTime: 4
 category: "Pilot Resources"
 tags:
