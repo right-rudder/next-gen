@@ -21,7 +21,7 @@ const { siteTitle, siteDescription, keywords, ogImage } = Astro.props;
       title={siteTitle || SITE_TITLE}
       description={siteDescription || SITE_DESCRIPTION}
       keywords={keywords || KEYWORDS}
-      image={IMAGE || ogImage}
+      image={ogImage || IMAGE}
     />
   </head>
   <body class="font-sans">
