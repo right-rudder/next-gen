@@ -43,7 +43,7 @@ Whether you’re just starting or looking to advance your career, NextGen Flight
 - [Commercial Pilot License (CPL)](https://flyhere.aero/training-programs/commercial-pilot)
 - [Multi-Engine Rating (MER)](https://flyhere.aero/training-programs/multi-engine-rating)
 - [Flight Instructor Certifications (CFI, CFII, MEI)](https://flyhere.aero/training-programs/certified-flight-instructor)
-- [Zero-to-Hero Accelerated Programs](https://flyhere.aero/new-to-flying)
+- [Zero-to-Hero Accelerated Programs](https://flyhere.aero/training-programs/career)
 
 These programs are designed to take you from beginner to professional pilot efficiently and effectively.
 
@@ -58,5 +58,5 @@ At NextGen Flight Academy, you’re more than just a student—you’re part of 
 ---
 
 Ready to take the next step in your aviation career? Enroll in a personalized flight training program at NextGen Flight Academy today! Visit [flyhere.aero](https://flyhere.aero/) for more information or call us:  
-**Riverside:** 877-551-1110  
-**Redlands:** 833-777-3500
+**Riverside:** [877-551-1110](tel:877-551-1110)  
+**Redlands:** [833-777-3500](tel:833-777-3500)
