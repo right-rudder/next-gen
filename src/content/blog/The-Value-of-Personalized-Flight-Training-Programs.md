@@ -38,12 +38,12 @@ NextGen Flight Academy offers access to top-tier training tools, including well-
 
 Whether you’re just starting or looking to advance your career, NextGen Flight Academy has a program for you. We offer:
 
-- Private Pilot License (PPL)
-- Instrument Rating (IR)
-- Commercial Pilot License (CPL)
-- Multi-Engine Rating (MER)
-- Flight Instructor Certifications (CFI, CFII, MEI)
-- Zero-to-Hero Accelerated Programs
+- [Private Pilot License (PPL)](https://flyhere.aero/training-programs/private-pilot)
+- [Instrument Rating (IR)](https://flyhere.aero/training-programs/instrument-rating)
+- [Commercial Pilot License (CPL)](https://flyhere.aero/training-programs/commercial-pilot)
+- [Multi-Engine Rating (MER)](https://flyhere.aero/training-programs/multi-engine-rating)
+- [Flight Instructor Certifications (CFI, CFII, MEI)](https://flyhere.aero/training-programs/certified-flight-instructor)
+- [Zero-to-Hero Accelerated Programs](https://flyhere.aero/new-to-flying)
 
 These programs are designed to take you from beginner to professional pilot efficiently and effectively.
 
