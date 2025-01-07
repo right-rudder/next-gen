@@ -152,6 +152,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"The-Value-of-Personalized-Flight-Training-Programs.md": {
+	id: "The-Value-of-Personalized-Flight-Training-Programs.md";
+  slug: "the-value-of-personalized-flight-training-programs";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md": {
 	id: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot.md";
   slug: "choosing-a-flight-school-important-considerations-for-becoming-a-pilot";
