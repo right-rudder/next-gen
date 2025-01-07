@@ -124,19 +124,6 @@ const ourFleet = {
             link: "/our-fleet/cessna-172",
             linkText: "Details",
           },
-          {
-            title: "Piper Warrior",
-            normalRate: 169.0,
-            blockRate: 159.0,
-            imagePath:
-              "/fleet/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
-            imageAlt:
-              "NextGen Flight Academy's Learn to Fly Piper Warrior aircraft in Redlands, CA",
-            description:
-              "The Piper Warrior is a single-engine, four-seat aircraft favored for flight training.",
-            link: "/our-fleet/piper-warrior",
-            linkText: "Details",
-          },
         ],
       },
     ],
