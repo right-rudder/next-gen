@@ -110,7 +110,7 @@ const ourFleet = {
       {
         location: "Redlands Municipal Airport (KREI)",
         locationDescription:
-          "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172 and a Piper Warrior. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
+          "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
         aircraft: [
           {
             title: "Cessna 172",
