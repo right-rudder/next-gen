@@ -110,7 +110,7 @@ const ourFleet = {
       {
         location: "Redlands Municipal Airport (KREI)",
         locationDescription:
-          "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172 and a Piper Warrior. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
+          "The Learn to Fly LLC (sister company of NextGen Flight Academy and our nominal “Redlands location”) fleet includes a Cessna 172. Thorough VFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time.",
         aircraft: [
           {
             title: "Cessna 172",
@@ -122,19 +122,6 @@ const ourFleet = {
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
             link: "/our-fleet/cessna-172",
-            linkText: "Details",
-          },
-          {
-            title: "Piper Warrior",
-            normalRate: 169.0,
-            blockRate: 159.0,
-            imagePath:
-              "/fleet/N415MS-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
-            imageAlt:
-              "NextGen Flight Academy's Learn to Fly Piper Warrior aircraft in Redlands, CA",
-            description:
-              "The Piper Warrior is a single-engine, four-seat aircraft favored for flight training.",
-            link: "/our-fleet/piper-warrior",
             linkText: "Details",
           },
         ],
