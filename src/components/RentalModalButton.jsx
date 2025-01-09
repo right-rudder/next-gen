@@ -227,7 +227,7 @@ const RentalModalButton = ({ btnStyle, btnText, aircraft }) => {
             {formSubmitted && (
               <div className="bg-white p-12 max-w-xl m-4 text-black rounded-sm-md h-full overflow-y-auto text-center">
                 <h2 className="font-bold text-4xl py-10">
-                  Thank you {userName} for filling the Quiz.
+                  Thank you {userName} for filling the form.
                 </h2>
 
                 <div className="flex flex-row justify-center">
