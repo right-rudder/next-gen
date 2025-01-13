@@ -19,43 +19,43 @@ export const navbarLinks = [
         subsubmenu: [
           {
             name: "Career Pilot",
-            link: "/training-programs/career",
+            link: "/riverside/career",
           },
           {
             name: "Private Pilot",
-            link: "/training-programs/private-pilot",
+            link: "/riverside/private-pilot",
           },
           {
             name: "Instrument Rating",
-            link: "/training-programs/instrument-rating",
+            link: "/riverside/instrument-rating",
           },
           {
             name: "Commercial Pilot",
-            link: "/training-programs/commercial-pilot",
+            link: "/riverside/commercial-pilot",
           },
           {
             name: "Multi-Engine Rating",
-            link: "/training-programs/multi-engine-rating",
+            link: "/riverside/multi-engine-rating",
           },
           {
             name: "Certified Flight Instructor",
-            link: "/training-programs/certified-flight-instructor",
+            link: "/riverside/certified-flight-instructor",
           },
           {
             name: "Airline Transport Pilot",
-            link: "/training-programs/airline-transport-pilot",
+            link: "/riverside/airline-transport-pilot",
           },
           {
             name: "High Performance Endorsement",
-            link: "/training-programs/high-performance-endorsement",
+            link: "/riverside/high-performance-endorsement",
           },
           {
             name: "High Altitude Endorsement",
-            link: "/training-programs/high-altitude-endorsement",
+            link: "/riverside/high-altitude-endorsement",
           },
           {
             name: "Complex Endorsement",
-            link: "/training-programs/complex-endorsement",
+            link: "/riverside/complex-endorsement",
           },
         ],
       },
@@ -65,43 +65,43 @@ export const navbarLinks = [
         subsubmenu: [
           {
             name: "Career Pilot",
-            link: "/training-programs/career",
+            link: "/redlands/career",
           },
           {
             name: "Private Pilot",
-            link: "/training-programs/private-pilot",
+            link: "/redlands/private-pilot",
           },
           {
             name: "Instrument Rating",
-            link: "/training-programs/instrument-rating",
+            link: "/redlands/instrument-rating",
           },
           {
             name: "Commercial Pilot",
-            link: "/training-programs/commercial-pilot",
+            link: "/redlands/commercial-pilot",
           },
           {
             name: "Multi-Engine Rating",
-            link: "/training-programs/multi-engine-rating",
+            link: "/redlands/multi-engine-rating",
           },
           {
             name: "Certified Flight Instructor",
-            link: "/training-programs/certified-flight-instructor",
+            link: "/redlands/certified-flight-instructor",
           },
           {
             name: "Airline Transport Pilot",
-            link: "/training-programs/airline-transport-pilot",
+            link: "/redlands/airline-transport-pilot",
           },
           {
             name: "High Performance Endorsement",
-            link: "/training-programs/high-performance-endorsement",
+            link: "/redlands/high-performance-endorsement",
           },
           {
             name: "High Altitude Endorsement",
-            link: "/training-programs/high-altitude-endorsement",
+            link: "/redlands/high-altitude-endorsement",
           },
           {
             name: "Complex Endorsement",
-            link: "/training-programs/complex-endorsement",
+            link: "/redlands/complex-endorsement",
           },
         ],
       },
