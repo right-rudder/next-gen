@@ -4,7 +4,7 @@ const highAltitudeRiverside = {
     pageTitle:
       "High Altitude Endorsement at Riverside, CA | NextGen Flight Academy",
     pageDescription:
-      "Expand your flying capabilities with a High-Altitude Endorsement from NextGen Flight Academy in Riverside and Redlands, CA. Learn to operate pressurized aircraft safely at high altitudes.",
+      "Expand your flying capabilities with a High-Altitude Endorsement from NextGen Flight Academy in Riverside, CA. Learn to operate pressurized aircraft safely at high altitudes.",
     pageKeywords:
       "High-Altitude Endorsement, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flight schools in Riverside CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly California, flight training Redlands, high-altitude endorsement Riverside, high-altitude aircraft training Riverside",
 
