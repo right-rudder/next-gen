@@ -4,7 +4,7 @@ const highAltitudeRedlands = {
     pageTitle:
       "High Altitude Endorsement at Redlands, CA | NextGen Flight Academy",
     pageDescription:
-      "Expand your flying capabilities with a High-Altitude Endorsement from NextGen Flight Academy in Redlands and Redlands, CA. Learn to operate pressurized aircraft safely at high altitudes.",
+      "Expand your flying capabilities with a High-Altitude Endorsement from NextGen Flight Academy in Redlands, CA. Learn to operate pressurized aircraft safely at high altitudes.",
     pageKeywords:
       "High-Altitude Endorsement, career track flight training, Redlands flight schools, NextGen Flight Academy, flying lessons Redlands CA, flight schools in Redlands CA, pilot training Redlands, Redlands aviation academy, Redlands flight training, intro flight, demonstration flights, Redlands flight academy, NextGen California, learn to fly California, flight training Redlands, high-altitude endorsement Redlands, high-altitude aircraft training Redlands",
 
