@@ -50,7 +50,7 @@ const highPerformanceRedlands = {
       title: "Let's fly high-performance aircraft",
       imagePath:
         "/src/assets/piper-cherokee-six-high-performance-endorsement.jpg",
-      imageAlt: "planes-flying-over-san-bernadino-ca",
+      imageAlt: "planes-flying-over-san-bernardino-ca",
       link: "/enrollment",
       linkText: "Enroll Now",
       description:
