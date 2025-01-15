@@ -268,17 +268,17 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           </select>
         </div>
 
-        <div class="flex gap-3 px-8">
-          <input
-            type="checkbox"
-            name="agree-data-collection"
-            id="agree-data-collection"
-          />
-
+        <div class="">
           <label
             for="agree-data-collection"
-            class="text-gray-500 text-sm lg:text-base mt-4"
+            class="text-gray-500 text-sm lg:text-base mt-4 w-full inline-flex items-center"
           >
+            <input
+              type="checkbox"
+              name="agree-data-collection"
+              id="agree-data-collection"
+              class="mr-3 w-5 h-5"
+            />
             {checkboxText}
           </label>
         </div>
