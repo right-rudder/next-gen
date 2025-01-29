@@ -2,6 +2,7 @@
 import { FaDownload } from "react-icons/fa";
 import ImageComp from "./ImageComp.astro";
 import "../styles/swiper-thumnails.css";
+import RentalModalButton from "./RentalModalButton";
 
 const { data } = Astro.props;
 ---
@@ -43,15 +44,19 @@ const { data } = Astro.props;
           }
         </ul>
       </div>
-      <div class="mt-8 w-full flex justify-center gap-x-8">
+      <div
+        class="mt-8 w-full flex flex-wrap lg:flex-nowrap justify-center gap-4"
+      >
+        <RentalModalButton
+          aircraft={data.title}
+          btnStyle={"btn-primary w-full flex-grow block btn-animate"}
+          btnText={"Rent with Us"}
+          client:visible
+        />
         <a
-          href={data.rentUrl}
-          target="_blank"
-          class="btn-primary block btn-animate"
+          href="/enrollment"
+          class="btn-primary-dark w-full block btn-animate flex-grow"
         >
-          <span class="relative z-10">Rent with Us</span>
-        </a>
-        <a href="/enrollment" class="btn-primary-dark block btn-animate">
           <span class="relative z-10">Train in the {data.title}</span>
         </a>
       </div>
