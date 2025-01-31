@@ -1,0 +1,36 @@
+---
+import BookModalButton from "./BookModalButton";
+import ImageComp from "./ImageComp.astro";
+---
+
+<section
+  class="bg-gradient-to-br from-primary/80 to-primary/40 text-white flex justify-center py-0"
+>
+  <div class="flex flex-col items-center lg:flex-row max-w-7xl py-10">
+    <div class="flex flex-col items-center p-5 gap-3 text-center">
+      <p class="text-xl text-primary-dark">
+        Still looking for more information on pilot training?
+      </p>
+      <h2
+        class="text-3xl lg:text-6xl px-4 font-sans2 text-white font-extrabold text-center tracking-tight"
+      >
+        Get Your FREE Quick Start Guide!
+      </h2>
+      <p class="text-primary-dark text-xl">
+        Check out our booklet to learn more about earning your pilot
+        certifications.
+      </p>
+      <BookModalButton
+        btnText="Get Guide"
+        btnStyle="btn-white btn-animate mt-5 w-full md:w-1/2"
+        client:visible
+      />
+    </div>
+    <ImageComp
+      imagePath="/src/assets/NextGen-flight-academy-book-mockup.png"
+      imageAlt="Summit Flight Academy Quick Start Guide"
+      styles="p-5 h-[250px] md:h-[300px] lg:h-[400px] order-first lg:order-last"
+      quality="100"
+    />
+  </div>
+</section>

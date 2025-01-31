@@ -166,6 +166,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"exploring-flight-careers-beyond-the-airline-path.md": {
+	id: "exploring-flight-careers-beyond-the-airline-path.md";
+  slug: "exploring-flight-careers-beyond-the-airline-path";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "flabob-veterans-day-2024.md": {
 	id: "flabob-veterans-day-2024.md";
   slug: "flabob-veterans-day-2024";
