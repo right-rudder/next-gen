@@ -9,6 +9,7 @@ import HeaderScreen from "../components/HeaderScreen.astro";
 import Testimonials from "../components/Testimonials.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 import BlogFeed from "../components/BlogFeed.astro";
+import BookDownload from "../components/BookDownload.astro";
 
 const { data } = homePage;
 ---
@@ -24,6 +25,8 @@ const { data } = homePage;
   <GridNav content={data.gridNav} />
 
   <TryFlyingCTA content={data.discoveryCTA} />
+
+  <BookDownload />
 
   <ProgramsSwiper content={data.programs} />
 
