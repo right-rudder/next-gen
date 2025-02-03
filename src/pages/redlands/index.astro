@@ -5,6 +5,7 @@ import GridPrograms from "../../components/GridPrograms.astro";
 import UnderHeader2 from "../../components/UnderHeader2.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import redlandsTrainingPrograms from "../../data/relands-training-programs";
+import BookDownload from "../../components/BookDownload.astro";
 
 const { data } = redlandsTrainingPrograms;
 ---
@@ -28,6 +29,8 @@ const { data } = redlandsTrainingPrograms;
   />
 
   <GridPrograms content={data.programs} />
+
+  <BookDownload />
 
   <EnrollNowCTA
     heading={data.enrollCTA.heading}
