@@ -46,7 +46,7 @@ export default {
         },
       },
       animation: {
-        "slow-zoom": "slow-zoom 30s infinite",
+        "slow-zoom": "slow-zoom 45s infinite",
       },
     },
   },
