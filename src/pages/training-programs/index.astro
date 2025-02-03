@@ -5,6 +5,7 @@ import HeaderScreen from "../../components/HeaderScreen.astro";
 import GridPrograms from "../../components/GridPrograms.astro";
 import UnderHeader2 from "../../components/UnderHeader2.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import BookDownload from "../../components/BookDownload.astro";
 
 const { data } = trainingPrograms;
 ---
@@ -28,6 +29,8 @@ const { data } = trainingPrograms;
   />
 
   <GridPrograms content={data.programs} />
+
+  <BookDownload />
 
   <EnrollNowCTA
     heading={data.enrollCTA.heading}
