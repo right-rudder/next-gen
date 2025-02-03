@@ -8,7 +8,6 @@ const BookModalButton = ({ btnStyle, btnText }) => {
   const [userName, setUserName] = useState("");
 
   const toggleModal = () => {
-    console.log(btnStyle);
     setShowModal(!showModal);
     setFormSubmitted(false);
   };
@@ -71,7 +70,7 @@ const BookModalButton = ({ btnStyle, btnText }) => {
         <div id="book-modal" className="z-50">
           <div className="fixed inset-0 h-full w-full bg-slate-900 bg-opacity-95 flex items-center justify-center">
             {!formSubmitted && (
-              <div className="bg-white relative p-12 max-w-2xl my-4 text-black rounded-md overflow-y-auto">
+              <div className="bg-white relative p-12 max-w-3xl my-4 text-black rounded-md overflow-y-auto">
                 <p className="text-xl text-center font-bold leading-7 text-accent uppercase">
                   Guide Download
                 </p>
@@ -81,7 +80,10 @@ const BookModalButton = ({ btnStyle, btnText }) => {
                 <p className="text-center italic text-base mt-0 mb-6">
                   Please fill out the form below to get started.
                 </p>
-                <form onSubmit={handleSubmit} className="mt-8 font-light">
+                <form
+                  onSubmit={handleSubmit}
+                  className="mt-8 lg:w-96 font-light"
+                >
                   <div className="mb-4">
                     <label
                       htmlFor="first-name"
