@@ -58,7 +58,7 @@ Location is a key factor in choosing a flight school. NextGen Flight Academy's c
 
 At NextGen Flight Academy, we believe that a strong sense of community enhances the learning experience. We foster a supportive environment where students, instructors, and aviation enthusiasts come together to share knowledge and experiences. This sense of belonging and mutual growth is integral to our mission of producing skilled and passionate pilots.
 
-![CFI and student pilot in Redlands, CA, before a checkride](/src/assets/student-and-cfi-completing-career-zero-to-hero-flight-training-at-nextgen-flight-academy.jpg)
+![CFI and student pilot in Redlands, CA, before a checkride](/blog/student-and-cfi-completing-career-zero-to-hero-flight-training-at-nextgen-flight-academy.webp)
 _Visit us today and get to know our CFIs_
 
 We invite you to become part of the NextGen Flight Academy community. Contact us today to learn more about our programs and start your aviation journey with us. Whether you're aiming for a professional aviation career or flying for fun, NextGen Flight Academy is here to help you soar to new heights.
