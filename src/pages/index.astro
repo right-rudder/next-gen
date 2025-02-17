@@ -10,6 +10,7 @@ import Testimonials from "../components/Testimonials.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import BookDownload from "../components/BookDownload.astro";
+import ImageComp from "../components/ImageComp.astro";
 
 const { data } = homePage;
 ---
@@ -21,6 +22,52 @@ const { data } = homePage;
 >
   <!-- HEADER -->
   <HeaderScreen content={data.header} />
+
+  <section id="awards" class="bg-slate-950 py-10">
+    <h3
+      class="text-gray-100 text-center mt-2 font-normal font-sans1 text-base tracking-wide uppercase group"
+    >
+      Voted as an <strong
+        class="text-primary group-hover:text-accent duration-700 ease-in-out"
+        >AOPA Distinguished Flight School</strong
+      > 3 years in a row!
+    </h3>
+    <div class="flex flex-wrap justify-center items-center gap-4 mt-4">
+      <a
+        href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
+        target="_self"
+        class="flex flex-col items-center group"
+      >
+        <ImageComp
+          imagePath="/src/assets/2023_FTExperience_DistinguishedBadge_Flight-School_FINAL.png"
+          imageAlt="Flight Training Experience Award Distinguished Flight School 2024 Badge"
+          styles="w-40 h-auto group-hover:scale-110 group-hover:brightness-110 duration-300 ease-out"
+        />
+      </a>
+      <a
+        href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
+        target="_self"
+        class="flex flex-col items-center group"
+      >
+        <ImageComp
+          imagePath="/src/assets/2024_FTExperience_DistinguishedBadge_Flight-School_FINAL.png"
+          imageAlt="Flight Training Experience Award Distinguished Flight School 2024 Badge"
+          styles="w-36 h-auto group-hover:scale-110 group-hover:brightness-110 duration-300 ease-out"
+        />
+      </a>
+      <a
+        href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
+        target="_self"
+        class="flex flex-col items-center group"
+      >
+        <ImageComp
+          imagePath="/src/assets/2025_FTExperience_DistinguishedBadge_Flight-School.png"
+          imageAlt="Flight Training Experience Award Distinguished Flight School 2025 Badge"
+          styles="w-36 h-auto group-hover:scale-110 group-hover:brightness-110 duration-300 ease-out"
+        />
+      </a>
+    </div>
+  </section>
 
   <GridNav content={data.gridNav} />
 

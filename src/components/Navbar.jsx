@@ -84,13 +84,13 @@ const Navbar = ({ pathname }) => {
       <div
         className={`${
           navBar || openMobile
-            ? "bg-primary-dark/90 backdrop-blur-md border-accent/50"
-            : "bg-gradient-to-b from-gray-900/30 to-transparent border-transparent border-b-0"
-        } duration-500 border-b-2 ease-out`}
+            ? "bg-primary-dark/90 backdrop-blur-md border-accent/50 border-b-2"
+            : "bg-gradient-to-b from-gray-900/30 to-transparent border-transparent"
+        } duration-500 border-b-0 ease-out`}
       >
         <div className="px-5 max-w-7xl mx-auto top-0">
           <div
-            className={`h-24 relative flex items-center justify-between transition-all`}
+            className={`h-28 relative flex items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex w-full items-center justify-between">
@@ -99,7 +99,7 @@ const Navbar = ({ pathname }) => {
                 className={`${
                   navBar || openMobile
                     ? "lg:h-24 h-20 mt-0"
-                    : "lg:h-28 h-24 mt-4"
+                    : "lg:h-32 h-24 mt-4"
                 } duration-500 ease-out w-full lg:w-1/6 rounded-full`}
               >
                 <img

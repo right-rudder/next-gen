@@ -44,9 +44,19 @@ export default {
           "0%, 100%": { transform: "scale(1)" },
           "50%": { transform: "scale(1.1)" },
         },
+        "fade-from-left": {
+          "0%": { opacity: 0, transform: "translateX(-10%)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        "fade-from-right": {
+          "0%": { opacity: 0, transform: "translateX(10%)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
       },
       animation: {
         "slow-zoom": "slow-zoom 45s infinite",
+        "fade-from-left": "fade-from-left 1s",
+        "fade-from-right": "fade-from-right 1s",
       },
     },
   },
