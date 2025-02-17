@@ -14,7 +14,7 @@ if (!images[content.imagePath]) {
 ---
 
 <div
-  class="relative h-screen-3/4 lg:h-screen bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
+  class="relative h-screen-3/4 lg:min-h-[90vh] bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
 >
   <Image
     src={images[content.imagePath]()}
@@ -31,11 +31,11 @@ if (!images[content.imagePath]) {
     class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center"
   >
     <h1
-      class="text-6xl md:text-8xl xl:text-9xl text-center drop-shadow-md font-medium tracking-normal text-white"
+      class="text-6xl md:text-8xl xl:text-9xl text-center drop-shadow-md font-medium tracking-normal text-white animate-fade-from-left"
       set:html={content.headerH1}
     />
     <h2
-      class="text-xl text-pretty px-6 md:text-3xl max-w-xl lg:max-w-5xl text-center text-accent brightness-150 drop-shadow-md font-semibold tracking-wide font-sans2"
+      class="text-xl text-pretty px-6 md:text-3xl max-w-xl lg:max-w-5xl text-center text-accent brightness-150 drop-shadow-md font-semibold tracking-wide font-sans2 animate-fade-from-right"
       set:html={content.headerH2}
     />
   </div>
