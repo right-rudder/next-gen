@@ -208,6 +208,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools.md": {
+	id: "what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools.md";
+  slug: "what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md": {
 	id: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot.md";
   slug: "why-zero-hero-flight-training-is-key-to-a-successful-career-as-a-pilot";
@@ -346,5 +353,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = typeof import("./../../src/content/config.js");
 }
