@@ -21,21 +21,25 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
 >
   <Header data={headerData} />
 
-  <section class="py-24 px-5">
-    <div class="max-w-3xl mx-auto">
+  <section class="bg-primary/20">
+    <div class="max-w-3xl mx-auto bg-white py-24 px-9">
       <h2
         class="text-dark-blue text-center text-5xl font-extrabold mx-auto w-fit mb-5"
       >
-        Start the enrollment process at NextGen Flight Academy
+        Start the enrollment process at <span class="text-primary"
+          >NextGen Flight Academy</span
+        >
       </h2>
-      <h3 class="font-medium text-center mx-auto text-xl">
+      <h3
+        class="font-medium mt-4 mb-12 font-sans1 leading-tight text-center mx-auto text-xl"
+      >
         Fill out the form below and let's start flying! A NextGen team member
         will get in touch with you and walk you through the next steps on
         getting you in the air.
       </h3>
       <form
         id="enrollment-form"
-        class="flex flex-col max-w-4xl mx-auto gap-12 my-5"
+        class="flex flex-col max-w-4xl mx-auto gap-3 my-5"
       >
         <div class="flex flex-col lg:flex-row gap-5">
           <input
@@ -77,7 +81,7 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           />
         </div>
 
-        <label class="mt-4" for="experience"
+        <label class="mt-4 text-xl text-center font-semibold" for="experience"
           >How far along are you in pilot training?*</label
         >
         <input
@@ -92,7 +96,9 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
         <fieldset
           class="flex flex-col justify-center items-center align-middle mt-4"
         >
-          <legend class="mb-2 text-gray-800 text-center w-full">
+          <legend
+            class="mb-2 text-gray-800 text-xl font-semibold text-center w-full"
+          >
             Primary Training Program Interest?
           </legend>
 
@@ -209,7 +215,9 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           </div>
         </fieldset>
 
-        <label for="extra-information mt-4"
+        <label
+          for="extra-information"
+          class="mt-6 text-xl text-center font-semibold"
           >Anything else you want us to know about?*</label
         >
         <textarea
@@ -222,9 +230,11 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
         ></textarea>
 
         <fieldset
-          class="flex flex-col justify-center items-center align-middle mt-4"
+          class="flex flex-col justify-center items-center align-middle mt-6"
         >
-          <legend class="mb-2 text-gray-800 text-center w-full">
+          <legend
+            class="mb-2 text-xl font-semibold text-gray-800 text-center w-full"
+          >
             Would you like schedule a visit to NextGen Flight Academy?
           </legend>
 
@@ -256,7 +266,9 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           id="location-container"
           class="hidden flex-col justify-center items-center align-middle"
         >
-          <label for="visit-location">Choose a location:</label>
+          <label for="visit-location" class="text-xl font-semibold"
+            >Choose a location:</label
+          >
 
           <select
             name="visit-location"
@@ -268,17 +280,17 @@ const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
           </select>
         </div>
 
-        <div class="flex gap-3 px-8">
-          <input
-            type="checkbox"
-            name="agree-data-collection"
-            id="agree-data-collection"
-          />
-
+        <div class="">
           <label
             for="agree-data-collection"
-            class="text-gray-500 text-sm lg:text-base mt-4"
+            class="text-gray-500 font-sans text-sm lg:text-base mt-4 w-full inline-flex items-center"
           >
+            <input
+              type="checkbox"
+              name="agree-data-collection"
+              id="agree-data-collection"
+              class="mr-3 w-5 h-5"
+            />
             {checkboxText}
           </label>
         </div>

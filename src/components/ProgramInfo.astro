@@ -18,7 +18,7 @@ const { data } = Astro.props;
       />
     </div>
     <h1
-      class="font-sans px-6 mt-16 text-6xl text-primary-dark tracking-wide font-bold"
+      class="font-sans px-6 mt-16 text-6xl text-primary-dark tracking-wide font-bold animate-fade-from-left"
     >
       {data.program.header}
     </h1>
@@ -128,7 +128,7 @@ const { data } = Astro.props;
             <li class="font-sans1 flex justify-start hover:scale-105 align-middle items-center w-full bg-muted h-10 text-base font-light leading-relaxed group hover:bg-gradient-to-br hover:from-primary hover:to-primary-dark/60 duration-200">
               <a
                 href={detail.link}
-                class="px-2 group-hover:text-white duration-100"
+                class="group-hover:text-white px-3 duration-100 w-full h-full flex justify-start align-middle items-center"
               >
                 {detail.title}
               </a>

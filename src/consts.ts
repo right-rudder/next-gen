@@ -1,6 +1,6 @@
 // CHANGE Default title
 export const SITE_TITLE =
-  "Pilot Training in Riverside, CA | NextGen Flight Academy";
+  "Pilot Training in Riverside, CA | Redlands, CA | NextGen Flight Academy";
 
 // CHANGE default meta description -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const SITE_DESCRIPTION =
@@ -11,7 +11,7 @@ export const SITE_DESCRIPTION =
 //typical keywords = how to become a pilot, flight school near, private pilot, discovery flight, introductory flight, instrument rating, commercial certificate, certified flight instructor, airline programs, how to become an airline pilot
 // CHANGE default keywords -> should only be used in homepage technically, but is there for a fallback in case a page is missed
 export const KEYWORDS =
-  "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training";
+  "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training, Airline programs; How to become a pilot; Flight school near me; Discovery flight; Introductory flight; Private pilot; Instrument rating; Commercial certificate; Certified flight instructor; Airline programs; How to become an airline pilot, quick start pilot guide download, free pilot guide download";
 
 export const IMAGE = "/NextGen-OG-image.png";
 

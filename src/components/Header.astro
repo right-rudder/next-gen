@@ -19,7 +19,7 @@ if (!images[data.imagePath])
   <Image
     src={images[data.imagePath]()}
     alt={data.imageAlt}
-    class="absolute top-0 w-full h-full object-cover -z-10"
+    class="absolute top-0 w-full h-full object-cover -z-10 animate-slow-zoom"
     quality={100}
     loading={"eager"}
   />
@@ -27,10 +27,10 @@ if (!images[data.imagePath])
   <div class="absolute inset-0 bg-slate-950/50 -z-0"></div>
   {
     (data.headerH1 || data.headerH2) && (
-      <div class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center">
+      <div class="text-white text-center lg:text-left z-10 flex flex-col items-center gap-4 px-5 h-full lg:pt-28 justify-center animate-fade-from-left">
         {data.headerH1 && (
           <h1
-            class="text-5xl md:text-6xl lg:text-7xl xl:text-9xl px-4 lg:px-12 text-center font-medium tracking-normal text-gray-100"
+            class="text-5xl md:text-6xl lg:text-7xl xl:text-9xl px-4 lg:px-12 text-center font-medium tracking-normal text-gray-100 animate-fade-from-right"
             set:html={data.headerH1}
           />
         )}

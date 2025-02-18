@@ -166,6 +166,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"exploring-flight-careers-beyond-the-airline-path.md": {
+	id: "exploring-flight-careers-beyond-the-airline-path.md";
+  slug: "exploring-flight-careers-beyond-the-airline-path";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "flabob-veterans-day-2024.md": {
 	id: "flabob-veterans-day-2024.md";
   slug: "flabob-veterans-day-2024";
@@ -187,6 +194,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running.md": {
+	id: "three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running.md";
+  slug: "three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "understanding-flight-instruments-for-safer-navigation.md": {
 	id: "understanding-flight-instruments-for-safer-navigation.md";
   slug: "understanding-flight-instruments-for-safer-navigation";
@@ -197,6 +211,13 @@ declare module 'astro:content' {
 "what-is-the-written-exam.md": {
 	id: "what-is-the-written-exam.md";
   slug: "what-is-the-written-exam";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools.md": {
+	id: "what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools.md";
+  slug: "what-makes-a-good-training-fleet-understanding-aircraft-variety-in-flight-schools";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -339,5 +360,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = typeof import("./../../src/content/config.js");
 }
