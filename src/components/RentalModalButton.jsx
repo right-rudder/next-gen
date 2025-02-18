@@ -74,7 +74,7 @@ const RentalModalButton = ({ btnStyle, btnText, aircraft }) => {
         <div id="quiz-modal" className="relative z-50">
           <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
             {!formSubmitted && (
-              <div className="bg-white p-12 max-w-xl my-4 text-black h-[99%] rounded-sm-sm overflow-y-auto">
+              <div className="relative bg-white p-12 max-w-xl my-4 text-black h-[99%] rounded-sm-sm overflow-y-auto">
                 <p className="text-base text-center font-bold leading-7 text-accent uppercase">
                   Rental Inquiry Form for
                 </p>
@@ -221,6 +221,15 @@ const RentalModalButton = ({ btnStyle, btnText, aircraft }) => {
                     <span className="relative z-10">Submit</span>
                   </button>
                 </form>
+                <button
+                  className="bg-accent p-1 rounded-full absolute top-2 right-2"
+                  onClick={() => {
+                    toggleModal();
+                    document.body.style.overflow = "auto";
+                  }}
+                >
+                  <IoMdClose className="text-2xl text-primary-dark" />
+                </button>
               </div>
             )}
 
@@ -254,16 +263,6 @@ const RentalModalButton = ({ btnStyle, btnText, aircraft }) => {
                 </p>
               </div>
             )}
-
-            <button
-              className="bg-accent p-1 rounded-full absolute top-2 right-2"
-              onClick={() => {
-                toggleModal();
-                document.body.style.overflow = "auto";
-              }}
-            >
-              <IoMdClose className="text-2xl text-primary-dark" />
-            </button>
           </div>
         </div>
       )}
