@@ -1,25 +1,25 @@
 const multiEngine = {
   data: {
     //SEO Header Stuff
-    pageTitle: "Multi-Engine Rating | NextGen Flight Academy",
+    pageTitle: "Multi-Engine Rating | Flight Training in Riverside & Redlands, CA. NextGen Flight Academy",
     pageDescription:
-      "Enhance your piloting skills with a Multi-Engine Rating from NextGen Flight Academy in Riverside and Redlands, CA. Learn to operate multi-engine aircraft and expand your flying opportunities.",
+      "Earn your Multi-Engine Rating at NextGen Flight Academy in Riverside and Redlands, CA. Gain the skills to operate multi-engine aircraft and advance your aviation career.",
     pageKeywords:
-      "Multi-Engine Rating, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside CA, flying lessons Redlands CA, flight schools in Riverside CA, flight schools in Redlands CA, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly Redlands, learn to fly California, flight training Redlands, pilot training Redlands",
+      "Multi-Engine Rating, multi-engine flight training, flight schools in Riverside, flight schools in Redlands, NextGen Flight Academy, commercial pilot training California, pilot training Riverside, pilot training Redlands, aviation schools in California, flight academy Riverside, flight academy Redlands, advanced pilot training, Beechcraft Duchess training, flight training programs California, multi-engine aircraft training, become a commercial pilot, flight lessons California, learn to fly Riverside, learn to fly Redlands, aviation career training, professional pilot training, FAA flight training",
 
     topImage: {
       imagePath:
         "/src/assets/N6716Z-nextgen-flight-academy-riverside-ca-fix.jpg",
-      imageAlt: "in-flight-cfi-and-student-fly-over-los-angeles-ca",
+      imageAlt: "multi-engine training flight over Southern California",
     },
     program: {
       header: "Multi-Engine Rating",
       description: [
-        "A Multi-Engine Rating (MER) allows you to fly aircraft with more than one engine, significantly enhancing your piloting skills and expanding your career opportunities. This rating is essential for pilots who aim to fly larger, faster, and more complex aircraft, including those used in commercial aviation. The training focuses on multi-engine aerodynamics, engine-out procedures, and the operation of multi-engine aircraft systems.",
-        "Achieving a Multi-Engine Rating demonstrates your ability to manage the increased complexity of multi-engine aircraft. This certification opens up new opportunities for pilots, including the potential to fly more advanced and higher-performance aircraft. It also makes you more competitive in the job market, as many commercial and corporate aviation roles require or prefer pilots with multi-engine experience.",
-        "The training covers multi-engine aerodynamics, including understanding asymmetric thrust and the principles of handling an aircraft when one engine fails. Engine-out procedures are a critical component, teaching you how to manage engine failures safely and effectively. You'll also gain in-depth knowledge of multi-engine systems, such as fuel management, electrical systems, and propeller synchronization, which are crucial for efficient and safe aircraft operation.",
+        "A Multi-Engine Rating (MER) allows you to fly aircraft with more than one engine, expanding your piloting skills and career opportunities. This certification is essential for pilots aiming to operate multi-engine aircraft used in commercial aviation, corporate aviation, and advanced flight operations. Training focuses on multi-engine aerodynamics, single-engine failure procedures, and complex aircraft systems.",
+        "Earning a Multi-Engine Rating enhances your ability to handle advanced aircraft while preparing you for commercial and airline pilot roles. With multi-engine training, you'll gain experience in asymmetric thrust control, emergency procedures, and high-performance aircraft operations. Many commercial airlines, charter services, and corporate flight departments require or prefer pilots with multi-engine experience.",
+        "Our training covers essential topics such as multi-engine aerodynamics, including understanding the effects of asymmetric thrust and best practices for handling engine-out situations. You'll also learn advanced flight maneuvers, fuel management, propeller synchronization, and electrical system operations. This rating is a key step toward becoming a more skilled and competitive pilot in the aviation industry.",
       ],
-      availability: "Available at Riverside and Redlands",
+      availability: "Available at Riverside and Redlands Flight Schools",
       related: [
         {
           title: "Instrument Rating",
@@ -36,52 +36,52 @@ const multiEngine = {
       ],
       trainingDetails: {
         description:
-          "Our pilot training is distinct for each certification and endorsement. Checkout what you need before getting started, which aircraft you can use to train for this certification, and get a pricing estimate.",
+          "NextGen Flight Academy offers structured pilot training programs tailored to each certification and endorsement. Learn what you need to start training, the aircraft available for multi-engine instruction, and estimated training costs.",
         requisites: [
           "Hold a Private Pilot License (PPL)",
           "Be able to read, speak, write, and understand English",
-          "Hold at least a third-class medical certificate",
+          "Hold at least a third-class FAA medical certificate",
         ],
         aircraft: [
-          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a>`,
+          `<a href="/our-fleet/beechcraft-duchess" class="hover:underline hover:text-accent">BE76 Beechcraft Duchess</a> - Multi-Engine Training Aircraft`,
         ],
         startingPrice: 4000,
         buttonLink: "/enrollment",
-        buttonText: "Enroll Now",
+        buttonText: "Enroll in Multi-Engine Training",
       },
     },
     CTAcard: {
-      title: "Ready to fly Multi-Engine Aircraft?",
+      title: "Advance Your Flight Training with Multi-Engine Certification",
       imagePath:
         "/src/assets/multi-engine-aircraft-at-nextgen-flight-academy.jpg",
-      imageAlt: "multi-engine-plane-at-redlands-airport",
+      imageAlt: "multi-engine training aircraft at Redlands Airport",
       link: "/enrollment",
-      linkText: "Enroll Now",
+      linkText: "Start Training Today",
       description:
-        "Advance your training at NextGen and earn your Multi-Engine Rating.",
+        "Take your piloting skills to the next level with a Multi-Engine Rating at NextGen Flight Academy. Train with expert instructors and gain the experience needed for commercial aviation.",
     },
     underHeader: {
       upperHeading: "Enrollment Steps",
-      heading: "How to Enroll at NextGen",
+      heading: "How to Enroll in Multi-Engine Training",
       description:
-        "Getting started with NextGen Flight Academy is simple. We welcome students from all over the San Bernadino Valley and beyond!",
+        "Starting your flight training at NextGen Flight Academy is simple. We welcome students from all over California, including Riverside, Redlands, and the San Bernardino Valley!",
       cards: [
         {
-          title: "Meet The Team",
-          body: "Reach out and connect with a member of the NextGen team. We’re eager to understand your aspirations in aviation and explore how we can support you in achieving those goals.",
-          linkText: "Contact Us",
+          title: "Meet Our Flight Instructors",
+          body: "Connect with a NextGen flight instructor to discuss your aviation goals and how our multi-engine training program can help you achieve them.",
+          linkText: "Contact Our Team",
           linkHref: "/contact",
         },
         {
-          title: "Visit NextGen",
-          body: "Come and see our facilities and fleet at either of our locations. Experience a discovery flight with one of our Certified Flight Instructors (CFIs) and get a real feel of what it’s like to train and fly with NextGen Flight Academy.",
-          linkText: "Book a Visit",
+          title: "Tour Our Flight School",
+          body: "Visit NextGen Flight Academy at either our Riverside or Redlands location. See our training aircraft, meet our instructors, and even schedule a discovery flight.",
+          linkText: "Schedule a Visit",
           linkHref: "/contact",
         },
         {
-          title: "Start Flying",
-          body: "Whether you aim to fly as a career or just for the sheer joy of it, NextGen Flight Academy is here to equip you with the skills and knowledge needed to be a safe and proficient pilot.",
-          linkText: "Enroll Now",
+          title: "Start Your Multi-Engine Training",
+          body: "Take the next step in your aviation career with multi-engine training. Whether you're working toward an airline career or expanding your skills, NextGen Flight Academy is ready to train you.",
+          linkText: "Enroll in Multi-Engine Training",
           linkHref: "/enrollment",
         },
       ],
