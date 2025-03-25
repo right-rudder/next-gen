@@ -100,8 +100,8 @@ const {
     "@context": "http://schema.org",
     "@type": "LocalBusiness",
     "name": "NextGen Flight Academy",
-    "description": "NextGen Flight Academy offers career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides top-tier education and flexible scheduling options to meet the needs of aspiring pilots. Our programs are designed to ensure high-quality instruction and extensive flying lessons, helping students achieve their goals in flight training efficiently and effectively.",
-    "keywords": "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+    "description": "NextGen Flight Academy offers high altitude endorsement and career-track, zero-to-hero pilot training programs at Riverside Municipal Airport (RAL) and Redlands Municipal Airport (REI). With 320 flying days a year and an FAA-approved Gleim syllabus, our academy provides specialized high altitude training and top-tier education with flexible scheduling options to meet the needs of aspiring pilots.",
+    "keywords": "High altitude endorsement, High altitude training, Mountain flying training, High altitude flight certification, NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Pilot training Riverside, California",
     "image": "./next-gen-logo.png",
     "logo": "./next-gen-logo.png",
     "telephone": "951-590-3572",
@@ -157,15 +157,30 @@ const {
         "closes": "15:30"
       }
     ],
-    "makesOffer": {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "serviceType": "Flight Instruction"
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "High Altitude Endorsement",
+          "name": "High Altitude Endorsement Training",
+          "description": "Specialized training for pilots to safely operate aircraft at high altitudes. FAA-approved high altitude endorsement courses designed to teach pilots about the physiological challenges, aircraft performance limitations, and emergency procedures specific to high altitude flying."
+        },
+        "priceCurrency": "USD",
+        "price": "Varies"
       },
-      "priceCurrency": "USD",
-      "price": "Varies"
-    },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "serviceType": "Flight Instruction",
+          "name": "Pilot Training Programs",
+          "description": "Comprehensive flight training programs from private pilot to commercial certification and beyond."
+        },
+        "priceCurrency": "USD",
+        "price": "Varies"
+      }
+    ],
     "identifier": [
       {
         "@type": "PropertyValue",
@@ -186,3 +201,124 @@ const {
     "hasMap": "https://maps.app.goo.gl/8PRRgEk2GMmxv4bV9"
   }
 </script>
+
+<!-- Course-specific structured data for high altitude endorsement -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Course",
+    "name": "High Altitude Endorsement Training",
+    "description": "Comprehensive high altitude endorsement training for pilots looking to safely operate aircraft above 10,000 feet MSL. Learn physiological challenges, aircraft performance considerations, and emergency procedures for high altitude flying.",
+    "provider": {
+      "@type": "Organization",
+      "name": "NextGen Flight Academy",
+      "sameAs": "https://flyhere.aero/"
+    },
+    "courseCode": "HAE-101",
+    "coursePrerequisites": "Private Pilot License (PPL)",
+    "educationalCredentialAwarded": "FAA High Altitude Endorsement",
+    "offers": {
+      "@type": "Offer",
+      "price": "Varies based on student experience",
+      "priceCurrency": "USD"
+    },
+    "hasCourseInstance": {
+      "@type": "CourseInstance",
+      "courseMode": ["onsite", "flexible scheduling"],
+      "instructor": {
+        "@type": "Person",
+        "name": "FAA Certified Flight Instructors"
+      },
+      "location": {
+        "@type": "Place",
+        "name": "Riverside Municipal Airport",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "6951 Flight Road Suite 106",
+          "addressLocality": "Riverside",
+          "addressRegion": "CA",
+          "postalCode": "92504",
+          "addressCountry": "US"
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Geographic Service Areas Schema -->
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "LocalBusiness",
+    "name": "NextGen Flight Academy",
+    "description": "Premier flight school offering comprehensive pilot training including specialized high altitude endorsement and mountain flying training across Southern California's diverse terrain.",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Riverside",
+        "containedIn": "California",
+        "description": "Primary training base with comprehensive flight training programs"
+      },
+      {
+        "@type": "City",
+        "name": "Redlands",
+        "containedIn": "California",
+        "description": "Secondary base offering specialized mountain flying and high altitude training"
+      },
+      {
+        "@type": "City",
+        "name": "Big Bear Lake",
+        "containedIn": "California",
+        "description": "High altitude training location at 6,752 ft MSL"
+      },
+      {
+        "@type": "City",
+        "name": "Lake Arrowhead",
+        "containedIn": "California",
+        "description": "Mountain flying training area in San Bernardino Mountains"
+      },
+      {
+        "@type": "City",
+        "name": "Running Springs",
+        "containedIn": "California",
+        "description": "Strategic mountain training location at 6,000 ft MSL"
+      },
+      {
+        "@type": "City",
+        "name": "Apple Valley",
+        "containedIn": "California",
+        "description": "High desert training environment for density altitude operations"
+      },
+      {
+        "@type": "City",
+        "name": "Victorville",
+        "containedIn": "California",
+        "description": "High desert aviation center with advanced training facilities"
+      }
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.1083,
+        "longitude": -117.2898
+      },
+      "geoRadius": "100000"
+    },
+    "specialties": [
+      "High Altitude Endorsement",
+      "Mountain Flying Training",
+      "Density Altitude Operations",
+      "Advanced Weather Training",
+      "Private Pilot Training",
+      "Commercial Pilot Training",
+      "Flight Instructor Certification"
+    ]
+  }
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script
+  type="text/partytown"
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-XGVTWZSEFH"></script>

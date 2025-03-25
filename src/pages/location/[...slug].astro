@@ -71,26 +71,22 @@ const features = {
   upperHeading: "Why Choose NextGen Flight Academy?",
   heading: "Why should I train with NextGen?",
   headingText:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt.",
+    "Experience world-class flight training in an ideal location with professional instructors and modern aircraft.",
   card1: {
     title: "Unmatched Training Standards",
-    description:
-      "NextGen Flight Academy offers both FAA Part 141 and Part 61 approved programs. Our rigorous Gleim syllabus ensures you receive a top-quality education, covering everything from Private Pilot to Airline Transport Pilot ratings.",
+    description: `Our specialties include ${location.data.flightTrainingSpecialties.join(", ")}. NextGen Flight Academy offers both FAA Part 141 and Part 61 approved programs.`,
   },
   card2: {
-    title: "Flexible Scheduling",
-    description:
-      "We understand the demands of our students' schedules. Our instructors are available for lessons before and after office hours, providing you with the flexibility to learn at your own pace.",
+    title: "Perfect Training Environment",
+    description: `Take advantage of our geographic benefits: ${location.data.geographicAdvantages ? location.data.geographicAdvantages.join(", ") : "perfect weather conditions and diverse training environments"}.`,
   },
   card3: {
-    title: "Reliable and Advanced Fleet",
-    description:
-      "Our modern fleet includes a variety of aircraft such as Cessna 172s, Cessna 152s, Piper Warriors, and Beechcraft Duchess. These well-maintained planes ensure a safe and efficient learning experience.",
+    title: "Convenient Airport Access",
+    description: `Train at ${location.data.nearbyAirports.join(" and ")}, giving you access to diverse training environments and airspace complexities.`,
   },
   card4: {
-    title: "Prime Locations",
-    description:
-      "With training facilities at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI), you have access to 320 flying days a year in Southern California's favorable weather. Enjoy scenic flights over Catalina Island, the Hollywood Sign, and other local landmarks.",
+    title: "Local Area Benefits",
+    description: `${location.data.areaHighlights} Experience flying in various conditions and terrains while enjoying the local aviation community.`,
   },
 };
 

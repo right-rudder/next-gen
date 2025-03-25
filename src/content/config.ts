@@ -26,6 +26,11 @@ const locationCollection = defineCollection({
     baseLocation: z.string(),
     keyPlace1: z.string(),
     keyPlace2: z.string(),
+    keywords: z.string(),
+    nearbyAirports: z.array(z.string()),
+    areaHighlights: z.string(),
+    flightTrainingSpecialties: z.array(z.string()),
+    geographicAdvantages: z.array(z.string()).optional(),
   }),
 });
 
