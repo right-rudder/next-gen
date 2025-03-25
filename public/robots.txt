@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
+Allow: /high-altitude-endorsement
+Allow: /training-locations
+Allow: /location/
+Allow: /location/big-bear-lake-ca
+Allow: /location/lake-arrowhead-ca
+Allow: /location/running-springs-ca
+Allow: /location/apple-valley-ca
+Allow: /location/victorville-ca
+Allow: /location/san-bernardino-ca
+Allow: /location/wrightwood-ca
 
+Disallow: /contact-confirmation
+Disallow: /enrollment-confirmation
+Disallow: /intro-flight-confirmation
+Disallow: /quiz-confirmation
+
+# Location-specific sitemaps
 Sitemap: https://flyhere.aero/sitemap-index.xml
+Sitemap: https://flyhere.aero/sitemap-locations.xml
