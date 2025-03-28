@@ -24,13 +24,13 @@ tags:
 
 ### Flying Higher: Earning Your High Altitude Endorsement at NextGen Flight Academy
 
-For pilots looking to operate aircraft above 25,000 feet MSL, a High Altitude Endorsement is required by the FAA. At [NextGen Flight Academy](https://flyhere.aero/), we provide this critical endorsement through structured training at our Riverside and Redlands locations.  
+For pilots looking to operate aircraft above 25,000 feet MSL, a [High Altitude Endorsement](https://flyhere.aero/riverside/high-altitude-endorsement) is required by the FAA. At [NextGen Flight Academy](https://flyhere.aero/), we provide this critical endorsement through structured training at our Riverside and Redlands locations.  
 
 ---
 
 ### What Is a High Altitude Endorsement?
 
-A High Altitude Endorsement is a logbook endorsement required for any pilot operating a pressurized aircraft above 25,000 feet. While it may not apply to every flight today, it’s an essential step for pilots pursuing commercial, corporate, or jet careers.  
+A [High Altitude Endorsement](https://flyhere.aero/riverside/high-altitude-endorsement) is a logbook endorsement required for any pilot operating a pressurized aircraft above 25,000 feet. While it may not apply to every flight today, it’s an essential step for pilots pursuing commercial, corporate, or jet careers.  
 
 This endorsement provides the knowledge and training needed to safely handle high altitude flight environments—including pressurization systems, oxygen requirements, and physiological hazards such as hypoxia.
 
@@ -38,7 +38,7 @@ This endorsement provides the knowledge and training needed to safely handle hig
 
 ### What You’ll Learn
 
-NextGen’s High Altitude Endorsement course includes both ground training and simulator time when appropriate. You’ll cover:  
+NextGen’s [High Altitude Endorsement](https://flyhere.aero/riverside/high-altitude-endorsement) course includes both ground training and simulator time when appropriate. You’ll cover:  
 - **High altitude aerodynamics**  
 - **Aircraft pressurization systems**  
 - **Oxygen use and FAA requirements**  
@@ -53,7 +53,7 @@ Our experienced instructors ensure you understand how to safely manage the uniqu
 
 If you plan to fly turbocharged, pressurized aircraft—either for personal travel or as part of your professional career—this endorsement is essential. It’s also a common requirement for airline, charter, and corporate flight operations.  
 
-At NextGen Flight Academy, we prepare our students for every level of professional aviation, and the High Altitude Endorsement is a valuable part of that journey.
+At NextGen Flight Academy, we prepare our students for every level of professional aviation, and the [High Altitude Endorsement](https://flyhere.aero/riverside/high-altitude-endorsement) is a valuable part of that journey.
 
 ---
 
@@ -69,7 +69,7 @@ Learn more about all of our [advanced training programs](https://flyhere.aero/ri
 
 ### Enroll in High Altitude Training Today
 
-Whether you're working toward commercial operations or simply expanding your skills, the High Altitude Endorsement is a smart investment in your aviation future.
+Whether you're working toward commercial operations or simply expanding your skills, the [High Altitude Endorsement](https://flyhere.aero/riverside/high-altitude-endorsement) is a smart investment in your aviation future.
 
 Call us today at [Riverside: 877-551-1110](tel:877-551-1110) or [Redlands: 833-777-3500](tel:833-777-3500), or visit our [Contact Page](https://flyhere.aero/contact) to get started.
 
