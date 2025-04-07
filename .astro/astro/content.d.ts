@@ -194,6 +194,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"high-altitude-endorsement-nextgen-flight-academy.md": {
+	id: "high-altitude-endorsement-nextgen-flight-academy.md";
+  slug: "high-altitude-endorsement-nextgen-flight-academy";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running.md": {
 	id: "three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running.md";
   slug: "three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running";
