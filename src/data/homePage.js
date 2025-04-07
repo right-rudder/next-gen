@@ -174,7 +174,7 @@ const homePage = {
           imagePath:
             "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
           imageAlt: "completing-an-endorsement-at-riverside-airport",
-          description: `<small class="uppercase italic font-bold text-accent">Must provide your own aircraft.</small><br>The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
+          description: `The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
           link: "/training-programs/complex-endorsement",
         },
       ],
