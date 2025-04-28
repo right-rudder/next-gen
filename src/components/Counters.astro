@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import BgTextureUp from "../assets/bg-texture-up.jpg";
+import StudentsHangar from "../assets/estudiantes-frente-a-hangares-de-ifly.webp";
+import Airplane from "../assets/student-and-cfi-completing-career-zero-to-hero-flight-training-at-nextgen-flight-academy.jpg"
+import CounterCard from "../components/CounterCard";
+
+const stats = [
+  {
+    value: 99,
+    title: "Passrate",
+  },
+  {
+    value: 10000,
+    title: "Hours of Instructor Experience",
+  },
+  {
+    value: 1315,
+    title: "Students Graduated",
+  },
+];
+
+---
+
+<section class="bg-primary-dark relative flex items-center justify-center">  
+  <div class="relative lg:-top-[50px] max-w-7xl flex flex-wrap">
+    {
+      stats.map((stat) => (
+        <CounterCard
+          client:only="react"
+          value={stat.value}
+          title={stat.title}
+        />
+      ))
+    }
+  </div>
+</section>
