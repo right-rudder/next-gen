@@ -11,6 +11,8 @@ import QuizCTA from "../components/QuizCTA.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import BookDownload from "../components/BookDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
+import Counters from "../components/Counters.astro";
+
 
 const { data } = homePage;
 ---
@@ -70,6 +72,8 @@ const { data } = homePage;
   </section>
 
   <GridNav content={data.gridNav} />
+
+  <Counters />
 
   <TryFlyingCTA content={data.discoveryCTA} />
 
