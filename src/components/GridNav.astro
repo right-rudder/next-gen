@@ -2,6 +2,7 @@
 import { Image } from "astro:assets";
 import loremImg from "../assets/flight-school-name-location-keyword.jpg";
 import NavCard from "./NavCard.astro";
+import Counters from "../components/Counters.astro";
 
 const { content } = Astro.props;
 ---
@@ -42,5 +43,8 @@ const { content } = Astro.props;
         }
       </ul>
     </div>
+  </div>
+  <div class="pt-12 lg:pt-20">
+    <Counters />
   </div>
 </section>
