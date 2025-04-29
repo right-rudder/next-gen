@@ -40,7 +40,7 @@ const complexRiverside = {
           "Be able to read, speak, write, and understand English",
           "Hold at least a third-class medical certificate",
         ],
-        aircraft: ["Complex aircraft provided by the student"],
+        aircraft: [`<a href="/our-fleet/cherokee-arrow" class="hover:underline hover:text-accent">Piper Cherokee Arrow</a>`],
         startingPrice: `Please <a href="/contact" class="hover:underline hover:text-accent"> contact us</a> for a price estimate.`,
         buttonLink: "/enrollment",
         buttonText: "Enroll Now",
