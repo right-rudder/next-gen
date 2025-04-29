@@ -2,7 +2,7 @@ import CountUp from "react-countup";
 
 const Counter = ({ value, title }) => {
   return (
-    <div className="flex flex-col bg-slate-950 items-center text-center flex-1 min-w-[150px]">
+    <div className="flex flex-col bg-slate-950 hover:bg-slate-900 items-center text-center flex-1 min-w-[150px] ease-in-out duration-500">
       <div className="border-r border-white/20 last:border-0 px-6 sm:px-8 py-6">
         <span className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">
           <CountUp
