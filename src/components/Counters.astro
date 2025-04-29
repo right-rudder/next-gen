@@ -1,0 +1,33 @@
+---
+import CounterCard from "../components/CounterCard";
+
+const stats = [
+  {
+    value: 99,
+    title: "Passrate",
+  },
+  {
+    value: 10000,
+    title: "Hours of Instructor Experience",
+  },
+  {
+    value: 1315,
+    title: "Students Graduated",
+  },
+];
+
+---
+
+<section class="relative flex items-center justify-center">
+  <div class="relative flex flex-wrap max-w-7xl w-full justify-center">
+    {
+      stats.map((stat) => (
+        <CounterCard
+          client:only="react"
+          value={stat.value}
+          title={stat.title}
+        />
+      ))
+    }
+  </div>
+</section>
