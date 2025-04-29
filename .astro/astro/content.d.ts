@@ -238,6 +238,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "location": {
+"apple-valley-ca.md": {
+	id: "apple-valley-ca.md";
+  slug: "apple-valley-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"big-bear-lake-ca.md": {
+	id: "big-bear-lake-ca.md";
+  slug: "big-bear-lake-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
 "coachella-ca.md": {
 	id: "coachella-ca.md";
   slug: "coachella-ca";
@@ -276,6 +290,13 @@ declare module 'astro:content' {
 "indio-ca.md": {
 	id: "indio-ca.md";
   slug: "indio-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"lake-arrowhead-ca.md": {
+	id: "lake-arrowhead-ca.md";
+  slug: "lake-arrowhead-ca";
   body: string;
   collection: "location";
   data: InferEntrySchema<"location">
@@ -329,9 +350,23 @@ declare module 'astro:content' {
   collection: "location";
   data: InferEntrySchema<"location">
 } & { render(): Render[".md"] };
+"redlands-ca.md": {
+	id: "redlands-ca.md";
+  slug: "redlands-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
 "riverside-ca.md": {
 	id: "riverside-ca.md";
   slug: "riverside-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"running-springs-ca.md": {
+	id: "running-springs-ca.md";
+  slug: "running-springs-ca";
   body: string;
   collection: "location";
   data: InferEntrySchema<"location">
@@ -346,6 +381,20 @@ declare module 'astro:content' {
 "upland-ca.md": {
 	id: "upland-ca.md";
   slug: "upland-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"victorville-ca.md": {
+	id: "victorville-ca.md";
+  slug: "victorville-ca";
+  body: string;
+  collection: "location";
+  data: InferEntrySchema<"location">
+} & { render(): Render[".md"] };
+"wrightwood-ca.md": {
+	id: "wrightwood-ca.md";
+  slug: "wrightwood-ca";
   body: string;
   collection: "location";
   data: InferEntrySchema<"location">
@@ -367,5 +416,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("./../../src/content/config.js");
+	export type ContentConfig = typeof import("../../src/content/config.js");
 }
