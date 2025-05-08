@@ -45,7 +45,7 @@ const cessna152 = {
         {
           docTitle: "Pilot Operating Handbook",
           docUrl:
-            "https://drive.google.com/file/d/1mkDNF0l6ax60I0JFxQ81AntcLP79Gat7/view?usp=drive_link",
+            "https://drive.google.com/file/d/10NY1Oo8C2RljuRrxf25-EQ9hQ-jDPjMC/view?usp=drive_link",
         },
         /* {
           docTitle: "Weight & Balance",
