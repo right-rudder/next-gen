@@ -46,7 +46,9 @@ const { title, author, description, pubDate, updatedDate, heroImage, tags } =
               )
             }
           </div>
-          <h1 class="text-5xl font-sans leading-tight text-primary-dark">
+          <h1
+            class="text-5xl font-sans font-bold leading-tight text-primary-dark"
+          >
             {title}
           </h1>
           <p class="-mt-3">by <strong>{author}</strong></p>
@@ -64,7 +66,7 @@ const { title, author, description, pubDate, updatedDate, heroImage, tags } =
           <hr />
         </div>
         <div
-          class="mt-8 px-6 flex justify-center prose-img:aspect-square lg:prose-img:aspect-auto prose-img:object-cover lg:prose-img:object-contain"
+          class="mt-8 px-6 font-sans1 max-w-4xl flex justify-center prose prose-h2:text-3xl prose-img:w-full prose-headings:font-bold prose-img:aspect-square lg:prose-img:aspect-auto prose-img:object-cover lg:prose-img:object-contain"
         >
           <slot />
         </div>
