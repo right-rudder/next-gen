@@ -17,6 +17,7 @@ import {
 import GoogleMaps from "../components/GoogleMaps.astro";
 
 const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
@@ -218,7 +219,7 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
     <GoogleMaps data={data.gMaps[1]} />
   </section>
 
-  <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
+  <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
     const checkbox = document.getElementById("agree-data-collection");
     const submitButton = document.getElementById("submit-button");
     const yesVisit = document.getElementById("yes-visit");
@@ -247,73 +248,83 @@ const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
         submitButton.classList.remove(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400"
+          "hover:bg-gray-400",
         );
       } else {
         submitButton.disabled = true;
         submitButton.classList.add(
           "cursor-not-allowed",
           "bg-gray-400",
-          "hover:bg-gray-400"
+          "hover:bg-gray-400",
         );
       }
     });
-
-    // Wait for the DOM content to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the contactUs form element
-      const contactForm = document.getElementById("contact-form");
-
-      // Check if the contactUs form element exists
-      if (contactForm !== null) {
-        // Add submit event listener to the contactUs form
-        contactForm.addEventListener("submit", function (event) {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // Serialize the form data
-          const formData = new FormData(contactForm);
-
-          // Check the value of the honeypot field
-          const confirmEmailValue = formData.get("confirm-email");
-          if (confirmEmailValue === "" || confirmEmailValue === null) {
-            // If the honeypot field is empty, it's a human
-            // Set the form action to the URL for processing the form and redirecting to thank you
-            contactForm.action = CONTACT_US_FORM_WEBHOOK_URL;
-          }
-
-          // Convert FormData to URLSearchParams
-          const urlSearchParams = new URLSearchParams();
-          for (const pair of formData.entries()) {
-            urlSearchParams.append(pair[0], pair[1]);
-          }
-
-          // Send an AJAX request to submit the form
-          const xhr = new XMLHttpRequest();
-          xhr.open("POST", contactForm.action);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded"
-          );
-          xhr.onload = function () {
-            // Check if the request was successful (status 200)
-            if (xhr.status === 200) {
-              // Redirect the user after a successful form submission
-              window.location.href = "/contact-confirmation";
-            } else {
-              // Handle errors if any
-              console.error("Form submission failed:", xhr.statusText);
-            }
-          };
-          xhr.onerror = function () {
-            // Handle network errors
-            console.error("Network error occurred while submitting the form.");
-          };
-          xhr.send(urlSearchParams);
-        });
-      } else {
-        console.error("Contact us form element not found.");
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contact-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
       }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
+
+        if (confirmEmail) return;
+
+        const webhookURL = CONTACT_US_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
+
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "contact_us",
+          account_random_id: "ac_vwzfezsv",
+          metadata: {
+            message: formData.get("message")?.trim() || "",
+            visit_nextgen: formData.get("visit-nextgen")?.trim() || "",
+            visit_location: formData.get("visit-location")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
+            window.location.href = "/contact-confirmation";
+          } else {
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
+          }
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
+      });
     });
   </script>
 

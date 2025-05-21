@@ -5,6 +5,8 @@ import "../styles/swiper-thumnails.css";
 import RentalModalButton from "./RentalModalButton";
 
 const { data } = Astro.props;
+const RENTAL_FORM_WEBHOOK_URL = import.meta.env.RENTAL_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <section class="mx-auto max-w-7xl w-full py-8 lg:pt-24 lg:pb-40 z-0">
@@ -51,6 +53,8 @@ const { data } = Astro.props;
           aircraft={data.title}
           btnStyle={"btn-primary w-full flex-grow block btn-animate"}
           btnText={"Rent with Us"}
+          rentalWebhookURL={RENTAL_FORM_WEBHOOK_URL}
+          portalApiKey={PORTAL_API_KEY}
           client:visible
         />
         <a

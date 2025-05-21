@@ -1,6 +1,8 @@
 ---
 import BookModalButton from "./BookModalButton";
 import ImageComp from "./ImageComp.astro";
+const BOOK_FORM_WEBHOOK_URL = import.meta.env.BOOK_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <section
@@ -23,6 +25,8 @@ import ImageComp from "./ImageComp.astro";
       <BookModalButton
         btnText="Get Guide"
         btnStyle="btn-white btn-animate mt-5 w-full md:w-1/2"
+        bookWebhookURL={BOOK_FORM_WEBHOOK_URL}
+        portalApiKey={PORTAL_API_KEY}
         client:visible
       />
     </div>

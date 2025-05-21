@@ -13,6 +13,7 @@ const checkboxText =
 
 const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
   .INTRO_FLIGHT_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
@@ -132,112 +133,120 @@ const INTRO_FLIGHT_FORM_WEBHOOK_URL = import.meta.env
       </form>
     </div>
   </section>
-</BaseLayout>
 
-<script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL }}>
-  // Function to format date as YYYY-MM-DD
-  function formatDate(date) {
-    let day = date.getDate();
-    let month = date.getMonth() + 1; // Months are zero based
-    let year = date.getFullYear();
+  <script define:vars={{ INTRO_FLIGHT_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    // Function to format date as YYYY-MM-DD
+    function formatDate(date) {
+      let day = date.getDate();
+      let month = date.getMonth() + 1; // Months are zero based
+      let year = date.getFullYear();
 
-    if (day < 10) {
-      day = "0" + day;
+      if (day < 10) {
+        day = "0" + day;
+      }
+      if (month < 10) {
+        month = "0" + month;
+      }
+
+      return `${year}-${month}-${day}`;
     }
-    if (month < 10) {
-      month = "0" + month;
-    }
 
-    return `${year}-${month}-${day}`;
-  }
+    // Calculate the date four days from today
+    const today = new Date();
+    const fourDaysFromToday = new Date(today);
+    fourDaysFromToday.setDate(today.getDate() + 4);
 
-  // Calculate the date four days from today
-  const today = new Date();
-  const fourDaysFromToday = new Date(today);
-  fourDaysFromToday.setDate(today.getDate() + 4);
+    // Set the min attribute
+    document
+      .getElementById("requested-date")
+      ?.setAttribute("min", formatDate(fourDaysFromToday));
 
-  // Set the min attribute
-  document
-    .getElementById("requested-date")
-    ?.setAttribute("min", formatDate(fourDaysFromToday));
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
 
-  const checkbox = document.getElementById("agree-data-collection");
-  const submitButton = document.getElementById("submit-button");
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("intro-flight-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
 
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      submitButton.disabled = false;
-      submitButton.classList.remove(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400"
-      );
-    } else {
-      submitButton.disabled = true;
-      submitButton.classList.add(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400"
-      );
-    }
-  });
-
-  // Wait for the DOM content to be fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the contactUs form element
-    const introFlightForm = document.getElementById("intro-flight-form");
-
-    // Check if the contactUs form element exists
-    if (introFlightForm !== null) {
-      // Add submit event listener to the contactUs form
-      introFlightForm.addEventListener("submit", function (event) {
-        // Prevent the default form submission
+      form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        // Serialize the form data
-        const formData = new FormData(introFlightForm);
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
 
-        // Check the value of the honeypot field
-        const confirmEmailValue = formData.get("confirm-email");
-        if (confirmEmailValue === "" || confirmEmailValue === null) {
-          // If the honeypot field is empty, it's a human
-          // Set the form action to the URL for processing the form and redirecting to thank you
-          introFlightForm.action = INTRO_FLIGHT_FORM_WEBHOOK_URL;
-        }
+        if (confirmEmail) return;
 
-        // Convert FormData to URLSearchParams
-        const urlSearchParams = new URLSearchParams();
-        for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1]);
-        }
+        const webhookURL = INTRO_FLIGHT_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
 
-        // Send an AJAX request to submit the form
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", introFlightForm.action);
-        xhr.setRequestHeader(
-          "Content-Type",
-          "application/x-www-form-urlencoded"
-        );
-        xhr.onload = function () {
-          // Check if the request was successful (status 200)
-          if (xhr.status === 200) {
-            // Redirect the user after a successful form submission
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "intro_flight",
+          account_random_id: "ac_vwzfezsv",
+          metadata: {
+            requested_date: formData.get("requested-date")?.trim() || "",
+            comments: formData.get("comments")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
             window.location.href = "/enrollment-confirmation";
           } else {
-            // Handle errors if any
-            console.error("Form submission failed:", xhr.statusText);
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
           }
-        };
-        xhr.onerror = function () {
-          // Handle network errors
-          console.error("Network error occurred while submitting the form.");
-        };
-        xhr.send(urlSearchParams);
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
       });
-    } else {
-      console.error("Intro flight form element not found.");
-    }
-  });
-</script>
-
-<script src="../scripts/emailValidation.js"></script>
+    });
+  </script>
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>
