@@ -7,6 +7,7 @@ import quizForm from "../data/quiz-form";
 
 const { data } = quizForm;
 const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
 <BaseLayout
@@ -565,30 +566,61 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
       >
     </form>
   </section>
-</BaseLayout>
-<script define:vars={{ QUIZ_FORM_WEBHOOK_URL }}>
-  // Wait for the DOM content to be fully loaded
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the quiz form element
-    const quizForm = document.getElementById("quiz-form");
+  <script define:vars={{ QUIZ_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
+    const yesVisit = document.getElementById("yes-visit");
+    const noVisit = document.getElementById("no-visit");
 
-    // Check if the quiz form element exists
-    if (quizForm !== null) {
-      // Add submit event listener to the quiz form
-      quizForm.addEventListener("submit", function (event) {
-        // Prevent the default form submission
+    yesVisit.addEventListener("change", function () {
+      if (yesVisit.checked) {
+        document
+          .getElementById("location-container")
+          .classList.remove("hidden");
+        document.getElementById("location-container").classList.add("flex");
+      } else {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    noVisit.addEventListener("change", function () {
+      if (noVisit.checked) {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+          "hover:text-white",
+        );
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+          "hover:text-white",
+        );
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("quiz-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
-        // Serialize the form data
-        const formData = new FormData(quizForm);
-
-        // Check the value of the honeypot field
-        const confirmEmailValue = formData.get("confirm-email");
-        if (confirmEmailValue === "" || confirmEmailValue === null) {
-          // If the honeypot field is empty, it's a human
-          // Set the form action to the URL for processing the form and redirecting to thank you
-          quizForm.action = QUIZ_FORM_WEBHOOK_URL;
-        }
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
+        if (confirmEmail) return;
 
         const inspirations = [];
         formData.getAll("inspirations").forEach((inspiration) => {
@@ -608,80 +640,78 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
 
         formData.append(
           "what-kind-of-guidance-and-support-you-prefer",
-          kindOfGuidance.join(",")
+          kindOfGuidance.join(","),
         );
 
-        // Convert FormData to URLSearchParams
-        const urlSearchParams = new URLSearchParams();
-        for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1]);
-        }
+        const webhookURL = QUIZ_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
 
-        // Send an AJAX request to submit the form
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", quizForm.action);
-        xhr.setRequestHeader(
-          "Content-Type",
-          "application/x-www-form-urlencoded"
-        );
-        xhr.onload = function () {
-          // Check if the request was successful (status 200)
-          if (xhr.status === 200) {
-            // Redirect the user after a successful form submission
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "quiz",
+          account_random_id: "ac_vwzfezsv",
+          metadata: {
+            "what-inspires-you": inspirations.join(","),
+            "what-kind-of-guidance-and-support-you-prefer":
+              kindOfGuidance.join(","),
+            "long-term-goals": formData.get("long-term-goals")?.trim() || "",
+            "do-you-know-how-a-wing-generates-lift":
+              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() ||
+              "",
+            "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training":
+              formData
+                .get(
+                  "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training",
+                )
+                ?.trim() || "",
+            "visit-nextgen": formData.get("visit-nextgen")?.trim() || "",
+            "visit-location": formData.get("visit-location")?.trim() || "",
+            "level-of-experience":
+              formData.get("level-of-experience")?.trim() || "",
+            "preferred-learning-style":
+              formData.get("preferred-learning-style")?.trim() || "",
+            "preferred-approach":
+              formData.get("preferred-approach")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
             window.location.href = "/quiz-confirmation";
           } else {
-            // Handle errors if any
-            console.error("Form submission failed:", xhr.statusText);
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
           }
-        };
-        xhr.onerror = function () {
-          // Handle network errors
-          console.error("Network error occurred while submitting the form.");
-        };
-        xhr.send(urlSearchParams);
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
       });
-    } else {
-      console.error("Quiz form element not found.");
-    }
-  });
-
-  const checkbox = document.getElementById("agree-data-collection");
-  const submitButton = document.getElementById("submit-button");
-  const yesVisit = document.getElementById("yes-visit");
-  const noVisit = document.getElementById("no-visit");
-
-  yesVisit.addEventListener("change", function () {
-    if (yesVisit.checked) {
-      document.getElementById("location-container").classList.remove("hidden");
-      document.getElementById("location-container").classList.add("flex");
-    } else {
-      document.getElementById("location-container").classList.add("hidden");
-    }
-  });
-
-  noVisit.addEventListener("change", function () {
-    if (noVisit.checked) {
-      document.getElementById("location-container").classList.add("hidden");
-    }
-  });
-
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      submitButton.disabled = false;
-      submitButton.classList.remove(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-        "hover:text-white"
-      );
-    } else {
-      submitButton.disabled = true;
-      submitButton.classList.add(
-        "cursor-not-allowed",
-        "bg-gray-400",
-        "hover:bg-gray-400",
-        "hover:text-white"
-      );
-    }
-  });
-</script>
+    });
+  </script>
+</BaseLayout>
