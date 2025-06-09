@@ -47,7 +47,7 @@ When you commit to full-path training, you’re immersing yourself in the world 
 
 Zero-to-hero programs are designed with a clear progression in mind. Each phase of training is strategically planned to build on previous knowledge, making it easier for students to understand and retain complex concepts. At NextGen Flight Academy and Learn to Fly, our curriculum is tailored to ensure that you move seamlessly from one level of training to the next, reducing the likelihood of setbacks and allowing you to achieve your goals efficiently.
 
-![Pilot and child at Redlands Airport with Cessna 172](/src/assets/pilot-and-child-at-redlands-airport-with-cessna-172.jpg)
+![Pilot and child at Redlands Airport with Cessna 172](/blog/pilot-and-child-at-redlands-airport-with-cessna-172.jpg)
 _A pilot introduces a young aviator to the Cessna 172 at Redlands Airport._
 
 ### Building a Strong Foundation
@@ -74,7 +74,7 @@ One of the most significant advantages of zero-to-hero training is the speed at 
 
 Training at reputable academies like NextGen and Learn to Fly provides you with opportunities to network with industry professionals and fellow students. These connections can be invaluable when it comes to finding job placements and advancing your career. Our alumni network and industry partnerships mean that you’ll have access to a wide range of resources and support as you transition from student to professional pilot.
 
-![Taxiing a Cessna 152 at Riverside Airport](/src/assets/taxiing-a-cessna-152-at-riverside-airport.jpg)
+![Taxiing a Cessna 152 at Riverside Airport](/blog/taxiing-a-cessna-152-at-riverside-airport.jpg)
 _Students taxi a Cessna 152 at Riverside Airport, preparing for another day of training at NextGen Flight Academy._
 
 **3. Competitive Edge in the Job Market**
