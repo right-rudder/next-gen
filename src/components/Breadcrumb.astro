@@ -38,7 +38,7 @@ const { items } = Astro.props;
                 {item.name}
               </a>
             ) : (
-              <span class="text-gray-900 font-medium">{item.name}</span>
+              <span class="text-gray-900 font-medium" aria-current="page">{item.name}</span>
             )}
           </li>
         ))
