@@ -6,6 +6,11 @@ interface Props {
   description: string;
   keywords: string;
   image?: string;
+  type?: string;
+  author?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  canonicalUrl?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -14,8 +19,16 @@ const {
   title,
   description,
   keywords,
-  image = "/blog-placeholder-1.jpg",
+  image = "/NextGen-OG-image.png",
+  type = "website",
+  author = "NextGen Flight Academy",
+  publishedTime,
+  modifiedTime,
+  canonicalUrl,
 } = Astro.props;
+
+// Enhanced meta tags for better SEO
+const finalCanonical = canonicalUrl || canonicalURL;
 ---
 
 <!-- Global Metadata -->
@@ -42,20 +55,50 @@ const {
 <meta name="generator" content={Astro.generator} />
 
 <!-- Canonical URL -->
-<link rel="canonical" href={canonicalURL} />
+<link rel="canonical" href={finalCanonical} />
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <meta name="keywords" content={keywords} />
+<meta name="author" content={author} />
+<meta name="robots" content="index, follow" />
+<meta name="language" content="English" />
+<meta name="revisit-after" content="7 days" />
 
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
+<meta property="og:type" content={type} />
 <meta property="og:url" content={Astro.url} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:site_name" content="NextGen Flight Academy" />
+<meta property="og:locale" content="en_US" />
+{
+  publishedTime && (
+    <meta property="article:published_time" content={publishedTime} />
+  )
+}
+{
+  modifiedTime && (
+    <meta property="article:modified_time" content={modifiedTime} />
+  )
+}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:site" content="@nextgenflightacademy" />
+
+<!-- Additional SEO Meta Tags -->
+<meta name="geo.region" content="US-CA" />
+<meta name="geo.placename" content="Riverside, Redlands" />
+<meta name="geo.position" content="33.95089726807398;-117.44593563235975" />
+<meta name="ICBM" content="33.95089726807398, -117.44593563235975" />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
@@ -74,9 +117,12 @@ const {
     var f = d.getElementsByTagName(s)[0],
       j = d.createElement(s),
       dl = l != "dataLayer" ? "&l=" + l : "";
-    j.async = true;
-    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-    f.parentNode.insertBefore(j, f);
+    (j as HTMLScriptElement).async = true;
+    (j as HTMLScriptElement).src =
+      "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    if (f.parentNode) {
+      f.parentNode.insertBefore(j, f);
+    }
   })(window, document, "script", "dataLayer", "GTM-5JDGHQBQ");
 </script>
 <!-- Google tag (gtag.js) -->

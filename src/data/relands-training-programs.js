@@ -6,7 +6,7 @@ const redlandsTrainingPrograms = {
     pageDescription:
       "Explore the selection of pilot training programs at NextGen Flight Academy. From private pilot to airline transport pilot, we offer a range of certifications and endorsements to help you achieve your aviation career goals.",
     pageKeywords:
-      "NextGen Flight Academy, Pilot training programs, Flight school Redlands, pilot training redlands, aviation redlands california, Private pilot certificate, Instrument rating, Commercial pilot certificate, Multi-engine rating, Certified flight instructor, Airline transport pilot, High performance endorsement, High altitude endorsement, Complex endorsement, Aviation career training",
+      "flight school Redlands California, pilot training Redlands Municipal Airport, learn to fly Redlands CA, flight lessons Redlands California, aviation training Redlands, private pilot training Redlands, instrument rating Redlands, commercial pilot training Redlands, flight instructor training Redlands, airline transport pilot Redlands, multi-engine rating Redlands, high altitude endorsement Redlands, complex endorsement Redlands, mountain flying training Redlands, aircraft rental Redlands, NextGen Flight Academy Redlands, Redlands airport flight training, aviation education Redlands, pilot certification Redlands",
 
     //top header
     header: {

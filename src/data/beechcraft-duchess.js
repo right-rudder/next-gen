@@ -5,7 +5,7 @@ const beechcraftDuchess = {
     pageDescription:
       "Fly the BE76 Beechcraft Duchess at NextGen Flight Academy today and earn your more advanced ratings.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Beechcraft Duchess BE76, multi-engine training aircraft, twin-engine airplane training, multi-engine rating training, commercial pilot multi-engine, advanced flight training aircraft, twin-engine flight instruction, retractable gear training, complex aircraft training, multi-engine instrument training, professional pilot training aircraft, airline pilot preparation, multi-engine checkride training, twin-engine proficiency, advanced aviation training, NextGen Flight Academy fleet, commercial pilot aircraft, multi-engine endorsement training, complex aircraft checkout",
 
     //top header
     header: {

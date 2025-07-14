@@ -5,7 +5,7 @@ const partnerships = {
     pageDescription:
       "Discover the partnerships that enhance your flight training experience at NextGen Flight Academy. Learn about our collaborations with Spartan College, American English Institute, and Excel Charter Academy School.",
     pageKeywords:
-      "NextGen Flight Academy, Flight training partnerships, Spartan College 15-15 Program, American English Institute, Excel Charter Academy School, Aviation education, Flight training collaboration, Pilot training programs, Aviation partnerships, Flight school",
+      "flight training partnerships, aviation education partnerships, Spartan College flight training, American English Institute aviation, Excel Charter Academy partnership, flight school collaborations, aviation career partnerships, professional pilot training partnerships, airline pathway programs, accelerated flight training programs, aviation industry partnerships, flight training alliances, pilot career development partnerships, aviation education network, flight school partnerships California, commercial pilot pathway programs, aviation training collaboration, pilot training partner schools",
 
     //top header
     header: {

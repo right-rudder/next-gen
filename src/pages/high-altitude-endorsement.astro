@@ -1,0 +1,284 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HeaderScreen from "../components/HeaderScreen.astro";
+import TryFlyingCTA from "../components/TryFlyingCTA.astro";
+import FAQSection from "../components/FAQSection.astro";
+import Breadcrumb from "../components/Breadcrumb.astro";
+import ImageComp from "../components/ImageComp.astro";
+import { highAltitudeFAQs } from "../data/faqs.js";
+
+const pageData = {
+  pageTitle:
+    "High Altitude Endorsement Training California | Mountain Flying | NextGen Flight Academy",
+  pageDescription:
+    "Master high altitude and mountain flying with NextGen Flight Academy's specialized high altitude endorsement training in California. Expert instruction for density altitude operations, mountain weather, and high altitude emergency procedures. Train at Big Bear, Lake Arrowhead, and other challenging mountain airports near Riverside and Redlands, CA.",
+  pageKeywords:
+    "high altitude endorsement California, mountain flying training, high altitude flight training, density altitude training, mountain flying endorsement, Big Bear flight training, Lake Arrowhead flight training, NextGen Flight Academy, high altitude pilot training California, mountain airport operations, high desert flight training, California mountain flying, high altitude aircraft operations",
+};
+
+const headerData = {
+  imagePath:
+    "/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg",
+  imageAlt:
+    "High altitude endorsement training aircraft flying over California mountains",
+  headerH1: "High Altitude Endorsement",
+  headerH2: "Master Mountain Flying in California's Diverse Terrain",
+};
+
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "Training Programs", href: "/training-programs" },
+  { name: "High Altitude Endorsement" },
+];
+
+const discoveryCTA = {
+  heading: "Experience High Altitude Flying",
+  text: "Ready to explore California's mountain airports and master high altitude operations? Book a discovery flight to experience the unique challenges and rewards of mountain flying with our expert instructors.",
+  text2:
+    "Our specialized training prepares you for safe operations at airports like Big Bear, Lake Arrowhead, and other challenging mountain destinations.",
+  imagePath:
+    "/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg",
+  imageAlt: "High altitude training flight over mountain terrain",
+  buttonText: "Book High Altitude Training",
+  buttonLink: "/contact",
+};
+---
+
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={pageData.pageKeywords}
+>
+  <Breadcrumb items={breadcrumbItems} />
+
+  <HeaderScreen content={headerData} />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">
+            Why High Altitude Training Matters in California
+          </h2>
+          <div class="space-y-4 text-gray-700">
+            <p>
+              California's diverse terrain presents unique flying challenges
+              that require specialized high altitude and mountain flying skills.
+              From sea level coastal airports to high elevation mountain
+              destinations like Big Bear (6,750 feet) and Lake Arrowhead, pilots
+              must understand density altitude effects, mountain weather
+              patterns, and specialized emergency procedures.
+            </p>
+            <p>
+              NextGen Flight Academy's high altitude endorsement training
+              prepares you for safe operations in California's challenging
+              mountain environment, covering everything from physiological
+              factors to aircraft performance considerations.
+            </p>
+          </div>
+
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">
+              Training Includes:
+            </h3>
+            <ul class="space-y-2 text-gray-700">
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Density altitude calculations and effects
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Mountain weather pattern recognition
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                High altitude airport operations
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Emergency procedures in mountainous terrain
+              </li>
+              <li class="flex items-center">
+                <svg
+                  class="h-5 w-5 text-green-500 mr-3"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                Practical flights to mountain airports
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="relative">
+          <ImageComp
+            imagePath="/src/assets/flying-the-duchess-at-riverside-ca-flight-school-nextgen.jpg"
+            imageAlt="Aircraft performing high altitude training maneuvers over California mountains"
+            styles="rounded-lg shadow-xl w-full h-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900">
+          Mountain Airports We Train At
+        </h2>
+        <p class="mt-4 text-lg text-gray-600">
+          Experience real-world high altitude operations at challenging
+          California mountain airports
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            Big Bear City Airport (L35)
+          </h3>
+          <p class="text-gray-600 mb-2">
+            <strong>Elevation:</strong> 6,750 feet MSL
+          </p>
+          <p class="text-gray-700">
+            Experience high density altitude effects and mountain approach
+            procedures at one of California's most challenging airports.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            Lake Arrowhead (Not Public)
+          </h3>
+          <p class="text-gray-600 mb-2">
+            <strong>Elevation:</strong> 5,100 feet MSL
+          </p>
+          <p class="text-gray-700">
+            Practice mountain flying techniques and learn about high altitude
+            airport considerations in a scenic mountain setting.
+          </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            Apple Valley Airport (APV)
+          </h3>
+          <p class="text-gray-600 mb-2">
+            <strong>Elevation:</strong> 3,062 feet MSL
+          </p>
+          <p class="text-gray-700">
+            High desert training environment perfect for understanding density
+            altitude operations and desert flying techniques.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <TryFlyingCTA content={discoveryCTA} />
+
+  <FAQSection
+    faqs={highAltitudeFAQs}
+    heading="High Altitude Training FAQs"
+    subheading="Learn more about our specialized high altitude and mountain flying training"
+  />
+</BaseLayout>
+
+<!-- Enhanced Schema.org for High Altitude Training -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "High Altitude Endorsement Training",
+    "description": "Comprehensive high altitude endorsement and mountain flying training for pilots. Learn density altitude operations, mountain weather, and emergency procedures for safe flying in California's diverse terrain.",
+    "provider": {
+      "@type": "Organization",
+      "name": "NextGen Flight Academy",
+      "url": "https://flyhere.aero/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "6951 Flight Road Suite 106",
+        "addressLocality": "Riverside",
+        "addressRegion": "CA",
+        "postalCode": "92504",
+        "addressCountry": "US"
+      }
+    },
+    "courseCode": "HAE-101",
+    "coursePrerequisites": "Private Pilot License (PPL) or higher",
+    "educationalCredentialAwarded": "FAA High Altitude Endorsement",
+    "keywords": [
+      "high altitude endorsement",
+      "mountain flying training",
+      "density altitude training",
+      "California mountain flying",
+      "high altitude pilot training"
+    ],
+    "courseMode": ["onsite", "practical"],
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Big Bear City Airport",
+        "address": "Big Bear City, CA"
+      },
+      {
+        "@type": "Place",
+        "name": "Riverside Municipal Airport",
+        "address": "Riverside, CA"
+      },
+      {
+        "@type": "Place",
+        "name": "Redlands Municipal Airport",
+        "address": "Redlands, CA"
+      }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "description": "Contact for pricing based on experience level",
+      "priceCurrency": "USD",
+      "availability": "InStock"
+    }
+  }
+</script>

@@ -1,12 +1,12 @@
 const privatePilotRiverside = {
   data: {
-    //SEO Header Stuff
+    //SEO Header Stuff - Enhanced for 2025
     pageTitle:
-      "Private Pilot Certificate at Riverside, CA | NextGen Flight Academy",
+      "Private Pilot License Training Riverside, CA | PPL Certification | NextGen Flight Academy",
     pageDescription:
-      "Start your aviation journey with NextGen Flight Academy's Private Pilot Certificate in Riverside, CA. Full-scale career training, expert instructors, and modern aircraft for aspiring pilots.",
+      "Earn your Private Pilot License (PPL) at NextGen Flight Academy in Riverside, CA. Comprehensive PPL training with expert CFIs, modern aircraft, and flexible scheduling. Start your aviation journey with California's premier flight school specializing in mountain flying and high altitude operations near Big Bear and Lake Arrowhead.",
     pageKeywords:
-      "Private Pilot Certificate, career track flight training, Riverside flight schools, NextGen Flight Academy, flying lessons Riverside, flight schools in Riverside, pilot training Riverside, Riverside aviation academy, Riverside flight training, intro flight, demonstration flights, Riverside flight academy, NextGen California, learn to fly California, Riverside pilot training, Riverside flight instruction, Riverside flight school, Riverside flight lessons",
+      "private pilot license Riverside CA, PPL training Riverside California, private pilot certificate Riverside, learn to fly Riverside CA, flight training Riverside, pilot training Riverside California, flight school Riverside CA, private pilot lessons Riverside, NextGen Flight Academy Riverside, aviation training Riverside, PPL certification California, flight instruction Riverside, become a pilot Riverside, flying lessons Riverside CA, pilot license Riverside, flight academy Riverside, mountain flying training, high altitude pilot training",
 
     topImage: {
       imagePath:

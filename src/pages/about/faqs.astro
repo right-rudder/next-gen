@@ -1,0 +1,164 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import FAQSection from "../../components/FAQSection.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
+import { flightTrainingFAQs } from "../../data/faqs.js";
+
+const pageData = {
+  pageTitle:
+    "Flight School FAQs | Common Questions | NextGen Flight Academy | Riverside & Redlands, CA",
+  pageDescription:
+    "Get answers to frequently asked questions about flight training at NextGen Flight Academy. Learn about costs, training duration, high altitude endorsement, mountain flying, aircraft fleet, and more from our expert flight instructors in Riverside and Redlands, California.",
+  pageKeywords:
+    "flight school FAQs, flight training questions, pilot training costs, how long flight training takes, high altitude endorsement FAQ, mountain flying questions, NextGen Flight Academy questions, flight school Riverside CA, flight school Redlands CA, learn to fly FAQ",
+};
+
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "FAQs" },
+];
+---
+
+<BaseLayout
+  siteTitle={pageData.pageTitle}
+  siteDescription={pageData.pageDescription}
+  keywords={pageData.pageKeywords}
+>
+  <div class="h-20 lg:h-32 w-full bg-primary/70 brightness-75"></div>
+  <Breadcrumb items={breadcrumbItems} />
+
+  <section class="py-16 bg-gradient-to-b from-blue-50 to-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl font-bold text-gray-900 sm:text-5xl mb-6">
+        Flight Training FAQs
+      </h1>
+      <p class="text-xl text-gray-600 mb-8">
+        Get answers to the most common questions about flight training, costs,
+        programs, and our specialized high altitude endorsement training at
+        NextGen Flight Academy.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <a
+          href="/contact"
+          class="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors"
+        >
+          Ask a Question
+        </a>
+        <a
+          href="/intro-flight"
+          class="border border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors"
+        >
+          Book Discovery Flight
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <FAQSection
+    faqs={flightTrainingFAQs}
+    heading="Comprehensive Flight Training FAQs"
+    subheading="Everything you need to know about becoming a pilot at NextGen Flight Academy"
+  />
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-gray-900 mb-6">
+        Still Have Questions?
+      </h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Our experienced flight instructors and staff are here to help answer any
+        questions about your aviation journey. Contact us today to speak with a
+        member of our team.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            Riverside Location
+          </h3>
+          <p class="text-gray-600 mb-2">6951 Flight Road Suite 106</p>
+          <p class="text-gray-600 mb-3">Riverside, CA 92504</p>
+          <p class="text-primary font-semibold">951-590-3572</p>
+        </div>
+        <div class="bg-white rounded-lg p-6 shadow-md">
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">
+            Redlands Location
+          </h3>
+          <p class="text-gray-600 mb-2">1745 Sessums Dr Unit 160</p>
+          <p class="text-gray-600 mb-3">Redlands, CA 92374</p>
+          <p class="text-primary font-semibold">951-468-9700</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<!-- Organization Schema for FAQ page -->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://flyhere.aero/#organization",
+    "name": "NextGen Flight Academy",
+    "url": "https://flyhere.aero/",
+    "description": "Premier flight school specializing in high altitude endorsement and comprehensive pilot training in Riverside and Redlands, California.",
+    "telephone": "951-590-3572",
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "6951 Flight Road Suite 106",
+        "addressLocality": "Riverside",
+        "addressRegion": "CA",
+        "postalCode": "92504",
+        "addressCountry": "US"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "1745 Sessums Dr Unit 160",
+        "addressLocality": "Redlands",
+        "addressRegion": "CA",
+        "postalCode": "92374",
+        "addressCountry": "US"
+      }
+    ],
+    "serviceArea": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.0522,
+        "longitude": -117.2898
+      },
+      "geoRadius": "100000"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Flight Training Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "High Altitude Endorsement Training",
+            "description": "Specialized mountain flying and high altitude operations training"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Private Pilot License Training",
+            "description": "Complete PPL certification program"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Instrument Rating Training",
+            "description": "IFR certification and training"
+          }
+        }
+      ]
+    }
+  }
+</script>

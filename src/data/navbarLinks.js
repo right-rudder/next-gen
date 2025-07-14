@@ -120,6 +120,10 @@ export const navbarLinks = [
         link: "/about/pilot-resource-center",
       },
       {
+        name: "FAQs",
+        link: "/about/faqs",
+      },
+      {
         name: "Financing",
         link: "/about/financing",
       },

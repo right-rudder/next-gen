@@ -5,7 +5,7 @@ const newToFlying = {
     pageDescription:
       "New to flying? Learn why you should become a pilot with NextGen Flight Academy. Discover our unmatched training standards, flexible scheduling, advanced fleet, and prime locations.",
     pageKeywords:
-      "NextGen Flight Academy, New to flying, Become a pilot, Pilot training, Flight school, FAA Part 141, FAA Part 61, Flexible flight training, Cessna 172, Cessna 152, Piper Warrior, Beechcraft Duchess, Riverside Municipal Airport, Redlands Municipal Airport, Aviation career, Flight lessons, Discovery flight",
+      "overcome fear of flying, nervous first time flyer, flight training anxiety, motion sickness flying, confident pilot training, patient flight instructor, understanding flight school, supportive aviation environment, first flying lesson what to expect, how to become a pilot in California, pilot license requirements, student pilot certificate process, pilot medical certificate requirements, flight training timeline private pilot, flight training cost breakdown, choosing a flight school, flight instructor selection, pilot training admission requirements, flight school enrollment process, new to flying, become a pilot, student pilot mistakes, NextGen Flight Academy, New to flying, Become a pilot, Pilot training, Flight school, FAA Part 141, FAA Part 61, Flexible flight training, Cessna 172, Cessna 152, Piper Warrior, Beechcraft Duchess, Riverside Municipal Airport, Redlands Municipal Airport, Aviation career, Flight lessons, Discovery flight, beginner pilot training, intro flight lesson Riverside, discovery flight gift certificate, aviation career counseling",
 
     //top header
     header: {
