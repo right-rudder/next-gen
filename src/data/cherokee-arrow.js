@@ -5,7 +5,7 @@ const cherokeeArrow = {
     pageDescription:
       "Fly in one of NextGen Flight Academy's Piper Cherokee Arrow and knock out your commercial and complex training.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Piper Cherokee Arrow PA-28R-180, complex aircraft training, retractable landing gear training, complex endorsement aircraft, commercial pilot training airplane, high-performance aircraft, variable pitch propeller training, advanced flight training aircraft, complex aircraft checkout, instrument rating complex aircraft, commercial pilot checkride aircraft, professional flight training, complex aircraft systems, retractable gear endorsement, high-performance endorsement, NextGen Flight Academy fleet, complex aircraft rental, advanced pilot training, commercial aviation training",
 
     //top header
     header: {

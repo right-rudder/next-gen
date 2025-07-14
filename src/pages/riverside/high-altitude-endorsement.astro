@@ -2,9 +2,16 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import UnderHeader from "../../components/UnderHeader.astro";
 import ProgramInfo from "../../components/ProgramInfo.astro";
+import Breadcrumb from "../../components/Breadcrumb.astro";
 import highAltitudeRiverside from "../../data/high-altitude-endorsement-riverside";
 
 const { data } = highAltitudeRiverside;
+
+const breadcrumbItems = [
+  { name: "Home", href: "/" },
+  { name: "Riverside Programs", href: "/riverside" },
+  { name: "High Altitude Endorsement" },
+];
 ---
 
 <BaseLayout
@@ -12,6 +19,8 @@ const { data } = highAltitudeRiverside;
   siteDescription={data.pageDescription}
   keywords={data.pageKeywords}
 >
+  <Breadcrumb items={breadcrumbItems} />
+
   <!-- HEADER -->
   <div class="h-20 lg:h-24 w-full bg-primary/70 brightness-75"></div>
 

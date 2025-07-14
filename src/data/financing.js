@@ -5,13 +5,13 @@ const financing = {
     pageDescription:
       "Explore financing options and scholarships for aspiring pilots at NextGen Flight Academy. Learn how Stratus Financial, Flight Training Finance, and Surv Credit can help you achieve your aviation dreams.",
     pageKeywords:
-      "NextGen Flight Academy, Pilot financing, Flight training loans, Aviation scholarships, Stratus Financial, Flight Training Finance, Surv Credit, Pilot training funding, Zero to hero financing, Flight school financing options",
+      "flight training financing options, pilot training payment plans, aviation scholarship opportunities, flight training grants, pilot training discounts, flight school with financing options, affordable pilot training near me, flight training cost breakdown, veteran approved flight training, VA benefits flight school, GI Bill flight training, federal financial aid flight school, financing flight training, NextGen Flight Academy, Pilot financing, Flight training loans, Aviation scholarships, Stratus Financial, Flight Training Finance, Surv Credit, Pilot training funding, Zero to hero financing, Flight school financing options, commercial pilot training cost California, private pilot license requirements California, flight training cost California, pilot training admission requirements, flight training enrollment, pilot school registration, aviation program application",
 
     //top header
     header: {
-      imagePath:
-        "/src/assets/pilot-shop-at-nextgen-riverside-airport.jpg",
-      imageAlt: "Find financing options at NextGen Flight Academy in Riverside and Redlands, CA",
+      imagePath: "/src/assets/pilot-shop-at-nextgen-riverside-airport.jpg",
+      imageAlt:
+        "Find financing options at NextGen Flight Academy in Riverside and Redlands, CA",
       headerH1: "Financing",
       headerH2:
         "Learn about financing options and scholarships available to aspiring pilots",

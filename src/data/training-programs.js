@@ -5,7 +5,7 @@ const trainingPrograms = {
     pageDescription:
       "Explore the selection of pilot training programs at NextGen Flight Academy. From private pilot to airline transport pilot, we offer a range of certifications and endorsements to help you achieve your aviation career goals.",
     pageKeywords:
-      "NextGen Flight Academy, Pilot training programs, Flight school Riverside, Flight school Redlands, Private pilot certificate, Instrument rating, Commercial pilot certificate, Multi-engine rating, Certified flight instructor, Airline transport pilot, High performance endorsement, High altitude endorsement, Complex endorsement, Aviation career training",
+      "private pilot license, instrument rating, commercial pilot license, airline transport pilot, certified flight instructor, multi-engine rating, complex endorsement, high performance endorsement, tailwheel endorsement, seaplane rating, flight instructor instrument, CFI training, CFII training, MEI training, ATP training, type rating, recurrent training, biennial flight review, instrument proficiency check, flight review, checkride preparation, ground school, flight training syllabus, accelerated flight training, part 141 training, part 61 training, integrated flight training, modular flight training, zero to hero program, career pilot program, professional pilot training, airline pilot pathway, collegiate flight program, veteran flight training, financing flight training, NextGen Flight Academy, Pilot training programs, Flight school Riverside, Flight school Redlands, Private pilot certificate, Instrument rating, Commercial pilot certificate, Multi-engine rating, Certified flight instructor, Airline transport pilot, High performance endorsement, High altitude endorsement, Complex endorsement, Aviation career training, pilot training California, flight school California, learn to fly California, aviation school California, checkride prep California, professional pilot training California",
 
     //top header
     header: {
@@ -24,7 +24,8 @@ const trainingPrograms = {
         "Submit your enrollment interest today to learn more about our timelines and training structure.",
       ],
       imagePath: "/src/assets/redlands-plane-on-dry-lake.jpg",
-      imageAlt: "Professional pilot landing on a dry lake bed near Redlands, CA",
+      imageAlt:
+        "Professional pilot landing on a dry lake bed near Redlands, CA",
       linkText: "Go from Zero to Hero",
       linkUrl: "/training-programs/career",
     },
@@ -113,8 +114,7 @@ const trainingPrograms = {
           imagePath:
             "/src/assets/nextgen-flight-academy-california-riverside-commercial-checkride .jpg",
           imageAlt: "completing-an-endorsement-at-riverside-airport",
-          description:
-            `The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
+          description: `The Complex Endorsement allows you to fly aircraft with retractable landing gear, flaps, and a controllable pitch propeller. It is required for operating more sophisticated aircraft, which is essential for many advanced piloting roles.`,
           link: "/training-programs/complex-endorsement",
           linkText: "Explore",
         },

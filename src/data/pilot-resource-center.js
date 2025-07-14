@@ -5,7 +5,7 @@ const pilotResources = {
     pageDescription:
       "Access essential resources for pilot training at NextGen Flight Academy. Download FAA publications, study materials, and find out about our comprehensive training programs at Riverside and Redlands airports.",
     pageKeywords:
-      "NextGen Flight Academy, FAA publications, Pilot training resources, Flight school Riverside, Flight school Redlands, Private pilot training, Instrument rating, Commercial pilot license, Flight instructor certification, Aviation study materials, Pilot handbooks, Aeronautical charts, Aviation weather, Career track pilot training",
+      "pilot resource center, aviation study materials, FAA pilot handbooks, flight training resources, pilot education materials, aviation reference guides, flight training manuals, pilot study guides, aeronautical charts resources, weather resources pilots, aircraft performance data, flight planning resources, aviation regulations resources, pilot certification materials, flight instructor resources, commercial pilot resources, instrument rating resources, aviation safety resources, pilot training downloads, NextGen Flight Academy resources",
 
     //top header
     header: {
@@ -151,8 +151,7 @@ const pilotResources = {
             {
               title: "",
               description: "Information on weather services for pilots.",
-              imagePath:
-                "/src/assets/aviation-weather-services-guide.jpg",
+              imagePath: "/src/assets/aviation-weather-services-guide.jpg",
               imageAlt: "NOAA FAA Aviation Weather Services Cover",
               link: "https://www.faa.gov/documentlibrary/media/advisory_circular/ac_00-45g_chg_1-2.pdf",
               linkText: "Download",
@@ -216,8 +215,7 @@ const pilotResources = {
               title: "",
               description:
                 "Compilation of Federal Aviation Regulations and Aeronautical Information.",
-              imagePath:
-                "/src/assets/Aeronautical Information Manual.jpeg",
+              imagePath: "/src/assets/Aeronautical Information Manual.jpeg",
               imageAlt: "Aeronautical Information Manual",
               link: "https://www.faa.gov/Air_traffic/publications/media/AIM-Basic-w-Chg1-and-Chg2-dtd-3-21-24.pdf",
               linkText: "Download",
@@ -226,8 +224,7 @@ const pilotResources = {
               title: "",
               description:
                 "Instructions on reading and using aeronautical charts.",
-              imagePath:
-                "/src/assets/Aeronautical-Chart-Users-Guide.jpg",
+              imagePath: "/src/assets/Aeronautical-Chart-Users-Guide.jpg",
               imageAlt: "Aeronautical Chart User Guide Cover",
               link: "https://aeronav.faa.gov/user_guide/20240516/cug-complete.pdf",
               linkText: "Download",

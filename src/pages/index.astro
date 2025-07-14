@@ -11,7 +11,8 @@ import QuizCTA from "../components/QuizCTA.astro";
 import BlogFeed from "../components/BlogFeed.astro";
 import BookDownload from "../components/BookDownload.astro";
 import ImageComp from "../components/ImageComp.astro";
-
+import FAQSection from "../components/FAQSection.astro";
+import { flightTrainingFAQs } from "../data/faqs.js";
 
 const { data } = homePage;
 ---
@@ -81,6 +82,12 @@ const { data } = homePage;
   <Testimonials content={data.testimonials} />
 
   <QuizCTA content={data.quizCTA} />
+
+  <FAQSection
+    faqs={flightTrainingFAQs.slice(0, 8)}
+    heading="Frequently Asked Questions"
+    subheading="Get answers to common questions about flight training at NextGen Flight Academy"
+  />
 
   <BlogFeed data={data.blogFeed} />
 
