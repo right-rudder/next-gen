@@ -5,7 +5,7 @@ const ourFleet = {
     pageDescription:
       "Explore the diverse fleet of training aircraft at NextGen Flight Academy, including Cessna 172s, Piper Cherokee Arrow, Beechcraft Duchess, and more. Learn to fly with the best in Riverside and Redlands, CA.",
     pageKeywords:
-      "NextGen Flight Academy, Our fleet, Training aircraft, Cessna 172, Piper Cherokee Arrow, Beechcraft Duchess, Redbird Simulator, Flight training, Pilot training fleet, Riverside Municipal Airport, Redlands Municipal Airport, Learn to fly, Aviation training, Flight school aircraft",
+      "Cessna 152 training, Cessna 172 training, Cessna 172 glass cockpit, Piper Warrior training, Piper Cherokee Arrow, Beechcraft Duchess training, multi-engine aircraft training, complex aircraft training, high performance aircraft training, retractable gear training, constant speed propeller training, turbo aircraft training, glass cockpit training, G1000 training, steam gauge training, analog instrument training, digital instrument training, flight simulator training, Redbird simulator, FAA approved flight simulator, instrument training device, basic aircraft training device, advanced aircraft training device, NextGen Flight Academy, Our fleet, Training aircraft, Cessna 172, Piper Cherokee Arrow, Beechcraft Duchess, Redbird Simulator, Flight training, Pilot training fleet, Riverside Municipal Airport, Redlands Municipal Airport, Learn to fly, Aviation training, Flight school aircraft, modern aircraft fleet, professional flight environment, aircraft rental requirements, aircraft checkout procedures, twin engine training, single engine training",
 
     //top header
     header: {

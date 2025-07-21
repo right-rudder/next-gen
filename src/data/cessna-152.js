@@ -5,7 +5,7 @@ const cessna152 = {
     pageDescription:
       "Fly in NextGen Flight Academy's Cessna 152 and get started in your initial certifications and ratings.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Cessna 152 training aircraft, two-seater training plane, student pilot aircraft, beginner training airplane, primary flight training aircraft, aviation training fleet, flight school aircraft rental, Cessna 152 specifications, aircraft checkout training, dual control training plane, flight training equipment, affordable training aircraft, basic flight training plane, private pilot training aircraft, instrument panel familiarization, pre-solo training aircraft, flight instruction airplane, NextGen Flight Academy fleet, learn to fly Cessna 152, training aircraft rental Riverside",
 
     //top header
     header: {

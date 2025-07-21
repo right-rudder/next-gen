@@ -1,0 +1,69 @@
+---
+interface FAQ {
+  question: string;
+  answer: string;
+}
+
+interface Props {
+  faqs: FAQ[];
+  heading?: string;
+  subheading?: string;
+}
+
+const {
+  faqs,
+  heading = "Frequently Asked Questions",
+  subheading = "Find answers to common questions about flight training at NextGen Flight Academy",
+} = Astro.props;
+---
+
+<section class="py-16 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">{heading}</h2>
+      <p class="mt-4 text-lg text-gray-600">{subheading}</p>
+    </div>
+
+    <div class="space-y-6">
+      {
+        faqs.map((faq, index) => (
+          <div class="bg-gray-50 rounded-lg p-6">
+            <div class="flex items-start">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-8 w-8 rounded-full bg-primary text-white text-sm font-medium">
+                  {index + 1}
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  {faq.question}
+                </h3>
+                <p
+                  class="text-gray-700 leading-relaxed"
+                  set:html={faq.answer}
+                />
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Schema.org Structured Data -->
+<script
+  type="application/ld+json"
+  set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer.replace(/<[^>]*>/g, ""), // Strip HTML for schema
+      },
+    })),
+  })}
+/>

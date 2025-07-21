@@ -5,7 +5,7 @@ const quizForm = {
     pageDescription:
       "Take the Pilot Readiness Quiz from NextGen Flight Academy to find out if you have what it takes to become a pilot. Evaluate your skills and readiness for flight training.",
     pageKeywords:
-      "NextGen Flight Academy, Pilot readiness quiz, Flight training quiz, Become a pilot, Pilot aptitude test, Flight school evaluation, Pilot training readiness, Aviation career, Pilot skills assessment, Flight school quiz",
+      "pilot readiness quiz, am I ready to be a pilot, pilot aptitude test, flight training readiness assessment, should I become a pilot quiz, pilot skills evaluation, aviation career assessment, pilot training quiz, flight school readiness test, become a pilot assessment, pilot career quiz, aviation aptitude test, flight training evaluation, pilot training readiness, aviation career readiness, flight school assessment quiz, pilot training preparation, aviation career evaluation, discover pilot potential",
 
     //top header
     header: {

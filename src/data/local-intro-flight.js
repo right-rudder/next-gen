@@ -1,4 +1,13 @@
 const localIntroFlight = {
+  data: {
+    //SEO Header Stuff
+    pageTitle: "Local Intro Flight | NextGen Flight Academy",
+    pageDescription:
+      "Take a local intro flight over beautiful Riverside and Lake Mathews. Perfect introduction to flying with certified flight instructor and ground instruction.",
+    pageKeywords:
+      "local intro flight Riverside, discovery flight Riverside California, intro flight Lake Mathews, learn to fly Riverside, discovery flight Redlands, local scenic flight, flight training introduction Riverside, pilot training experience, NextGen Flight Academy intro flights, book intro flight Riverside, affordable intro flight, first flying experience, flight lesson Riverside, aviation experience gift, learn to fly experience, introductory flight lesson, pilot training introduction, flight school intro flight",
+  },
+
   header: {
     headerH1: "Local Intro Flight",
     headerH2: "Book an Introductory Flight at NextGen Flight Academy",

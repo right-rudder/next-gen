@@ -5,7 +5,7 @@ const redbirdSimulator = {
     pageDescription:
       "Train and perfect your craft and flight training with our Redbird Simulator at NextGen Flight Academy in Riverside, CA.",
     pageKeywords:
-      "NextGen Flight Academy, Flight school Riverside, California; Flight school Redlands, California; Learn to fly Riverside, California; Learn to fly Redlands, California; Pilot training Riverside, California; Pilot training Redlands, California; Flight lessons Riverside, California; Flight lessons Redlands, California; Riverside Redlands flight school; Inland Empire flight school; Flight training; Pilot training; Flight instruction; Flight lessons; Airplane lessons; Private pilot license (PPL) training; Instrument rating training; Commercial pilot license (CPL) training; Certified Flight Instructor (CFI) training",
+      "Redbird flight simulator, aircraft flight simulator training, instrument flight simulator, flight simulation training, virtual flight training, simulator instrument training, weather flying simulation, emergency procedures training, IFR flight simulator, flight safety training simulator, advanced flight simulation, pilot proficiency training, instrument approach training, flight training technology, realistic flight simulation, NextGen Flight Academy simulator, cost-effective flight training, flight simulator sessions, aviation simulation training, instrument rating simulator",
 
     //top header
     header: {

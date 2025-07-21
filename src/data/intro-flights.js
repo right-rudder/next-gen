@@ -5,7 +5,7 @@ const introFlights = {
     pageDescription:
       "Experience the thrill of flying with NextGen Flight Academy's intro flights. Choose from local flights, flight lessons, and scenic routes over Disneyland, Dana Point, and Catalina Island.",
     pageKeywords:
-      "NextGen Flight Academy, Intro flights, Discovery flights, Local intro flight, Flight lesson, Disneyland intro flight, Dana Point intro flight, Catalina intro flight, Scenic flights, Flight training, Learn to fly, Aviation experience",
+      "flight training enrollment, pilot school registration, aviation program application, flight lesson booking, discovery flight scheduling, intro flight reservation, pilot training consultation, flight school tour, meet the instructor, discovery flight gift certificate, intro flight lesson Riverside, first flying lesson what to expect, discovery flight California, intro flight Riverside, intro flight Redlands, NextGen Flight Academy, Intro flights, Discovery flights, Local intro flight, Flight lesson, Disneyland intro flight, Dana Point intro flight, Catalina intro flight, Scenic flights, Flight training, Learn to fly, Aviation experience, flight training financing options, pilot training payment plans, aviation scholarship opportunities, flight training grants, pilot training discounts, group flight training rates, corporate aviation training packages, accelerated pilot program enrollment, career pilot consultation",
 
     //top header
     header: {
