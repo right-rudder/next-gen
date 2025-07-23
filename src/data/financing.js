@@ -22,7 +22,7 @@ const financing = {
         provider: "Stratus Financial",
         providerDescription:
           "NextGen Flight Academy has partnered with Stratus Financial to offer financing packages to take you from your first flight to the airlines. This is our recommended financing option, especially if you’re looking for a complete “zero to hero” package.",
-        imagePath: "/financing/Stratus_financial_logo.webp",
+        imagePath: "/src/assets/stratus-logo.png",
         imageAlt: "Straus Financial Logo",
         linkText: "Learn More",
         linkUrl: "https://stratus.finance/apply/nextgenflightacademy/",
