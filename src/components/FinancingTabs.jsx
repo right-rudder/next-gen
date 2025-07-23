@@ -53,7 +53,7 @@ const FinancingTabs = () => {
             </h3>
           </div>
           <img
-            src="/financing/Stratus_financial_logo.webp"
+            src="/src/assets/stratus-logo.png"
             alt="Stratus Financial logo"
             className="h-16 md:h-20"
           />
