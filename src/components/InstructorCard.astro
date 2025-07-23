@@ -3,11 +3,11 @@ const { name, imagePath, imageAlt, rank = "CFI" } = Astro.props;
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
 );
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
   );
 ---
 
@@ -29,7 +29,7 @@ if (!images[imagePath])
   </h3>
   <p
     class="text-lg leading-6 font-sans1 text-gray-600 group-hover:scale-110 duration-200 delay-100 ease-in-out"
-  >
-    {rank}
+    set:html={rank ? `<strong>${rank}</strong>` : ""}
+    >
   </p>
 </li>
