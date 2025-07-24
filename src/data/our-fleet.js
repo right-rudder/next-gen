@@ -31,7 +31,7 @@ const ourFleet = {
               "/fleet/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt: "Cessna 172 at Riverside Airport",
             description:
-              "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
+              "The Cessna 172L is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
             link: "/our-fleet/cessna-172",
             linkText: "Details",
           },
