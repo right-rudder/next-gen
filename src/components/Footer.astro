@@ -21,6 +21,9 @@ import logo from "../assets/NG Logo White Background 2.png";
 import { Image } from "astro:assets";
 import ImageComp from "./ImageComp.astro";
 
+const date = new Date();
+const year = date.getFullYear();
+
 const { pathname } = Astro.url;
 ---
 
@@ -230,7 +233,7 @@ const { pathname } = Astro.url;
       class="mx-auto flex flex-col gap-2 lg:flex-row justify-between items-center align-middle max-w-6xl"
     >
       <p class="text-sm text-gray-100 text-center">
-        © Copyright 2024 NextGen Flight Academy. All rights reserved.
+        © Copyright {year} NextGen Flight Academy. All rights reserved.
       </p>
       <span class="text-white text-center flex gap-2">
         Powered by
