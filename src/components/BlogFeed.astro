@@ -4,7 +4,7 @@ import BlogPostCard from "./BlogPostCard.astro";
 import FormattedDate from "./FormattedDate.astro";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 const { data } = Astro.props;
@@ -23,7 +23,7 @@ const { data } = Astro.props;
       </p>
     </div>
     <div
-      class={`flex justify-center align-middle items-center mx-auto mt-16 gap-8 sm:mt-20 lg:mx-0`}
+      class={`flex flex-col md:flex-row  justify-center align-middle items-center mx-auto mt-16 gap-8 sm:mt-20 lg:mx-0`}
     >
       {
         posts.slice(0, 3).map((post, index) => (
