@@ -24,10 +24,11 @@ const ourFleet = {
           "The NextGen Flight Academy fleet includes Cessna 172s, Piper Arrow, Cessna 120, Duchess, and a Cessna 152. Thorough VFR and IFR checkout flights are mandatory. An FAA Flight Review can be added with minimal extra time. Renters and students must carry renters insurance.",
         aircraft: [
           {
-            title: "Cessna 172",
+            title: "Cessna 172L",
             normalRate: 169.0,
             blockRate: 159.0,
-            imagePath: "/fleet/N7320J-cessna-172-side.jpg",
+            imagePath:
+              "/fleet/N7815C-cessna-nextgen-flight-academy-learn-to-fly-redlands-ca.jpg",
             imageAlt: "Cessna 172 at Riverside Airport",
             description:
               "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling.",
