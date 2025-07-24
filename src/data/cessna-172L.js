@@ -44,7 +44,7 @@ const cessna172L = {
       documentation: [
         {
           docTitle: "Pilot Operating Handbook",
-          docUrl: "/Cessna-172H-1967-POH.pdf",
+          docUrl: "/C172L-POH.pdf",
         },
         {
           docTitle: "Weight & Balance",
@@ -59,7 +59,7 @@ const cessna172L = {
       ],
       description:
         "The Cessna 172L is a variant of the Cessna 172, featuring a more streamlined design and minor performance improvements. This model retains the core attributes of the 172 series, such as the high-wing configuration and stable flight characteristics, making it well-suited for both primary and advanced flight training. The 172L includes enhancements like improved aerodynamics and slightly better fuel efficiency, which benefit both instructors and students during long training sessions.",
-      link: "/our-fleet/cessna-172",
+      link: "/our-fleet/cessna-172L",
       linkText: "Details",
     },
 
