@@ -18,7 +18,7 @@ const cessna172 = {
     },
 
     aircraft: {
-      title: "Cessna 172",
+      title: "Cessna 172L",
       normalRate: 154.99,
       blockRate: 149.99,
       location: [
@@ -47,7 +47,7 @@ const cessna172 = {
       documentation: [
         {
           docTitle: "Pilot Operating Handbook",
-          docUrl: "/Cessna-172H-1967-POH.pdf",
+          docUrl: "/C172L-POH.pdf",
         },
         {
           docTitle: "Weight & Balance",
@@ -61,7 +61,7 @@ const cessna172 = {
         },
       ],
       description:
-        "The Cessna 172 Skyhawk is a four-seat, single-engine, high-wing aircraft. Known for its reliability and ease of handling, it is the most popular aircraft for flight training. Its stable flight characteristics, simple control systems, and forgiving landing gear make it ideal for student pilots. Features include a high-wing design for excellent visibility, sturdy tricycle landing gear, and a robust airframe that can withstand the rigors of frequent training flights.",
+        "The Cessna 172L is a variant of the Cessna 172, featuring a more streamlined design and minor performance improvements. This model retains the core attributes of the 172 series, such as the high-wing configuration and stable flight characteristics, making it well-suited for both primary and advanced flight training. The 172L includes enhancements like improved aerodynamics and slightly better fuel efficiency, which benefit both instructors and students during long training sessions.",
       link: "/our-fleet/cessna-172",
       linkText: "Details",
     },
