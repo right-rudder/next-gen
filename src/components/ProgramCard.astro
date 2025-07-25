@@ -1,6 +1,6 @@
 ---
 import type { ImageMetadata } from "astro";
-import { Image } from "astro:assets";
+import ImageComp from "./ImageComp.astro";
 
 const {
   title,
@@ -11,11 +11,11 @@ const {
   description,
 } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}"
+  "/src/assets/*.{jpeg,jpg,png,gif}",
 );
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
   );
 ---
 
@@ -35,11 +35,10 @@ if (!images[imagePath])
         />
       )
     }
-    <Image
-      src={images[imagePath]()}
-      alt={imageAlt}
-      class="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-105 duration-100 ease-out"
-      quality={60}
+    <ImageComp
+      imagePath={imagePath}
+      imageAlt={imageAlt}
+      styles="absolute -z-0 h-full w-full object-cover group-hover:-translate-y-3 group-hover:scale-105 duration-100 ease-out"
     />
     <div
       class="absolute z-0 w-full h-full bg-black/30 group-hover:bg-black/50 duration-500"
