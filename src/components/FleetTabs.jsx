@@ -47,7 +47,7 @@ const FleetTabs = ({ data }) => {
           ))}
         </div>
       </div>
-      <section className="bg-gray-200 py-16 lg:py-24">
+      <section className="bg-gray-50 py-16 lg:py-24">
         <div className="mx-auto text-center mb-16">
           <h3 className="font-bold text-5xl text-primary">
             {currentTab.location}

@@ -29,8 +29,7 @@ const { data } = homePage;
     <h3
       class="text-gray-100 text-center mt-2 font-normal font-sans1 text-base tracking-wide uppercase group"
     >
-      Voted as an <strong
-        class="text-primary group-hover:text-accent duration-700 ease-in-out"
+      Voted as an <strong class="text-accent duration-700 ease-in-out"
         >AOPA Distinguished Flight School</strong
       > 3 years in a row!
     </h3>
@@ -39,6 +38,7 @@ const { data } = homePage;
         href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
         target="_self"
         class="flex flex-col items-center group"
+        aria-label="Check our blog post - 3 years a charm aopa honors nextgen flight academy for third time running"
       >
         <ImageComp
           imagePath="/src/assets/2023_FTExperience_DistinguishedBadge_Flight-School_FINAL.png"
@@ -50,6 +50,7 @@ const { data } = homePage;
         href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
         target="_self"
         class="flex flex-col items-center group"
+        aria-label="Check our blog post - 3 years a charm aopa honors nextgen flight academy for third time running"
       >
         <ImageComp
           imagePath="/src/assets/2024_FTExperience_DistinguishedBadge_Flight-School_FINAL.png"
@@ -61,6 +62,7 @@ const { data } = homePage;
         href="/blog/three-years-a-charm-aopa-honors-nextgen-flight-academy-for-third-time-running/"
         target="_self"
         class="flex flex-col items-center group"
+        aria-label="Check our blog post - 3 years a charm aopa honors nextgen flight academy for third time running"
       >
         <ImageComp
           imagePath="/src/assets/2025_FTExperience_DistinguishedBadge_Flight-School.png"
@@ -96,4 +98,4 @@ const { data } = homePage;
     <GoogleMaps data={data.gMaps[1]} />
   </section>
 </BaseLayout>
-<script src="../scripts/creativeSlider.js"></script>
+<script src="../scripts/creativeSlider.js" defer></script>
