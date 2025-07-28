@@ -9,6 +9,12 @@ import partytown from "@astrojs/partytown";
 // https://astro.build/config
 export default defineConfig({
   site: "https://flyhere.aero/",
+  vite: {
+    build: {
+      cssCodeSplit: true,
+      minify: true,
+    },
+  },
   integrations: [
     mdx(),
     sitemap({
