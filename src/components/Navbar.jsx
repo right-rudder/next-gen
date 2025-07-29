@@ -55,11 +55,11 @@ const Navbar = ({ pathname }) => {
           item.link + "/" === pathname ||
           item.subsubmenu?.some(
             (subItem) =>
-              subItem.link === pathname || subItem.link + "/" === pathname
-          )
+              subItem.link === pathname || subItem.link + "/" === pathname,
+          ),
       ) ||
       menuItem?.subsubmenu?.some(
-        (item) => item.link === pathname || item.link + "/" === pathname
+        (item) => item.link === pathname || item.link + "/" === pathname,
       ) ||
       menuItem.link === pathname ||
       menuItem.link + "/" === pathname;
@@ -169,7 +169,7 @@ const Navbar = ({ pathname }) => {
                                             {subsubitem.name}
                                           </a>
                                         </li>
-                                      )
+                                      ),
                                     )}
                                   </ul>
                                 )}
@@ -265,7 +265,7 @@ const Navbar = ({ pathname }) => {
             alt="NextGen Flight Academy Logo"
             aria-label="NextGen Flight Academy Logo"
             title="NextGen Flight Academy Logo"
-            className="object-contain h-24 w-auto drop-shadow-sm"
+            className="object-contain h-24 drop-shadow-sm w-full max-w-[240px]"
           />
         </a>
 
@@ -364,10 +364,13 @@ const Navbar = ({ pathname }) => {
             <a
               href={`tel:${PHONE_NUMBER}`}
               className="border p-2 w-fit border-white rounded-full bg-white"
+              aria-label="Phone"
             >
               <FaPhone className="size-4 text-accent" />
             </a>
-            <a href={`tel:${PHONE_NUMBER}`}>{PHONE_NUMBER}</a>
+            <a href={`tel:${PHONE_NUMBER}`} aria-label="Phone">
+              {PHONE_NUMBER}
+            </a>
           </div>
 
           <div className="flex gap-3 mt-2 mb-16">

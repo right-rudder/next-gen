@@ -2,13 +2,15 @@
 import { Image } from "astro:assets";
 import type { ImageMetadata } from "astro";
 
+import ImageComp from "./ImageComp.astro";
+
 const { content } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif,webp}"
+  "/src/assets/*.{jpeg,jpg,png,gif,webp}",
 );
 if (!images[content.imagePath]) {
   throw new Error(
-    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,webp}"`,
   );
 }
 ---
@@ -16,11 +18,11 @@ if (!images[content.imagePath]) {
 <div
   class="relative h-screen-3/4 lg:min-h-[90vh] bg-gray-800 text-white flex flex-col items-center justify-center overflow-hidden"
 >
-  <Image
-    src={images[content.imagePath]()}
-    alt={content.imageAlt}
+  <ImageComp
+    imagePath={content.imagePath}
+    imageAlt={content.imageAlt}
     loading={"eager"}
-    class="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
+    styles="absolute inset-0 -z-0 object-cover object-center w-full h-full animate-slow-zoom"
   />
   <div
     class="absolute bg-gradient-to-b from-slate-950/20 via-50% via-slate-950/70 to-slate-950/40 w-full h-full z-0"

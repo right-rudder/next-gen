@@ -4,11 +4,11 @@ import { Image } from "astro:assets";
 
 const { content } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  "/src/assets/*.{jpeg,jpg,png,gif}"
+  "/src/assets/*.{jpeg,jpg,png,gif}",
 );
 if (!images[content.imagePath])
   throw new Error(
-    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${content.imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`,
   );
 ---
 
@@ -24,7 +24,7 @@ if (!images[content.imagePath])
     <div
       class="w-full lg:w-1/2 flex flex-col justify-center align-middle items-center lg:items-start p-4 lg:p-8 text-center lg:text-left"
     >
-      <h4
+      <h3
         class="px-4 text-6xl lg:text-8xl font-sans2 font-bold tracking-tight text-primary text-center lg:text-left"
         set:html={content.heading}
       />

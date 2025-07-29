@@ -12,7 +12,7 @@ const { content } = Astro.props;
     <div class="">
       {
         content.upperHeading && (
-          <h2 class="mx-auto uppercase text-lg lg:text-xl lg:max-w-3xl font-sans1 text-center font-bold tracking-tight text-accent">
+          <h2 class="mx-auto uppercase text-lg lg:text-xl lg:max-w-3xl font-sans1 text-center font-bold tracking-tight text-gray-50">
             {content.upperHeading}
           </h2>
         )
@@ -32,13 +32,15 @@ const { content } = Astro.props;
       >
         {
           content.cards.map((card) => (
-            <NavCard
-              title={card.title}
-              imagePath={card.imagePath}
-              imageAlt={card.imageAlt}
-              description={card.description}
-              link={card.link}
-            />
+            <li>
+              <NavCard
+                title={card.title}
+                imagePath={card.imagePath}
+                imageAlt={card.imageAlt}
+                description={card.description}
+                link={card.link}
+              />
+            </li>
           ))
         }
       </ul>
