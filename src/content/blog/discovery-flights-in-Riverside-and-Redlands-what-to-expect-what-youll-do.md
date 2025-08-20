@@ -35,7 +35,7 @@ A discovery flight is your first, hands-on lesson with a certified instructor. Y
 
 ## Why do it with NextGen Flight Academy?
 
-- **Two convenient airports: Riverside Municipal (KRAL) & Redlands Municipal (KREI)—great airspace for new pilots and year-round flying.
+- **Two convenient airports:** Riverside Municipal (KRAL) & Redlands Municipal (KREI)—great airspace for new pilots and year-round flying.
 
 - **Modern training tools:** Access to a Redbird simulator for procedures and instrument practice to reinforce what you learn in the air.
 
