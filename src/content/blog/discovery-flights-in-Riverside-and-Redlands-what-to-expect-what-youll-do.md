@@ -81,6 +81,6 @@ A discovery flight is the most motivating way to find out if flying is for you. 
 
 **Ready to write your own aviation story?**
 
-👉 [Book your Discovery Flight today](/intro-flight/) or visit [FlyHere.aero](/) to speak with a training advisor.
+👉 [Book your Discovery Flight today](/intro-flight/) or [Contact Us](/contact) to speak with a training advisor.
 
 _Take the first step toward your aviation dreams!_
