@@ -2,7 +2,7 @@ const homePage = {
   data: {
     //SEO Header Stuff - Enhanced for 2025
     pageTitle:
-      "Part 141/61 & Multi-Engine Training | NextGen Flight Academy | Riverside & Redlands, CA",
+      "Part 141 & Part 61 Flight Training | NextGen Flight Academy | Riverside & Redlands, CA",
     pageDescription:
       "NextGen Flight Academy offers premier Part 141 and 61 training, multi-engine rating, and comprehensive pilot certification programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days per year, FAA Part 141/61 approved training, and specialized high altitude/mountain flying expertise in California's diverse terrain, our academy provides top-tier aviation education. Experience professional flight training from Private Pilot to ATP with expert CFIs, modern aircraft fleet, and proven 95% checkride pass rate.",
     pageKeywords:
