@@ -1,17 +1,17 @@
 // CHANGE Default title - Enhanced with primary keywords
 export const SITE_TITLE =
-  "High Altitude & Mountain Flying Training | NextGen Flight Academy | Riverside & Redlands, CA";
+  "Part 141/61 & Multi-Engine Training  | NextGen Flight Academy | Riverside & Redlands, CA";
 
 // CHANGE default meta description - Enhanced with target keywords and location focus
 export const SITE_DESCRIPTION =
-  "NextGen Flight Academy offers premier high altitude endorsement, mountain flying training, and comprehensive pilot certification programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days per year, FAA Part 141/61 approved training, and specialized high altitude/mountain flying expertise in California's diverse terrain, our academy provides top-tier aviation education and flexible scheduling. Experience professional flight training from Private Pilot to ATP with expert CFIs, modern aircraft fleet, and proven 95% checkride pass rate.";
+  "NextGen Flight Academy offers premier Part 141 and 61 training, multi-engine rating, and comprehensive pilot certification programs at Riverside Municipal Airport (KRAL) and Redlands Municipal Airport (KREI). With 320 flying days per year, FAA Part 141/61 approved training, and specialized high altitude/mountain flying expertise in California's diverse terrain, our academy provides top-tier aviation education and flexible scheduling. Experience professional flight training from Private Pilot to ATP with expert CFIs, modern aircraft fleet, and proven 95% checkride pass rate.";
 
 // ===== COMPREHENSIVE KEYWORD STRATEGY =====
 // Organized by search intent, competition level, and conversion potential
 
 // PRIMARY KEYWORDS - High value, high intent, brand focus
 export const PRIMARY_KEYWORDS =
-  "NextGen Flight Academy, high altitude endorsement, mountain flying training, flight school Riverside CA, flight school Redlands CA, pilot training California";
+  "NextGen Flight Academy, Part 141, Part 61, multi-engine rating, high altitude endorsement, mountain flying training, flight school Riverside CA, flight school Redlands CA, pilot training California";
 
 // AVIATION TRAINING FOCUS - Core flight training terms
 export const AVIATION_TRAINING_KEYWORDS =
