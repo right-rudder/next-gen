@@ -1,6 +1,6 @@
 // CHANGE Default title - Enhanced with primary keywords
 export const SITE_TITLE =
-  "Part 141 & Part 61 Flight Training  | NextGen Flight Academy | Riverside & Redlands, CA";
+  "Part 141 & Part 61 Flight Training | NextGen Flight Academy | Riverside & Redlands, CA";
 
 // CHANGE default meta description - Enhanced with target keywords and location focus
 export const SITE_DESCRIPTION =
