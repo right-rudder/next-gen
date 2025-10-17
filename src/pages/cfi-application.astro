@@ -1,0 +1,336 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { TfiEmail } from "react-icons/tfi";
+import cfiApplication from "../data/cfi-application";
+
+const { data } = cfiApplication;
+
+import {
+  PHONE_NUMBER,
+  AIRPORT,
+  ADDRESS_LINE_1,
+  ADDRESS_LINE_2,
+  EMAIL_ADDRESS,
+} from "../consts";
+import GoogleMaps from "../components/GoogleMaps.astro";
+
+const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env
+  .CFI_APPLICATION_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <section
+    class="px-6 pt-12 pb-16 lg:pb-4 min-h-screen bg-gradient-to-tr from-primary/40 to-primary/70"
+  >
+    <div class="max-w-7xl mx-auto">
+      <div class="flex flex-wrap justify-center align-top items-start">
+        <div
+          class="order-last w-full lg:w-1/4 lg:order-first px-8 text-right mt-16"
+        >
+          <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+            {data.locations[0].title}
+          </h3>
+          <a href={data.locations[0].gMaps}>
+            <div class="flex justify-end gap-3 mt-5 hover:underline">
+              <p class="text-gray-50">
+                {data.locations[0].address}<br />{data.locations[0].city}, {
+                  data.locations[0].state
+                }
+                {data.locations[0].zip}
+              </p>
+              <IoLocationOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+            </div>
+          </a>
+          <a href={`tel:${data.locations[0].phone}`}>
+            <div class="flex justify-end gap-3 mt-5 hover:underline">
+              <p class="text-gray-50">{data.locations[0].phone}</p>
+              <IoPhonePortraitOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+            </div>
+          </a>
+        </div>
+        <form
+          id="contact-form"
+          class="flex flex-col rounded-b-xl max-w-2xl mx-auto gap-5 mt-8 lg:mt-12 p-4 lg:p-12 bg-white/30 w-full lg:w-1/2 shadow-xl h-full"
+        >
+          <h2
+            class="text-primary-dark text-5xl font-extrabold mx-auto w-fit text-center"
+          >
+            APPLY NOW <br /> AND HELP US TEACH THE NEXT GENERATION OF PILOTS
+          </h2>
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              type="text"
+              name="first-name"
+              placeholder="Your first name"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+              required
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Your last name"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+              required
+            />
+          </div>
+          <div class="flex flex-col lg:flex-row gap-5">
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+              required
+            />
+            <input
+              type="email"
+              name="confirm-email"
+              placeholder="Confirm email"
+              class="hidden px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+            />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Your phone number"
+              class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+              required
+            />
+          </div>
+
+          <textarea
+            required
+            name="message"
+            placeholder="Your message"
+            class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 min-h-48 placeholder:text-primary/60"
+          ></textarea>
+
+          <div class="">
+            <div class="mt-10 space-y-10"></div>
+            <fieldset
+              class="flex flex-col justify-center items-center align-middle mt-4"
+            >
+              <legend class="mb-2 text-gray-800 text-center w-full">
+                Do you have a preference for one of NextGen Flight Academy
+                airports?
+              </legend>
+
+              <div>
+                <div>
+                  <input
+                    type="radio"
+                    class="mx-2"
+                    id="yes-visit"
+                    name="visit-nextgen"
+                    value="yes-visit"
+                    required
+                  />
+                  <label for="yes-visit">Yes</label>
+                </div>
+                <input
+                  type="radio"
+                  class="mx-2"
+                  id="no-visit"
+                  name="visit-nextgen"
+                  value="no-visit"
+                  required
+                />
+                <label for="no-visit">No</label>
+              </div>
+            </fieldset>
+            <div
+              id="location-container"
+              class="hidden flex-col justify-center items-center align-middle"
+            >
+              <label for="visit-location">Choose a location:</label>
+
+              <select
+                name="visit-location"
+                id="visit-location"
+                class="w-36 px-3 py-2 border border-gray-400 text-center"
+              >
+                <option value="riverside">Riverside</option>
+                <option value="redlands">Redlands</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="flex gap-3">
+            <input
+              type="checkbox"
+              name="agree-data-collection"
+              id="agree-data-collection"
+            />
+
+            <label
+              for="agree-data-collection"
+              class="text-gray-800 text-sm lg:text-base"
+            >
+              {data.checkboxText}
+            </label>
+          </div>
+          <button
+            id="submit-button"
+            form="contact-form"
+            disabled
+            type="submit"
+            class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
+            >Send message</button
+          >
+        </form>
+        <div class="w-full lg:w-1/4 px-8 text-left mt-16">
+          <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+            {data.locations[1].title}
+          </h3>
+          <a href={data.locations[1].gMaps}>
+            <div class="flex justify-start gap-3 mt-5 hover:underline">
+              <IoLocationOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+              <p class="text-gray-50">
+                {data.locations[1].address}<br />{data.locations[1].city}, {
+                  data.locations[1].state
+                }
+                {data.locations[1].zip}
+              </p>
+            </div>
+          </a>
+          <a href={`tel:${data.locations[1].phone}`}>
+            <div class="flex justify-start gap-3 mt-5 hover:underline">
+              <IoPhonePortraitOutline
+                className="lg:size-8 size-6 text-primary-dark"
+              />
+              <p class="text-gray-50">{data.locations[1].phone}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full flex flex-wrap overflow-hidden">
+    <GoogleMaps data={data.gMaps[0]} />
+    <GoogleMaps data={data.gMaps[1]} />
+  </section>
+
+  <script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+    const checkbox = document.getElementById("agree-data-collection");
+    const submitButton = document.getElementById("submit-button");
+    const yesVisit = document.getElementById("yes-visit");
+    const noVisit = document.getElementById("no-visit");
+
+    yesVisit.addEventListener("change", function () {
+      if (yesVisit.checked) {
+        document
+          .getElementById("location-container")
+          .classList.remove("hidden");
+        document.getElementById("location-container").classList.add("flex");
+      } else {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    noVisit.addEventListener("change", function () {
+      if (noVisit.checked) {
+        document.getElementById("location-container").classList.add("hidden");
+      }
+    });
+
+    checkbox.addEventListener("change", function () {
+      if (checkbox.checked) {
+        submitButton.disabled = false;
+        submitButton.classList.remove(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      } else {
+        submitButton.disabled = true;
+        submitButton.classList.add(
+          "cursor-not-allowed",
+          "bg-gray-400",
+          "hover:bg-gray-400",
+        );
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("contact-form");
+      if (!form) {
+        console.error("Form element not found.");
+        return;
+      }
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const confirmEmail = formData.get("confirm-email")?.trim();
+
+        if (confirmEmail) return;
+
+        const webhookURL = CONTACT_US_FORM_WEBHOOK_URL;
+        const apiKey = PORTAL_API_KEY;
+
+        const urlEncodedBody = new URLSearchParams(formData).toString();
+
+        const jsonBody = {
+          first_name: formData.get("first-name")?.trim() || "",
+          last_name: formData.get("last-name")?.trim() || "",
+          email: formData.get("email")?.trim() || "",
+          phone: formData.get("phone")?.trim() || "",
+          campaign: "contact_us",
+          account_random_id: "ac_vwzfezsv",
+          metadata: {
+            message: formData.get("message")?.trim() || "",
+            visit_nextgen: formData.get("visit-nextgen")?.trim() || "",
+            visit_location: formData.get("visit-location")?.trim() || "",
+          },
+        };
+
+        try {
+          const [ghlRes, portalRes] = await Promise.all([
+            fetch(webhookURL, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+              },
+              body: urlEncodedBody,
+            }),
+            fetch("https://portal.rightruddermarketing.com/api/leads", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "x-api-key": apiKey,
+              },
+              body: JSON.stringify(jsonBody),
+            }),
+          ]);
+
+          if (ghlRes.ok && portalRes.ok) {
+            window.location.href = "/contact-confirmation";
+          } else {
+            console.error("Submission failed", {
+              ghlStatus: ghlRes.status,
+              portalStatus: portalRes.status,
+            });
+          }
+        } catch (err) {
+          console.error("Submission error:", err);
+        }
+      });
+    });
+  </script>
+
+  <script src="../scripts/emailValidation.js"></script>
+</BaseLayout>
