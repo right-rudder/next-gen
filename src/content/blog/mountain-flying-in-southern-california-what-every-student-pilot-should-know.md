@@ -2,7 +2,7 @@
 pubDate: "July 25, 2025"
 author: Amanda Heveran
 title: "Mountain Flying in Southern California: What Every Student Pilot Should Know"
-description: "When you think of California flight training, you probably imagine clear skies, endless sunshine, and wide-open airspace. And while Southern California certainly delivers on that promise, it also offers one of aviation’s greatest challenges—and opportunities—for student pilots: mountain flying."
+description: "When you think of California flight training, you probably imagine clear skies, endless sunshine, and wide-open airspace. And while Southern California certainly delivers on that promise, it also offers one of aviation’s greatest challenges, and opportunities, for student pilots: mountain flying."
 heroImage: "/blog/on-an-intro-flight-with-nextgen-flight-academy.jpg"
 readingTime: 4
 category: "Pilot Resources"
@@ -20,9 +20,9 @@ tags:
   ]
 ---
 
-When you think of California flight training, you probably imagine clear skies, endless sunshine, and wide-open airspace. And while Southern California certainly delivers on that promise, it also offers one of aviation’s greatest challenges—and opportunities—for student pilots: **mountain flying**.
+When you think of California flight training, you probably imagine clear skies, endless sunshine, and wide-open airspace. And while Southern California certainly delivers on that promise, it also offers one of aviation’s greatest challenges, and opportunities, for student pilots: **mountain flying**.
 
-At **NextGen Flight Academy**, with locations in both Riverside (KRAL) and Redlands (KREI), we train future pilots to not just pass their checkrides, but to fly confidently across California’s diverse terrain—including the **San Bernardino Mountains**, **Mount Baldy**, and the higher-elevation airfields of the Inland Empire. Whether you’re new to flying or building flight hours toward a career, understanding mountain operations is a skill that separates a good pilot from a great one.
+At **NextGen Flight Academy**, with locations in both Riverside (KRAL) and Redlands (KREI), we train future pilots to not just pass their checkrides, but to fly confidently across California’s diverse terrain, including the **San Bernardino Mountains**, **Mount Baldy**, and the higher-elevation airfields of the Inland Empire. Whether you’re new to flying or building flight hours toward a career, understanding mountain operations is a skill that separates a good pilot from a great one.
 
 ---
 
@@ -35,17 +35,17 @@ Flying near or over mountainous terrain isn’t just about navigating steep ridg
 - **Density altitude performance limits**
 - **Navigational awareness without easy visual references**
 
-For pilots flying in the western U.S., these factors are not optional knowledge—they’re essential.
+For pilots flying in the western U.S., these factors are not optional knowledge, they’re essential.
 
 ✅ That’s why NextGen integrates **high altitude and mountain flight scenarios** into its [career-track training programs](/riverside/career) and offers real-world experience from instructors who’ve flown it all.
 
 ---
 
-## Key Challenges of Mountain Flying—and How We Prepare You
+## Key Challenges of Mountain Flying, and How We Prepare You
 
 ### 1. **Density Altitude: The Hidden Threat**
 
-On a hot day in Redlands, your aircraft might behave like it's 8,000 feet above sea level—even when you’re only at 1,500 feet. This is called **high density altitude**, and it dramatically affects climb performance, engine output, and takeoff distance.
+On a hot day in Redlands, your aircraft might behave like it's 8,000 feet above sea level, even when you’re only at 1,500 feet. This is called **high density altitude**, and it dramatically affects climb performance, engine output, and takeoff distance.
 
 🛩️ At NextGen, you’ll learn how to:
 
@@ -67,7 +67,7 @@ Mountain winds can be deceiving. What looks like a steady breeze on the surface 
 - Use **mountain passes** effectively for crossing
 - Recognize early signs of turbulence and avoid traps
 
-This isn’t something you can learn from a textbook—it takes real flight time, and that's exactly what NextGen delivers.
+This isn’t something you can learn from a textbook, it takes real flight time, and that's exactly what NextGen delivers.
 
 ---
 
@@ -87,7 +87,7 @@ These skills prepare you not just for checkrides, but for safe cross-country fly
 
 ## Why Train Mountain Flying with NextGen?
 
-Few flight schools offer the combination of **year-round flying**, **FAA Part 141/61 programs**, and **proximity to mountainous terrain** that NextGen does. Our students don’t have to travel out of state to get real-world mountain experience—we train in it _every day_.
+Few flight schools offer the combination of **year-round flying**, **FAA Part 141/61 programs**, and **proximity to mountainous terrain** that NextGen does. Our students don’t have to travel out of state to get real-world mountain experience, we train in it _every day_.
 
 📍 Train out of:
 
@@ -109,7 +109,7 @@ Our [career-track students](/riverside/career) gain firsthand experience in thes
 
 ## Ready to Learn the Right Way?
 
-If you're serious about flying for a living—or just flying safely—mountain flying is not something to put off. It’s a core part of becoming a well-rounded pilot, and **NextGen Flight Academy is one of the few schools in California positioned to teach it from day one.**
+If you're serious about flying for a living, or just flying safely, mountain flying is not something to put off. It’s a core part of becoming a well-rounded pilot, and **NextGen Flight Academy is one of the few schools in California positioned to teach it from day one.**
 
 🎯 Whether you're just [new to flying](/new-to-flying) or ready to elevate your commercial training, we’re here to guide your next step.
 
@@ -118,6 +118,6 @@ If you're serious about flying for a living—or just flying safely—mountain f
 ---
 
 **NextGen Flight Academy**  
-Expert flight training in high-altitude, real-world terrain—right here in Southern California.
+Expert flight training in high-altitude, real-world terrain, right here in Southern California.
 
 🛫 _Train smarter. Fly further. Fly NextGen._

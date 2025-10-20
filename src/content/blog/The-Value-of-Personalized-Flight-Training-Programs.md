@@ -53,7 +53,7 @@ Our campuses in Riverside and Redlands provide unique advantages. Both areas off
 
 ### Join the NextGen Community
 
-At NextGen Flight Academy, you’re more than just a student—you’re part of a community. Our supportive environment fosters collaboration and mentorship, helping you thrive in your aviation journey. From instructors to fellow students, you’ll find a network of people who are as passionate about flying as you are.
+At NextGen Flight Academy, you’re more than just a student, you’re part of a community. Our supportive environment fosters collaboration and mentorship, helping you thrive in your aviation journey. From instructors to fellow students, you’ll find a network of people who are as passionate about flying as you are.
 
 ---
 

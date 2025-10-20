@@ -89,7 +89,7 @@ At NextGen Flight Academy, our students' success stories speak volumes. Our grad
 
 **2. Unmatched Instructor Expertise**
 
-Our instructors are not just experienced pilots—they are dedicated mentors committed to your success. With thousands of flight hours and real-world aviation experience, they bring practical insights that go beyond textbook learning. This depth of knowledge ensures you’re not just passing exams but truly mastering the art of flying.
+Our instructors are not just experienced pilots, they are dedicated mentors committed to your success. With thousands of flight hours and real-world aviation experience, they bring practical insights that go beyond textbook learning. This depth of knowledge ensures you’re not just passing exams but truly mastering the art of flying.
 
 **3. Customized Training**
 

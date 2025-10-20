@@ -20,7 +20,7 @@ tags:
   ]
 ---
 
-Riverside Municipal Airport (KRAL) is more than just a training hub—it’s one of the best places in Southern California to become a pilot. Its ideal flying conditions and strategic location give students an advantage from day one.
+Riverside Municipal Airport (KRAL) is more than just a training hub, it’s one of the best places in Southern California to become a pilot. Its ideal flying conditions and strategic location give students an advantage from day one.
 
 ## 1. Excellent Flying Weather
 

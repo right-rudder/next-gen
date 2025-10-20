@@ -3,7 +3,7 @@ const cessna172N_N7320J = {
     // SEO Header Stuff
     pageTitle: "Cessna 172N Skyhawk - Our Fleet | NextGen Flight Academy",
     pageDescription:
-      "Train in NextGen Flight Academy's Cessna 172N Skyhawk, N7320J — a reliable, four-seat training aircraft ideal for private pilot, instrument, and commercial flight training.",
+      "Train in NextGen Flight Academy's Cessna 172N Skyhawk, N7320J ,  a reliable, four-seat training aircraft ideal for private pilot, instrument, and commercial flight training.",
     pageKeywords:
       "Cessna 172N Skyhawk training aircraft, N7320J, four-seat training airplane, advanced Cessna 172, modern training plane, private pilot training aircraft, commercial pilot training airplane, instrument rating aircraft, cross-country training plane, aviation training fleet, reliable training aircraft, flight school aircraft rental, NextGen Flight Academy fleet, dual control airplane, flight training equipment, aircraft checkout training, learn to fly Cessna 172N, training aircraft specifications, aviation education aircraft, professional flight training",
 
@@ -26,16 +26,16 @@ const cessna172N_N7320J = {
         {
           imagePath:
             "/src/assets/N7320J-nextgen-flight-academy-riverside-ca.jpg",
-          imageAlt: "Side view of Cessna 172N N7320J at Riverside Airport (RAL)",
+          imageAlt:
+            "Side view of Cessna 172N N7320J at Riverside Airport (RAL)",
         },
         {
-          imagePath:
-            "/src/assets/N7320J-cessna-172-side.jpg",
-          imageAlt: "Front view of Cessna 172N N7320J at Riverside Airport (RAL)",
+          imagePath: "/src/assets/N7320J-cessna-172-side.jpg",
+          imageAlt:
+            "Front view of Cessna 172N N7320J at Riverside Airport (RAL)",
         },
         {
-          imagePath:
-            "/src/assets/N7320J-interior-panel-cessna-172.jpg",
+          imagePath: "/src/assets/N7320J-interior-panel-cessna-172.jpg",
           imageAlt: "Cockpit and instrument panel of Cessna 172N N7320J",
         },
       ],

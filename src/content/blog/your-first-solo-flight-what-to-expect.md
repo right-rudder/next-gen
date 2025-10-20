@@ -20,7 +20,7 @@ tags:
   ]
 ---
 
-Your first solo flight is a defining moment in your training. After weeks of preparation and practice with your instructor, you’ll take off, fly a pattern, and land—all by yourself.
+Your first solo flight is a defining moment in your training. After weeks of preparation and practice with your instructor, you’ll take off, fly a pattern, and land, all by yourself.
 
 ## How You Get There
 
