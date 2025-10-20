@@ -1,9 +1,9 @@
 ---
-pubDate: "November 21, 2025"
+pubDate: "February 15, 2025"
 author: Amanda Heveran
 title: "How to Prepare for Your FAA Written Exam"
 description: "Passing the FAA written exam is an important step in your pilot training. Learn effective study strategies, resources, and tips to build confidence on test day."
-heroImage: "/blog/faa-written-exam-prep.webp"
+heroImage: "/blog/N3848T-glass-instrument-panel.jpg"
 readingTime: 5
 category: "Training Guides"
 tags:

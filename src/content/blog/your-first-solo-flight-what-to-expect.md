@@ -1,9 +1,9 @@
 ---
-pubDate: "November 14, 2025"
+pubDate: "October 16, 2025"
 author: Amanda Heveran
 title: "Your First Solo Flight: What to Expect"
 description: "A milestone every pilot remembers: the first solo flight. Learn what leads up to it, how the flight works, and what it feels like to fly alone for the first time."
-heroImage: "/blog/first-solo-flight.webp"
+heroImage: "/blog/redlands-plane-on-dry-lake-header.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:

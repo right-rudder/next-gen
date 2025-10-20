@@ -1,9 +1,9 @@
 ---
-pubDate: "October 24, 2025"
+pubDate: "November 15, 2025"
 author: Amanda Heveran
 title: "Why Southern California Is the Best Place to Learn to Fly"
 description: "Discover why Southern California is one of the best places in the U.S. to learn how to fly. Ideal weather, diverse airspace, and access to top training facilities make Riverside and Redlands prime locations for flight training."
-heroImage: "/blog/socal-flight-training-sunset.webp"
+heroImage: "/blog/nextgen-flight-academy-hollywood-sign-intro-flight.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:

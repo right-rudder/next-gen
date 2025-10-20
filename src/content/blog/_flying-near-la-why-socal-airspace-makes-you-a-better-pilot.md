@@ -3,7 +3,7 @@ pubDate: "November 28, 2025"
 author: Amanda Heveran
 title: "Flying Near LA: Why SoCal Airspace Makes You a Better Pilot"
 description: "Southern California’s complex airspace isn’t just a challenge—it’s an advantage. Learn how training near LA builds skill, confidence, and real-world flying ability."
-heroImage: "/blog/socal-airspace-training.webp"
+heroImage: "/blog/boarding-the-piper-cherokee-arrow-at-nextgen-flight-academy-redlands-riverside-ca-pilot-training-school.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:

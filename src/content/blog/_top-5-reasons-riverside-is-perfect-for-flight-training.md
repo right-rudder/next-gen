@@ -1,9 +1,9 @@
 ---
-pubDate: "October 31, 2025"
+pubDate: "December 15, 2025"
 author: Amanda Heveran
 title: "Top 5 Reasons Riverside Is Perfect for Flight Training"
 description: "Explore why Riverside, CA, is one of the best locations for pilot training. Learn how its weather, location, and resources help students progress quickly."
-heroImage: "/blog/riverside-airport.webp"
+heroImage: "/blog/completing-an-endorsement-at-riverside-airport.jpg"
 readingTime: 5
 category: "Pilot Resources"
 tags:

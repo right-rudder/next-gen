@@ -1,9 +1,9 @@
 ---
-pubDate: "November 7, 2025"
+pubDate: "January 15, 2026"
 author: Amanda Heveran
 title: "How Long It Takes to Earn Each Pilot License"
 description: "Wondering how long it takes to become a pilot? Learn the average timelines for Private, Instrument, Commercial, and CFI training at NextGen Flight Academy."
-heroImage: "/blog/pilot-license-timeline.webp"
+heroImage: "/blog/passing-a-checkride-at-nextgen-flight-learn-to-fly.jpg"
 readingTime: 6
 category: "Training Guides"
 tags:
