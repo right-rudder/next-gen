@@ -2,7 +2,7 @@
 pubDate: "June 18, 2025"
 author: Amanda Heveran
 title: "Your Complete Guide to Flight Training at NextGen"
-description: "Discover all flight training programs offered by NextGen Flight Academy in Riverside and Redlands, California—from Private Pilot to ATP and CFI. Learn which path is right for you."
+description: "Discover all flight training programs offered by NextGen Flight Academy in Riverside and Redlands, California, from Private Pilot to ATP and CFI. Learn which path is right for you."
 heroImage: "/blog/completing-an-endorsement-at-riverside-airport.webp"
 readingTime: 5
 category: "Pilot Resources"
@@ -29,13 +29,13 @@ _Ever looked up at a plane crossing the sky and wondered what it would be like t
 
 Picture this: clear blue skies 300+ days a year, perfect visibility for learning, and airports that aren't constantly battling weather delays. That's exactly what you'll find at NextGen Flight Academy, with training locations at Riverside Municipal (KRAL) and Redlands Municipal (KREI) airports.
 
-But here's what really sets NextGen apart—they're approved for both **Part 61** and **Part 141** training. What does this mean for you? Simple: you get to choose between flexible, self-paced learning (Part 61) or a more structured, accelerated curriculum (Part 141). It's like having two different learning styles available to match your schedule and goals.
+But here's what really sets NextGen apart, they're approved for both **Part 61** and **Part 141** training. What does this mean for you? Simple: you get to choose between flexible, self-paced learning (Part 61) or a more structured, accelerated curriculum (Part 141). It's like having two different learning styles available to match your schedule and goals.
 
 ## Start Here: Your Flight Training Roadmap
 
 ### The Discovery Flight: Your $99.99 Test Drive
 
-Before diving into any program, take advantage of NextGen's [**Discovery Flight**](/intro-flight) for just $99.99. Think of it as a test drive for aviation—you'll actually fly a real airplane with a certified instructor. It's the perfect way to answer that nagging question: "Is this really for me?"
+Before diving into any program, take advantage of NextGen's [**Discovery Flight**](/intro-flight) for just $99.99. Think of it as a test drive for aviation, you'll actually fly a real airplane with a certified instructor. It's the perfect way to answer that nagging question: "Is this really for me?"
 
 **What happens during your discovery flight:**
 
@@ -50,7 +50,7 @@ Before diving into any program, take advantage of NextGen's [**Discovery Flight*
 
 **Perfect for:** Anyone who wants to fly for fun, travel to new destinations, or explore aviation as a hobby
 
-You'll need to be at least 17 years old and hold a basic medical certificate. The training covers everything from basic aircraft operations to navigating airspace—think of it as getting your driver's license, but for the sky.
+You'll need to be at least 17 years old and hold a basic medical certificate. The training covers everything from basic aircraft operations to navigating airspace, think of it as getting your driver's license, but for the sky.
 
 **Time commitment:** 35-40 hours of flight time, plus ground study
 
@@ -97,14 +97,14 @@ Becoming a flight instructor is one of the most common ways to build the 1,500 h
 
 **Perfect for:** Experienced pilots ready for airline or corporate careers
 
-This is the PhD of pilot certificates—the highest level of pilot certification. You'll need 1,500 hours of experience and pass rigorous testing, but it opens doors to major airlines and high-level corporate operations.
+This is the PhD of pilot certificates, the highest level of pilot certification. You'll need 1,500 hours of experience and pass rigorous testing, but it opens doors to major airlines and high-level corporate operations.
 
 **Age requirement:** 23 years old
 **Experience needed:** 1,500 total flight hours (some military and college programs offer reduced minimums)
 
 ## [The Fast Track: Zero to Hero Career Program](/training-programs/career)
 
-Can't decide between programs? NextGen's [**Career Track Program**](/training-programs/career) takes you from complete beginner to professional pilot in one comprehensive package. It's like signing up for a complete college degree in aviation—structured, efficient, and designed to get you to your goals faster.
+Can't decide between programs? NextGen's [**Career Track Program**](/training-programs/career) takes you from complete beginner to professional pilot in one comprehensive package. It's like signing up for a complete college degree in aviation, structured, efficient, and designed to get you to your goals faster.
 
 **Who should consider this:**
 
@@ -125,7 +125,7 @@ These aren't separate certificates, but they're crucial endorsements that expand
 ## Making Your Decision: Questions to Ask Yourself
 
 1. **What's your timeline?** Weekend warrior or career change?
-2. **What's your budget?** Training is an investment—plan accordingly
+2. **What's your budget?** Training is an investment, plan accordingly
 3. **How much time can you dedicate?** Consistent training accelerates progress
 4. **What are your long-term goals?** Hobby flying or professional aviation?
 
@@ -142,10 +142,10 @@ Ready to start your aviation journey? Here's exactly what to do:
 
 The airline industry is experiencing unprecedented pilot demand, with major carriers offering signing bonuses and competitive salaries. But even if airlines aren't your goal, general aviation is thriving with opportunities in charter, corporate, and specialized flying operations.
 
-Aviation training isn't just about learning to fly—it's about joining a community of passionate, skilled professionals who see the world from a different perspective. Every pilot remembers their first solo flight, their first cross-country adventure, and the moment they realized they were truly a pilot.
+Aviation training isn't just about learning to fly, it's about joining a community of passionate, skilled professionals who see the world from a different perspective. Every pilot remembers their first solo flight, their first cross-country adventure, and the moment they realized they were truly a pilot.
 
 **Ready to write your own aviation story?**
 
 👉 [Book your Discovery Flight today](/intro-flight/) or visit [FlyHere.aero](/) to speak with a training advisor.
 
-_The sky isn't the limit—it's your new playground._
+_The sky isn't the limit, it's your new playground._

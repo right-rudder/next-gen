@@ -125,7 +125,7 @@ This career offers the chance to operate into **smaller airports** not typically
 
 ## 5. Agricultural Pilot
 
-For those seeking adventure and a hands-on role, **agricultural pilots**—also known as **crop dusters**—fly specially equipped aircraft to distribute pesticides, fertilizers, and seeds over large fields. This role requires precision flying and in-depth knowledge of aircraft systems.
+For those seeking adventure and a hands-on role, **agricultural pilots**, also known as **crop dusters**, fly specially equipped aircraft to distribute pesticides, fertilizers, and seeds over large fields. This role requires precision flying and in-depth knowledge of aircraft systems.
 
 Pilots in this field often fly **low and fast** over agricultural fields, demanding superior flying skills and environmental awareness. Many agricultural pilots also work in **firefighting** and **reforestation missions** during the off-season.
 
