@@ -10,11 +10,7 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
-<BaseLayout
-  siteTitle={data.pageTitle}
-  siteDescription={data.pageDescription}
-  keywords={data.pageKeywords}
->
+<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
   <Header data={data.header} />
 
   <section class="py-16 px-5 max-w-5xl mx-auto">
@@ -30,175 +26,145 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       action=""
       class="max-w-3xl mx-auto flex flex-col justify-center align-middle items-center space-y-8"
     >
-      <div class="">
-        <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-          <div class="sm:col-span-3">
-            <label
-              for="first-name"
-              class="block font-medium leading-6 text-primary-dark"
-              >First name</label
-            >
-            <div class="mt-2">
-              <input
-                type="text"
-                name="first-name"
-                id="first-name"
-                autocomplete="given-name"
-                class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-                required
-              />
-            </div>
+      <div class="w-full mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="sm:col-span-3">
+          <label for="first-name" class="block font-medium leading-6 text-primary-dark">First name</label>
+          <div class="mt-2">
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              autocomplete="given-name"
+              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+              required
+            />
           </div>
+        </div>
 
-          <div class="sm:col-span-3">
-            <label
-              for="last-name"
-              class="block font-medium leading-6 text-primary-dark"
-              >Last name</label
-            >
-            <div class="mt-2">
-              <input
-                type="text"
-                name="last-name"
-                id="last-name"
-                autocomplete="family-name"
-                class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-                required
-              />
-            </div>
+        <div class="sm:col-span-3">
+          <label for="last-name" class="block font-medium leading-6 text-primary-dark">Last name</label>
+          <div class="mt-2">
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              autocomplete="family-name"
+              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+              required
+            />
           </div>
+        </div>
 
-          <div class="sm:col-span-3">
-            <label
-              for="email"
-              class="block font-medium leading-6 text-primary-dark"
-              >Email address</label
-            >
-            <div class="mt-2">
-              <input
-                id="email"
-                name="email"
-                type="email"
-                autocomplete="email"
-                class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-                required
-              />
-            </div>
+        <div class="sm:col-span-3">
+          <label for="email" class="block font-medium leading-6 text-primary-dark">Email address</label>
+          <div class="mt-2">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+              required
+            />
           </div>
+        </div>
 
-          <p class="hidden">
-            <label>
-              Don't fill this out if you're human: <input
-                name="confirm-email"
-              />
-            </label>
-          </p>
+        <p class="hidden">
+          <label>
+            Don't fill this out if you're human: <input name="confirm-email" />
+          </label>
+        </p>
 
-          <div class="sm:col-span-3">
-            <label
-              for="phone"
-              class="block font-medium leading-6 text-primary-dark">Phone</label
-            >
-            <div class="mt-2">
-              <input
-                id="phone"
-                name="phone"
-                type="tel"
-                autocomplete="phone"
-                class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-                required
-              />
-            </div>
+        <div class="sm:col-span-3">
+          <label for="phone" class="block font-medium leading-6 text-primary-dark">Phone</label>
+          <div class="mt-2">
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autocomplete="phone"
+              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+              required
+            />
           </div>
         </div>
       </div>
 
-      <div class="">
-        <div class="mt-10 space-y-10 flex justify-center">
-          <fieldset>
-            <legend class="font-medium leading-6 text-primary-dark"
-              >What inspires you to pursue a career as a pilot?</legend
-            >
-            <p class="text-gray-500 text-sm">You can select multiple options</p>
-            <div class="mt-2 space-y-1">
-              <div class="relative flex gap-x-3">
-                <div class="flex h-6 items-center">
-                  <input
-                    id="adventure"
-                    name="inspirations"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                    value="A passion for adventure"
-                  />
-                </div>
-                <div class="leading-6">
-                  <label for="adventure" class="text-gray-600"
-                    >A passion for adventure</label
-                  >
-                </div>
+      <div class="w-full mt-10 space-y-10 flex">
+        <fieldset class="w-full">
+          <legend class="font-medium leading-6 text-primary-dark"
+            >What inspires you to pursue a career as a pilot?</legend
+          >
+          <p class="text-gray-500 text-sm">You can select multiple options</p>
+          <div class="mt-2 space-y-1">
+            <div class="relative flex gap-x-3">
+              <div class="flex h-6 items-center">
+                <input
+                  id="adventure"
+                  name="inspirations"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                  value="A passion for adventure"
+                />
               </div>
-              <div class="relative flex gap-x-3">
-                <div class="flex h-6 items-center">
-                  <input
-                    id="opportunities"
-                    name="inspirations"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                    value="Professional growth and opportunities"
-                  />
-                </div>
-                <div class="leading-6">
-                  <label for="opportunities" class="text-gray-600"
-                    >Professional growth and opportunities</label
-                  >
-                </div>
+              <div class="leading-6">
+                <label for="adventure" class="text-gray-600">A passion for adventure</label>
               </div>
-              <div class="relative flex gap-x-3">
-                <div class="flex h-6 items-center">
-                  <input
-                    id="hobby"
-                    name="inspirations"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                    value="Personal hobby"
-                  />
-                </div>
-                <div class="leading-6">
-                  <label for="hobby" class="text-gray-600">Personal hobby</label
-                  >
-                </div>
-              </div>
-              <div class="relative flex gap-x-3">
-                <div class="flex h-6 items-center">
-                  <input
-                    id="other"
-                    name="inspirations"
-                    type="checkbox"
-                    class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                    value="Other:"
-                  />
-                </div>
-                <div class="leading-6">
-                  <label for="other" class="text-gray-600"
-                    >Other (please specify)</label
-                  >
-                </div>
-              </div>
-              <input
-                class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-                type="text"
-                name="inspirations"
-                id="other-text"
-              />
             </div>
-          </fieldset>
-        </div>
+            <div class="relative flex gap-x-3">
+              <div class="flex h-6 items-center">
+                <input
+                  id="opportunities"
+                  name="inspirations"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                  value="Professional growth and opportunities"
+                />
+              </div>
+              <div class="leading-6">
+                <label for="opportunities" class="text-gray-600">Professional growth and opportunities</label>
+              </div>
+            </div>
+            <div class="relative flex gap-x-3">
+              <div class="flex h-6 items-center">
+                <input
+                  id="hobby"
+                  name="inspirations"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                  value="Personal hobby"
+                />
+              </div>
+              <div class="leading-6">
+                <label for="hobby" class="text-gray-600">Personal hobby</label>
+              </div>
+            </div>
+            <div class="relative flex gap-x-3">
+              <div class="flex h-6 items-center">
+                <input
+                  id="other"
+                  name="inspirations"
+                  type="checkbox"
+                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                  value="Other:"
+                />
+              </div>
+              <div class="leading-6">
+                <label for="other" class="text-gray-600">Other (please specify)</label>
+              </div>
+            </div>
+            <input
+              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+              type="text"
+              name="inspirations"
+              id="other-text"
+            />
+          </div>
+        </fieldset>
       </div>
 
-      <div class="col-span-full">
-        <label
-          for="long-term-goals"
-          class="block font-medium leading-6 text-primary-dark"
+      <div class="col-span-full w-full">
+        <label for="long-term-goals" class="block font-medium leading-6 text-primary-dark"
           >What are your long-term goals within the aviation industry?</label
         >
         <div class="mt-2">
@@ -211,262 +177,231 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
       </div>
 
-      <div class="">
-        <div class="mt-10 space-y-10 flex justify-center">
-          <fieldset>
-            <legend class="font-medium leading-6 text-primary-dark"
-              >What is your current level of aviation experience?</legend
-            >
-            <div class="mt-2 space-y-1">
-              <div class="flex items-center gap-x-3">
-                <input
-                  id="no-experience"
-                  name="level-of-experience"
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                  value="No prior experience with piloting aircraft"
-                />
-                <label for="no-experience" class="block leading-6 text-gray-600"
-                  >No prior experience with piloting aircraft</label
-                >
-              </div>
-              <div class="flex items-center gap-x-3">
-                <input
-                  id="simulator-experience"
-                  name="level-of-experience"
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                  value="Experience with flight simulators or drones"
-                />
-                <label
-                  for="simulator-experience"
-                  class="block leading-6 text-gray-600"
-                  >Experience with flight simulators or drones</label
-                >
-              </div>
-              <div class="flex items-center gap-x-3">
-                <input
-                  id="flight-training"
-                  name="level-of-experience"
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                  value="Some flight training but haven't soloed yet"
-                />
-                <label
-                  for="flight-training"
-                  class="block leading-6 text-gray-600"
-                  >Some flight training but haven't soloed yet</label
-                >
-              </div>
-              <div class="flex items-center gap-x-3">
-                <input
-                  id="checkride"
-                  name="level-of-experience"
-                  type="radio"
-                  class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                  value="Currently working towards completing a checkride"
-                  required
-                />
-                <label for="checkride" class="block leading-6 text-gray-600"
-                  >Currently working towards completing a checkride</label
-                >
-              </div>
-            </div>
-          </fieldset>
-        </div>
-      </div>
-
-      <div class="">
-        <div class="mt-10 space-y-10 flex justify-center"></div>
-        <fieldset>
+      <div class="w-full mt-10 space-y-10 flex">
+        <fieldset class="w-full">
           <legend class="font-medium leading-6 text-primary-dark"
-            >Which learning style resonates with you the most?</legend
+            >What is your current level of aviation experience?</legend
           >
           <div class="mt-2 space-y-1">
             <div class="flex items-center gap-x-3">
               <input
-                id="practical"
-                name="preferred-learning-style"
+                id="no-experience"
+                name="level-of-experience"
                 type="radio"
                 class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                value="Hands-on, practical learning"
+                value="No prior experience with piloting aircraft"
               />
-              <label for="practical" class="block leading-6 text-gray-600"
-                >Hands-on, practical learning</label
+              <label for="no-experience" class="block leading-6 text-gray-600"
+                >No prior experience with piloting aircraft</label
               >
             </div>
             <div class="flex items-center gap-x-3">
               <input
-                id="visual"
-                name="preferred-learning-style"
+                id="simulator-experience"
+                name="level-of-experience"
                 type="radio"
                 class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                value="Visual learning through observation"
+                value="Experience with flight simulators or drones"
               />
-              <label for="visual" class="block leading-6 text-gray-600"
-                >Visual learning through observation</label
+              <label for="simulator-experience" class="block leading-6 text-gray-600"
+                >Experience with flight simulators or drones</label
               >
             </div>
             <div class="flex items-center gap-x-3">
               <input
-                id="reading"
-                name="preferred-learning-style"
+                id="flight-training"
+                name="level-of-experience"
                 type="radio"
                 class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                value="Learning through reading and studying materials"
+                value="Some flight training but haven't soloed yet"
+              />
+              <label for="flight-training" class="block leading-6 text-gray-600"
+                >Some flight training but haven't soloed yet</label
+              >
+            </div>
+            <div class="flex items-center gap-x-3">
+              <input
+                id="checkride"
+                name="level-of-experience"
+                type="radio"
+                class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+                value="Currently working towards completing a checkride"
                 required
               />
-              <label for="reading" class="block leading-6 text-gray-600"
-                >Learning through reading and studying materials</label
+              <label for="checkride" class="block leading-6 text-gray-600"
+                >Currently working towards completing a checkride</label
               >
             </div>
           </div>
         </fieldset>
       </div>
 
-      <div class="">
-        <div class="mt-10 space-y-10 flex justify-center"></div>
-        <fieldset>
-          <legend class="font-medium leading-6 text-primary-dark"
-            >Do you prefer a structured learning environment with clearly
-            defined expectations, or a more flexible, adaptable approach?</legend
-          >
-          <div class="mt-2 space-y-1">
-            <div class="flex items-center gap-x-3">
-              <input
-                id="structured"
-                name="preferred-approach"
-                type="radio"
-                class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                value="I prefer a structured approach"
-              />
-              <label for="structured" class="block leading-6 text-gray-600"
-                >I prefer a structured approach</label
-              >
-            </div>
-            <div class="flex items-center gap-x-3">
-              <input
-                id="flexible"
-                name="preferred-approach"
-                type="radio"
-                class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
-                value="I prefer a flexible approach"
-                required
-              />
-              <label for="flexible" class="block leading-6 text-gray-600"
-                >I prefer a flexible approach</label
-              >
-            </div>
-          </div>
-        </fieldset>
-      </div>
-
-      <div class="">
-        <div class="mt-10 space-y-10"></div>
-        <fieldset>
-          <legend class="font-medium leading-6 text-primary-dark"
-            >What kind of guidance and support would you prefer from your flight
-            instructor?
-          </legend>
-          <p class="text-gray-500 text-sm">You can select multiple options</p>
-          <div class="mt-2 space-y-1">
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="personalized-approach"
-                  name="kind-of-guidance"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="A personalized approach tailored to my individual learning needs and preferences"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="personalized-approach" class="text-gray-600"
-                  >A personalized approach tailored to my individual learning
-                  needs and preferences</label
-                >
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="hands-on-involvement"
-                  name="kind-of-guidance"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Hands-on involvement from the instructor, with constant feedback and guidance"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="hands-on-involvement" class="text-gray-600"
-                  >Hands-on involvement from the instructor, with constant
-                  feedback and guidance</label
-                >
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="structured-approach"
-                  name="kind-of-guidance"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="A structured approach with clear goals and objectives"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="structured-approach" class="text-gray-600"
-                  >A structured approach with clear goals and objectives</label
-                >
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="guidance"
-                  name="kind-of-guidance"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Supportive and encouraging guidance, with a focus on building confidence"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="guidance" class="text-gray-600"
-                  >Supportive and encouraging guidance, with a focus on building
-                  confidence</label
-                >
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="other2"
-                  name="kind-of-guidance"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Other:"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="other2" class="text-gray-600"
-                  >Other (please specify)</label
-                >
-              </div>
-            </div>
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Which learning style resonates with you the most?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
             <input
-              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-              type="text"
-              name="kind-of-guidance"
-              id="other2-text"
+              id="practical"
+              name="preferred-learning-style"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Hands-on, practical learning"
             />
+            <label for="practical" class="block leading-6 text-gray-600">Hands-on, practical learning</label>
           </div>
-        </fieldset>
-      </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="visual"
+              name="preferred-learning-style"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Visual learning through observation"
+            />
+            <label for="visual" class="block leading-6 text-gray-600">Visual learning through observation</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="reading"
+              name="preferred-learning-style"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Learning through reading and studying materials"
+              required
+            />
+            <label for="reading" class="block leading-6 text-gray-600"
+              >Learning through reading and studying materials</label
+            >
+          </div>
+        </div>
+      </fieldset>
 
-      <div class="col-span-full">
-        <label
-          for="lift-generation"
-          class="block font-medium leading-6 text-primary-dark"
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Do you prefer a structured learning environment with clearly defined expectations, or a more flexible,
+          adaptable approach?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="structured"
+              name="preferred-approach"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="I prefer a structured approach"
+            />
+            <label for="structured" class="block leading-6 text-gray-600">I prefer a structured approach</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="flexible"
+              name="preferred-approach"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="I prefer a flexible approach"
+              required
+            />
+            <label for="flexible" class="block leading-6 text-gray-600">I prefer a flexible approach</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >What kind of guidance and support would you prefer from your flight instructor?
+        </legend>
+        <p class="text-gray-500 text-sm">You can select multiple options</p>
+        <div class="mt-2 space-y-1">
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="personalized-approach"
+                name="kind-of-guidance"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="A personalized approach tailored to my individual learning needs and preferences"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="personalized-approach" class="text-gray-600"
+                >A personalized approach tailored to my individual learning needs and preferences</label
+              >
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="hands-on-involvement"
+                name="kind-of-guidance"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Hands-on involvement from the instructor, with constant feedback and guidance"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="hands-on-involvement" class="text-gray-600"
+                >Hands-on involvement from the instructor, with constant feedback and guidance</label
+              >
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="structured-approach"
+                name="kind-of-guidance"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="A structured approach with clear goals and objectives"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="structured-approach" class="text-gray-600"
+                >A structured approach with clear goals and objectives</label
+              >
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="guidance"
+                name="kind-of-guidance"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Supportive and encouraging guidance, with a focus on building confidence"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="guidance" class="text-gray-600"
+                >Supportive and encouraging guidance, with a focus on building confidence</label
+              >
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="other2"
+                name="kind-of-guidance"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Other:"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="other2" class="text-gray-600">Other (please specify)</label>
+            </div>
+          </div>
+          <input
+            class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+            type="text"
+            name="kind-of-guidance"
+            id="other2-text"
+          />
+        </div>
+      </fieldset>
+
+      <div class="col-span-full w-full">
+        <label for="lift-generation" class="block font-medium leading-6 text-primary-dark"
           >Do you know how a wing generates lift?</label
         >
         <div class="mt-2">
@@ -479,12 +414,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
       </div>
 
-      <div class="col-span-full">
-        <label
-          for="expectations"
-          class="block font-medium leading-6 text-primary-dark"
-          >Is there anything else you'd like us to know about your interests or
-          expectations regarding flight training?</label
+      <div class="col-span-full w-full">
+        <label for="expectations" class="block font-medium leading-6 text-primary-dark"
+          >Is there anything else you'd like us to know about your interests or expectations regarding flight training?</label
         >
         <div class="mt-2">
           <textarea
@@ -492,78 +424,48 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             name="anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training"
             rows="3"
             class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-            ></textarea>
+          ></textarea>
         </div>
       </div>
 
-      <div class="">
-        <div class="mt-10 space-y-10"></div>
-        <fieldset
-          class="flex flex-col justify-center items-center align-middle mt-4"
-        >
-          <legend class="mb-2 text-gray-800 text-center w-full">
-            Would you like schedule a visit to NextGen Flight Academy?
-          </legend>
+      <fieldset class="flex flex-col mt-4 w-full">
+        <legend class="mb-2 text-gray-800 w-full"> Would you like schedule a visit to NextGen Flight Academy? </legend>
 
+        <div>
           <div>
-            <div>
-              <input
-                type="radio"
-                class="mx-2"
-                id="yes-visit"
-                name="visit-nextgen"
-                value="yes-visit"
-                required
-              />
-              <label for="yes-visit">Yes</label>
-            </div>
-            <input
-              type="radio"
-              class="mx-2"
-              id="no-visit"
-              name="visit-nextgen"
-              value="no-visit"
-              required
-            />
+            <input type="radio" class="mx-2" id="yes-visit" name="visit-nextgen" value="yes-visit" required />
+            <label for="yes-visit">Yes</label>
+          </div>
+          <div>
+            <input type="radio" class="mx-2" id="no-visit" name="visit-nextgen" value="no-visit" required />
             <label for="no-visit">No</label>
           </div>
-        </fieldset>
-        <div
-          id="location-container"
-          class="hidden flex-col justify-center items-center align-middle"
-        >
-          <label for="visit-location">Choose a location:</label>
-
-          <select
-            name="visit-location"
-            id="visit-location"
-            class="w-36 px-3 py-2 border border-gray-400 text-center"
-          >
-            <option value="riverside">Riverside</option>
-            <option value="redlands">Redlands</option>
-          </select>
-
-          <label for="visit-date">Preferred Date:</label>
-          <input
-            type="date"
-            name="visit-date"
-            id="visit-date"
-            class="w-40 px-3 py-2 border border-gray-400 text-center"
-            required
-          />
-
-          <label for="visit-time">Preferred Time:</label>
-          <select
-            name="visit-time"
-            id="visit-time"
-            class="w-40 px-3 py-2 border border-gray-400 text-center"
-            required
-          >
-            <option value="">Select a time</option>
-            <option value="morning">Morning</option>
-            <option value="afternoon">Afternoon</option>
-          </select>
         </div>
+      </fieldset>
+
+      <div id="location-container" class="hidden flex flex-col gap-2 w-full">
+        <label for="visit-location">Choose a location:</label>
+
+        <select name="visit-location" id="visit-location" class="w-36 px-3 py-2 border border-gray-400">
+          <option value="riverside">Riverside</option>
+          <option value="redlands">Redlands</option>
+        </select>
+
+        <label for="visit-date">Preferred Date:</label>
+        <input
+          type="date"
+          name="visit-date"
+          id="visit-date"
+          class="w-40 px-3 py-2 border border-gray-400"
+          required
+        />
+
+        <label for="visit-time">Preferred Time:</label>
+        <select name="visit-time" id="visit-time" class="w-40 px-3 py-2 border border-gray-400" required>
+          <option value="">Select a time</option>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+        </select>
       </div>
 
       <div class="flex gap-3 my-5 items-center">
@@ -595,9 +497,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
     yesVisit.addEventListener("change", function () {
       if (yesVisit.checked) {
-        document
-          .getElementById("location-container")
-          .classList.remove("hidden");
+        document.getElementById("location-container").classList.remove("hidden");
         document.getElementById("location-container").classList.add("flex");
       } else {
         document.getElementById("location-container").classList.add("hidden");
@@ -614,24 +514,13 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
     const today = new Date().toISOString().split("T")[0];
     dateInput.setAttribute("min", today);
 
-
     checkbox.addEventListener("change", function () {
       if (checkbox.checked) {
         submitButton.disabled = false;
-        submitButton.classList.remove(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400",
-          "hover:text-white",
-        );
+        submitButton.classList.remove("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
       } else {
         submitButton.disabled = true;
-        submitButton.classList.add(
-          "cursor-not-allowed",
-          "bg-gray-400",
-          "hover:bg-gray-400",
-          "hover:text-white",
-        );
+        submitButton.classList.add("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
       }
     });
     document.addEventListener("DOMContentLoaded", () => {
@@ -664,10 +553,7 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
         formData.delete("kind-of-guidance");
 
-        formData.append(
-          "what-kind-of-guidance-and-support-you-prefer",
-          kindOfGuidance.join(","),
-        );
+        formData.append("what-kind-of-guidance-and-support-you-prefer", kindOfGuidance.join(","));
 
         const webhookURL = QUIZ_FORM_WEBHOOK_URL;
         const apiKey = PORTAL_API_KEY;
@@ -686,26 +572,21 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
           account_random_id: "ac_vwzfezsv",
           metadata: {
             "what-inspires-you": inspirations.join(","),
-            "what-kind-of-guidance-and-support-you-prefer":
-              kindOfGuidance.join(","),
+            "what-kind-of-guidance-and-support-you-prefer": kindOfGuidance.join(","),
             "long-term-goals": formData.get("long-term-goals")?.trim() || "",
             "do-you-know-how-a-wing-generates-lift":
-              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() ||
-              "",
+              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() || "",
             "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training":
               formData
                 .get(
-                  "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training",
+                  "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training"
                 )
                 ?.trim() || "",
             "visit-nextgen": formData.get("visit-nextgen")?.trim() || "",
             "visit-location": formData.get("visit-location")?.trim() || "",
-            "level-of-experience":
-              formData.get("level-of-experience")?.trim() || "",
-            "preferred-learning-style":
-              formData.get("preferred-learning-style")?.trim() || "",
-            "preferred-approach":
-              formData.get("preferred-approach")?.trim() || "",
+            "level-of-experience": formData.get("level-of-experience")?.trim() || "",
+            "preferred-learning-style": formData.get("preferred-learning-style")?.trim() || "",
+            "preferred-approach": formData.get("preferred-approach")?.trim() || "",
           },
         };
 
