@@ -1,0 +1,249 @@
+---
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import contact from "../data/contact";
+
+const { data } = contact;
+
+import GoogleMaps from "../components/GoogleMaps.astro";
+
+const FORM_WEBHOOK_URL = import.meta.env.GROUND_SCHOOL_SESSION_FORM_WEBHOOK_URL;
+const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
+---
+
+<section id="ground-school-form-section" class="px-6 pt-12 pb-16 lg:pb-4 min-h-screen bg-gradient-to-tr from-primary/40 to-primary/70">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-wrap justify-center align-top items-start">
+      <div class="order-last w-full lg:w-1/4 lg:order-first px-8 text-right mt-16">
+        <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+          {data.locations[0].title}
+        </h3>
+        <a href={data.locations[0].gMaps}>
+          <div class="flex justify-end gap-3 mt-5 hover:underline">
+            <p class="text-gray-50">
+              {data.locations[0].address}<br />{data.locations[0].city}, {data.locations[0].state}
+              {data.locations[0].zip}
+            </p>
+            <IoLocationOutline className="lg:size-8 size-6 text-primary-dark" />
+          </div>
+        </a>
+        <a href={`tel:${data.locations[0].phone}`}>
+          <div class="flex justify-end gap-3 mt-5 hover:underline">
+            <p class="text-gray-50">{data.locations[0].phone}</p>
+            <IoPhonePortraitOutline className="lg:size-8 size-6 text-primary-dark" />
+          </div>
+        </a>
+      </div>
+      <form
+        id="ground-school-contact-form"
+        class="flex flex-col rounded-b-xl max-w-2xl mx-auto gap-5 mt-8 lg:mt-12 p-4 lg:p-12 bg-white/30 w-full lg:w-1/2 shadow-xl h-full"
+      >
+        <h2 class="text-primary-dark text-5xl font-extrabold mx-auto w-fit text-center">Attend the Next Ground School Session</h2>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            type="text"
+            name="first-name"
+            placeholder="Your first name"
+            class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+            required
+          />
+          <input
+            type="text"
+            name="last-name"
+            placeholder="Your last name"
+            class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+            required
+          />
+        </div>
+        <div class="flex flex-col lg:flex-row gap-5">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Your email"
+            class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+            required
+          />
+          <input
+            type="email"
+            name="confirm-email"
+            placeholder="Confirm email"
+            class="hidden px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Your phone number"
+            class="px-5 py-4 outline-1 w-full border-primary-darkborder outline-gray-500 placeholder:text-primary/60"
+            required
+          />
+        </div>
+
+        <textarea
+          required
+          name="message"
+          placeholder="Your message"
+          class="px-5 py-4 outline-1 border-primary-darkborder outline-gray-500 min-h-48 placeholder:text-primary/60"
+        ></textarea>
+
+        <div class="flex gap-3">
+          <input type="checkbox" name="agree-data-collection" id="agree-data-collection" />
+
+          <label for="agree-data-collection" class="text-gray-800 text-sm lg:text-base">
+            {data.checkboxText}
+          </label>
+        </div>
+        <button
+          id="submit-button"
+          form="ground-school-contact-form"
+          disabled
+          type="submit"
+          class="mx-auto mt-8 btn-primary cursor-not-allowed bg-gray-400 hover:bg-gray-400 hover:text-white"
+          >Submit</button
+        >
+      </form>
+      <div class="w-full lg:w-1/4 px-8 text-left mt-16">
+        <h3 class="text-primary-dark text-2xl font-semibold mt-10">
+          {data.locations[1].title}
+        </h3>
+        <a href={data.locations[1].gMaps}>
+          <div class="flex justify-start gap-3 mt-5 hover:underline">
+            <IoLocationOutline className="lg:size-8 size-6 text-primary-dark" />
+            <p class="text-gray-50">
+              {data.locations[1].address}<br />{data.locations[1].city}, {data.locations[1].state}
+              {data.locations[1].zip}
+            </p>
+          </div>
+        </a>
+        <a href={`tel:${data.locations[1].phone}`}>
+          <div class="flex justify-start gap-3 mt-5 hover:underline">
+            <IoPhonePortraitOutline className="lg:size-8 size-6 text-primary-dark" />
+            <p class="text-gray-50">{data.locations[1].phone}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-full flex flex-wrap overflow-hidden">
+  <GoogleMaps data={data.gMaps[0]} />
+  <GoogleMaps data={data.gMaps[1]} />
+</section>
+
+<script define:vars={{ FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+  const cooldownSeconds = 10;
+  let isSubmitting = false;
+
+  function updateSubmitButtonState(enabled, text) {
+    submitButton.disabled = !enabled;
+    if (text) {
+      submitButton.textContent = text;
+    }
+
+    if (enabled) {
+      submitButton.classList.remove("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400");
+    } else {
+      submitButton.classList.add("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400");
+    }
+  }
+
+  checkbox.addEventListener("change", function () {
+    updateSubmitButtonState(checkbox.checked);
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("ground-school-contact-form");
+    if (!form) {
+      console.error("Form element not found.");
+      return;
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (isSubmitting) return;
+
+      if (!checkbox.checked) {
+        alert("Please agree receiving email and text messages from NextGen before submitting.");
+        return;
+      }
+
+      const formData = new FormData(form);
+      const confirmEmail = formData.get("confirm-email")?.trim();
+
+      if (confirmEmail) return;
+
+      const webhookURL = FORM_WEBHOOK_URL;
+      const apiKey = PORTAL_API_KEY;
+
+      const urlEncodedBody = new URLSearchParams(formData).toString();
+
+      const jsonBody = {
+        first_name: formData.get("first-name")?.trim() || "",
+        last_name: formData.get("last-name")?.trim() || "",
+        email: formData.get("email")?.trim() || "",
+        phone: formData.get("phone")?.trim() || "",
+        campaign: "contact_us",
+        account_random_id: "ac_vwzfezsv",
+        metadata: {
+          message: formData.get("message")?.trim() || "",
+          visit_nextgen: formData.get("visit-nextgen")?.trim() || "",
+          visit_location: formData.get("visit-location")?.trim() || "",
+        },
+      };
+
+      try {
+        isSubmitting = true;
+        updateSubmitButtonState(false, "Submitting...");
+
+        const [crmResponse, portalResponse] = await Promise.all([
+          fetch(webhookURL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: urlEncodedBody,
+          }),
+          fetch("https://portal.rightruddermarketing.com/api/leads", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "x-api-key": apiKey,
+            },
+            body: JSON.stringify(jsonBody),
+          }),
+        ]);
+
+        if (crmResponse.ok && portalResponse.ok) {
+          window.location.href = "/ground-school-confirmation";
+        } else {
+          console.error("Submission failed", {
+            crm: {
+              status: crmResponse.status,
+              body: await crmResponse.json(),
+            },
+            portal: {
+              status: portalResponse.status,
+              body: await portalResponse.json(),
+            }
+          });
+          alert("There was an error submitting your form. Please try again or contact us directly.");
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+        alert("There was an error submitting your form. Please try again or contact us directly.");
+      } finally {
+        setTimeout(() => {
+          isSubmitting = false;
+          updateSubmitButtonState(true, "Submit")
+        }, cooldownSeconds * 1000)
+      }
+    });
+  });
+</script>
+
+<script src="../scripts/emailValidation.js"></script>

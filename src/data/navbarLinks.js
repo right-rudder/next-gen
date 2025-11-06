@@ -105,6 +105,10 @@ export const navbarLinks = [
           },
         ],
       },
+      {
+        name: "Ground School Sessions",
+        link: "/ground-school-sessions",
+      }
     ],
   },
   {
