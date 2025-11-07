@@ -1,0 +1,65 @@
+---
+import HeaderScreen from "../components/HeaderScreen.astro";
+import UnderHeader2 from "../components/UnderHeader2.astro";
+import data from "../data/ground-school-sessions";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import GroundSchoolForm from "../components/GroundSchoolForm.astro";
+---
+
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
+  <HeaderScreen content={data.header} />
+
+  <UnderHeader2
+    upperHeading={data.underHeader.upperHeading}
+    heading={data.underHeader.heading}
+    description={data.underHeader.description}
+    imagePath={data.underHeader.imagePath}
+    imageAlt={data.underHeader.imageAlt}
+    linkText={data.underHeader.linkText}
+    linkUrl={data.underHeader.linkUrl}
+  />
+
+  <section>
+    <div class="bg-gradient-to-b from-gray-50 to-gray-200 py-12 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto w-full lg:mx-0">
+          <p
+            class="text-gray-500 text-center text-xl lg:text-2xl font-semibold"
+          >
+            {data.whatYouCanExpect.upperHeading}
+          </p>
+          <h2
+            class="text-6xl font-bold tracking-tight text-main-red text-center text-primary-dark"
+          >
+            {data.whatYouCanExpect.heading}
+          </h2>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-8 lg:gap-0">
+          <div
+            class="w-full lg:max-w-3xl mt-4 py-4 lg:py-12 lg:px-8 rounded text-primary-dark flex flex-col items-center lg:flex-1 mx-auto"
+          >
+            {
+              data.whatYouCanExpect.containerDescription.map((text) => (
+                <p class="mb-2 font-sans1 px-2 leading-6 text-center text-xl lg:px-6">
+                  {text}
+                </p>
+              ))
+            }
+            <p
+              class="italic text-lg my-6 px-2 leading-6 text-center lg:px-6"
+            >
+              {data.whatYouCanExpect.containerSmallPrint}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <GroundSchoolForm />
+</BaseLayout>

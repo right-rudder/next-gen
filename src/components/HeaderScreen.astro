@@ -41,4 +41,10 @@ if (!images[content.imagePath]) {
       set:html={content.headerH2}
     />
   </div>
+
+  {
+    content.cta && (
+      <a href={content.cta.url} class="btn-primary absolute bottom-4 z-10">{content.cta.text}</a>
+    )
+  }
 </div>
