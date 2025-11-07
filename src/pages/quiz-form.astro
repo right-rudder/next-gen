@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Header from "../components/Header.astro";
-import Banner from "../assets/private-pilot-sits-in-multi-engine-plane.jpg";
 import { MdOutlineQuiz } from "react-icons/md";
 import quizForm from "../data/quiz-form";
 
@@ -26,6 +25,17 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       action=""
       class="max-w-3xl mx-auto flex flex-col justify-center align-middle items-center space-y-8"
     >
+      <p class="text-primary text-lg w-full font-light mt-2">
+        <b>Purpose:</b> To help prospective students evaluate their preparedness for flight training and allow NextGen Flight
+        Academy to tailor a personalized training plan.
+        <br /><br />
+
+        <b>Instructions:</b> Please answer the following questions honestly. Your responses will remain confidential and
+        will be used solely to assist in your flight training journey.
+      </p>
+
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Personal Information</h3>
+
       <div class="w-full mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div class="sm:col-span-3">
           <label for="first-name" class="block font-medium leading-6 text-primary-dark">First name</label>
@@ -90,92 +100,43 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
       </div>
 
-      <div class="w-full mt-10 space-y-10 flex">
-        <fieldset class="w-full">
-          <legend class="font-medium leading-6 text-primary-dark"
-            >What inspires you to pursue a career as a pilot?</legend
-          >
-          <p class="text-gray-500 text-sm">You can select multiple options</p>
-          <div class="mt-2 space-y-1">
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="adventure"
-                  name="inspirations"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="A passion for adventure"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="adventure" class="text-gray-600">A passion for adventure</label>
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="opportunities"
-                  name="inspirations"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Professional growth and opportunities"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="opportunities" class="text-gray-600">Professional growth and opportunities</label>
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="hobby"
-                  name="inspirations"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Personal hobby"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="hobby" class="text-gray-600">Personal hobby</label>
-              </div>
-            </div>
-            <div class="relative flex gap-x-3">
-              <div class="flex h-6 items-center">
-                <input
-                  id="other"
-                  name="inspirations"
-                  type="checkbox"
-                  class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  value="Other:"
-                />
-              </div>
-              <div class="leading-6">
-                <label for="other" class="text-gray-600">Other (please specify)</label>
-              </div>
-            </div>
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">Preferred method of contact</legend>
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
             <input
-              class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-              type="text"
-              name="inspirations"
-              id="other-text"
+              id="method-contact-email"
+              name="method-contact"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Email"
             />
+            <label for="method-contact-email" class="block leading-6 text-gray-600">Email</label>
           </div>
-        </fieldset>
-      </div>
-
-      <div class="col-span-full w-full">
-        <label for="long-term-goals" class="block font-medium leading-6 text-primary-dark"
-          >What are your long-term goals within the aviation industry?</label
-        >
-        <div class="mt-2">
-          <textarea
-            id="long-term-goals"
-            name="long-term-goals"
-            rows="3"
-            class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
-          ></textarea>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="method-contact-phone"
+              name="method-contact"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Phone call"
+            />
+            <label for="method-contact-phone" class="block leading-6 text-gray-600">Phone Call</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="method-contact-text"
+              name="method-contact"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Text message"
+            />
+            <label for="method-contact-text" class="block leading-6 text-gray-600">Text message</label>
+          </div>
         </div>
-      </div>
+      </fieldset>
+
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Flight Experience</h3>
 
       <div class="w-full mt-10 space-y-10 flex">
         <fieldset class="w-full">
@@ -236,6 +197,106 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </fieldset>
       </div>
 
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Aspirations and Mindset</h3>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">What inspires you to pursue a career as a pilot?</legend
+        >
+        <p class="text-gray-500 text-sm">You can select multiple options</p>
+        <div class="mt-2 space-y-1">
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="adventure"
+                name="inspirations"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="A passion for adventure"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="adventure" class="text-gray-600">A passion for adventure</label>
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="opportunities"
+                name="inspirations"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Professional growth and opportunities"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="opportunities" class="text-gray-600">Professional growth and opportunities</label>
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="hobby"
+                name="inspirations"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Personal hobby"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="hobby" class="text-gray-600">Personal hobby</label>
+            </div>
+          </div>
+          <div class="relative flex gap-x-3">
+            <div class="flex h-6 items-center">
+              <input
+                id="other"
+                name="inspirations"
+                type="checkbox"
+                class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
+                value="Other:"
+              />
+            </div>
+            <div class="leading-6">
+              <label for="other" class="text-gray-600">Other (please specify)</label>
+            </div>
+          </div>
+          <input
+            class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+            type="text"
+            name="inspirations"
+            id="other-text"
+          />
+          <div id="other-error-msg" class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4">
+            <div class="flex">
+              <div class="shrink-0">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-yellow-400">
+                  <path d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm text-yellow-700">
+                  Please fill out the text field above.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- <div class="col-span-full w-full">
+        <label for="long-term-goals" class="block font-medium leading-6 text-primary-dark"
+          >What are your long-term goals within the aviation industry?</label
+        >
+        <div class="mt-2">
+          <textarea
+            id="long-term-goals"
+            name="long-term-goals"
+            rows="3"
+            class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
+          ></textarea>
+        </div>
+      </div> -->
+
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
           >Which learning style resonates with you the most?</legend
@@ -272,6 +333,64 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             />
             <label for="reading" class="block leading-6 text-gray-600"
               >Learning through reading and studying materials</label
+            >
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">How certain are you about becoming a pilot?</legend>
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="pilot-certainty-100"
+              name="pilot-certainty"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="100%"
+            />
+            <label for="pilot-certainty-100" class="block leading-6 text-gray-600">100%</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="pilot-certainty-90"
+              name="pilot-certainty"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="90%"
+            />
+            <label for="pilot-certainty-90" class="block leading-6 text-gray-600">90%</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="pilot-certainty-75"
+              name="pilot-certainty"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="75%"
+            />
+            <label for="pilot-certainty-75" class="block leading-6 text-gray-600">75%</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="pilot-certainty-less-75"
+              name="pilot-certainty"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Less than 75%"
+            />
+            <label for="pilot-certainty-less-75" class="block leading-6 text-gray-600">Less than 75%</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="pilot-certainty-still-considering"
+              name="pilot-certainty"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Still considering"
+            />
+            <label for="pilot-certainty-still-considering" class="block leading-6 text-gray-600"
+              >Still considering</label
             >
           </div>
         </div>
@@ -397,10 +516,25 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             name="kind-of-guidance"
             id="other2-text"
           />
+          <div id="other2-error-msg" class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4">
+            <div class="flex">
+              <div class="shrink-0">
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-yellow-400">
+                  <path d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="ml-3">
+                <p class="text-sm text-yellow-700">
+                  Please fill out the text field above.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
       </fieldset>
 
-      <div class="col-span-full w-full">
+      <!-- <div class="col-span-full w-full">
         <label for="lift-generation" class="block font-medium leading-6 text-primary-dark"
           >Do you know how a wing generates lift?</label
         >
@@ -412,7 +546,333 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             class="block w-full p-2 border-0 py-1.5 text-primary-dark shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-primary sm:leading-6"
             required></textarea>
         </div>
+      </div> -->
+
+      <div>
+        <h3 class="text-primary text-2xl font-extrabold w-full">Medical Fitness</h3>
+
+        <p class="text-primary text-lg w-full font-light mt-2">
+          <b>Note:</b> All pilots must obtain an FAA Medical Certificate. It’s essential to assess your medical fitness early
+          in your training journey.
+        </p>
       </div>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">Age range</legend>
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-age-under-25"
+              name="medical-age-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Under 25"
+              required
+            />
+            <label for="medical-age-under-25" class="block leading-6 text-gray-600">Under 25</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-age-26-55"
+              name="medical-age-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="26-55"
+              required
+            />
+            <label for="medical-age-26-55" class="block leading-6 text-gray-600">26-55</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-age-over-55"
+              name="medical-age-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Over 55"
+              required
+            />
+            <label for="medical-age-over-55" class="block leading-6 text-gray-600">Over 55</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">Weight range</legend>
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-weight-under-200-lbs"
+              name="medical-weight-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Under 200 lbs"
+              required
+            />
+            <label for="medical-weight-under-200-lbs" class="block leading-6 text-gray-600">Under 200 lbs</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-weight-200-250-lbs"
+              name="medical-weight-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="200-250 lbs"
+              required
+            />
+            <label for="medical-weight-200-250-lbs" class="block leading-6 text-gray-600">200-250 lbs</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-weight-over-250-lbs"
+              name="medical-weight-range"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Over 250 lbs"
+              required
+            />
+            <label for="medical-weight-over-250-lbs" class="block leading-6 text-gray-600">Over 250 lbs</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Do you currently have any known medical conditions that might affect your ability to obtain an FAA Medical
+          Certificate?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-conditions-yes"
+              name="medical-conditions"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes"
+              required
+            />
+            <label for="medical-conditions-yes" class="block leading-6 text-gray-600">Yes</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-conditions-no"
+              name="medical-conditions"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="No"
+              required
+            />
+            <label for="medical-conditions-no" class="block leading-6 text-gray-600">No</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-conditions-unsure"
+              name="medical-conditions"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Unsure"
+              required
+            />
+            <label for="medical-conditions-unsure" class="block leading-6 text-gray-600">Unsure</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark">Are you currently taking any medications?</legend>
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-medication-yes"
+              name="medical-medication"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes"
+              required
+            />
+            <label for="medical-medication-yes" class="block leading-6 text-gray-600">Yes</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-medication-no"
+              name="medical-medication"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="No"
+              required
+            />
+            <label for="medical-medication-no" class="block leading-6 text-gray-600">No</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="medical-medication-not-saying"
+              name="medical-medication"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Prefer not to say"
+              required
+            />
+            <label for="medical-medication-not-saying" class="block leading-6 text-gray-600">Prefer not to say</label>
+          </div>
+        </div>
+
+        <p class="text-primary text-lg w-full font-light mt-2">
+          <b>Important:</b> If you are taking medications or have medical conditions, we recommend consulting with an FAA-certified
+          Aviation Medical Examiner (AME) to determine your eligibility for a medical certificate.
+        </p>
+      </fieldset>
+
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Time Commitment</h3>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >How many flying lessons do you plan to schedule per week?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-weekly-1-or-fewer"
+              name="time-commitment-weekly"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="1 or fewer"
+              required
+            />
+            <label for="time-commitment-weekly-1-or-fewer" class="block leading-6 text-gray-600">1 or fewer</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-weekly-2-3"
+              name="time-commitment-weekly"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="2-3"
+              required
+            />
+            <label for="time-commitment-weekly-2-3" class="block leading-6 text-gray-600">2-3</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-weekly-4-or-more"
+              name="time-commitment-weekly"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="4 or more"
+              required
+            />
+            <label for="time-commitment-weekly-4-or-more" class="block leading-6 text-gray-600">4 or more</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Do you have flexibility in your schedule to accommodate additional study or practice time?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-flexibility-yes"
+              name="time-commitment-flexibility"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes"
+              required
+            />
+            <label for="time-commitment-flexibility-yes" class="block leading-6 text-gray-600">Yes</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-flexibility-no"
+              name="time-commitment-flexibility"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="No"
+              required
+            />
+            <label for="time-commitment-flexibility-no" class="block leading-6 text-gray-600">No</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="time-commitment-flexibility-limited"
+              name="time-commitment-flexibility"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Limited flexibility"
+              required
+            />
+            <label for="time-commitment-flexibility-limited" class="block leading-6 text-gray-600"
+              >Limited flexibility</label
+            >
+          </div>
+        </div>
+
+        <p class="text-primary text-lg w-full font-light mt-2">
+          <b>Note:</b> Consistent practice and study are crucial for success in flight training. Less frequent flying can
+          lead to longer training durations and increased costs.
+        </p>
+      </fieldset>
+
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Financial Planning</h3>
+
+      <fieldset class="w-full">
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Have you prepared financially for the costs associated with flight training?</legend
+        >
+        <div class="mt-2 space-y-1">
+          <div class="flex items-center gap-x-3">
+            <input
+              id="financial-yes-full-amount"
+              name="financial"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes, I have the full amount saved (~$12,000 for a Private Pilot License)"
+              required
+            />
+            <label for="financial-yes-full-amount" class="block leading-6 text-gray-600"
+              >Yes, I have the full amount saved (~$12,000 for a Private Pilot License)</label
+            >
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="financial-yes-as-i-go"
+              name="financial"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes, I plan to pay as I go"
+              required
+            />
+            <label for="financial-yes-as-i-go" class="block leading-6 text-gray-600">Yes, I plan to pay as I go</label>
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="financial-yes-assitance"
+              name="financial"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="Yes, I have financial assistance (e.g., Stratus, scholarships, employer reimbursement)"
+              required
+            />
+            <label for="financial-yes-assitance" class="block leading-6 text-gray-600"
+              >Yes, I have financial assistance (e.g., Stratus, scholarships, employer reimbursement)</label
+            >
+          </div>
+          <div class="flex items-center gap-x-3">
+            <input
+              id="financial-no"
+              name="financial"
+              type="radio"
+              class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
+              value="No, I need guidance on financing options"
+              required
+            />
+            <label for="financial-no" class="block leading-6 text-gray-600"
+              >No, I need guidance on financing options</label
+            >
+          </div>
+        </div>
+      </fieldset>
+
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Additional Information</h3>
 
       <div class="col-span-full w-full">
         <label for="expectations" class="block font-medium leading-6 text-primary-dark"
@@ -433,17 +893,17 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
         <div>
           <div>
-            <input type="radio" class="mx-2" id="yes-visit" name="visit-nextgen" value="yes-visit" required />
+            <input type="radio" class="mx-2" id="yes-visit" name="visit-nextgen" value="Yes" required />
             <label for="yes-visit">Yes</label>
           </div>
           <div>
-            <input type="radio" class="mx-2" id="no-visit" name="visit-nextgen" value="no-visit" required />
+            <input type="radio" class="mx-2" id="no-visit" name="visit-nextgen" value="No" required />
             <label for="no-visit">No</label>
           </div>
         </div>
       </fieldset>
 
-      <div id="location-container" class="hidden flex flex-col gap-2 w-full">
+      <div id="location-container" class="hidden flex-col gap-2 w-full">
         <label for="visit-location">Choose a location:</label>
 
         <select name="visit-location" id="visit-location" class="w-36 px-3 py-2 border border-gray-400">
@@ -452,21 +912,22 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </select>
 
         <label for="visit-date">Preferred Date:</label>
-        <input
-          type="date"
-          name="visit-date"
-          id="visit-date"
-          class="w-40 px-3 py-2 border border-gray-400"
-          required
-        />
+        <input type="date" name="visit-date" id="visit-date" class="w-40 px-3 py-2 border border-gray-400" required />
 
         <label for="visit-time">Preferred Time:</label>
         <select name="visit-time" id="visit-time" class="w-40 px-3 py-2 border border-gray-400" required>
           <option value="">Select a time</option>
-          <option value="morning">Morning</option>
-          <option value="afternoon">Afternoon</option>
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
         </select>
       </div>
+
+      <p class="text-primary text-lg w-full font-light mt-2">
+        <b>Final Note</b><br />
+        Once submitted, your answers will be reviewed by our team, and we’ll reach out to discuss your personalized training
+        path. This assessment can be exported into your student profile and used to tailor recommendations for scheduling,
+        instruction format, and financial planning.
+      </p>
 
       <div class="flex gap-3 my-5 items-center">
         <input
@@ -494,6 +955,48 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
     const submitButton = document.getElementById("submit-button");
     const yesVisit = document.getElementById("yes-visit");
     const noVisit = document.getElementById("no-visit");
+    let isSubmitting = false;
+
+    const otherFields = [
+      {
+        id: "other",
+        idText: "other-text",
+        idErrorMsg: "other-error-msg",
+      },
+      {
+        id: "other2",
+        idText: "other2-text",
+        idErrorMsg: "other2-error-msg",
+      },
+    ]
+
+    function updateSubmitButtonState(enabled, text) {
+      submitButton.disabled = !enabled;
+      if (text) {
+        submitButton.textContent = text;
+      }
+
+      if (enabled) {
+        submitButton.classList.remove("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
+      } else {
+        submitButton.classList.add("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
+      }
+    }
+
+    function checkOtherFilled(idOther, idOtherText, idErrorMsg) {
+      const other = document.getElementById(idOther);
+      const otherText = document.getElementById(idOtherText);
+      const otherErrorMsg = document.getElementById(idErrorMsg);
+
+      if (other.checked && otherText.value.trim() === "") {
+        otherErrorMsg.classList.remove("hidden");
+        otherText.focus();
+        return false;
+      }
+
+      otherErrorMsg.classList.add("hidden");
+      return true;
+    }
 
     yesVisit.addEventListener("change", function () {
       if (yesVisit.checked) {
@@ -515,14 +1018,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
     dateInput.setAttribute("min", today);
 
     checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        submitButton.disabled = false;
-        submitButton.classList.remove("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
-      } else {
-        submitButton.disabled = true;
-        submitButton.classList.add("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
-      }
+      updateSubmitButtonState(checkbox.checked);
     });
+
     document.addEventListener("DOMContentLoaded", () => {
       const form = document.getElementById("quiz-form");
       if (!form) {
@@ -533,9 +1031,17 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       form.addEventListener("submit", async (event) => {
         event.preventDefault();
 
+        if (isSubmitting) return;
+
         const formData = new FormData(form);
         const confirmEmail = formData.get("confirm-email")?.trim();
         if (confirmEmail) return;
+
+        for (const item of otherFields) {
+          if (!checkOtherFilled(item.id, item.idText, item.idErrorMsg)) {
+            return;
+          }
+        }
 
         const inspirations = [];
         formData.getAll("inspirations").forEach((inspiration) => {
@@ -571,11 +1077,29 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
           campaign: "quiz",
           account_random_id: "ac_vwzfezsv",
           metadata: {
-            "what-inspires-you": inspirations.join(","),
-            "what-kind-of-guidance-and-support-you-prefer": kindOfGuidance.join(","),
-            "long-term-goals": formData.get("long-term-goals")?.trim() || "",
-            "do-you-know-how-a-wing-generates-lift":
-              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() || "",
+            "preferred-method-of-contact": formData.get("method-contact")?.trim() || "",
+            "level-of-experience": formData.get("level-of-experience")?.trim() || "",
+            "aspirations-and-mindset": {
+              "what-inspires-you": inspirations.join(","),
+              "preferred-learning-style": formData.get("preferred-learning-style")?.trim() || "",
+              "pilot-certainty": formData.get("pilot-certainty")?.trim() || "",
+              "preferred-approach": formData.get("preferred-approach")?.trim() || "",
+              "what-kind-of-guidance-and-support-you-prefer": kindOfGuidance.join(","),
+            },
+            "medical": {
+              "medical-age-range": formData.get("medical-age-range")?.trim() || "",
+              "medical-weight-range": formData.get("medical-weight-range")?.trim() || "",
+              "medical-conditions": formData.get("medical-conditions")?.trim() || "",
+              "medical-medication": formData.get("medical-medication")?.trim() || "",
+            },
+            "time-commitment": {
+              "time-commitment-weekly": formData.get("time-commitment-weekly")?.trim() || "",
+              "time-commitment-flexibility": formData.get("time-commitment-flexibility")?.trim() || "",
+            },
+            "financial": formData.get("financial")?.trim() || "",
+            /* "long-term-goals": formData.get("long-term-goals")?.trim() || "", */
+            /* "do-you-know-how-a-wing-generates-lift":
+              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() || "", */
             "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training":
               formData
                 .get(
@@ -584,14 +1108,14 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
                 ?.trim() || "",
             "visit-nextgen": formData.get("visit-nextgen")?.trim() || "",
             "visit-location": formData.get("visit-location")?.trim() || "",
-            "level-of-experience": formData.get("level-of-experience")?.trim() || "",
-            "preferred-learning-style": formData.get("preferred-learning-style")?.trim() || "",
-            "preferred-approach": formData.get("preferred-approach")?.trim() || "",
           },
         };
 
         try {
-          const [ghlRes, portalRes] = await Promise.all([
+          isSubmitting = true;
+          updateSubmitButtonState(false, "Submitting...");
+
+          const [crmResponse, portalResponse] = await Promise.all([
             fetch(webhookURL, {
               method: "POST",
               headers: {
@@ -610,16 +1134,27 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             }),
           ]);
 
-          if (ghlRes.ok && portalRes.ok) {
+          if (crmResponse.ok && portalResponse.ok) {
             window.location.href = "/quiz-confirmation";
           } else {
             console.error("Submission failed", {
-              ghlStatus: ghlRes.status,
-              portalStatus: portalRes.status,
+              crm: {
+                status: crmResponse.status,
+                body: await crmResponse.json(),
+              },
+              portal: {
+                status: portalResponse.status,
+                body: await portalResponse.json(),
+              },
             });
+            alert("There was an error submitting your form. Please try again or contact us directly.");
           }
         } catch (err) {
           console.error("Submission error:", err);
+          alert("There was an error submitting your form. Please try again or contact us directly.");
+        } finally {
+          isSubmitting = false;
+          updateSubmitButtonState(false, "Submit");
         }
       });
     });
