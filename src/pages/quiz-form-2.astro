@@ -69,29 +69,38 @@ const quizQuestions = [
   {
     section: "Flight Experience",
     type: "radio",
-    name: "level-of-experience",
-    legend: "What is your current level of aviation experience?",
+    name: "flight-experience",
+    legend: "Do you have any prior flight experience or training?",
+    hasOther: true,
+    otherId: "experience-other",
+    otherTextId: "experience-other-text",
+    otherErrorId: "experience-other-error",
     options: [
       {
-        id: "no-experience",
-        value: "No prior experience with piloting aircraft",
-        label: "No prior experience with piloting aircraft",
+        id: "experience-no",
+        value: "No prior experience",
+        label: "No prior experience",
       },
       {
-        id: "simulator-experience",
-        value: "Experience with flight simulators or drones",
-        label: "Experience with flight simulators or drones",
+        id: "experience-sim",
+        value: "Flight simulator experience",
+        label: "Flight simulator experience",
       },
       {
-        id: "flight-training",
-        value: "Some flight training but haven't soloed yet",
-        label: "Some flight training but haven't soloed yet",
+        id: "experience-drones",
+        value: "Drone piloting experience",
+        label: "Drone piloting experience",
       },
       {
-        id: "checkride",
-        value: "Currently working towards completing a checkride",
-        label: "Currently working towards completing a checkride",
-        required: true,
+        id: "experience-lessons",
+        value: "Some flight lessons",
+        label: "Some flight lessons",
+      },
+      {
+        id: "experience-other",
+        value: "Other:",
+        label: "Other (please specify)",
+        isOther: true,
       },
     ],
   },
@@ -131,24 +140,129 @@ const quizQuestions = [
   },
   {
     type: "radio",
-    name: "preferred-learning-style",
-    legend: "Which learning style resonates with you the most?",
+    name: "plane-reaction",
+    legend:
+      "When a plane flies overhead during a conversation, how do you react?",
     options: [
       {
-        id: "practical",
-        value: "Hands-on, practical learning",
-        label: "Hands-on, practical learning",
+        id: "plane-identify",
+        value: "I immediately try to identify it",
+        label: "I immediately try to identify it",
       },
       {
-        id: "visual",
-        value: "Visual learning through observation",
-        label: "Visual learning through observation",
+        id: "plane-wish",
+        value: "I wish I were up there",
+        label: "I wish I were up there",
       },
       {
-        id: "reading",
-        value: "Learning through reading and studying materials",
-        label: "Learning through reading and studying materials",
-        required: true,
+        id: "plane-glance",
+        value: "I glance at it and continue",
+        label: "I glance at it and continue",
+      },
+      {
+        id: "plane-focused",
+        value: "I acknowledge it but stay focused",
+        label: "I acknowledge it but stay focused",
+      },
+      {
+        id: "plane-not-notice",
+        value: "I don't notice it",
+        label: "I don't notice it",
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "pilot-type",
+    legend: "What kind of pilot do you aspire to be?",
+    options: [
+      {
+        id: "type-recreational",
+        value: "Recreational/Hobby Pilot",
+        label: "Recreational/Hobby Pilot",
+      },
+      {
+        id: "type-cfi",
+        value: "Flight Instructor (CFI)",
+        label: "Flight Instructor (CFI)",
+      },
+      { id: "type-airline", value: "Airline Pilot", label: "Airline Pilot" },
+      {
+        id: "type-corporate",
+        value: "Corporate/Business Pilot",
+        label: "Corporate/Business Pilot",
+      },
+      { id: "type-military", value: "Military Pilot", label: "Military Pilot" },
+      {
+        id: "type-helicopter",
+        value: "Helicopter Pilot",
+        label: "Helicopter Pilot",
+      },
+      {
+        id: "type-unsure",
+        value: "Still exploring options",
+        label: "Still exploring options",
+      },
+    ],
+  },
+  {
+    type: "checkbox",
+    name: "learning-methods",
+    legend: "Which learning methods do you prefer?",
+    note: "Select all that apply",
+    options: [
+      {
+        id: "learn-visual",
+        value: "Visual (e.g., diagrams, videos)",
+        label: "Visual (e.g., diagrams, videos)",
+      },
+      {
+        id: "learn-auditory",
+        value: "Auditory (e.g., lectures, discussions)",
+        label: "Auditory (e.g., lectures, discussions)",
+      },
+      {
+        id: "learn-reading",
+        value: "Reading/Writing (e.g., manuals, note-taking)",
+        label: "Reading/Writing (e.g., manuals, note-taking)",
+      },
+      {
+        id: "learn-kinesthetic",
+        value: "Kinesthetic (e.g., hands-on practice, simulations)",
+        label: "Kinesthetic (e.g., hands-on practice, simulations)",
+      },
+    ],
+  },
+  {
+    type: "checkbox",
+    name: "training-formats",
+    legend: "Which of the following training formats are you interested in?",
+    note: "Select all that apply",
+    options: [
+      {
+        id: "format-one-on-one",
+        value: "One-on-one instruction (most personalized)",
+        label: "One-on-one instruction (most personalized)",
+      },
+      {
+        id: "format-small-group",
+        value: "Small group classes",
+        label: "Small group classes",
+      },
+      {
+        id: "format-online",
+        value: "Online/self-paced ground school",
+        label: "Online/self-paced ground school",
+      },
+      {
+        id: "format-hybrid",
+        value: "Hybrid (in-person + online)",
+        label: "Hybrid (in-person + online)",
+      },
+      {
+        id: "format-accelerated",
+        value: "Accelerated/immersion program",
+        label: "Accelerated/immersion program",
       },
     ],
   },
@@ -233,6 +347,82 @@ const quizQuestions = [
         value: "Other:",
         label: "Other (please specify)",
         isOther: true,
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "problem-solving",
+    legend:
+      "You have a major project due tomorrow and are only partially through. What do you do?",
+    options: [
+      {
+        id: "solve-ahead",
+        value: "Complete it ahead of schedule",
+        label: "Complete it ahead of schedule",
+      },
+      {
+        id: "solve-work",
+        value: "Work through the night if needed",
+        label: "Work through the night if needed",
+      },
+      {
+        id: "solve-extension",
+        value: "Request an extension",
+        label: "Request an extension",
+      },
+      {
+        id: "solve-break",
+        value: "Take a short break and continue",
+        label: "Take a short break and continue",
+      },
+      {
+        id: "solve-overwhelmed",
+        value: "Feel overwhelmed and freeze up",
+        label: "Feel overwhelmed and freeze up",
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "education-degree",
+    legend: "Do you currently hold a college degree?",
+    options: [
+      { id: "degree-yes", value: "Yes", label: "Yes" },
+      { id: "degree-no", value: "No", label: "No" },
+      {
+        id: "degree-current",
+        value: "Currently pursuing",
+        label: "Currently pursuing",
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "education-interest",
+    legend:
+      "Are you interested in pursuing a degree in conjunction with your flight training?",
+    note: "NextGen has partnerships with aviation degree programs",
+    options: [
+      {
+        id: "edu-before",
+        value: "Yes, before flight training",
+        label: "Yes, before flight training",
+      },
+      {
+        id: "edu-during",
+        value: "Yes, during flight training",
+        label: "Yes, during flight training",
+      },
+      {
+        id: "edu-after",
+        value: "Yes, after flight training",
+        label: "Yes, after flight training",
+      },
+      {
+        id: "edu-no",
+        value: "No, flight training only",
+        label: "No, flight training only",
       },
     ],
   },
@@ -377,8 +567,152 @@ const quizQuestions = [
       },
     ],
   },
+  {
+    section: "Motivation & Drive",
+    type: "checkbox",
+    name: "motivation-factors",
+    legend: "What motivates you to pursue flight training?",
+    options: [
+      {
+        id: "motivate-adventure",
+        value: "Sense of adventure and freedom",
+        label: "Sense of adventure and freedom",
+      },
+      {
+        id: "motivate-career",
+        value: "Career advancement and opportunities",
+        label: "Career advancement and opportunities",
+      },
+      {
+        id: "motivate-challenge",
+        value: "Personal challenge and achievement",
+        label: "Personal challenge and achievement",
+      },
+      {
+        id: "motivate-travel",
+        value: "Ability to travel",
+        label: "Ability to travel",
+      },
+      {
+        id: "motivate-family",
+        value: "Family tradition/influence",
+        label: "Family tradition/influence",
+      },
+      {
+        id: "motivate-income",
+        value: "High earning potential",
+        label: "High earning potential",
+      },
+      {
+        id: "motivate-flexibility",
+        value: "Schedule flexibility",
+        label: "Schedule flexibility",
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "timeline",
+    legend: "When do you hope to start flight training?",
+    options: [
+      {
+        id: "timeline-immediate",
+        value: "Immediately (within 30 days)",
+        label: "Immediately (within 30 days)",
+      },
+      {
+        id: "timeline-3months",
+        value: "Within 3 months",
+        label: "Within 3 months",
+      },
+      {
+        id: "timeline-6months",
+        value: "Within 6 months",
+        label: "Within 6 months",
+      },
+      { id: "timeline-year", value: "Within 1 year", label: "Within 1 year" },
+      {
+        id: "timeline-exploring",
+        value: "Just exploring for now",
+        label: "Just exploring for now",
+      },
+    ],
+  },
+  {
+    type: "radio",
+    name: "support-system",
+    legend: "Do you have family/friend support for your flight training?",
+    options: [
+      {
+        id: "support-strong",
+        value: "Strong support system",
+        label: "Strong support system",
+      },
+      { id: "support-some", value: "Some support", label: "Some support" },
+      {
+        id: "support-neutral",
+        value: "Neutral/indifferent",
+        label: "Neutral/indifferent",
+      },
+      {
+        id: "support-little",
+        value: "Little to no support",
+        label: "Little to no support",
+      },
+      {
+        id: "support-not-sure",
+        value: "Prefer not to say",
+        label: "Prefer not to say",
+      },
+    ],
+  },
 ];
 
+const additionalQuestions = [
+  {
+    type: "checkbox",
+    name: "heard-about",
+    legend: "How did you hear about NextGen Flight Academy?",
+    hasOther: true,
+    otherId: "source-other",
+    otherTextId: "source-other-text",
+    otherErrorId: "source-other-error",
+    options: [
+      { id: "source-google", value: "Google search", label: "Google search" },
+      {
+        id: "source-social",
+        value: "Social media (Facebook, Instagram, TikTok)",
+        label: "Social media (Facebook, Instagram, TikTok)",
+      },
+      {
+        id: "source-friend",
+        value: "Referred by a friend or pilot",
+        label: "Referred by a friend or pilot",
+      },
+      {
+        id: "source-visit",
+        value: "Visited the airport",
+        label: "Visited the airport",
+      },
+      {
+        id: "source-event",
+        value: "Aviation event or airshow",
+        label: "Aviation event or airshow",
+      },
+      {
+        id: "source-school",
+        value: "School/college career fair",
+        label: "School/college career fair",
+      },
+      {
+        id: "source-other",
+        value: "Other:",
+        label: "Other (please specify)",
+        isOther: true,
+      },
+    ],
+  },
+];
 // Create array of other fields for JavaScript validation
 const otherFields = quizQuestions
   .filter((q) => q.hasOther)
