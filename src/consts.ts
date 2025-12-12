@@ -1,3 +1,5 @@
+export const COMPANY_NAME = "NextGen Flight Academy";
+
 // CHANGE Default title - Enhanced with primary keywords
 export const SITE_TITLE =
   "Part 141 & Part 61 Flight Training | NextGen Flight Academy | Riverside & Redlands, CA";
