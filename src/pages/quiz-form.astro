@@ -9,7 +9,11 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
 const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 ---
 
-<BaseLayout siteTitle={data.pageTitle} siteDescription={data.pageDescription} keywords={data.pageKeywords}>
+<BaseLayout
+  siteTitle={data.pageTitle}
+  siteDescription={data.pageDescription}
+  keywords={data.pageKeywords}
+>
   <Header data={data.header} />
 
   <section class="py-16 px-5 max-w-5xl mx-auto">
@@ -26,19 +30,27 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       class="max-w-3xl mx-auto flex flex-col justify-center align-middle items-center space-y-8"
     >
       <p class="text-primary text-lg w-full font-light mt-2">
-        <b>Purpose:</b> To help prospective students evaluate their preparedness for flight training and allow NextGen Flight
-        Academy to tailor a personalized training plan.
+        <b>Purpose:</b> To help prospective students evaluate their preparedness
+        for flight training and allow NextGen Flight Academy to tailor a personalized
+        training plan.
         <br /><br />
 
-        <b>Instructions:</b> Please answer the following questions honestly. Your responses will remain confidential and
-        will be used solely to assist in your flight training journey.
+        <b>Instructions:</b> Please answer the following questions honestly. Your
+        responses will remain confidential and will be used solely to assist in your
+        flight training journey.
       </p>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Personal Information</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Personal Information
+      </h3>
 
       <div class="w-full mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
         <div class="sm:col-span-3">
-          <label for="first-name" class="block font-medium leading-6 text-primary-dark">First name</label>
+          <label
+            for="first-name"
+            class="block font-medium leading-6 text-primary-dark"
+            >First name</label
+          >
           <div class="mt-2">
             <input
               type="text"
@@ -52,7 +64,11 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
 
         <div class="sm:col-span-3">
-          <label for="last-name" class="block font-medium leading-6 text-primary-dark">Last name</label>
+          <label
+            for="last-name"
+            class="block font-medium leading-6 text-primary-dark"
+            >Last name</label
+          >
           <div class="mt-2">
             <input
               type="text"
@@ -66,7 +82,11 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
 
         <div class="sm:col-span-3">
-          <label for="email" class="block font-medium leading-6 text-primary-dark">Email address</label>
+          <label
+            for="email"
+            class="block font-medium leading-6 text-primary-dark"
+            >Email address</label
+          >
           <div class="mt-2">
             <input
               id="email"
@@ -86,7 +106,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </p>
 
         <div class="sm:col-span-3">
-          <label for="phone" class="block font-medium leading-6 text-primary-dark">Phone</label>
+          <label
+            for="phone"
+            class="block font-medium leading-6 text-primary-dark">Phone</label
+          >
           <div class="mt-2">
             <input
               id="phone"
@@ -101,7 +124,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       </div>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">Preferred method of contact</legend>
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Preferred method of contact</legend
+        >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
             <input
@@ -111,7 +136,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Email"
             />
-            <label for="method-contact-email" class="block leading-6 text-gray-600">Email</label>
+            <label
+              for="method-contact-email"
+              class="block leading-6 text-gray-600">Email</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -121,7 +149,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Phone call"
             />
-            <label for="method-contact-phone" class="block leading-6 text-gray-600">Phone Call</label>
+            <label
+              for="method-contact-phone"
+              class="block leading-6 text-gray-600">Phone Call</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -131,12 +162,17 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Text message"
             />
-            <label for="method-contact-text" class="block leading-6 text-gray-600">Text message</label>
+            <label
+              for="method-contact-text"
+              class="block leading-6 text-gray-600">Text message</label
+            >
           </div>
         </div>
       </fieldset>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Flight Experience</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Flight Experience
+      </h3>
 
       <div class="w-full mt-10 space-y-10 flex">
         <fieldset class="w-full">
@@ -164,7 +200,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
                 class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
                 value="Experience with flight simulators or drones"
               />
-              <label for="simulator-experience" class="block leading-6 text-gray-600"
+              <label
+                for="simulator-experience"
+                class="block leading-6 text-gray-600"
                 >Experience with flight simulators or drones</label
               >
             </div>
@@ -197,10 +235,13 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </fieldset>
       </div>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Aspirations and Mindset</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Aspirations and Mindset
+      </h3>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">What inspires you to pursue a career as a pilot?</legend
+        <legend class="font-medium leading-6 text-primary-dark"
+          >What inspires you to pursue a career as a pilot?</legend
         >
         <p class="text-gray-500 text-sm">You can select multiple options</p>
         <div class="mt-2 space-y-1">
@@ -215,7 +256,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               />
             </div>
             <div class="leading-6">
-              <label for="adventure" class="text-gray-600">A passion for adventure</label>
+              <label for="adventure" class="text-gray-600"
+                >A passion for adventure</label
+              >
             </div>
           </div>
           <div class="relative flex gap-x-3">
@@ -229,7 +272,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               />
             </div>
             <div class="leading-6">
-              <label for="opportunities" class="text-gray-600">Professional growth and opportunities</label>
+              <label for="opportunities" class="text-gray-600"
+                >Professional growth and opportunities</label
+              >
             </div>
           </div>
           <div class="relative flex gap-x-3">
@@ -257,7 +302,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               />
             </div>
             <div class="leading-6">
-              <label for="other" class="text-gray-600">Other (please specify)</label>
+              <label for="other" class="text-gray-600"
+                >Other (please specify)</label
+              >
             </div>
           </div>
           <input
@@ -266,11 +313,23 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             name="inspirations"
             id="other-text"
           />
-          <div id="other-error-msg" class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4">
+          <div
+            id="other-error-msg"
+            class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4"
+          >
             <div class="flex">
               <div class="shrink-0">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-yellow-400">
-                  <path d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" fill-rule="evenodd" />
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  data-slot="icon"
+                  aria-hidden="true"
+                  class="size-5 text-yellow-400"
+                >
+                  <path
+                    d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"></path>
                 </svg>
               </div>
               <div class="ml-3">
@@ -310,7 +369,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Hands-on, practical learning"
             />
-            <label for="practical" class="block leading-6 text-gray-600">Hands-on, practical learning</label>
+            <label for="practical" class="block leading-6 text-gray-600"
+              >Hands-on, practical learning</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -320,7 +381,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Visual learning through observation"
             />
-            <label for="visual" class="block leading-6 text-gray-600">Visual learning through observation</label>
+            <label for="visual" class="block leading-6 text-gray-600"
+              >Visual learning through observation</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -339,7 +402,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       </fieldset>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">How certain are you about becoming a pilot?</legend>
+        <legend class="font-medium leading-6 text-primary-dark"
+          >How certain are you about becoming a pilot?</legend
+        >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
             <input
@@ -349,7 +414,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="100%"
             />
-            <label for="pilot-certainty-100" class="block leading-6 text-gray-600">100%</label>
+            <label
+              for="pilot-certainty-100"
+              class="block leading-6 text-gray-600">100%</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -359,7 +427,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="90%"
             />
-            <label for="pilot-certainty-90" class="block leading-6 text-gray-600">90%</label>
+            <label
+              for="pilot-certainty-90"
+              class="block leading-6 text-gray-600">90%</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -369,7 +440,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="75%"
             />
-            <label for="pilot-certainty-75" class="block leading-6 text-gray-600">75%</label>
+            <label
+              for="pilot-certainty-75"
+              class="block leading-6 text-gray-600">75%</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -379,7 +453,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Less than 75%"
             />
-            <label for="pilot-certainty-less-75" class="block leading-6 text-gray-600">Less than 75%</label>
+            <label
+              for="pilot-certainty-less-75"
+              class="block leading-6 text-gray-600">Less than 75%</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -389,8 +466,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="Still considering"
             />
-            <label for="pilot-certainty-still-considering" class="block leading-6 text-gray-600"
-              >Still considering</label
+            <label
+              for="pilot-certainty-still-considering"
+              class="block leading-6 text-gray-600">Still considering</label
             >
           </div>
         </div>
@@ -398,8 +476,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
-          >Do you prefer a structured learning environment with clearly defined expectations, or a more flexible,
-          adaptable approach?</legend
+          >Do you prefer a structured learning environment with clearly defined
+          expectations, or a more flexible, adaptable approach?</legend
         >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
@@ -410,7 +488,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               class="h-4 w-4 border-gray-300 text-primary focus:ring-primary"
               value="I prefer a structured approach"
             />
-            <label for="structured" class="block leading-6 text-gray-600">I prefer a structured approach</label>
+            <label for="structured" class="block leading-6 text-gray-600"
+              >I prefer a structured approach</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -421,14 +501,17 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="I prefer a flexible approach"
               required
             />
-            <label for="flexible" class="block leading-6 text-gray-600">I prefer a flexible approach</label>
+            <label for="flexible" class="block leading-6 text-gray-600"
+              >I prefer a flexible approach</label
+            >
           </div>
         </div>
       </fieldset>
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
-          >What kind of guidance and support would you prefer from your flight instructor?
+          >What kind of guidance and support would you prefer from your flight
+          instructor?
         </legend>
         <p class="text-gray-500 text-sm">You can select multiple options</p>
         <div class="mt-2 space-y-1">
@@ -444,7 +527,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             </div>
             <div class="leading-6">
               <label for="personalized-approach" class="text-gray-600"
-                >A personalized approach tailored to my individual learning needs and preferences</label
+                >A personalized approach tailored to my individual learning
+                needs and preferences</label
               >
             </div>
           </div>
@@ -460,7 +544,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             </div>
             <div class="leading-6">
               <label for="hands-on-involvement" class="text-gray-600"
-                >Hands-on involvement from the instructor, with constant feedback and guidance</label
+                >Hands-on involvement from the instructor, with constant
+                feedback and guidance</label
               >
             </div>
           </div>
@@ -492,7 +577,8 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             </div>
             <div class="leading-6">
               <label for="guidance" class="text-gray-600"
-                >Supportive and encouraging guidance, with a focus on building confidence</label
+                >Supportive and encouraging guidance, with a focus on building
+                confidence</label
               >
             </div>
           </div>
@@ -507,7 +593,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               />
             </div>
             <div class="leading-6">
-              <label for="other2" class="text-gray-600">Other (please specify)</label>
+              <label for="other2" class="text-gray-600"
+                >Other (please specify)</label
+              >
             </div>
           </div>
           <input
@@ -516,11 +604,23 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
             name="kind-of-guidance"
             id="other2-text"
           />
-          <div id="other2-error-msg" class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4">
+          <div
+            id="other2-error-msg"
+            class="hidden border-l-4 border-yellow-400 bg-yellow-50 p-4"
+          >
             <div class="flex">
               <div class="shrink-0">
-                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="size-5 text-yellow-400">
-                  <path d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" clip-rule="evenodd" fill-rule="evenodd" />
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  data-slot="icon"
+                  aria-hidden="true"
+                  class="size-5 text-yellow-400"
+                >
+                  <path
+                    d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495ZM10 5a.75.75 0 0 1 .75.75v3.5a.75.75 0 0 1-1.5 0v-3.5A.75.75 0 0 1 10 5Zm0 9a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"
+                    clip-rule="evenodd"
+                    fill-rule="evenodd"></path>
                 </svg>
               </div>
               <div class="ml-3">
@@ -530,7 +630,6 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               </div>
             </div>
           </div>
-        </div>
         </div>
       </fieldset>
 
@@ -549,16 +648,20 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       </div> -->
 
       <div>
-        <h3 class="text-primary text-2xl font-extrabold w-full">Medical Fitness</h3>
+        <h3 class="text-primary text-2xl font-extrabold w-full">
+          Medical Fitness
+        </h3>
 
         <p class="text-primary text-lg w-full font-light mt-2">
-          <b>Note:</b> All pilots must obtain an FAA Medical Certificate. It’s essential to assess your medical fitness early
-          in your training journey.
+          <b>Note:</b> All pilots must obtain an FAA Medical Certificate. It’s essential
+          to assess your medical fitness early in your training journey.
         </p>
       </div>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">Age range</legend>
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Age range</legend
+        >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
             <input
@@ -569,7 +672,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Under 25"
               required
             />
-            <label for="medical-age-under-25" class="block leading-6 text-gray-600">Under 25</label>
+            <label
+              for="medical-age-under-25"
+              class="block leading-6 text-gray-600">Under 25</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -580,7 +686,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="26-55"
               required
             />
-            <label for="medical-age-26-55" class="block leading-6 text-gray-600">26-55</label>
+            <label for="medical-age-26-55" class="block leading-6 text-gray-600"
+              >26-55</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -591,13 +699,18 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Over 55"
               required
             />
-            <label for="medical-age-over-55" class="block leading-6 text-gray-600">Over 55</label>
+            <label
+              for="medical-age-over-55"
+              class="block leading-6 text-gray-600">Over 55</label
+            >
           </div>
         </div>
       </fieldset>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">Weight range</legend>
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Weight range</legend
+        >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
             <input
@@ -608,7 +721,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Under 200 lbs"
               required
             />
-            <label for="medical-weight-under-200-lbs" class="block leading-6 text-gray-600">Under 200 lbs</label>
+            <label
+              for="medical-weight-under-200-lbs"
+              class="block leading-6 text-gray-600">Under 200 lbs</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -619,7 +735,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="200-250 lbs"
               required
             />
-            <label for="medical-weight-200-250-lbs" class="block leading-6 text-gray-600">200-250 lbs</label>
+            <label
+              for="medical-weight-200-250-lbs"
+              class="block leading-6 text-gray-600">200-250 lbs</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -630,15 +749,18 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Over 250 lbs"
               required
             />
-            <label for="medical-weight-over-250-lbs" class="block leading-6 text-gray-600">Over 250 lbs</label>
+            <label
+              for="medical-weight-over-250-lbs"
+              class="block leading-6 text-gray-600">Over 250 lbs</label
+            >
           </div>
         </div>
       </fieldset>
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
-          >Do you currently have any known medical conditions that might affect your ability to obtain an FAA Medical
-          Certificate?</legend
+          >Do you currently have any known medical conditions that might affect
+          your ability to obtain an FAA Medical Certificate?</legend
         >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
@@ -650,7 +772,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes"
               required
             />
-            <label for="medical-conditions-yes" class="block leading-6 text-gray-600">Yes</label>
+            <label
+              for="medical-conditions-yes"
+              class="block leading-6 text-gray-600">Yes</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -661,7 +786,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="No"
               required
             />
-            <label for="medical-conditions-no" class="block leading-6 text-gray-600">No</label>
+            <label
+              for="medical-conditions-no"
+              class="block leading-6 text-gray-600">No</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -672,13 +800,18 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Unsure"
               required
             />
-            <label for="medical-conditions-unsure" class="block leading-6 text-gray-600">Unsure</label>
+            <label
+              for="medical-conditions-unsure"
+              class="block leading-6 text-gray-600">Unsure</label
+            >
           </div>
         </div>
       </fieldset>
 
       <fieldset class="w-full">
-        <legend class="font-medium leading-6 text-primary-dark">Are you currently taking any medications?</legend>
+        <legend class="font-medium leading-6 text-primary-dark"
+          >Are you currently taking any medications?</legend
+        >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
             <input
@@ -689,7 +822,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes"
               required
             />
-            <label for="medical-medication-yes" class="block leading-6 text-gray-600">Yes</label>
+            <label
+              for="medical-medication-yes"
+              class="block leading-6 text-gray-600">Yes</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -700,7 +836,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="No"
               required
             />
-            <label for="medical-medication-no" class="block leading-6 text-gray-600">No</label>
+            <label
+              for="medical-medication-no"
+              class="block leading-6 text-gray-600">No</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -711,17 +850,23 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Prefer not to say"
               required
             />
-            <label for="medical-medication-not-saying" class="block leading-6 text-gray-600">Prefer not to say</label>
+            <label
+              for="medical-medication-not-saying"
+              class="block leading-6 text-gray-600">Prefer not to say</label
+            >
           </div>
         </div>
 
         <p class="text-primary text-lg w-full font-light mt-2">
-          <b>Important:</b> If you are taking medications or have medical conditions, we recommend consulting with an FAA-certified
-          Aviation Medical Examiner (AME) to determine your eligibility for a medical certificate.
+          <b>Important:</b> If you are taking medications or have medical conditions,
+          we recommend consulting with an FAA-certified Aviation Medical Examiner
+          (AME) to determine your eligibility for a medical certificate.
         </p>
       </fieldset>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Time Commitment</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Time Commitment
+      </h3>
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
@@ -737,7 +882,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="1 or fewer"
               required
             />
-            <label for="time-commitment-weekly-1-or-fewer" class="block leading-6 text-gray-600">1 or fewer</label>
+            <label
+              for="time-commitment-weekly-1-or-fewer"
+              class="block leading-6 text-gray-600">1 or fewer</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -748,7 +896,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="2-3"
               required
             />
-            <label for="time-commitment-weekly-2-3" class="block leading-6 text-gray-600">2-3</label>
+            <label
+              for="time-commitment-weekly-2-3"
+              class="block leading-6 text-gray-600">2-3</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -759,14 +910,18 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="4 or more"
               required
             />
-            <label for="time-commitment-weekly-4-or-more" class="block leading-6 text-gray-600">4 or more</label>
+            <label
+              for="time-commitment-weekly-4-or-more"
+              class="block leading-6 text-gray-600">4 or more</label
+            >
           </div>
         </div>
       </fieldset>
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
-          >Do you have flexibility in your schedule to accommodate additional study or practice time?</legend
+          >Do you have flexibility in your schedule to accommodate additional
+          study or practice time?</legend
         >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
@@ -778,7 +933,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes"
               required
             />
-            <label for="time-commitment-flexibility-yes" class="block leading-6 text-gray-600">Yes</label>
+            <label
+              for="time-commitment-flexibility-yes"
+              class="block leading-6 text-gray-600">Yes</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -789,7 +947,10 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="No"
               required
             />
-            <label for="time-commitment-flexibility-no" class="block leading-6 text-gray-600">No</label>
+            <label
+              for="time-commitment-flexibility-no"
+              class="block leading-6 text-gray-600">No</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -800,23 +961,28 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Limited flexibility"
               required
             />
-            <label for="time-commitment-flexibility-limited" class="block leading-6 text-gray-600"
-              >Limited flexibility</label
+            <label
+              for="time-commitment-flexibility-limited"
+              class="block leading-6 text-gray-600">Limited flexibility</label
             >
           </div>
         </div>
 
         <p class="text-primary text-lg w-full font-light mt-2">
-          <b>Note:</b> Consistent practice and study are crucial for success in flight training. Less frequent flying can
-          lead to longer training durations and increased costs.
+          <b>Note:</b> Consistent practice and study are crucial for success in flight
+          training. Less frequent flying can lead to longer training durations and
+          increased costs.
         </p>
       </fieldset>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Financial Planning</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Financial Planning
+      </h3>
 
       <fieldset class="w-full">
         <legend class="font-medium leading-6 text-primary-dark"
-          >Have you prepared financially for the costs associated with flight training?</legend
+          >Have you prepared financially for the costs associated with flight
+          training?</legend
         >
         <div class="mt-2 space-y-1">
           <div class="flex items-center gap-x-3">
@@ -828,8 +994,11 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes, I have the full amount saved (~$12,000 for a Private Pilot License)"
               required
             />
-            <label for="financial-yes-full-amount" class="block leading-6 text-gray-600"
-              >Yes, I have the full amount saved (~$12,000 for a Private Pilot License)</label
+            <label
+              for="financial-yes-full-amount"
+              class="block leading-6 text-gray-600"
+              >Yes, I have the full amount saved (~$12,000 for a Private Pilot
+              License)</label
             >
           </div>
           <div class="flex items-center gap-x-3">
@@ -841,7 +1010,11 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes, I plan to pay as I go"
               required
             />
-            <label for="financial-yes-as-i-go" class="block leading-6 text-gray-600">Yes, I plan to pay as I go</label>
+            <label
+              for="financial-yes-as-i-go"
+              class="block leading-6 text-gray-600"
+              >Yes, I plan to pay as I go</label
+            >
           </div>
           <div class="flex items-center gap-x-3">
             <input
@@ -852,8 +1025,11 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
               value="Yes, I have financial assistance (e.g., Stratus, scholarships, employer reimbursement)"
               required
             />
-            <label for="financial-yes-assitance" class="block leading-6 text-gray-600"
-              >Yes, I have financial assistance (e.g., Stratus, scholarships, employer reimbursement)</label
+            <label
+              for="financial-yes-assitance"
+              class="block leading-6 text-gray-600"
+              >Yes, I have financial assistance (e.g., Stratus, scholarships,
+              employer reimbursement)</label
             >
           </div>
           <div class="flex items-center gap-x-3">
@@ -872,11 +1048,16 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
         </div>
       </fieldset>
 
-      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">Additional Information</h3>
+      <h3 class="text-primary text-2xl font-extrabold w-full mt-10">
+        Additional Information
+      </h3>
 
       <div class="col-span-full w-full">
-        <label for="expectations" class="block font-medium leading-6 text-primary-dark"
-          >Is there anything else you'd like us to know about your interests or expectations regarding flight training?</label
+        <label
+          for="expectations"
+          class="block font-medium leading-6 text-primary-dark"
+          >Is there anything else you'd like us to know about your interests or
+          expectations regarding flight training?</label
         >
         <div class="mt-2">
           <textarea
@@ -889,15 +1070,31 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       </div>
 
       <fieldset class="flex flex-col mt-4 w-full">
-        <legend class="mb-2 text-gray-800 w-full"> Would you like schedule a visit to NextGen Flight Academy? </legend>
+        <legend class="mb-2 text-gray-800 w-full">
+          Would you like schedule a visit to NextGen Flight Academy?
+        </legend>
 
         <div>
           <div>
-            <input type="radio" class="mx-2" id="yes-visit" name="visit-nextgen" value="Yes" required />
+            <input
+              type="radio"
+              class="mx-2"
+              id="yes-visit"
+              name="visit-nextgen"
+              value="Yes"
+              required
+            />
             <label for="yes-visit">Yes</label>
           </div>
           <div>
-            <input type="radio" class="mx-2" id="no-visit" name="visit-nextgen" value="No" required />
+            <input
+              type="radio"
+              class="mx-2"
+              id="no-visit"
+              name="visit-nextgen"
+              value="No"
+              required
+            />
             <label for="no-visit">No</label>
           </div>
         </div>
@@ -906,16 +1103,31 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       <div id="location-container" class="hidden flex-col gap-2 w-full">
         <label for="visit-location">Choose a location:</label>
 
-        <select name="visit-location" id="visit-location" class="w-36 px-3 py-2 border border-gray-400">
+        <select
+          name="visit-location"
+          id="visit-location"
+          class="w-36 px-3 py-2 border border-gray-400"
+        >
           <option value="riverside">Riverside</option>
           <option value="redlands">Redlands</option>
         </select>
 
         <label for="visit-date">Preferred Date:</label>
-        <input type="date" name="visit-date" id="visit-date" class="w-40 px-3 py-2 border border-gray-400" required />
+        <input
+          type="date"
+          name="visit-date"
+          id="visit-date"
+          class="w-40 px-3 py-2 border border-gray-400"
+          required
+        />
 
         <label for="visit-time">Preferred Time:</label>
-        <select name="visit-time" id="visit-time" class="w-40 px-3 py-2 border border-gray-400" required>
+        <select
+          name="visit-time"
+          id="visit-time"
+          class="w-40 px-3 py-2 border border-gray-400"
+          required
+        >
           <option value="">Select a time</option>
           <option value="Morning">Morning</option>
           <option value="Afternoon">Afternoon</option>
@@ -924,8 +1136,9 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
 
       <p class="text-primary text-lg w-full font-light mt-2">
         <b>Final Note</b><br />
-        Once submitted, your answers will be reviewed by our team, and we’ll reach out to discuss your personalized training
-        path. This assessment can be exported into your student profile and used to tailor recommendations for scheduling,
+        Once submitted, your answers will be reviewed by our team, and we’ll reach
+        out to discuss your personalized training path. This assessment can be exported
+        into your student profile and used to tailor recommendations for scheduling,
         instruction format, and financial planning.
       </p>
 
@@ -950,213 +1163,241 @@ const PORTAL_API_KEY = import.meta.env.PORTAL_API_KEY;
       >
     </form>
   </section>
-  <script define:vars={{ QUIZ_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
-    const checkbox = document.getElementById("agree-data-collection");
-    const submitButton = document.getElementById("submit-button");
-    const yesVisit = document.getElementById("yes-visit");
-    const noVisit = document.getElementById("no-visit");
-    let isSubmitting = false;
-
-    const otherFields = [
-      {
-        id: "other",
-        idText: "other-text",
-        idErrorMsg: "other-error-msg",
-      },
-      {
-        id: "other2",
-        idText: "other2-text",
-        idErrorMsg: "other2-error-msg",
-      },
-    ]
-
-    function updateSubmitButtonState(enabled, text) {
-      submitButton.disabled = !enabled;
-      if (text) {
-        submitButton.textContent = text;
-      }
-
-      if (enabled) {
-        submitButton.classList.remove("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
-      } else {
-        submitButton.classList.add("cursor-not-allowed", "bg-gray-400", "hover:bg-gray-400", "hover:text-white");
-      }
-    }
-
-    function checkOtherFilled(idOther, idOtherText, idErrorMsg) {
-      const other = document.getElementById(idOther);
-      const otherText = document.getElementById(idOtherText);
-      const otherErrorMsg = document.getElementById(idErrorMsg);
-
-      if (other.checked && otherText.value.trim() === "") {
-        otherErrorMsg.classList.remove("hidden");
-        otherText.focus();
-        return false;
-      }
-
-      otherErrorMsg.classList.add("hidden");
-      return true;
-    }
-
-    yesVisit.addEventListener("change", function () {
-      if (yesVisit.checked) {
-        document.getElementById("location-container").classList.remove("hidden");
-        document.getElementById("location-container").classList.add("flex");
-      } else {
-        document.getElementById("location-container").classList.add("hidden");
-      }
-    });
-
-    noVisit.addEventListener("change", function () {
-      if (noVisit.checked) {
-        document.getElementById("location-container").classList.add("hidden");
-      }
-    });
-
-    const dateInput = document.getElementById("visit-date");
-    const today = new Date().toISOString().split("T")[0];
-    dateInput.setAttribute("min", today);
-
-    checkbox.addEventListener("change", function () {
-      updateSubmitButtonState(checkbox.checked);
-    });
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const form = document.getElementById("quiz-form");
-      if (!form) {
-        console.error("Form element not found.");
-        return;
-      }
-
-      form.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        if (isSubmitting) return;
-
-        const formData = new FormData(form);
-        const confirmEmail = formData.get("confirm-email")?.trim();
-        if (confirmEmail) return;
-
-        for (const item of otherFields) {
-          if (!checkOtherFilled(item.id, item.idText, item.idErrorMsg)) {
-            return;
-          }
-        }
-
-        const inspirations = [];
-        formData.getAll("inspirations").forEach((inspiration) => {
-          inspirations.push(inspiration);
-        });
-
-        formData.delete("inspirations");
-
-        formData.append("what-inspires-you", inspirations.join(","));
-
-        const kindOfGuidance = [];
-        formData.getAll("kind-of-guidance").forEach((guidance) => {
-          kindOfGuidance.push(guidance);
-        });
-
-        formData.delete("kind-of-guidance");
-
-        formData.append("what-kind-of-guidance-and-support-you-prefer", kindOfGuidance.join(","));
-
-        const webhookURL = QUIZ_FORM_WEBHOOK_URL;
-        const apiKey = PORTAL_API_KEY;
-
-        const urlEncodedBody = new URLSearchParams(formData).toString();
-
-        const jsonBody = {
-          first_name: formData.get("first-name")?.trim() || "",
-          last_name: formData.get("last-name")?.trim() || "",
-          email: formData.get("email")?.trim() || "",
-          phone: formData.get("phone")?.trim() || "",
-          "visit-location": formData.get("visit-location")?.trim() || "",
-          "visit-date": formData.get("visit-date")?.trim() || "",
-          "visit-time": formData.get("visit-time")?.trim() || "",
-          campaign: "quiz",
-          account_random_id: "ac_vwzfezsv",
-          metadata: {
-            "preferred-method-of-contact": formData.get("method-contact")?.trim() || "",
-            "level-of-experience": formData.get("level-of-experience")?.trim() || "",
-            "aspirations-and-mindset": {
-              "what-inspires-you": inspirations.join(","),
-              "preferred-learning-style": formData.get("preferred-learning-style")?.trim() || "",
-              "pilot-certainty": formData.get("pilot-certainty")?.trim() || "",
-              "preferred-approach": formData.get("preferred-approach")?.trim() || "",
-              "what-kind-of-guidance-and-support-you-prefer": kindOfGuidance.join(","),
-            },
-            "medical": {
-              "medical-age-range": formData.get("medical-age-range")?.trim() || "",
-              "medical-weight-range": formData.get("medical-weight-range")?.trim() || "",
-              "medical-conditions": formData.get("medical-conditions")?.trim() || "",
-              "medical-medication": formData.get("medical-medication")?.trim() || "",
-            },
-            "time-commitment": {
-              "time-commitment-weekly": formData.get("time-commitment-weekly")?.trim() || "",
-              "time-commitment-flexibility": formData.get("time-commitment-flexibility")?.trim() || "",
-            },
-            "financial": formData.get("financial")?.trim() || "",
-            /* "long-term-goals": formData.get("long-term-goals")?.trim() || "", */
-            /* "do-you-know-how-a-wing-generates-lift":
-              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() || "", */
-            "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training":
-              formData
-                .get(
-                  "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training"
-                )
-                ?.trim() || "",
-            "visit-nextgen": formData.get("visit-nextgen")?.trim() || "",
-            "visit-location": formData.get("visit-location")?.trim() || "",
-          },
-        };
-
-        try {
-          isSubmitting = true;
-          updateSubmitButtonState(false, "Submitting...");
-
-          const [crmResponse, portalResponse] = await Promise.all([
-            fetch(webhookURL, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-              },
-              body: urlEncodedBody,
-            }),
-            fetch("https://portal.rightruddermarketing.com/api/leads", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json",
-                "x-api-key": apiKey,
-              },
-              body: JSON.stringify(jsonBody),
-            }),
-          ]);
-
-          if (crmResponse.ok && portalResponse.ok) {
-            window.location.href = "/quiz-confirmation";
-          } else {
-            console.error("Submission failed", {
-              crm: {
-                status: crmResponse.status,
-                body: await crmResponse.json(),
-              },
-              portal: {
-                status: portalResponse.status,
-                body: await portalResponse.json(),
-              },
-            });
-            alert("There was an error submitting your form. Please try again or contact us directly.");
-          }
-        } catch (err) {
-          console.error("Submission error:", err);
-          alert("There was an error submitting your form. Please try again or contact us directly.");
-        } finally {
-          isSubmitting = false;
-          updateSubmitButtonState(false, "Submit");
-        }
-      });
-    });
-  </script>
 </BaseLayout>
+<script define:vars={{ QUIZ_FORM_WEBHOOK_URL, PORTAL_API_KEY }}>
+  const checkbox = document.getElementById("agree-data-collection");
+  const submitButton = document.getElementById("submit-button");
+  const yesVisit = document.getElementById("yes-visit");
+  const noVisit = document.getElementById("no-visit");
+  let isSubmitting = false;
+
+  const otherFields = [
+    {
+      id: "other",
+      idText: "other-text",
+      idErrorMsg: "other-error-msg",
+    },
+    {
+      id: "other2",
+      idText: "other2-text",
+      idErrorMsg: "other2-error-msg",
+    },
+  ];
+
+  function updateSubmitButtonState(enabled, text) {
+    submitButton.disabled = !enabled;
+    if (text) {
+      submitButton.textContent = text;
+    }
+
+    if (enabled) {
+      submitButton.classList.remove(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+        "hover:text-white",
+      );
+    } else {
+      submitButton.classList.add(
+        "cursor-not-allowed",
+        "bg-gray-400",
+        "hover:bg-gray-400",
+        "hover:text-white",
+      );
+    }
+  }
+
+  function checkOtherFilled(idOther, idOtherText, idErrorMsg) {
+    const other = document.getElementById(idOther);
+    const otherText = document.getElementById(idOtherText);
+    const otherErrorMsg = document.getElementById(idErrorMsg);
+
+    if (other.checked && otherText.value.trim() === "") {
+      otherErrorMsg.classList.remove("hidden");
+      otherText.focus();
+      return false;
+    }
+
+    otherErrorMsg.classList.add("hidden");
+    return true;
+  }
+
+  yesVisit.addEventListener("change", function () {
+    if (yesVisit.checked) {
+      document.getElementById("location-container").classList.remove("hidden");
+      document.getElementById("location-container").classList.add("flex");
+    } else {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  noVisit.addEventListener("change", function () {
+    if (noVisit.checked) {
+      document.getElementById("location-container").classList.add("hidden");
+    }
+  });
+
+  const dateInput = document.getElementById("visit-date");
+  const today = new Date().toISOString().split("T")[0];
+  dateInput.setAttribute("min", today);
+
+  checkbox.addEventListener("change", function () {
+    updateSubmitButtonState(checkbox.checked);
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("quiz-form");
+    if (!form) {
+      console.error("Form element not found.");
+      return;
+    }
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      if (isSubmitting) return;
+
+      const formData = new FormData(form);
+      const confirmEmail = formData.get("confirm-email")?.trim();
+      if (confirmEmail) return;
+
+      for (const item of otherFields) {
+        if (!checkOtherFilled(item.id, item.idText, item.idErrorMsg)) {
+          return;
+        }
+      }
+
+      const inspirations = [];
+      formData.getAll("inspirations").forEach((inspiration) => {
+        inspirations.push(inspiration);
+      });
+
+      formData.delete("inspirations");
+
+      formData.append("what-inspires-you", inspirations.join(","));
+
+      const kindOfGuidance = [];
+      formData.getAll("kind-of-guidance").forEach((guidance) => {
+        kindOfGuidance.push(guidance);
+      });
+
+      formData.delete("kind-of-guidance");
+
+      formData.append(
+        "what-kind-of-guidance-and-support-you-prefer",
+        kindOfGuidance.join(","),
+      );
+
+      const webhookURL = QUIZ_FORM_WEBHOOK_URL;
+      const apiKey = PORTAL_API_KEY;
+
+      const urlEncodedBody = new URLSearchParams(formData).toString();
+
+      const jsonBody = {
+        first_name: formData.get("first-name")?.trim() || "",
+        last_name: formData.get("last-name")?.trim() || "",
+        email: formData.get("email")?.trim() || "",
+        phone: formData.get("phone")?.trim() || "",
+        "visit-location": formData.get("visit-location")?.trim() || "",
+        "visit-date": formData.get("visit-date")?.trim() || "",
+        "visit-time": formData.get("visit-time")?.trim() || "",
+        campaign: "quiz",
+        account_random_id: "ac_vwzfezsv",
+        metadata: {
+          "preferred-method-of-contact":
+            formData.get("method-contact")?.trim() || "",
+          "level-of-experience":
+            formData.get("level-of-experience")?.trim() || "",
+          "aspirations-and-mindset": {
+            "what-inspires-you": inspirations.join(","),
+            "preferred-learning-style":
+              formData.get("preferred-learning-style")?.trim() || "",
+            "pilot-certainty": formData.get("pilot-certainty")?.trim() || "",
+            "preferred-approach":
+              formData.get("preferred-approach")?.trim() || "",
+            "what-kind-of-guidance-and-support-you-prefer":
+              kindOfGuidance.join(","),
+          },
+          medical: {
+            "medical-age-range":
+              formData.get("medical-age-range")?.trim() || "",
+            "medical-weight-range":
+              formData.get("medical-weight-range")?.trim() || "",
+            "medical-conditions":
+              formData.get("medical-conditions")?.trim() || "",
+            "medical-medication":
+              formData.get("medical-medication")?.trim() || "",
+          },
+          "time-commitment": {
+            "time-commitment-weekly":
+              formData.get("time-commitment-weekly")?.trim() || "",
+            "time-commitment-flexibility":
+              formData.get("time-commitment-flexibility")?.trim() || "",
+          },
+          financial: formData.get("financial")?.trim() || "",
+          /* "long-term-goals": formData.get("long-term-goals")?.trim() || "", */
+          /* "do-you-know-how-a-wing-generates-lift":
+              formData.get("do-you-know-how-a-wing-generates-lift")?.trim() || "", */
+          "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training":
+            formData
+              .get(
+                "anything-else-youd-like-us-to-know-about-your-interests-or-expectations-regarding-flight-training",
+              )
+              ?.trim() || "",
+          "visit-nextgen": formData.get("visit-nextgen")?.trim() || "",
+          "visit-location": formData.get("visit-location")?.trim() || "",
+        },
+      };
+
+      try {
+        isSubmitting = true;
+        updateSubmitButtonState(false, "Submitting...");
+
+        const [crmResponse, portalResponse] = await Promise.all([
+          fetch(webhookURL, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: urlEncodedBody,
+          }),
+          fetch("https://portal.rightruddermarketing.com/api/leads", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "x-api-key": apiKey,
+            },
+            body: JSON.stringify(jsonBody),
+          }),
+        ]);
+
+        if (crmResponse.ok && portalResponse.ok) {
+          window.location.href = "/quiz-confirmation";
+        } else {
+          console.error("Submission failed", {
+            crm: {
+              status: crmResponse.status,
+              body: await crmResponse.json(),
+            },
+            portal: {
+              status: portalResponse.status,
+              body: await portalResponse.json(),
+            },
+          });
+          alert(
+            "There was an error submitting your form. Please try again or contact us directly.",
+          );
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+        alert(
+          "There was an error submitting your form. Please try again or contact us directly.",
+        );
+      } finally {
+        isSubmitting = false;
+        updateSubmitButtonState(false, "Submit");
+      }
+    });
+  });
+</script>
